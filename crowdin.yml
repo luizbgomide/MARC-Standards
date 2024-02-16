@@ -1,0 +1,3 @@
+files:
+  - source: Source/marc/**/*.htm*
+    translation: '%original_path%/%original_file_name%'
