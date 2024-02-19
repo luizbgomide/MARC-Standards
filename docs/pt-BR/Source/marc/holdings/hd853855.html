@@ -1,0 +1,2001 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html40/loose.dtd">
+<html>
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>MARC 21 Format for Holdings Data: 853-855: Captions and Pattern-General Information (Network Development and MARC Standards Office, Library of Congress) </title>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="description" content="This page lists the captions and pattern fields  (Network Development and MARC Standards Office, Library of Congress)">
+   <meta name="keywords" content="marc, marc21, marc standards">
+   <meta name="author" content="Library of Congress Network Development and MARC Standards Office">
+   <link href="../marc-generic.css" rel="stylesheet" type="text/css">
+   <style type="text/css">
+      body {
+         margin-left: 2em;
+         margin-right: 2em;
+      }
+
+      h1 {
+         font-family: Arial, Helvetica, sans-serif;
+      }
+
+      h3 {
+         text-align: left;
+      }
+
+      h4 {
+         margin-top: .5em;
+         margin-bottom: .5em;
+      }
+
+      p {
+         text-align: justify;
+         margin-left: 2em;
+         margin-right: 2em;
+      }
+
+      .formatname {
+         font-weight: bold;
+         font-family: Arial, Helvetica, sans-serif;
+         margin-left: .5em
+      }
+
+      .datename {
+         font-weight: bold;
+         text-align: right;
+         font-family: Arial, Helvetica, sans-serif;
+         margin-top: -1.2em;
+      }
+
+      .font_small {
+         font-size: 9pt;
+      }
+
+      .fieldtoc {
+         margin-left: 2em;
+      }
+
+      .subfieldtoc {
+         margin-left: 3em;
+      }
+
+      .box {
+         font-family: ZapfDingbats;
+      }
+
+      .description {
+         text-align: justify;
+         margin-left: 2em;
+      }
+
+      .description2 {
+         text-align: justify;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .description3 {
+         text-align: justify;
+         margin-top: 1em;
+         margin-bottom: 1em;
+         margin-left: 2em;
+      }
+
+      .indicator {
+         text-align: left;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .indicatorvalue {
+         margin-left: 2em;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .subfieldvalue {
+         margin-left: 2em;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .subfield {
+         text-align: left;
+         margin-top: 1em;
+         margin-bottom: 1em;
+         margin-left: 2em;
+      }
+
+      .characterposition {
+         text-align: left;
+         margin-top: 1em;
+         margin-bottom: 1em;
+         margin-left: 2em;
+      }
+
+      .charactervalue {
+         margin-left: 2em;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .characterpositionhistory {
+         text-align: left;
+         margin-top: .5em;
+         margin-bottom: .5em;
+         margin-left: 2em;
+      }
+
+      .charactervaluehistory {
+         margin-left: 2em;
+         margin-top: .1em;
+         margin-bottom: .1em;
+      }
+
+      .example {
+         margin-left: 4em;
+      }
+
+      .changed {
+         color: #FF0000;
+      }
+
+      .captiontext {
+         font-style: italic;
+      }
+
+      .displaytext {
+         font-style: italic;
+         margin-bottom: .5em;
+         margin-top: .5em;
+      }
+
+      .displaycontent {
+         text-align: left;
+      }
+
+      .table {
+         margin-left: 2em;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .head-nav {
+         font-family: Arial, Helvetica, sans-serif;
+         font-size: 9pt;
+      }
+
+      .summary {
+         margin-left: 2em;
+      }
+
+      .summarytable {
+         margin-left: 4em;
+      }
+
+      .update {
+         text-align: center;
+         font-weight: bold;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .changebox {
+         font-style: italic;
+         margin-top: .5em;
+      }
+
+      .changesection {
+         text-align: left;
+         margin-left: 2em;
+         font-weight: bold;
+         margin-top: .5em;
+      }
+
+      .changefield {
+         text-align: left;
+         margin-left: 1em;
+         font-weight: bold;
+      }
+
+      .changefieldlabel {
+         margin-left: 3em;
+         font-weight: bold;
+      }
+
+      .changeindicator {
+         margin-left: 3em;
+      }
+
+      .changeindicatorfieldname {
+         margin-left: 2em;
+      }
+
+      .changeindicatorvalue {
+         margin-left: 4em;
+         font-weight: bold;
+      }
+
+      .changesubfield {
+         margin-left: 3em;
+         font-weight: bold;
+      }
+
+      .changesubfieldname {
+         margin-left: 1em;
+         font-weight: bold;
+      }
+
+      .changesubfieldlocation {
+         text-align: justify;
+         font-weight: normal;
+      }
+
+      .glossaryentry {
+         margin-left: 2em;
+         margin-top: 1em;
+         font-weight: bold;
+      }
+
+      .glossaryentrydescription {
+         margin-left: 4em;
+         margin-bottom: 1em;
+         text-align: justify;
+      }
+
+      .citationaddress {
+         margin-left: 2em;
+         text-align: justify;
+      }
+
+      .citationinternet {
+         margin-left: 2em;
+         text-align: justify;
+      }
+
+      .citationname {
+         font-style: italic;
+         margin-top: 1em;
+      }
+   </style>
+   <script src="../../dac62e20b491e735c6b56e64c39134d8ee93f9cf/satelliteLib-6b47f831c184878d7338d4683ecf773a17973bb9.js"></script>
+</head>
+
+<body bgcolor="#ffffff">
+   <div class="head-nav"><a href="http://www.loc.gov/">Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/marc/">MARC</a> &gt;&gt; <a href="index.htm">Holdings</a> &gt;&gt; <strong>853-855</strong></div>
+   <hr><a name="skip_menu"></a>
+   <h1>853-855 - Captions and Pattern-General Information</h1>
+   <hr>
+   <div class="formatname">MARC 21 Holdings</div>
+   <div class="datename">June 2021</div>
+   <hr>
+   <div class="description">&quot;<strong>Full</strong>&quot; documentation refers to the <em>MARC 21 Format for Holdings Data</em> that contains detailed descriptions of every data element, along with examples, input conventions and history sections. </div>
+   <p></p>
+   <div class="description"> &quot;<strong>Concise</strong>&quot; documentation refers to the <em>MARC 21 Concise Format for Holdings Data</em> that contains abridged descriptions of every data element, along with examples. </div>
+   <p></p>
+   <div class="fieldtoc"><strong>853 - Captions and Pattern - Basic Bibliographic Unit</strong> (R) <a href="hd853.html">Full</a> | <a href="concise/hd853.html">Concise</a>
+   </div>
+   <div class="fieldtoc"><strong>854 - Captions and Pattern - Supplementary Material</strong> (R) <a href="hd854.html">Full</a> | <a href="concise/hd854.html">Concise</a>
+   </div>
+   <div class="fieldtoc"><strong>855 - Captions and Pattern - Indexes</strong> (R) <a href="hd855.html">Full</a> | <a href="concise/hd855.html">Concise</a>
+   </div>
+   <p></p>
+   <table width="100%">
+      <tr valign="top">
+         <td width="45%"><strong>First Indicator</strong><br>
+            <em>Compressibility and expandability</em> <em>[853, 854]</em> <br> 0 - Cannot compress or expand <br>1 - Can compress but not expand <br>2 - Can compress or expand <br>3 - Unknown <br><br>
+            <em>Undefined</em> <em>[855] </em><br> # - Undefined <br><br>
+         </td>
+         <td width="45%"><strong>Second Indicator</strong><br>
+            <em>Caption evaluation</em> <em>[853, 854] </em><br> 0 - Captions verified; all levels present <br>1 - Captions verified; all levels may not be present <br>2 - Captions unverified; all levels present <br>3 - Captions unverified; all levels may not be present <br><br>
+            <em>Undefined [855] </em><br> # - Undefined <br><br>
+         </td>
+      </tr>
+   </table>
+   <hr>
+   <table width="100%">
+      <tr valign="top">
+         <td valign="top" width="50%" align="left"></td>
+         <td valign="top" width="50%" align="left"></td>
+      </tr>
+      <tr valign="top">
+         <td colspan="2"><strong>Subfield Codes</strong><br></td>
+      </tr>
+      <tr valign="top">
+         <td><em>Enumeration caption:</em><br>$a - First level of enumeration (NR) <br>$b - Second level of enumeration (NR) <br>$c - Third level of enumeration (NR) <br>$d - Fourth level of enumeration (NR) <br>$e - Fifth level of enumeration (NR) <br>$f - Sixth level of enumeration (NR) <br>$g - Alternative numbering scheme, first level of enumeration (NR) <br>$h - Alternative numbering scheme, second level of enumeration (NR) <br><br><em>Chronology caption:</em><br>$i - First level of chronology (NR) <br>$j - Second level of chronology (NR) <br>$k - Third level of chronology (NR) <br>$l - Fourth level of chronology (NR) <br>$m - Alternative numbering scheme, chronology (NR) <br></td>
+         <td><em>Publication pattern:</em><br>$n - Pattern note (NR) <br>$p - Number of pieces per issuance (NR) <br>$u - Bibliographic units per next higher level (R) <br>$v - Numbering continuity (R) <br>$w - Frequency (NR) <br>$x - Calendar change (NR) <br>$y - Regularity pattern (R) <br>$z - Numbering scheme (R) <br><br><em>Other captions:</em><br>$o - Type of unit (R) <br>$t - Copy (NR) <br><br><em>Control subfields:</em><br>$2 - Source of caption abbreviation (R) <br>$3 - Materials specified (NR) <br>$6 - Linkage (NR) <br>$8 - Field link and sequence number (NR) <br></td>
+      </tr>
+   </table>
+   <hr>
+   <h3>FIELD DEFINITION AND SCOPE</h3>
+   <p>Captions that identify the enumeration and chronology levels and codes that define the publication pattern of the holdings described in the 863-865 Enumeration and Chronology fields. Any related 853-855 and 863-865 fields are linked by a number in subfield $8 (Field link and sequence number). </p>
+   <p>A general description of the four types of holdings data fields and their relationship to each other is given in the <em><a href="hd853878.html">Holdings Data--General Information</a></em> section. </p>
+   <p>Guidelines for applying content designators and the input conventions for the 853-855 fields are given in this section. </p>
+   <hr>
+   <h3>GUIDELINES FOR APPLYING CONTENT DESIGNATORS</h3>
+   <h4><span class="box">&#9632;</span> INDICATORS </h4>
+   <div class="indicator"><strong>First Indicator - Compressibility and expandability</strong>
+      <div class="description">Whether a computer algorithm may be used to convert the content of subfields $a-$m in one or more linked enumeration and chronology fields (863-864) from: an <strong>itemized report</strong> to one that expresses the same range of holdings in terms of the enumeration and chronology of only the first and last part held; or a <strong>compressed first-and-last-part-held listing</strong> of a range of holdings to an explicit itemization of each part held. <div class="description2">Specific data element requirements for compression and expansion are given in the <em>Input Conventions</em> area of this <em>General Information</em> section. A fuller description of compressibility and expandability is given in the <em>853-878 Holdings Data-General Information</em> section. <div class="description2">First indicator value does not indicate whether the holdings data in the 863 or 864 field are already expressed in a compressed or expanded form. This condition is indicated by the value in the second indicator position (Form of holdings) in the 863 or 864 Enumeration and Chronology field. </div>
+         </div>
+         <div class="indicatorvalue"><strong>0 - Cannot compress or expand</strong>
+            <div class="description">Data in the linked 863 or 864 Enumeration and Chronology field can be neither compressed nor expanded by computer algorithm. </div>
+         </div>
+         <div class="indicatorvalue"><strong>1 - Can compress but not expand</strong>
+            <div class="description">Data in the linked 863 or 864 Enumeration and Chronology field can be compressed but cannot be expanded by computer algorithm. </div>
+         </div>
+         <div class="indicatorvalue"><strong>2 - Can compress or expand</strong>
+            <div class="description">Data in the linked 863 or 864 Enumeration and Chronology field can be either compressed or expanded by computer algorithm. </div>
+         </div>
+         <div class="indicatorvalue"><strong>3 - Unknown</strong>
+            <div class="description">Compressibility and expandability by computer algorithm of the data in the linked 863 or 864 Enumeration and Chronology field is unknown. </div>
+         </div>
+      </div>
+   </div>
+   <div class="indicator"><strong>First Indicator - Undefined</strong>
+      <div class="description">Undefined and contains a blank (#). </div>
+   </div>
+   <div class="indicator"><strong>Second Indicator - Caption evaluation</strong>
+      <div class="description">Completeness of the caption levels and whether the captions used actually appear on the bibliographic item. <div class="indicatorvalue"><strong>0 - Captions verified; all levels present</strong>
+            <div class="description">Captions are for all possible levels and they appear on the item.</div>
+         </div>
+         <div class="indicatorvalue"><strong>1 - Captions verified; all levels may not be present</strong>
+            <div class="description">Captions are as they appear on the item but all possible levels may not be included. </div>
+         </div>
+         <div class="indicatorvalue"><strong>2 - Captions unverified; all levels present</strong>
+            <div class="description">Captions are for all possible levels but they are not necessarily the same as they appear on the item. </div>
+         </div>
+         <div class="indicatorvalue"><strong>3 - Captions unverified; all levels may not be present</strong>
+            <div class="description">May not include captions for all possible levels and the ones given are not necessarily the same as they appear on the item. </div>
+         </div>
+      </div>
+   </div>
+   <div class="indicator"><strong>Second Indicator - Undefined</strong>
+      <div class="description">Undefined and contains a blank (#). </div>
+   </div>
+   <h4><span class="box">&#9632;</span> SUBFIELD CODES </h4>
+   <div class="description"><strong>$a-$h: Enumeration captions</strong>: Captions for the levels of enumeration applicable to a bibliographic item. These caption subfields are correlated with the enumeration subfields $a-$h in the 863-865 Enumeration and Chronology field linked to the 853-855 field, although the same subfields need not always be present. Full correlation of caption and enumeration level subfields $a-$h in linked 853-855/863-865 fields <em>is not required</em> when captions are not desired for displaying the holdings statement. Full correlation <em>is required</em> when compression or expansion of the enumeration in field 863 or 864 by computer algorithm is desired. If there is no caption on the item for some level, a caption may be invented and enclosed in brackets ([ ]) or an asterisk used in place of data in order to achieve full correlation. </div>
+   <div class="example">
+      <table width="100%">
+         <tr>
+            <td valign="top" width="5%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="15%" align="left"></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left">853</td>
+            <td valign="top" colspan="9" align="left">03$81$av.$b[no.]</td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left">863</td>
+            <td valign="top" colspan="9" align="left">40$81.1$a1-7$b1-12<br><em>[Display example: v.1:[no.]1-v.7:[no.]12]</em></td>
+         </tr>
+      </table>
+   </div>
+   <div class="description2">
+      <div class="description">When alternative numbering schemes are applicable to an item, subfields $g and $h contain the alternative Enumeration captions. If captions for more than two levels of alternative enumeration are required, an 866-868 Textual Holdings field is used. </div>
+   </div>
+   <div class="description">
+      <div class="description2"> When only Chronology captions are used on an item (that is, the item carries no enumeration), the Chronology captions may be contained in either the relevant enumeration subfields ($a-$h) or chronology subfields ($i-$m), with the chronology subfields ($i-$m) preferred whenever possible. If a Chronology caption is not to be used in a display of the 863-865 Enumeration and Chronology field, it is enclosed in parentheses, e.g., (year). </div>
+   </div>
+   <div class="description2">
+      <div class="description">When a supplement or index designation is used as a caption (which occurs if its numbering relates to a particular volume or part of the bibliographic unit, e.g. v. 9, suppl. 1-3) the designation is contained in the relevant Enumeration caption subfield ($a-$f). </div>
+   </div>
+   <div class="example">
+      <table width="100%">
+         <tr>
+            <td valign="top" width="5%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="15%" align="left"></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left">854</td>
+            <td valign="top" colspan="9" align="left">00$81$av.$bsuppl.$i(year)$j(month)$k(day)</td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left">864</td>
+            <td valign="top" colspan="9" align="left">41$81.1$a16$b1$i1977$j06$k01<br><em>[Display example: v.16:suppl.1 (1977: June 1)]</em></td>
+         </tr>
+      </table>
+   </div>
+   <div class="description2">
+      <div class="description">When the enumeration consists of the number of units held followed by a term describing the units, the entire phrase is contained in the appropriate 863-865 field, and the 853-855 field contains the term unit (in parentheses if display is not desired). </div>
+   </div>
+   <div class="example">
+      <table width="100%">
+         <tr>
+            <td valign="top" width="5%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="15%" align="left"></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left">853</td>
+            <td valign="top" colspan="9" align="left">03$81$a(unit)</td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left">863</td>
+            <td valign="top" colspan="9" align="left">#1$81.1$a50 playing cards</td>
+         </tr>
+      </table>
+   </div>
+   <div class="subfield"><strong>$a - First level of enumeration</strong>
+      <div class="description">Caption for the highest level of enumeration. The designation for an unnumbered (e.g., new ser.) or a numbered (e.g., ser. 5) series is considered part of the caption. </div>
+      <div class="example">
+         <table width="100%">
+            <tr>
+               <td valign="top" width="5%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="15%" align="left"></td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">855</td>
+               <td valign="top" colspan="9" align="left">##$81$av.</td>
+            </tr>
+         </table>
+      </div>
+      <div class="example">
+         <table width="100%">
+            <tr>
+               <td valign="top" width="5%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="15%" align="left"></td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">853</td>
+               <td valign="top" colspan="9" align="left">01$81$av.</td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">853</td>
+               <td valign="top" colspan="9" align="left">01$82$anew ser.:v.</td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">863</td>
+               <td valign="top" colspan="9" align="left">40$81.1$a1-25</td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">863</td>
+               <td valign="top" colspan="9" align="left">40$82.1$a1-12<br><em>[Holdings consist of v.1-25 and new series v.1-12.]</em></td>
+            </tr>
+         </table>
+      </div>
+      <div class="example">
+         <table width="100%">
+            <tr>
+               <td valign="top" width="5%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="15%" align="left"></td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">853</td>
+               <td valign="top" colspan="9" align="left">01$81$aser.5:v.$i(year)</td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">863</td>
+               <td valign="top" colspan="9" align="left">40$81.1$a24-33$i1969-1978<br><em>[Holdings consist of series 5, v.24-33, 1969-1978.]</em></td>
+            </tr>
+         </table>
+      </div>
+   </div>
+   <div class="subfield"><strong>$b - Second level of enumeration</strong>
+      <div class="example">
+         <table width="100%">
+            <tr>
+               <td valign="top" width="5%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="15%" align="left"></td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">853</td>
+               <td valign="top" colspan="9" align="left">03$81$av.$bno.</td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">863</td>
+               <td valign="top" colspan="9" align="left">41$81.1$a3$b1</td>
+            </tr>
+         </table>
+      </div>
+   </div>
+   <div class="subfield"><strong>$c - Third level of enumeration</strong>
+      <div class="example">
+         <table width="100%">
+            <tr>
+               <td valign="top" width="5%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="15%" align="left"></td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">853</td>
+               <td valign="top" colspan="9" align="left">02$81$av.$bpt.$cno.</td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">863</td>
+               <td valign="top" colspan="9" align="left">40$81.1$a2$b2$c1-3</td>
+            </tr>
+         </table>
+      </div>
+   </div>
+   <div class="subfield"><strong>$d - Fourth level of enumeration</strong>
+      <div class="example">
+         <table width="100%">
+            <tr>
+               <td valign="top" width="5%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="15%" align="left"></td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">853</td>
+               <td valign="top" colspan="9" align="left">20$81$aed.$bno.$u3$vr$csect.$u4$vr$dpt.$u2$vr$zbcLatn$i(year)$j(month)$k(day)$ws$ypd01,15</td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">863</td>
+               <td valign="top" colspan="9" align="left">41$81.1$a2$b1$c1$dA$i2000$j01$k1</td>
+            </tr>
+         </table>
+      </div>
+   </div>
+   <div class="subfield"><strong>$e - Fifth level of enumeration</strong>
+      <div class="description"><em>Subfield $e is unlikely to be used</em>. </div>
+   </div>
+   <div class="subfield"><strong>$f - Sixth level of enumeration</strong>
+      <div class="description"><em>Subfield $f is unlikely to be used</em>. </div>
+   </div>
+   <div class="subfield"><strong>$g - Alternative numbering scheme, first level of enumeration</strong>
+      <div class="description">Caption for the highest level of an alternative numbering scheme.</div>
+      <div class="example">
+         <table width="100%">
+            <tr>
+               <td valign="top" width="5%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="15%" align="left"></td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">853</td>
+               <td valign="top" colspan="9" align="left">23$81$av.$bno.$u12$vr$gno.$i(year)$j(month)$wm$x01</td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">863</td>
+               <td valign="top" colspan="9" align="left">40$81.1$a1-3$g1-36$i1977-1979</td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">863</td>
+               <td valign="top" colspan="9" align="left">40$81.2$a4$b1-2$g37-38$i1980$j01-02<br><em>[Holdings consist of v.1, no. 1-12 (no. 1-12) 1977; v.2, no. 1-12 (no. 13-24) 1978; v. 3, no. 1-12 (no. 25-36) 1979; and v. 4 no. 1-2 (no. 37-38) Jan.-Feb., 1980.]</em></td>
+            </tr>
+         </table>
+      </div>
+   </div>
+   <div class="subfield"><strong>$h - Alternative numbering scheme, second level of enumeration</strong>
+      <div class="example">
+         <table width="100%">
+            <tr>
+               <td valign="top" width="5%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="15%" align="left"></td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">853</td>
+               <td valign="top" colspan="9" align="left">22$81$av.$bno.$u12$vr$g(letter)$hBd.$u6$vr$i(year)$j(month)$wm$x01</td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">863</td>
+               <td valign="top" colspan="9" align="left">40$81.1$a7$b1-3$gB$h21-23$i1981$j01-03<br><em>[Display example: v.7:no.1-3=B:Bd.21-23(1981:Jan.-M&auml;rz)]</em></td>
+            </tr>
+         </table>
+      </div>
+   </div>
+   <div class="description"><strong>$i-$m: Chronology captions</strong>: Captions for the levels of chronology applicable to a bibliographic item. These caption subfields are correlated with the chronology subfields $i-$m in the 863-865 Enumeration and Chronology field linked to the 853-855 field, although the same subfields need not always be present. Full correlation of caption and chronology level subfields $i-$m in the 853-855/863-865 fields <em>is not required</em> when captions are not desired for displaying the holdings statement. Full correlation <em>is required</em> when compression or expansion of the chronology in field 863 or 864 by computer algorithm is desired. Because bibliographic items generally do not carry Chronology captions, a caption may be invented and enclosed in brackets ([ ]) in order to achieve full correlation. </div>
+   <div class="description2">
+      <div class="description">When an alternative chronology scheme is applicable to an item, subfield $m contains the alternative Chronology caption. If captions for more than one level of alternative chronology are required, an 866-868 Textual Holdings field is used. </div>
+   </div>
+   <div class="description2">
+      <div class="description">When only Chronology captions are used on an item (that is, the item carries no enumeration), the Chronology may be contained in either the relevant enumeration subfields ($a-$h) or chronology subfields ($i-$m), with the chronology subfields ($i-$m) preferred whenever possible. If a Chronology caption is not to be used in a display of the 863-865 Enumeration and Chronology field, it is enclosed in parentheses, e.g., (year). </div>
+   </div>
+   <div class="example">
+      <table width="100%">
+         <tr>
+            <td valign="top" width="5%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="15%" align="left"></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left">853</td>
+            <td valign="top" colspan="9" align="left">03$81$i(year)</td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left">863</td>
+            <td valign="top" colspan="9" align="left">40$81.1$i1964-1981<br><em>[An annual publication identified only by year.]</em></td>
+         </tr>
+      </table>
+   </div>
+   <div class="subfield"><strong>$i - First level of chronology</strong>
+      <div class="description">Caption for the highest level of chronology.</div>
+      <div class="example">
+         <table width="100%">
+            <tr>
+               <td valign="top" width="5%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="15%" align="left"></td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">853</td>
+               <td valign="top" colspan="9" align="left">20$81$av.$i(year)</td>
+            </tr>
+         </table>
+      </div>
+   </div>
+   <div class="subfield"><strong>$j - Second level of chronology</strong>
+      <div class="example">
+         <table width="100%">
+            <tr>
+               <td valign="top" width="5%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="15%" align="left"></td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">853</td>
+               <td valign="top" colspan="9" align="left">03$81$av.$bno.$gno.$i(year)$j(season)</td>
+            </tr>
+         </table>
+      </div>
+   </div>
+   <div class="subfield"><strong>$k - Third level of chronology</strong>
+      <div class="example">
+         <table width="100%">
+            <tr>
+               <td valign="top" width="5%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="15%" align="left"></td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">853</td>
+               <td valign="top" colspan="9" align="left">22$81$av.$bno.$u12$vr$i(year)$j(month)$k(day)$wm$x01</td>
+            </tr>
+         </table>
+      </div>
+   </div>
+   <div class="subfield"><strong>$l - Fourth level of chronology</strong>
+      <div class="example">
+         <table width="100%">
+            <tr>
+               <td valign="top" width="5%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="15%" align="left"></td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">853</td>
+               <td valign="top" colspan="9" align="left">00$81$av.$bsect.$u12$vr$cno.$u7$vr$dpt.$uvar$vr$i(year)$j(month)$k(day)$lweek$wd$x01</td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">863</td>
+               <td valign="top" colspan="9" align="left">40$81.1$a1$b4$c4-7$d15$i1988$j04$k13-16$l15</td>
+            </tr>
+         </table>
+      </div>
+   </div>
+   <div class="subfield"><strong>$m - Alternative numbering scheme, chronology</strong> </div>
+   <div class="subfield"><strong>$n - Pattern note</strong>
+      <div class="description">Explanatory note citing the specific year and issue used to prepare the regularity pattern coding expressed in the field. </div>
+      <div class="example">
+         <table width="100%">
+            <tr>
+               <td valign="top" width="5%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="15%" align="left"></td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">853</td>
+               <td valign="top" colspan="9" align="left">02$81$av.$bno.$u365$vc$i(year)$j(month)$kday)$wd$x0101$ycd1224/1225$yce2358/359$nBased on v. 11, no. 2172/2173, December 24/December 25, 2001 </td>
+            </tr>
+         </table>
+      </div>
+   </div>
+   <div class="subfield"><strong>$o - Type of unit</strong>
+      <div class="description">Caption that describes the type of unit (e.g., annual buyer&#8217;s guide, subject index) in the enumeration hierarchy when it has no associated sequence numbering. When used, subfield $o immediately follows the caption to which it refers. </div>
+      <div class="example">
+         <table width="100%">
+            <tr>
+               <td valign="top" width="5%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="15%" align="left"></td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">855</td>
+               <td valign="top" colspan="9" align="left">##$81$a(year)$oalphabetical index</td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">865</td>
+               <td valign="top" colspan="9" align="left">4#$81.1$a1969/1978</td>
+            </tr>
+         </table>
+      </div>
+      <div class="example">
+         <table width="100%">
+            <tr>
+               <td valign="top" width="5%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="15%" align="left"></td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">853</td>
+               <td valign="top" colspan="9" align="left">##$aParts$i(year)$j(month)$k(day) $o12, Banks and banking</td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">863</td>
+               <td valign="top" colspan="9" align="left">##$a1-100$i2004$jJan.$k01</td>
+            </tr>
+         </table>
+      </div>
+      <div class="example">
+         <table width="100%">
+            <tr>
+               <td valign="top" width="5%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="15%" align="left"></td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">854</td>
+               <td valign="top" colspan="9" align="left">00$81$av.</td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">864</td>
+               <td valign="top" colspan="9" align="left">41$81.1$a31$oSupplement<br><em>[Display example: "Supplement" v. 31]</em></td>
+            </tr>
+         </table>
+      </div>
+   </div>
+   <div class="subfield"><strong>$p - Number of pieces per issuance</strong>
+      <div class="description">Numeric value that represents the number of physical parts or pieces received per issuance. This technique allows for describing the behavior of items issued in parts. Subfield $p is only coded in cases where the number of parts or pieces is different from the publishing frequency expressed in subfield $w. All codable frequency information should be placed in subfield $w. </div>
+      <div class="example">
+         <table width="100%">
+            <tr>
+               <td valign="top" width="5%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="15%" align="left"></td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">853</td>
+               <td valign="top" colspan="9" align="left">20$81$a[Ed.]$bv.$u12$vr$i(year)$j(month)$p6$wf$x01</td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">863</td>
+               <td valign="top" colspan="9" align="left">40$81.1$a156$b1-6$i2001$j01</td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">863</td>
+               <td valign="top" colspan="9" align="left">40$81.2$a156$b8-11$i2001$j07<br><em>[This is a semiannual publication issued twice per year in January and July, with six issues published at each time. It restarts its volume numbering (second level enumeration) with every edition. The first level enumeration changes once per year at the turn of the calendar year.]</em></td>
+            </tr>
+         </table>
+      </div>
+   </div>
+   <div class="subfield"><strong>$t - Copy</strong>
+      <div class="description">Caption for the copy number when the 863-865 Enumeration and Chronology field linked to the 853-855 field contains a subfield $t (Copy number). </div>
+      <div class="example">
+         <table width="100%">
+            <tr>
+               <td valign="top" width="5%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="15%" align="left"></td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">853</td>
+               <td valign="top" colspan="9" align="left">22$81$av.$bno.$u4$vr$i(year)$j(month)$wq$x12$tc.</td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">863</td>
+               <td valign="top" colspan="9" align="left">40$81.1$a1-4$b1-3$t3</td>
+            </tr>
+         </table>
+      </div>
+   </div>
+   <div class="subfield"><strong>$u - Bibliographic units per next higher level</strong>
+      <div class="description">Number (or the code <em>var</em> or <em>und</em>) that specifies the total number of parts that comprise the next higher level of enumeration. May be used with each level of enumeration except the first level (subfield $a or $g) because there is no higher level. When it is used, subfield $u follows the caption subfield for the enumeration level to which it applies. Not used with subfield $a or $g. </div>
+      <div class="subfieldvalue"><strong>&lt;n&gt; - Number of parts</strong>
+         <div class="description">Total number of parts that constitute the next higher level of enumeration for example, a quarterly publication requires 4 issues to make 1 volume. Because subfield $u is variable in length, no leading zero is used for a single-character number. <div class="example">
+               <table width="100%">
+                  <tr>
+                     <td valign="top" width="5%" align="left"></td>
+                     <td valign="top" width="10%" align="left"></td>
+                     <td valign="top" width="10%" align="left"></td>
+                     <td valign="top" width="10%" align="left"></td>
+                     <td valign="top" width="10%" align="left"></td>
+                     <td valign="top" width="10%" align="left"></td>
+                     <td valign="top" width="10%" align="left"></td>
+                     <td valign="top" width="10%" align="left"></td>
+                     <td valign="top" width="10%" align="left"></td>
+                     <td valign="top" width="15%" align="left"></td>
+                  </tr>
+                  <tr>
+                     <td valign="top" colspan="1" align="left">853</td>
+                     <td valign="top" colspan="9" align="left">03$81$av.$bno.$u12$vr$cpt.$u3$wj<br><em>[The bibliographic unit consists of 12 numbers per volume and 3 parts per number.]</em></td>
+                  </tr>
+               </table>
+            </div>Combined issues are counted as one part. <div class="example">
+               <table width="100%">
+                  <tr>
+                     <td valign="top" width="5%" align="left"></td>
+                     <td valign="top" width="10%" align="left"></td>
+                     <td valign="top" width="10%" align="left"></td>
+                     <td valign="top" width="10%" align="left"></td>
+                     <td valign="top" width="10%" align="left"></td>
+                     <td valign="top" width="10%" align="left"></td>
+                     <td valign="top" width="10%" align="left"></td>
+                     <td valign="top" width="10%" align="left"></td>
+                     <td valign="top" width="10%" align="left"></td>
+                     <td valign="top" width="15%" align="left"></td>
+                  </tr>
+                  <tr>
+                     <td valign="top" colspan="1" align="left">853</td>
+                     <td valign="top" colspan="9" align="left">10$81$av.$bno.$u8$vr$i(year)$j(month)$wm$x01$ypm01/02,03,04,05, 06/07,08/09,10,11/12<br><em>[Example of monthly serial with four combined issues]</em></td>
+                  </tr>
+               </table>
+            </div>
+         </div>
+      </div>
+      <div class="subfieldvalue"><strong>var - Varies</strong>
+         <div class="description">The total number of parts that constitute the next higher level of enumeration varies so much that a specific number in subfield $u would be meaningless. </div>
+      </div>
+      <div class="subfieldvalue"><strong>und - Undetermined</strong>
+         <div class="description">The next higher level of enumeration is known to have parts but the number of parts is unknown. </div>
+      </div>
+   </div>
+   <div class="subfield"><strong>$v - Numbering continuity</strong>
+      <div class="description">One-character code that indicates whether the numbering of the described level consists of continuously incrementing numbers or numbers that restart at the completion of the unit. </div>
+      <div class="description2">
+         <div class="description">May be used with each level of enumeration except the first level (subfield $a or $g). Subfield $v follows the caption subfield and the subfield $u (Bibliographic units at next higher level) for the enumeration to which it applies. </div>
+      </div>
+      <div class="subfieldvalue"><strong>c - Number increments continuously</strong> </div>
+      <div class="subfieldvalue"><strong>r - Number restarts at the completion of the unit</strong> </div>
+   </div>
+   <div class="subfield"><strong>$w - Frequency</strong>
+      <div class="description">One-character alphabetic code or a number that indicates the publication frequency of the item. Subfield $w is not related to a specific caption. It is input following the last Chronology caption used. Specific publishing pattern information is contained in subfield $y (Regularity), including exceptions to the frequency coded in this subfield. Subfield $p is also used when both a frequency code and number of pieces per issuance need to be recorded for multipart titles. </div>
+      <div class="description2">
+         <div class="description"><u>Codes</u></div>
+      </div>
+      <div class="description2">
+         <div class="description">Used for a publishing pattern that has a fundamental periodicity.</div>
+         <div class="table">
+            <table>
+               <tr>
+                  <td width="243" align="left" valign="top">a - Annual</td>
+                  <td width="362" align="left" valign="top">j - Three times a month</td>
+               </tr>
+               <tr>
+                  <td valign="top" align="left">b - Bimonthly</td>
+                  <td valign="top" align="left">k - Continuously updated</td>
+               </tr>
+               <tr>
+                  <td valign="top" align="left">c - Semiweekly</td>
+                  <td valign="top" align="left">m - Monthly</td>
+               </tr>
+               <tr>
+                  <td valign="top" align="left">d - Daily</td>
+                  <td valign="top" align="left">q - Quarterly</td>
+               </tr>
+               <tr>
+                  <td valign="top" align="left">e - Biweekly</td>
+                  <td valign="top" align="left">s - Semimonthly</td>
+               </tr>
+               <tr>
+                  <td valign="top" align="left">f - Semiannual</td>
+                  <td valign="top" align="left">t - Three times a year</td>
+               </tr>
+               <tr>
+                  <td valign="top" align="left">g - Biennial</td>
+                  <td valign="top" align="left">w - Weekly</td>
+               </tr>
+               <tr>
+                  <td valign="top" align="left">h - Triennial</td>
+                  <td valign="top" align="left">x - Completely irregular</td>
+               </tr>
+               <tr>
+                  <td valign="top" align="left">i - Three times a week</td>
+                  <td valign="top" align="left"></td>
+               </tr>
+            </table>
+         </div>
+      </div>
+      <div class="example">
+         <table width="100%">
+            <tr>
+               <td valign="top" width="5%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="15%" align="left"></td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">854</td>
+               <td valign="top" colspan="9" align="left">00$81$a(year)$wa</td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">853</td>
+               <td valign="top" colspan="9" align="left">20$81$av.$bno.$u12$vr$i(year)$j(month)$wm$x11</td>
+            </tr>
+         </table>
+      </div>
+      <div class="description2">
+         <div class="description"><u>Number</u></div>
+      </div>
+      <div class="description2">
+         <div class="description">Used to specify the number of issues per year when no codable periodicity exists. Because subfield $w is variable in length, no leading zero is used for a single-character number. </div>
+      </div>
+      <div class="example">
+         <table width="100%">
+            <tr>
+               <td valign="top" width="5%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="15%" align="left"></td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">853</td>
+               <td valign="top" colspan="9" align="left">02$81$a(year)$b(month)$w4$ypm03,06,08,12</td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">863</td>
+               <td valign="top" colspan="9" align="left">30$81.1$a2002-2003</td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">863</td>
+               <td valign="top" colspan="9" align="left">41$81.2$a2004$b03<br><em>[The bibliographic unit is published four times a year at irregular intervals.]</em></td>
+            </tr>
+         </table>
+      </div>
+   </div>
+   <div class="subfield"><strong>$x - Calendar change</strong>
+      <div class="description">One or more two- or four-character numeric codes that indicate the chronological point at which the highest level increments or changes. </div>
+      <div class="description2">
+         <div class="description"><u>Codes</u></div>
+      </div>
+      <div class="description2">
+         <div class="description">Two-character code identifies the month or season of change. A four-character code in the pattern <em>mmdd</em> (2 for the month and 2 for the day) identifies the month and day of change. A month or day code of less than two digits is right justified and the unused position contains a zero. </div>
+         <div class="table">
+            <table width="625">
+               <tr>
+                  <td width="151" align="left" valign="top"><u>Month</u></td>
+                  <td width="187" align="left" valign="top"><u>Day</u></td>
+                  <td width="271" align="left" valign="top"><u>Season</u></td>
+               </tr>
+               <tr>
+                  <td valign="top" align="left">01-12 - Month</td>
+                  <td valign="top" align="left">01-31 - Day</td>
+                  <td valign="top" align="left">21 - Spring</td>
+               </tr>
+               <tr>
+                  <td valign="top" align="left"></td>
+                  <td valign="top" align="left"></td>
+                  <td valign="top" align="left">22 - Summer</td>
+               </tr>
+               <tr>
+                  <td valign="top" align="left"></td>
+                  <td valign="top" align="left"></td>
+                  <td valign="top" align="left">23 - Autumn</td>
+               </tr>
+               <tr>
+                  <td valign="top" align="left"></td>
+                  <td valign="top" align="left"></td>
+                  <td valign="top" align="left">24 - Winter</td>
+               </tr>
+            </table>
+         </div>
+      </div>
+      <div class="example">
+         <table width="100%">
+            <tr>
+               <td valign="top" width="5%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="15%" align="left"></td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">853</td>
+               <td valign="top" colspan="9" align="left">23$81$av.$bno.$u4$vr$i(year)$j(season)$wq$x21<br><em>[A quarterly publication for which issue no. 1 of each volume is identified as Spring.]</em></td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">853</td>
+               <td valign="top" colspan="9" align="left">20$81$av.$bno.$u12$vc$i(year)$j(month)$wm$x07<br><em>[A monthly publication consisting of 12 numbers per volume; the volume number increments in July.]</em></td>
+            </tr>
+         </table>
+      </div>
+      <div class="description2">
+         <div class="description">When there is more than one change in a year (for example, 12 numbers per year are issued as 2 volumes per year), all of the calendar change codes are contained in one subfield $x and the codes are separated by a comma. Subfield $x is not related to a specific caption. It is input following the last subfield. </div>
+      </div>
+      <div class="example">
+         <table width="100%">
+            <tr>
+               <td valign="top" width="5%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="15%" align="left"></td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">853</td>
+               <td valign="top" colspan="9" align="left">22$81$av.$bno.$u6$vc$i(year)$j(month)$wm$x06,12<br><em>[A monthly publication which has 6 numbers per volume. The numbers increment continuously, and new volumes begin in June and December.]</em></td>
+            </tr>
+         </table>
+      </div>
+   </div>
+   <div class="subfield"><strong>$y - Regularity pattern</strong>
+      <div class="description">Codes that describe the regularity of the publishing pattern coded in subfield $w (Frequency). The subfield may be structured as either a chronology type or enumeration type. Both types begin with a publication code. </div>
+      <div class="description2">
+         <div class="description"><strong>Publication Code</strong></div>
+         <div class="description">
+            <div class="description2">First one-character code in both the chronology type and enumeration type indicates whether the subsequent codes refer to the publication or the nonpublication of part(s) of the item or the combination of either enumeration or chronology elements. </div>
+         </div>
+         <div class="table">
+            <table>
+               <tr>
+                  <td width="247" align="left" valign="top">c - Combined</td>
+               </tr>
+               <tr>
+                  <td valign="top" align="left">o - Omitted</td>
+               </tr>
+               <tr>
+                  <td valign="top" align="left">p - Published</td>
+               </tr>
+            </table>
+         </div>
+      </div>
+      <div class="description2">
+         <div class="description"><strong>Chronology Type</strong></div>
+         <div class="description">
+            <div class="description2">Chronology type of regularity pattern is structured as:</div>
+         </div>
+      </div>
+      <div class="description2">
+         <div class="description">&lt;Publication Code&gt;&lt;Chronology Code Definition&gt;&lt;Chronology Code&gt;,&lt;Chronology Code&gt;,.. </div>
+      </div>
+      <div class="description2">
+         <div class="description">May contain one or more chronology codes that are associated with the publication code and chronology code definition that are in the first and second character position of the subfield. The subfield may be repeated to allow for coding more than one publication code/chronology code definition/chronology code string to indicate regular exceptions to a specified regularity pattern (i.e. normalized irregulars). </div>
+         <div class="description">
+            <div class="description2"><strong>Chronology Code Definition</strong> - Second one-character code in the subfield indicates whether the subsequent Chronology Code(s) represent the name of a day, a numeric month or month and day code, a code for a season of the year, or a code for a week of the month or year. If the subfield describes regularity in terms of enumeration, this code is &#8220;e.&#8221; </div>
+         </div>
+         <div class="table">
+            <table>
+               <tr>
+                  <td width="414" align="left" valign="top">d - Day</td>
+               </tr>
+               <tr>
+                  <td valign="top" align="left">m - Month</td>
+               </tr>
+               <tr>
+                  <td valign="top" align="left">s - Season</td>
+               </tr>
+               <tr>
+                  <td valign="top" align="left">w - Week</td>
+               </tr>
+               <tr>
+                  <td valign="top" align="left">y - Year</td>
+               </tr>
+            </table>
+         </div>
+      </div>
+      <div class="description2">
+         <div class="description"><strong>Chronology Code</strong> - Designation of the part of the item for which regularity pattern information is provided. Multiple codes are separated by a comma. A slash (/) is used to designate combined issues. </div>
+         <div class="description">
+            <div class="description2">Two-character alphabetic or numeric codes are used for days, weeks, months, and/or seasons. A four character code is used to indicate a year or year combination. A code of less than two digits is right justified and the unused position contains a zero. </div>
+         </div>
+         <div class="description">
+            <div class="description2"><u><strong>Chronology Type and Code Patterns</strong></u>: </div>
+         </div>
+         <div class="table">
+            <table>
+               <tr>
+                  <td width="168" align="left" valign="top"><u>Chronology Type Code</u></td>
+                  <td width="157" align="left" valign="top"><u>Possible Code Pattern</u></td>
+                  <td width="129" align="left" valign="top"><u>Example</u></td>
+                  <td width="186" align="left" valign="top"><u>Example Meaning</u></td>
+               </tr>
+               <tr>
+                  <td valign="top" align="left">d</td>
+                  <td valign="top" align="left">dd</td>
+                  <td valign="top" align="left">su</td>
+                  <td valign="top" align="left">Sunday</td>
+               </tr>
+               <tr>
+                  <td valign="top" align="left">d</td>
+                  <td valign="top" align="left">DD</td>
+                  <td valign="top" align="left">08</td>
+                  <td valign="top" align="left">Eighth day of each month</td>
+               </tr>
+               <tr>
+                  <td valign="top" align="left">m</td>
+                  <td valign="top" align="left">MM</td>
+                  <td valign="top" align="left">09</td>
+                  <td valign="top" align="left">September</td>
+               </tr>
+               <tr>
+                  <td valign="top" align="left">d</td>
+                  <td valign="top" align="left">MMDD</td>
+                  <td valign="top" align="left">0925</td>
+                  <td valign="top" align="left">September 25</td>
+               </tr>
+               <tr>
+                  <td valign="top" align="left">s</td>
+                  <td valign="top" align="left">SS</td>
+                  <td valign="top" align="left">22</td>
+                  <td valign="top" align="left">Summer</td>
+               </tr>
+               <tr>
+                  <td valign="top" align="left">w</td>
+                  <td valign="top" align="left">WWdd</td>
+                  <td valign="top" align="left">03we</td>
+                  <td valign="top" align="left">Third Wednesday</td>
+               </tr>
+               <tr>
+                  <td valign="top" align="left">w</td>
+                  <td valign="top" align="left">MMWWdd</td>
+                  <td valign="top" align="left">0599tu</td>
+                  <td valign="top" align="left">Last Tuesday in May</td>
+               </tr>
+               <tr>
+                  <td valign="top" align="left">w</td>
+                  <td valign="top" align="left">MMWWdd</td>
+                  <td valign="top" align="left">0802we</td>
+                  <td valign="top" align="left">Second Wednesday in August</td>
+               </tr>
+               <tr>
+                  <td valign="top" align="left">w</td>
+                  <td valign="top" align="left">MMWW</td>
+                  <td valign="top" align="left">1204</td>
+                  <td valign="top" align="left">Fourth wqeek in December</td>
+               </tr>
+               <tr>
+                  <td valign="top" align="left">y</td>
+                  <td valign="top" align="left">YYYY</td>
+                  <td valign="top" align="left">yyy1/yyy2</td>
+                  <td valign="top" align="left">Span over 2 years</td>
+               </tr>
+            </table>
+         </div>
+      </div>
+      <div class="description2">
+         <div class="description"><strong><u>Pattern Description</u></strong>: </div>
+         <div class="table">
+            <table>
+               <tr>
+                  <td width="96" align="left" valign="top"><u>Pattern</u></td>
+                  <td width="119" align="left" valign="top"><u>Meaning</u></td>
+                  <td width="152" align="left" valign="top"><u>Characteristics</u></td>
+                  <td width="270" align="left" valign="top"><u>Possible Values - Summary</u></td>
+               </tr>
+               <tr>
+                  <td valign="top" align="left">dd</td>
+                  <td valign="top" align="left">day</td>
+                  <td valign="top" align="left">alpha</td>
+                  <td valign="top" align="left">mo-su</td>
+               </tr>
+               <tr>
+                  <td valign="top" align="left">DD</td>
+                  <td valign="top" align="left">day</td>
+                  <td valign="top" align="left">numeric</td>
+                  <td valign="top" align="left">01-31</td>
+               </tr>
+               <tr>
+                  <td valign="top" align="left">ww</td>
+                  <td valign="top" align="left">week</td>
+                  <td valign="top" align="left">numeric</td>
+                  <td valign="top" align="left">01-53</td>
+               </tr>
+               <tr>
+                  <td valign="top" align="left">WW</td>
+                  <td valign="top" align="left">week</td>
+                  <td valign="top" align="left">numeric</td>
+                  <td valign="top" align="left">99, 98, 97, 00, 01, 02, 03, 04, 05</td>
+               </tr>
+               <tr>
+                  <td valign="top" align="left">MM</td>
+                  <td valign="top" align="left">month</td>
+                  <td valign="top" align="left">numeric</td>
+                  <td valign="top" align="left">01-12</td>
+               </tr>
+               <tr>
+                  <td valign="top" align="left">SS</td>
+                  <td valign="top" align="left">season</td>
+                  <td valign="top" align="left">numeric</td>
+                  <td valign="top" align="left">21, 22, 23, 24</td>
+               </tr>
+               <tr>
+                  <td valign="top" align="left">y</td>
+                  <td valign="top" align="left">year</td>
+                  <td valign="top" align="left">numeric</td>
+                  <td valign="top" align="left">2002</td>
+               </tr>
+            </table>
+         </div>
+      </div>
+      <div class="description2">
+         <div class="description"><strong><u>Pattern Values</u></strong>: </div>
+         <div class="table">
+            <table>
+               <tr>
+                  <td width="156" align="left" valign="top"><u>Day of week- dd</u></td>
+                  <td width="92" align="left" valign="top"><u>Week- ww</u></td>
+                  <td width="141" align="left" valign="top"><u>Month- MM</u></td>
+                  <td width="245" align="left" valign="top"><u>Week of Month- WW</u></td>
+               </tr>
+               <tr>
+                  <td valign="top" align="left"> mo - Monday</td>
+                  <td valign="top" align="left">01-53</td>
+                  <td valign="top" align="left">01-12</td>
+                  <td valign="top" align="left">99 - Last</td>
+               </tr>
+               <tr>
+                  <td valign="top" align="left">tu - Tuesday</td>
+                  <td valign="top" align="left"></td>
+                  <td valign="top" align="left"></td>
+                  <td valign="top" align="left">98 - Next to Last</td>
+               </tr>
+               <tr>
+                  <td valign="top" align="left">we - Wednesday</td>
+                  <td valign="top" align="left"></td>
+                  <td valign="top" align="left"></td>
+                  <td valign="top" align="left">97 - Third to Last</td>
+               </tr>
+               <tr>
+                  <td valign="top" align="left">th - Thursday</td>
+                  <td valign="top" align="left"></td>
+                  <td valign="top" align="left"></td>
+                  <td valign="top" align="left">00 - Every</td>
+               </tr>
+               <tr>
+                  <td valign="top" align="left">fr - Friday</td>
+                  <td valign="top" align="left"></td>
+                  <td valign="top" align="left"></td>
+                  <td valign="top" align="left">01 - First</td>
+               </tr>
+               <tr>
+                  <td valign="top" align="left">sa - Saturday</td>
+                  <td valign="top" align="left"></td>
+                  <td valign="top" align="left"></td>
+                  <td valign="top" align="left">02 - Second</td>
+               </tr>
+               <tr>
+                  <td valign="top" align="left">su - Sunday</td>
+                  <td valign="top" align="left"></td>
+                  <td valign="top" align="left"></td>
+                  <td valign="top" align="left">03 - Third</td>
+               </tr>
+               <tr>
+                  <td valign="top" align="left"></td>
+                  <td valign="top" align="left"></td>
+                  <td valign="top" align="left"></td>
+                  <td valign="top" align="left">04 - Fourth</td>
+               </tr>
+               <tr>
+                  <td valign="top" align="left"></td>
+                  <td valign="top" align="left"></td>
+                  <td valign="top" align="left"></td>
+                  <td valign="top" align="left">05 - Fifth</td>
+               </tr>
+            </table>
+         </div>
+         <div class="table">
+            <table width="403">
+               <tr>
+                  <td valign="top" align="left"><u>Day of Month- DD</u></td>
+                  <td valign="top" align="left"><u>Season- SS</u></td>
+               </tr>
+               <tr>
+                  <td valign="top" align="left"> 01-31</td>
+                  <td valign="top" align="left">21 - Spring</td>
+               </tr>
+               <tr>
+                  <td height="24" align="left" valign="top"></td>
+                  <td valign="top" align="left">22 - Summer</td>
+               </tr>
+               <tr>
+                  <td valign="top" align="left"></td>
+                  <td valign="top" align="left">23 - Autumn</td>
+               </tr>
+               <tr>
+                  <td valign="top" align="left"></td>
+                  <td valign="top" align="left">24 - Winter</td>
+               </tr>
+            </table>
+         </div>
+         <div class="example">
+            <table width="100%">
+               <tr>
+                  <td valign="top" width="5%" align="left"></td>
+                  <td valign="top" width="10%" align="left"></td>
+                  <td valign="top" width="10%" align="left"></td>
+                  <td valign="top" width="10%" align="left"></td>
+                  <td valign="top" width="10%" align="left"></td>
+                  <td valign="top" width="10%" align="left"></td>
+                  <td valign="top" width="10%" align="left"></td>
+                  <td valign="top" width="10%" align="left"></td>
+                  <td valign="top" width="10%" align="left"></td>
+                  <td valign="top" width="15%" align="left"></td>
+               </tr>
+               <tr>
+                  <td valign="top" colspan="1" align="left">854</td>
+                  <td valign="top" colspan="9" align="left">03$81$a(year)$b(month)$c(day)$wd$yodsa<br><em>[Item is published daily except Saturday.]</em></td>
+               </tr>
+               <tr>
+                  <td valign="top" colspan="1" align="left">854</td>
+                  <td valign="top" colspan="9" align="left">02$81$av.$bno.$u11$vr$i(year)$j(month)$wm$x01$ycm07/08<br><em>[Item is a monthly, with the first number appearing in January and a combined July/August issue.]</em></td>
+               </tr>
+               <tr>
+                  <td valign="top" colspan="1" align="left">854</td>
+                  <td valign="top" colspan="9" align="left">03$81$av.$bno.$u10$vr$i(year)$j(month)$wm$x09$yom07,08<br><em>[Item has ten numbers per volume; ten numbers per year beginning with no. 1 in September; no numbers published in July or August.]</em></td>
+               </tr>
+               <tr>
+                  <td valign="top" colspan="1" align="left">854</td>
+                  <td valign="top" colspan="9" align="left">23$81$av.$bno.$u3$vr$i(year)$j(season)$w3$x21$yps21,22, 23<br><em>[Item has three numbers per volume; three numbers per year, published in Spring, Summer, and Autumn.]</em></td>
+               </tr>
+            </table>
+         </div>
+         <div class="example">
+            <table width="100%">
+               <tr>
+                  <td valign="top" width="5%" align="left"></td>
+                  <td valign="top" width="10%" align="left"></td>
+                  <td valign="top" width="10%" align="left"></td>
+                  <td valign="top" width="10%" align="left"></td>
+                  <td valign="top" width="10%" align="left"></td>
+                  <td valign="top" width="10%" align="left"></td>
+                  <td valign="top" width="10%" align="left"></td>
+                  <td valign="top" width="10%" align="left"></td>
+                  <td valign="top" width="10%" align="left"></td>
+                  <td valign="top" width="15%" align="left"></td>
+               </tr>
+               <tr>
+                  <td valign="top" colspan="1" align="left">853</td>
+                  <td valign="top" colspan="9" align="left">03$81$av.$bno.$u43$vr$i(year)$j(month)$k(day)$w43$x0901$yow0604we,0702we,0703we,0704we,0802we,0803we,0804we, 0805we,1203we,1204we,1205we$ypdwe<br><em>[Item has weekly issues except on dates noted in subfield $y]</em></td>
+               </tr>
+               <tr>
+                  <td valign="top" colspan="1" align="left">863</td>
+                  <td valign="top" colspan="9" align="left">30$81.1$a21-22$i2001-2003</td>
+               </tr>
+               <tr>
+                  <td valign="top" colspan="1" align="left">863</td>
+                  <td valign="top" colspan="9" align="left">41$81.2$a23$b1$i2003$j09$k03</td>
+               </tr>
+            </table>
+         </div>
+         <div class="example">
+            <table width="100%">
+               <tr>
+                  <td valign="top" width="5%" align="left"></td>
+                  <td valign="top" width="10%" align="left"></td>
+                  <td valign="top" width="10%" align="left"></td>
+                  <td valign="top" width="10%" align="left"></td>
+                  <td valign="top" width="10%" align="left"></td>
+                  <td valign="top" width="10%" align="left"></td>
+                  <td valign="top" width="10%" align="left"></td>
+                  <td valign="top" width="10%" align="left"></td>
+                  <td valign="top" width="10%" align="left"></td>
+                  <td valign="top" width="15%" align="left"></td>
+               </tr>
+               <tr>
+                  <td valign="top" colspan="1" align="left">853</td>
+                  <td valign="top" colspan="9" align="left">20$81$av.$bno.$u48$vr$ww$x0101$yow05we<br><em>[Item is a weekly, but omits the fifth Wednesday of the month.]</em></td>
+               </tr>
+               <tr>
+                  <td valign="top" colspan="1" align="left">853</td>
+                  <td valign="top" colspan="9" align="left">03$av.$bno.$u12$vr$i(year)$j(month)$wm$x01$ypw02we$ypw0402th,0501we$yow0402we,0502we<br><em>[Item is monthly, published every second Wednesday of the month except in April when it is published on the second Thursday and May, when it is published on the first Wednesday.]</em></td>
+               </tr>
+               <tr>
+                  <td valign="top" colspan="1" align="left">853</td>
+                  <td valign="top" colspan="9" align="left">02$av.$bno.$uvar$vr$i(year)$j(month)$k(day)$wc$x07$ypw00mo,00th$yod0101,0704,1225$yow0901mo,1104th<br><em>[Item is published every Monday and Thursday except for when New Years Day, the fourth of July, Labor Day, Thanksgiving and Christmas fall on a Monday or Thursday.]</em></td>
+               </tr>
+            </table>
+         </div>
+         <div class="example">
+            <table width="100%">
+               <tr>
+                  <td valign="top" width="5%" align="left"></td>
+                  <td valign="top" width="10%" align="left"></td>
+                  <td valign="top" width="10%" align="left"></td>
+                  <td valign="top" width="10%" align="left"></td>
+                  <td valign="top" width="10%" align="left"></td>
+                  <td valign="top" width="10%" align="left"></td>
+                  <td valign="top" width="10%" align="left"></td>
+                  <td valign="top" width="10%" align="left"></td>
+                  <td valign="top" width="10%" align="left"></td>
+                  <td valign="top" width="15%" align="left"></td>
+               </tr>
+               <tr>
+                  <td valign="top" colspan="1" align="left">853</td>
+                  <td valign="top" colspan="9" align="left">02$av.$i(year)$wg$ypyyyy1/yyy2</td>
+               </tr>
+               <tr>
+                  <td valign="top" colspan="1" align="left">863</td>
+                  <td valign="top" colspan="9" align="left">41$a10$i1999/2000<br><em>[Item is published every other year combining chronology to reflect the span of coverage.] </em></td>
+               </tr>
+            </table>
+         </div>
+      </div>
+      <div class="description2">
+         <div class="description"><strong>Enumeration Type</strong></div>
+         <div class="description">
+            <div class="description2">The enumeration type is structured as:</div>
+         </div>
+      </div>
+      <div class="description2">
+         <div class="description">&lt;Publication Code&gt;&lt;Enumeration Code Definition&gt;&lt;Enumeration Code&gt;,&lt;Enumeration Code&gt;,... </div>
+      </div>
+      <div class="description2">
+         <div class="description">Enumeration codes may occupy the second and third positions after subfield $y to provide for regularity patterns for items that use only enumeration for sequencing and/or those items whose sequencing must be specified separately when combinations occur. </div>
+         <div class="description">
+            <div class="description2"><strong>Enumeration Code Definition</strong> - Second code in the subfield indicates whether the subsequent codes represent enumeration rather than chronology. When code "e" is used, an additional numeric code is added to indicate the level of enumeration to which the regularity applies. </div>
+         </div>
+         <div class="table">
+            <table>
+               <tr>
+                  <td valign="top" align="left"><strong>e1</strong>- Enumeration, lst level </td>
+               </tr>
+               <tr>
+                  <td valign="top" align="left"><strong>e2</strong>- Enumeration, 2nd level </td>
+               </tr>
+            </table>
+         </div>
+      </div>
+      <div class="description2">
+         <div class="description"><strong>Enumeration Code</strong> - Enumeration code following the enumeration code definition indicates the designation of the issues of the item for which regularity pattern information is provided. Multiple designations are separated by a comma. A slash (/) is used to designate a combined issue. </div>
+      </div>
+      <div class="example">
+         <table width="100%">
+            <tr>
+               <td valign="top" width="5%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="15%" align="left"></td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">853</td>
+               <td valign="top" colspan="9" align="left">02$81$av.$bno.$u6$vr$ws$x01,02,03,04,05,06,07,08,09,10,11,12 $ypw02we,04we$yce21/3,4/6<br><em>[Item is published twenty-four times per year on the second and fourth Wednesdays of every month. The second level of enumeration combines numbers 1 to 3 on the second Wednesday of every month and numbers 4 to 6 on the fourth Wednesday of every month.]</em></td>
+            </tr>
+         </table>
+      </div>
+      <div class="description2">
+         <div class="description">Presence of continuous numbering (subfield $v, code c) in conjunction with an enumeration code signals the combination of specific numbers in the sequence of specific issues. Because of the continuous numbering, the actual enumeration values cannot be used to express the enumeration in subfield $y. Enumerative values must be represented in terms of the number of issues expected to be published to allow combined issue prediction to occur. </div>
+      </div>
+      <div class="example">
+         <table width="100%">
+            <tr>
+               <td valign="top" width="5%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="15%" align="left"></td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">853</td>
+               <td valign="top" colspan="9" align="left">02$81$av.$bno.$u52$vc$ww$yce251/52<br><em>[Item is published weekly except for a combination in the last two weeks of December. Since issue description is limited to enumeration only, and the second level enumeration is also continuous, the pattern represents the issue combination in terms of combining the fifty-first and fifty-second issues published that year]</em></td>
+            </tr>
+         </table>
+      </div>
+      <div class="example">
+         <table width="100%">
+            <tr>
+               <td valign="top" width="5%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="15%" align="left"></td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">853</td>
+               <td valign="top" colspan="9" align="left">20$81.0$a(year)$b(month)$c(day)$ww$ycw1203/1204<br><em>[Item is published weekly except that it combines the third and fourth weeks in December.]</em></td>
+            </tr>
+         </table>
+      </div>
+      <div class="description2">
+         <div class="description">Automated systems may construct algorithms to predict the second level of continuous enumeration based on the starting value of the second level of enumeration at the beginning of the subscription cycle. </div>
+         <div class="description">
+            <div class="description2">There may be multiple ways to express the same pattern using the defined publication, chronology and enumeration codes. For instance, the pattern may be expressed enumerating all published issues, or enumerating the omitted issues. The institution should strive for the most succinct method possible that accurately records the pattern. </div>
+         </div>
+         <div class="description">
+            <div class="description2">Regularity pattern codes, along with additional examples are maintained at the Library of Congress and are available online at: www.loc.gov/marc/chrono_patterns.html. Questions on coding patterns or establishing new ones should be addressed to the Network Development and MARC Standards Office, Library of Congress, Washington, D.C. 20540-4402 (Email: <a href="/cdn-cgi/l/email-protection#97f9f3fae4f8d7fbf8f4b9f0f8e1"><span class="__cf_email__" data-cfemail="86e8e2ebf5e9c6eae9e5a8e1e9f0">[email&#160;protected]</span></a>). </div>
+         </div>
+      </div>
+   </div>
+   <div class="subfield"><strong>$z - Numbering scheme</strong>
+      <div class="description">Six character code string used to designate the numbering scheme used on a publication. The codes allow for recording different numbering schemes at different levels of enumeration. Subfield $z follows the enumeration subfield ($a-$h) to which it applies. </div>
+      <div class="description">
+         <div class="description2"><strong>Type of designation</strong> - First one-character code indicates whether the numbering is a number, letter or combined (number first or letter first). Combined should only be used when one of the elements is a constant designation (e.g., 1a, 2a, 3a), rather than actually two different levels of enumeration (e.g., 1a, 1b, 1c). </div>
+      </div>
+      <div class="table">
+         <table>
+            <tr>
+               <td width="354" align="left" valign="top">a - Number</td>
+            </tr>
+            <tr>
+               <td valign="top" align="left">b - Letter</td>
+            </tr>
+            <tr>
+               <td valign="top" align="left">c - Combined, number first</td>
+            </tr>
+            <tr>
+               <td valign="top" align="left">d - Combined, letter first</td>
+            </tr>
+            <tr>
+               <td valign="top" align="left">e - Symbol or character</td>
+            </tr>
+         </table>
+      </div>
+      <div class="description2">
+         <div class="description"><strong>Case</strong> - Second one-character code indicates if a numbering scheme is conveyed as alphas and applies both to those coded in the previous position as &#8220;b&#8221; or to Roman numerals. </div>
+         <div class="table">
+            <table>
+               <tr>
+                  <td width="247" align="left" valign="top">a - No case</td>
+               </tr>
+               <tr>
+                  <td valign="top" align="left">b - Lower case</td>
+               </tr>
+               <tr>
+                  <td valign="top" align="left">c - Upper case</td>
+               </tr>
+               <tr>
+                  <td valign="top" align="left">d - Mixed case</td>
+               </tr>
+            </table>
+         </div>
+      </div>
+      <div class="description2">
+         <div class="description"><strong>Script Code/Type Code</strong> - Third through sixth positions indicate either the script used in the numbering scheme or, for numerals or symbols that are not in alternate scripts, the type of numeral or symbol used. The script code is a four-character code from the list at: www.unicode.org/iso15924/. The type code is as follows (# means "blank"): </div>
+         <div class="table">
+            <table>
+               <tr>
+                  <td valign="top" align="left">an## - Arabic numeral</td>
+               </tr>
+               <tr>
+                  <td valign="top" align="left">rn## - Roman numeral</td>
+               </tr>
+               <tr>
+                  <td valign="top" align="left">sy&lt;symbol&gt;# - Symbol</td>
+               </tr>
+            </table>
+         </div>
+      </div>
+      <div class="example">
+         <table width="100%">
+            <tr>
+               <td valign="top" width="5%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="15%" align="left"></td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">853</td>
+               <td valign="top" colspan="9" align="left">20$81$av.$bissue$i(year)$j(month)$k(day)$ww$zaaarab</td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">863</td>
+               <td valign="top" colspan="9" align="left">41$81.1$a37$b1232$i1970$j12$k31<br><em>[The numbering scheme used is an Arabic alternate script]</em></td>
+            </tr>
+         </table>
+      </div>
+      <div class="example">
+         <table width="100%">
+            <tr>
+               <td valign="top" width="5%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="15%" align="left"></td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">853</td>
+               <td valign="top" colspan="9" align="left">20$81$av.$bno.$u26$vr$ww$x0101$yow05we$zaaan##</td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">863</td>
+               <td valign="top" colspan="9" align="left">41$81.1$a18$b7<br><em>[The numbering scheme used is Arabic numeral]</em></td>
+            </tr>
+         </table>
+      </div>
+      <div class="example">
+         <table width="100%">
+            <tr>
+               <td valign="top" width="5%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="15%" align="left"></td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">853</td>
+               <td valign="top" colspan="9" align="left">20$81$aannee$b(*)$u12$vr$cpt.$u2 $vr$zbcLatn$i(year)$ws$x01</td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">863</td>
+               <td valign="top" colspan="9" align="left">41$81.1$a8$b3$cB<br><em>[Asterisk used as a convention for noncaptioned level. Numbering scheme of 3rd level is uppercase alphabetic latin script letter.]</em></td>
+            </tr>
+         </table>
+      </div>
+   </div>
+   <div class="subfield"><strong>$2 - Source of caption abbreviation</strong>
+      <div class="description">MARC code that identifies the source of the abbreviations used in the captions of the field. Code from: <em><a href="http://www.loc.gov/standards/sourcelist/caption-abbreviation.html">Caption Abbreviation Source Codes</a></em>. </div>
+   </div>
+   <div class="subfield"><strong>$3 - Materials specified</strong>
+      <div class="description">The range of volumes or dates to which the field applies.</div>
+   </div>
+   <div class="subfield"><strong>$6 - Linkage</strong>
+      <div class="description">See description of this subfield in Appendix A: <em><a href="echdcntf.html">Control subfields:</a></em>. </div>
+   </div>
+   <div class="subfield"><strong>$8 - Field link and sequence number</strong>
+      <div class="description">See description of this subfield in Appendix A: <em><a href="echdcntf.html">Control subfields:</a></em>. </div>
+   </div>
+   <hr>
+   <h3>INPUT CONVENTIONS</h3>
+   <div class="description2"><strong>Compression and expansion requirements</strong> - Following conditions must be present in a holdings statement for machine compression or expansion (itemization) to be possible:<br><br><em>Leader/17 Encoding level</em><br><br><strong>Compression</strong> only can be applied to Holdings level 4 detailed holdings statements (Leader/17, code 4) and Holdings level 4 detailed holdings statements with piece designation (Leader/17, code 5).<br><br><strong>Expansion</strong> can be applied to both types of detailed holdings statements (Leader/17, code 4 or 5) and to Holdings level 3 summary holdings statements (Leader/17, code 3).<br><br><em>Correlation of the 853/854 caption and the 863/864 enumeration level subfields</em><br><br><strong>Compression</strong> and <strong>expansion</strong> require that the caption subfields ($a-$m) for each of the applicable levels of enumeration and chronology subfields ($a-$m) must be present in the 853/854 Captions and Pattern field that is linked to the 863/864 Enumeration and Chronology field.<br><br><em>Publication pattern subfields $u-$y</em><br><br>No publication pattern subfields in field 853 or 854 are required for either compression or expansion when the enumeration and chronology in field 863 or 864 consist only of the highest level of enumeration (subfields $a, $g, $i, $m). When subsequent levels are present, the compression or expansion capability requires pertinent publication pattern information in the following subfields: <div class="table">
+         <table>
+            <tr>
+               <td width="74" align="left" valign="top">$u</td>
+               <td width="340" align="left" valign="top">Bibliographic units per next higher level</td>
+            </tr>
+            <tr>
+               <td valign="top" align="left">$v</td>
+               <td valign="top" align="left">Numbering continuity</td>
+            </tr>
+            <tr>
+               <td valign="top" align="left">$w</td>
+               <td valign="top" align="left">Frequency</td>
+            </tr>
+            <tr>
+               <td valign="top" align="left">$x</td>
+               <td valign="top" align="left">Calendar change</td>
+            </tr>
+            <tr>
+               <td valign="top" align="left">$y</td>
+               <td valign="top" align="left">Regularity pattern</td>
+            </tr>
+         </table>
+      </div>
+   </div>
+   <div class="description2"><strong></strong><strong>Compression</strong> of the contents of subfields $a-$m in field 863 or 864 requires information in subfields $u and $v. Subfield $u may not contain the code <em>var</em> (varies) or <em>und</em> (undetermined).<br>
+      <br><strong>Expansion</strong> of the contents of subfield $a-$m in field 863 or 864 requires information in subfields $u, $v, and $w and may also require information in subfields $x and $y.
+   </div>
+   <div class="description2"><strong>Punctuation</strong> - Period following an abbreviation used as a caption is carried in the MARC record. </div>
+   <div class="description2"><strong>Ordinal Numbers</strong> - To indicate that ordinal numbers should be displayed, a plus sign (+) may be used preceding the caption. If no caption is entered, a plus sign may be recorded alone to indicate display of the corresponding 863 subfield as an ordinal number. </div>
+   <div class="example">
+      <table width="100%">
+         <tr>
+            <td valign="top" width="5%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="15%" align="left"></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left">853</td>
+            <td valign="top" colspan="9" align="left">03$8(year)$b+qtr.</td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left">863</td>
+            <td valign="top" colspan="9" align="left">41$81.1$a1982$b1 </td>
+         </tr>
+         <tr>
+            <td></td>
+            <td colspan="9">
+               <div class="displaytext">Display example:&nbsp;</div>
+            </td>
+         </tr>
+         <tr>
+            <td></td>
+            <td colspan="9">
+               <div class="displaycontent">1982:1st qtr.</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="example">
+      <table width="100%">
+         <tr>
+            <td valign="top" width="5%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="15%" align="left"></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left">853</td>
+            <td valign="top" colspan="9" align="left">03$81$a+</td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left">863</td>
+            <td valign="top" colspan="9" align="left">41$81.1$a1 </td>
+         </tr>
+         <tr>
+            <td></td>
+            <td colspan="9">
+               <div class="displaytext">Display example:&nbsp;</div>
+            </td>
+         </tr>
+         <tr>
+            <td></td>
+            <td colspan="9">
+               <div class="displaycontent">1st</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="description2"><strong></strong> Note that there is no requirement that this technique of distinguishing between ordinal and cardinal numbers be used, nor is there any requirement that any differentiation need be made. A system would require internal language tables to display the correct ordinal numbers. There is no provision in the holdings format for communicating these tables. </div>
+   <div class="description2"><strong>Caption displays</strong> - If there is no caption on the item for some level, a caption may be invented and enclosed in brackets ([ ]) or an asterisk used in place of data in order to achieve full correlation. Parentheses are used around a caption to suppress display. </div>
+   <div class="example">
+      <table width="100%">
+         <tr>
+            <td valign="top" width="5%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="15%" align="left"></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left">853</td>
+            <td valign="top" colspan="9" align="left">03$81$av.$b[no.]<br><em>[Caption is invented and is not on the piece]</em></td>
+         </tr>
+      </table>
+   </div>
+   <div class="example">
+      <table width="100%">
+         <tr>
+            <td valign="top" width="5%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="15%" align="left"></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left">853</td>
+            <td valign="top" colspan="9" align="left">20$81$av.$i(year)</td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left">863</td>
+            <td valign="top" colspan="9" align="left">30$81.1$a1-10$i1988-1998</td>
+         </tr>
+      </table>
+   </div>
+   <div class="description2"><strong>Abbreviations</strong> - Abbreviations used in subfields $a-$h are recorded according to the <em>Anglo-American Cataloguing Rules</em> (Appendix B: Abbreviations). </div>
+   <div class="description2"><strong>Field Repeatability</strong> - Single 853-855 Captions and Pattern field may apply to more than one 863-865 Enumeration and Chronology field <em>if the contents of the subfields remain constant</em>. The 853-855 fields are repeated when the contents of the subfields varies. For items that have continually varying captions and pattern, an organization may choose to use the Textual Holdings (866-868) fields. </div>
+   <hr>
+   <h3>CONTENT DESIGNATOR HISTORY</h3>
+   <div class="font_small"><em>$n - Pattern note [NEW, 2002]</em><br><em>$o - Type of unit [in field 853] [NEW, 2006]</em><br><em>$p - Number of pieces per issuance [NEW, 2002]</em><br><em>$w - Frequency</em><br><em>k - Continuously updated [NEW, 2001]</em><br><em>$y - Regularity pattern</em><br><em>c - Combined [NEW, 2002]<br>
+      </em><em>e - Enumeration [NEW, 2002]</em><em><br> y - Year [NEW, 2002]</em><br>
+      <em>$z - Numbering scheme [NEW, 2000]</em><br><em>$2 - Source of caption abbreviation [NEW, 2006]</em>
+   </div>
+   <hr>
+   <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr valign="bottom">
+         <td>
+            <div class="head-nav"><a href="http://www.loc.gov/">Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/marc/">MARC</a> &gt;&gt; <a href="index.htm">Holdings</a> &gt;&gt; <strong>853-855</strong></div> (06/03/2021)
+         </td>
+         <td align="right"><a href="/cdn-cgi/l/email-protection#d9b7bdb4aab699b5b6baf7beb6af">Contact Us</a></td>
+      </tr>
+   </table>
+   <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+   <script>if (window['_satellite']) { _satellite.pageBottom(); }</script>
+</body>
+
+</html>
