@@ -1,0 +1,584 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>MARC 21 Format for Holdings Data: Appendix A: Control Subfields (Network Development and MARC Standards Office, Library of Congress) </title>
+   <meta name="description" content="This field contains the  (Network Development and MARC Standards Office, Library of Congress)">
+   <meta name="keywords" content="marc, marc21, marc standards">
+   <meta name="author" content="Library of Congress Network Development and MARC Standards Office">
+   <link href="../styles.css" rel="stylesheet" type="text/css">
+   <link href="../print.css" rel="stylesheet" type="text/css" media="print">
+   <script src="../../dac62e20b491e735c6b56e64c39134d8ee93f9cf/satelliteLib-6b47f831c184878d7338d4683ecf773a17973bb9.js"></script>
+</head>
+
+<body class="full">
+   <div class="head-nav">
+      <div class="noprint"><a href="http://www.loc.gov/">Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/marc/">MARC</a> &gt;&gt; <a href="index.htm">Holdings</a> &gt;&gt; <span class="caps"><strong>appendix a</strong></span></div>
+   </div>
+   <hr><a name="skip_menu"></a>
+   <h1><span>Appendix A</span> - <span>Control Subfields</span></h1>
+   <hr>
+   <div class="formatname">MARC 21 Holdings</div>
+   <div class="datename">November 2018</div>
+   <hr>
+   <table width="100%" class="subfields">
+      <tr>
+         <td width="50%"></td>
+         <td width="50%"></td>
+      </tr>
+      <tr>
+         <th colspan="2">Subfield Codes</th>
+      </tr>
+      <tr>
+         <td>
+            <ul class="nomark">
+               <li>$0 - Authority record control number or standard number</li>
+               <li>$1 - Real World Object URI</li>
+               <li>$5 - Institution to which field applies<span> (NR)</span></li>
+            </ul>
+         </td>
+         <td>
+            <ul class="nomark">
+               <li>$6 - Linkage</li>
+               <li>$8 - Field Link and Sequence Number</li>
+            </ul>
+         </td>
+      </tr>
+   </table>
+   <hr>
+   <div class="definition">
+      <div>
+         <p>Descriptions of subfields that are used to link field data to specific institutions or to other fields. These subfields are defined for most fields in the format, and thus their descriptions are brought together in this appendix. The subfields are included in field level subfield lists wherever they are defined, with pointers to this appendix.</p>
+      </div>
+   </div>
+   <hr>
+   <div class="guidelines">
+      <h4><span class="box">■</span> SUBFIELD CODES </h4>
+      <div class="subfields">
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$0 - Authority record control number or standard number</strong>
+               </p>
+               <div>
+                  <p>Subfield $0 contains the system control number of the related authority record, or a standard identifier. These identifiers may be in the form of text or a Uniform Resource Identifier (URI). If the identifier is text, the control number or identifier is preceded by the appropriate MARC Organization code (for a related authority record) or the Standard Identifier source code (for a standard identifier scheme), enclosed in parentheses. When the identifier is given in the form of a Web retrieval protocol, e.g., HTTP URI, no preceding parenthetical is used. </p>
+                  <p>Subfield $0 may contain a URI that identifies a name or label for an entity. When dereferenced, the URI points to information describing that name. A URI that directly identifies the entity itself is contained in subfield $1.</p>
+                  <p>See <em><a href="http://www.loc.gov/marc/organizations/orgshome.html">MARC Code List for Organizations</a></em> for a listing of organization codes and <em><a href="http://www.loc.gov/standards/sourcelist/standard-identifier.html"> Standard Identifier Source Codes</a></em> for code systems for standard identifiers. Subfield $0 is repeatable for different control numbers or identifiers. </p>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$1 - Real World Object URI</strong>
+               </p>
+               <div>
+                  <p>Subfield $1 contains a URI that identifies an entity, sometimes referred to as a Thing, a Real World Object or RWO, whether actual or conceptual. When dereferenced, the URI points to a description of that entity. A URI that identifies a name or label for an entity is contained in $0.</p>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$5 - Institution to which field applies</strong>
+               </p>
+               <div>
+                  <p>MARC code of the institution or organization that holds the copy to which the data in the field applies. It is used for institution-specific information that may or may not apply to the universal use of the holdings record. See <em><a href="echdorg.html">Organization Code Sources</a></em> for a listing of organization code sources used in MARC 21 records. </p>
+                  <div class="example">
+                     <table>
+                        <tr>
+                           <td>583</td>
+                           <td colspan="9">##$aQueued for preservation;$c19861010;$ePriority;$fTitle IIC project$5DLC</td>
+                        </tr>
+                     </table>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$6 - Linkage</strong>
+               </p>
+               <div>
+                  <p>Data that links fields that are different script representations of each other. Subfield $6 may contain the tag number of an associated field, an occurrence number, a code that identifies the first script encountered in a left-to-right scan of the field, and an indication that the orientation for a display of the field data is right-to-left. A regular (non-880) field may be linked to one or more 880 fields that all contain different script representations of the same data. Subfield $6 is structured as follows:</p>
+                  <p>$6[linking tag]-[occurrence number]/[script identification code]/[field orientation code]</p>
+                  <p>Subfield $6 is always the first subfield in the field.</p>
+                  <p>Descriptions of multiscript record models, with examples, are in <em><a href="echdmulti.html">Multiscript Records</a></em>; specifications for field 880 are under that field; specifications for character sets and repertoires for scripts are found in <em><a href="http://www.loc.gov/marc/specifications/spechome.html">MARC 21 Specifications for Record Structure, Character Sets, and Exchange Media</a></em>. </p>
+               </div>
+               <div>
+                  <p><strong>Linking tag and occurrence number - </strong><em>Linking tag</em> part contains the tag number of the associated field and is always three characters in length. This part is followed immediately by a hyphen and the two-digit <em>occurrence number</em> part. A different occurrence number is assigned to each set of associated fields within a single record. The function of an <em>occurrence number</em> is to permit the matching of the associated fields (not to sequence the fields within the record). An <em>occurrence number</em> may be assigned at random for each set of associated fields. An <em>occurrence number</em> of less than two digits is right justified and the unused position contains a zero. </p>
+                  <p>When there is no associated field to which a field 880 is linked, the <em>occurrence number</em> in subfield $6 is 00. It is used if an agency wants to separate scripts in a record (see <em><a href="echdmulti.html">Multiscript Records</a></em>). The <em>linking tag</em> part of subfield $6 will contain the tag that the associated regular field would have had if it had existed in the record. </p>
+                  <div class="example">
+                     <table>
+                        <tr>
+                           <td>852</td>
+                           <td colspan="9">4#$6880-01$a[Location in Latin script]</td>
+                        </tr>
+                        <tr>
+                           <td>880</td>
+                           <td colspan="9">2#$6852-01/(2/r$a[Location in Hebrew script linked to associated field] </td>
+                        </tr>
+                     </table>
+                  </div>
+               </div>
+               <div>
+                  <p><strong>Script identification code - </strong>Occurrence number is followed immediately by a slash (/) and the <em>script identification code</em>. This code identifies the alternate script found in the field. The following codes are used: </p>
+                  <div class="table">
+                     <table>
+                        <tr>
+                           <td><em>Code</em></td>
+                           <td><em>Script</em></td>
+                        </tr>
+                        <tr>
+                           <td>(3</td>
+                           <td>Arabic</td>
+                        </tr>
+                        <tr>
+                           <td>(B</td>
+                           <td>Latin</td>
+                        </tr>
+                        <tr>
+                           <td>$1</td>
+                           <td>Chinese, Japanese, Korean</td>
+                        </tr>
+                        <tr>
+                           <td>(N</td>
+                           <td>Cyrillic</td>
+                        </tr>
+                        <tr>
+                           <td>(S</td>
+                           <td>Greek</td>
+                        </tr>
+                        <tr>
+                           <td>(2</td>
+                           <td>Hebrew</td>
+                        </tr>
+                     </table>
+                  </div>
+               </div>
+               <div class="example">
+                  <table>
+                     <tr>
+                        <td>880</td>
+                        <td colspan="9">1#$6852-01/(N$a[Location in Cyrillic script]<em><span><br><span>[The (N identifies the Basic Cyrillic character set.]</span></span></em></td>
+                     </tr>
+                  </table>
+               </div>
+               <div>
+                  <p>These codes have been defined based on the MARC-8 coded character set escape sequences defined in accordance with ISO IEC 2022, "Character Code Structure and Extension Techniques" (equivalent to ANSI X3.41, "Code Extension Techniques for Use with 7-bit and 8-bit Character Sets"). The codes are described in <a href="http://www.loc.gov/marc/specifications/speccharmarc8.html">MARC character set documentation</a>. </p>
+                  <p>In a Unicode environment, script identification codes may instead be taken from <a href="http://www.unicode.org/iso15924/">ISO 15924</a> "Codes for the representation of names of scripts". Either the alphabetic values (consisting of four letters) or the numerical values (consisting of three digits) may be used. </p>
+               </div>
+               <div class="example">
+                  <table>
+                     <tr>
+                        <td>880</td>
+                        <td colspan="9">1#$6852-01/Cyrl$a[Location in Cyrillic script]</td>
+                     </tr>
+                  </table>
+               </div>
+               <div class="example">
+                  <table>
+                     <tr>
+                        <td>880</td>
+                        <td colspan="9">1#$6852-01/220$a[Location in Cyrillic script]</td>
+                     </tr>
+                  </table>
+               </div>
+               <div>
+                  <p>The entire field need not be in the script identified in subfield $6. If more than one script is present in the field, subfield $6 will contain the identification of the <em>first</em> alternate script encountered in a left-to-right scan of the field. </p>
+               </div>
+               <div>
+                  <p>Note also that the <em>script identification code</em> is used in field 880, subfield $6, but this data element is not generally used for subfield $6 of the associated regular field. In the associated field, the data is assumed to be the primary script(s) for the record. </p>
+               </div>
+               <div>
+                  <p><strong>Orientation code - </strong>In a MARC record, the contents of field 880 are always recorded in their logical order, from the first character to the last, regardless of field orientation. For a display of the field, the default field orientation is left-to-right. When the field contains text that has a right-to-left orientation, the <em>script identification code</em> is followed by a slash (/) and the field <em>orientation code</em>. The MARC field <em>orientation code</em> for right-to-left scripts is the letter r. The <em>orientation code</em> is only included in fields with right-to-left orientation, since left-to-right orientation is the default orientation in 880 fields. (See <em><a href="http://www.loc.gov/marc/specifications/spechome.html">MARC 21 Specifications for Record Structure, Character Sets, and Exchange Media</a></em> for a detailed description of field orientation.) </p>
+                  <div class="example">
+                     <table>
+                        <tr>
+                           <td>880</td>
+                           <td colspan="9">1#$6852-01/(2/r$h[Call number in Hebrew script]<em><span><br><span>[The r indicates the right-to-left orientation of the Hebrew script.]</span></span></em></td>
+                        </tr>
+                     </table>
+                  </div>
+                  <p>Note that the <em>orientation code</em> is used in field 880, subfield $6, but this data element is not generally used for subfield $6 of the associated regular field. In the associated field, the data is assumed to be the usual orientation of the primary script(s) for the record. </p>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$8 - Field Link and Sequence Number</strong>
+               </p>
+               <div>
+                  <p>Data that identifies linked fields and may also propose a sequence for the linked fields. Subfield $8 may be repeated to link a field to more than one other group of fields. The structure and syntax for the field link and sequence number subfield is:</p>
+                  <p>$8[linking number].[sequence number]\[field link type]</p>
+                  <p><strong>Linking number</strong> is the first data element in the subfield and required if the subfield is used. It is a variable-length whole number that occurs in subfield $8 in all fields that are to be linked. Fields with the same linking number are considered linked. </p>
+                  <p><strong>Sequence number</strong> is separated from the linking number by a period "." and may be optional. It is a variable- length whole number that may be used to indicate the relative order for display of the linked fields (lower sequence numbers displaying before higher ones). If it is used it must occur in all $8 subfields containing the same linking number. </p>
+                  <p><strong>Field link type</strong> is separated from preceding data by a reverse slash “\”. It is a code indicating the reason for the link and it follows the link number or sequence number if present. In the absence of a field link type, it is assumed that subfield $8 is used for linking and sequencing 85X, 86X, or 87X fields (captions, enumeration and chronology, textual holdings, and/or item information). Subfield $8 is essential to link and order these fields. </p>
+                  <p>The following one-character field link type codes have been defined in MARC for use in subfield $8:</p>
+               </div>
+               <div class="value">
+                  <div><span class="valueLabel">a - Action</span>
+                     <div>
+                        <p>Used in a record to link one or more fields with another field to which the processing or reference actions relate. This code is typically used only when there is more than one 5XX that relates to another 5XX field. </p>
+                        <div class="example">
+                           <table>
+                              <tr>
+                                 <td>541</td>
+                                 <td colspan="9">##$81.1\a$3Public School and College Authority and Trade School and Junior College Authority project files$aFinance Dept.$cTransferred </td>
+                              </tr>
+                              <tr>
+                                 <td>583</td>
+                                 <td colspan="9">##$81.2\a$aAppraised$c198712-$ltjb/prr</td>
+                              </tr>
+                              <tr>
+                                 <td>583</td>
+                                 <td colspan="9">##$81.3\a$aScheduled$c19880127$ksrc/prr</td>
+                              </tr>
+                              <tr>
+                                 <td>583</td>
+                                 <td colspan="9">##$81.4\a$aArranged$c19900619$kmc/dmj</td>
+                              </tr>
+                              <tr>
+                                 <td>583</td>
+                                 <td colspan="9">##$81.5\a$aProcessed level 2$b90.160$c19901218$kmc/dmj</td>
+                              </tr>
+                           </table>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="value">
+                  <div><span class="valueLabel">p - Metadata provenance</span>
+                     <div>
+                        <p>Used in a record to link a field with another field containing information about provenance of the metadata recorded in the linked field. </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="value">
+                  <div><span class="valueLabel">u - General linking, type unspecified</span>
+                     <div>
+                        <p>Used in cases when a specific link type is not appropriate. Code “u” may serve as a default value when there is no information about the reason for the link available. </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="value">
+                  <div><span class="valueLabel">x - General sequencing</span>
+                     <div>
+                        <p>Used in a record to make a link between fields to show a sequence between them. The sequence could be one that orders the pieces of a long field that has been broken up, indicates the relative importance of fields within the sequence, or is used for some other sequencing purpose. Use of the sequence number in $8 is required when this code is used.</p>
+                     </div>
+                  </div>
+               </div>
+               <div>
+                  <p>Note that subfield $8 is defined differently in field 852 where it is used to sequence related holdings records. See the description of field 852, subfield $8 for more information.</p>
+               </div>
+               <div class="example">
+                  <table>
+                     <tr>
+                        <td>583</td>
+                        <td colspan="9">##$81.2$aExhibit$c1982/12/01 through 1982/03/01$jMuseum of Fine Arts</td>
+                     </tr>
+                     <tr>
+                        <td>876</td>
+                        <td colspan="9">##$81.2$aXAX1222-1$pA1234567</td>
+                     </tr>
+                  </table>
+               </div>
+               <div class="example">
+                  <table>
+                     <tr>
+                        <td>853</td>
+                        <td colspan="9">03$81$aBd.$i(year)</td>
+                     </tr>
+                     <tr>
+                        <td>853</td>
+                        <td colspan="9">03$82$an.F:Bd$i(year)</td>
+                     </tr>
+                     <tr>
+                        <td>863</td>
+                        <td colspan="9">30$81.1$a1-21$i1911-1923/1924</td>
+                     </tr>
+                     <tr>
+                        <td>863</td>
+                        <td colspan="9">30$82.1$a1-25$i1925/1926-1942/1943<em><span><br><span>[Linking numbers 1 and 2 link each 853 field to its associated 863 field.] </span></span></em></td>
+                     </tr>
+                  </table>
+               </div>
+               <div class="example">
+                  <table>
+                     <tr>
+                        <td>853</td>
+                        <td colspan="9">00$81$ano.$i(year)$j(month)</td>
+                     </tr>
+                     <tr>
+                        <td>863</td>
+                        <td colspan="9">40$81.1$a180-226$i1976-1981</td>
+                     </tr>
+                     <tr>
+                        <td>863</td>
+                        <td colspan="9">44$81.2$a228</td>
+                     </tr>
+                     <tr>
+                        <td>863</td>
+                        <td colspan="9">40$81.3$a230$i1982$jApr.</td>
+                     </tr>
+                     <tr>
+                        <td>863</td>
+                        <td colspan="9">40$81.4$a235$i1982$jDec.</td>
+                     </tr>
+                     <tr>
+                        <td>863</td>
+                        <td colspan="9">40$81.5$a237$i1983$jMar.</td>
+                     </tr>
+                     <tr>
+                        <td>863</td>
+                        <td colspan="9">40$81.6$a239-242$i1983$jJune-Oct.<em><span><br><span>[Incremented decimal sequence numbers added to the linking number in multiple 863 fields associated with a single field 853 (when the display captions are constant) assist in appropriate sequencing of the 863 fields.] </span></span></em></td>
+                     </tr>
+                  </table>
+               </div>
+               <div class="example">
+                  <table>
+                     <tr>
+                        <td>853</td>
+                        <td colspan="9">20$81$av.$bno.$u12$vr$i(year)$j(month)</td>
+                     </tr>
+                     <tr>
+                        <td>863</td>
+                        <td colspan="9">40$81.1$a108$b1-6$i1989$j1-6</td>
+                     </tr>
+                     <tr>
+                        <td>863</td>
+                        <td colspan="9">40$81.2$a108$b7-12$i1989$j7-12</td>
+                     </tr>
+                     <tr>
+                        <td>863</td>
+                        <td colspan="9">40$81.3$a109$b1-6$i1990$j1-6</td>
+                     </tr>
+                     <tr>
+                        <td>863</td>
+                        <td colspan="9">40$81.4$a109$b7-12$i1990$j7-12</td>
+                     </tr>
+                     <tr>
+                        <td>876</td>
+                        <td colspan="9">##$81.1$aAAA1000-1-1$pA1481283827</td>
+                     </tr>
+                     <tr>
+                        <td>876</td>
+                        <td colspan="9">##$81.2$aAAA1000-1-3$pA1481283831</td>
+                     </tr>
+                  </table>
+               </div>
+               <div class="example">
+                  <table>
+                     <tr>
+                        <td>876</td>
+                        <td colspan="9">##$81.3$aAAA1000-1-2$jLost$pA1481283845</td>
+                     </tr>
+                     <tr>
+                        <td>876</td>
+                        <td colspan="9">##$81.4$aAAA1000-1-5$pA1481283863<em><span><br><span>[The whole link and sequence number links the item fields to the appropriate 863 field.] </span></span></em></td>
+                     </tr>
+                  </table>
+               </div>
+               <div>
+                  <p><u><strong>Application of Subfield $8 for Fields 866-868 (Textual Holdings)</strong></u></p>
+                  <p>Subfield $8 contains data that links related 853-868 holdings data fields. Only a linking number is used in the Textual Holdings fields to include whether the field is:</p>
+                  <ul>
+                     <li>the only holdings data field in the holdings statement or the only holdings data field to be used for display, </li>
+                     <li>an alternative display for one or more portions of the holdings data in 863-865 Enumeration and Chronology field(s) contained in the holdings statement, or </li>
+                     <li>a holdings data field in addition to the 863-865 Enumeration and Chronology field(s) contained in the holdings statement. </li>
+                  </ul>
+                  <p>Linking number used in subfield $8 is determined by the following conditions:</p>
+               </div>
+               <div class="value">
+                  <div><span class="valueLabel">Linking number is 0</span>
+                     <div>
+                        <p>Holdings are recorded only in a 866-868 Textual Holdings field. No 853-855 Captions and Pattern and 863-865 Enumeration and Chronology fields occur in the holdings statement. </p>
+                        <div class="example">
+                           <table>
+                              <tr>
+                                 <td>867</td>
+                                 <td colspan="9">31$80$a”Teacher’s guide” pt. A-B</td>
+                              </tr>
+                           </table>
+                        </div>
+                        <p>Holdings data are recorded in the linked 853-855 Captions and Pattern/863-865 Enumeration and Chronology fields but the display form of the holdings is recorded in a Textual Holdings field. </p>
+                        <div class="example">
+                           <table>
+                              <tr>
+                                 <td>853</td>
+                                 <td colspan="9">20$81$a[captions and pattern]</td>
+                              </tr>
+                              <tr>
+                                 <td>853</td>
+                                 <td colspan="9">20$82$a[captions and pattern]</td>
+                              </tr>
+                              <tr>
+                                 <td>853</td>
+                                 <td colspan="9">20$83$a[captions and pattern]</td>
+                              </tr>
+                              <tr>
+                                 <td>863</td>
+                                 <td colspan="9">43$81.1$a[enumeration and chronology]</td>
+                              </tr>
+                              <tr>
+                                 <td>863</td>
+                                 <td colspan="9">43$82.1$a[enumeration and chronology]</td>
+                              </tr>
+                              <tr>
+                                 <td>863</td>
+                                 <td colspan="9">43$82.2$a[enumeration and chronology]</td>
+                              </tr>
+                              <tr>
+                                 <td>863</td>
+                                 <td colspan="9">43$83.1$a[enumeration and chronology]</td>
+                              </tr>
+                              <tr>
+                                 <td>866</td>
+                                 <td colspan="9">40$80$a[textual holdings for display]<em><span><br><span>[No display is generated from any of the 853/863 fields. Field 866 replaces all of the 853/863 fields for display purposes.] </span></span></em></td>
+                              </tr>
+                           </table>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="value">
+                  <div><span class="valueLabel">Linking number is the same as the linking number in the linked 853-855 and 863-865 fields</span>
+                     <div>
+                        <p>One or more portions of the holdings data recorded in the 853-855 Captions and Pattern/863-865 Enumeration and Chronology fields is also recorded in an 866-868 Textual Holdings field to provide an alternative form for display purposes. The linking number in subfield $8 must match the linking number in subfield $8 of the linked 853-855/863-865 fields that the 866-868 field replaces. The content of a Textual Holdings field must replace <em>all</em> of the Enumeration and Chronology fields linked to a Captions and Pattern field. </p>
+                        <p>If multiple Captions and Pattern/Enumeration Chronology fields that have <em>consecutive linking numbers</em> are to be replaced for display purposes by a single Textual Holdings field, subfield $8 may be repeated in Textual Holdings field to record the linking number of each of the Captions and Pattern/Enumeration and Chronology fields to be replaced. </p>
+                        <div class="example">
+                           <table>
+                              <tr>
+                                 <td>855</td>
+                                 <td colspan="9">20$81$a[captions and pattern]</td>
+                              </tr>
+                              <tr>
+                                 <td>855</td>
+                                 <td colspan="9">20$82$a[captions and pattern]</td>
+                              </tr>
+                              <tr>
+                                 <td>855</td>
+                                 <td colspan="9">20$83$a[captions and pattern]</td>
+                              </tr>
+                              <tr>
+                                 <td>855</td>
+                                 <td colspan="9">20$84$a[captions and pattern]</td>
+                              </tr>
+                              <tr>
+                                 <td>865</td>
+                                 <td colspan="9">43$81.1$a[enumeration and chronology]</td>
+                              </tr>
+                              <tr>
+                                 <td>865</td>
+                                 <td colspan="9">43$82.1$a [enumeration and chronology] </td>
+                              </tr>
+                              <tr>
+                                 <td>865</td>
+                                 <td colspan="9">43$83.1$a[enumeration and chronology]</td>
+                              </tr>
+                              <tr>
+                                 <td>865</td>
+                                 <td colspan="9">40$84.1$a[enumeration and chronology]</td>
+                              </tr>
+                              <tr>
+                                 <td>868</td>
+                                 <td colspan="9">40$82$83$a[textual holdings for display]<em><span><br><span>[Field 868 replaces the 855/865 fields having linking numbers 2 and 3. No display is generated from those fields.] </span></span></em></td>
+                              </tr>
+                           </table>
+                        </div>
+                        <p>Optionally, separate 866-868 Textual Holdings fields, each with one subfield $8, may be used instead of a single 866-868 field with multiple subfields $8.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="value">
+                  <div><span class="valueLabel">Linking number is unique and sequences the holdings data with the enumeration and chronology of the 863-865 fields</span>
+                     <div>
+                        <p>When part of the holdings data is recorded in the 853-855 Captions and Pattern/863-865 Enumeration and Chronology fields and part is recorded in the Textual Holdings fields, displays may be generated from both types of fields. This situation may occur when the holdings are extremely complex or the publication pattern varies greatly for only a certain period of time. A unique whole number is used as the linking number in the Textual Holdings field to sequence the field among the linking numbers used in the 853-855/863-865 fields according to the enumeration and chronology recorded in each field. </p>
+                        <div class="example">
+                           <table>
+                              <tr>
+                                 <td>855</td>
+                                 <td colspan="9">20$81$a[captions and pattern]</td>
+                              </tr>
+                              <tr>
+                                 <td>855</td>
+                                 <td colspan="9">20$83$a[captions and pattern]</td>
+                              </tr>
+                              <tr>
+                                 <td>865</td>
+                                 <td colspan="9">40$81.1$a[enumeration and chronology]</td>
+                              </tr>
+                              <tr>
+                                 <td>865</td>
+                                 <td colspan="9">40$83.1$a[enumeration and chronology]</td>
+                              </tr>
+                              <tr>
+                                 <td>868</td>
+                                 <td colspan="9">41$82$a[textual holdings]<em><span><br><span>[The enumeration/chronology of the holdings recorded in field 868 falls between the fields with linking numbers 1 and 3. A display may be generated from all of the fields.] </span></span></em></td>
+                              </tr>
+                           </table>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <hr>
+   <h3>CONTENT DESIGNATOR HISTORY</h3>
+   <div class="history">
+      <div class="historySubfield">
+         <div><em>$0 - Authority record control number or standard number [NEW, 2015]</em>
+            <div class="subfieldHistoryDsc"></div>
+         </div>
+      </div>
+      <div class="historySubfield">
+         <div><em>$0 - Authority record control number or standard number [REDESCRIBED, 2016]</em>
+            <div class="subfieldHistoryDsc">
+               <p>In 2016, the requirement to precede a dereferenceable URI (such as an HTTP URI) in subfield $0 with the parenthetical prefix code "(uri)" was removed. </p>
+            </div>
+            <div class="subfieldHistoryDsc"></div>
+         </div>
+      </div>
+      <div class="historySubfield">
+         <div><em>$1 - Real World Object URI [NEW, 2017]</em>
+            <div class="subfieldHistoryDsc"></div>
+         </div>
+      </div>
+      <div class="historySubfield">
+         <div><em>$6 - Linkage [REDESCRIBED, 2018]</em>
+            <div class="subfieldHistoryDsc">
+               <p>Scope of $6 broadened to allow for the recording of script identification codes taken from ISO 15924.</p>
+            </div>
+            <div class="subfieldHistoryDsc"></div>
+         </div>
+      </div>
+      <div class="historySubfield">
+         <div><em>$8 - Field Link and Sequence Number</em>
+            <div class="subfieldHistoryDsc">
+               <div class="valuehistory">
+                  <div><em>a - Action [NEW, 2004]</em></div>
+               </div>
+               <div class="valuehistory">
+                  <div><em>p - Metadata provenance [NEW, 2012]</em></div>
+               </div>
+               <div class="valuehistory">
+                  <div><em>u - General linking, type unspecified [NEW, 2016]</em></div>
+               </div>
+               <div class="valuehistory">
+                  <div><em>x - General sequencing [NEW, 2004]</em></div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <hr class="clear">
+   <div class="head-nav">
+      <div class="noprint"><a href="http://www.loc.gov/">Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/marc/">MARC</a> &gt;&gt; <a href="index.htm">Holdings</a> &gt;&gt; <span class="caps"><strong>appendix a</strong></span></div>
+   </div>
+   <div class="left"><span class="noprint">(06/03/2021)</span></div>
+   <div class="right"><a href="/cdn-cgi/l/email-protection#fe909a938d91be92919dd0999188" class="noprint">Contact Us</a></div>
+   <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+   <script>if (window['_satellite']) { _satellite.pageBottom(); }</script>
+</body>
+
+</html>
