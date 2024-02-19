@@ -1,0 +1,410 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html40/loose.dtd">
+<html>
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>MARC 21 Concise Format for Bibliographic Data: 006: Fixed-Length Data Elements-Additional Material Characteristics (Network Development and MARC Standards Office, Library of Congress) </title>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="description" content="This field contains the fixed-length data elements-additional material (Network Development and MARC Standards Office, Library of Congress)">
+   <meta name="keywords" content="marc, marc21, marc standards">
+   <meta name="author" content="Library of Congress Network Development and MARC Standards Office">
+   <link href="../../marc-generic.css" rel="stylesheet" type="text/css">
+   <style type="text/css">
+      body {
+         margin-left: 2em;
+         margin-right: 2em;
+      }
+
+      h1 {
+         font-family: Arial, Helvetica, sans-serif;
+      }
+
+      h3 {
+         text-align: left;
+      }
+
+      h4 {
+         margin-top: .5em;
+         margin-bottom: .5em;
+      }
+
+      p {
+         text-align: justify;
+         margin-left: 2em;
+         margin-right: 2em;
+      }
+
+      .characterposition {
+         text-align: left;
+         margin-top: .1em;
+         margin-bottom: .1em;
+         margin-left: 2em;
+      }
+
+      .charactervalue {
+         margin-left: 2em;
+         margin-top: .1em;
+         margin-bottom: .1em;
+      }
+
+      .formatname {
+         font-weight: bold;
+         font-family: Arial, Helvetica, sans-serif;
+         margin-left: .5em
+      }
+
+      .datename {
+         font-weight: bold;
+         text-align: right;
+         font-family: Arial, Helvetica, sans-serif;
+         margin-top: -1.2em;
+      }
+
+      .description {
+         text-align: justify;
+         margin-left: 2em;
+      }
+
+      .description2 {
+         text-align: justify;
+         margin-top: 1em;
+         margin-bottom: 1em;
+         margin-left: 2em;
+      }
+
+      .description3 {
+         text-align: justify;
+         margin-top: 1em;
+         margin-bottom: 1em;
+         margin-left: 2em;
+      }
+
+      .indicatorhead {
+         font-weight: bold;
+         margin-top: 1em;
+      }
+
+      .indicator {
+         text-align: left;
+      }
+
+      .indicatorvalue {
+         margin-left: 2em;
+      }
+
+      .subfieldhead {
+         font-weight: bold;
+         margin-top: 1em;
+      }
+
+      .subfieldvalue {
+         text-align: left;
+         margin-left: 2em;
+      }
+
+      .examplehead {
+         font-weight: bold;
+         margin-top: 1em;
+      }
+
+      .example {
+         margin-left: 4em;
+      }
+
+      .changed {
+         color: #FF0000;
+      }
+
+      .table {
+         margin-left: 2em;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .head-nav {
+         font-family: Arial, Helvetica, sans-serif;
+         font-size: 9pt;
+      }
+   </style>
+   <script src="../../../dac62e20b491e735c6b56e64c39134d8ee93f9cf/satelliteLib-6b47f831c184878d7338d4683ecf773a17973bb9.js"></script>
+</head>
+
+<body>
+   <div class="head-nav"><a href="http://www.loc.gov/">Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/marc/">MARC</a> &gt;&gt; <a href="../index.htm">Bibliographic</a> &gt;&gt; <a href="../bd00x.html">00X</a> &gt;&gt; <strong>006</strong></div>
+   <hr><a name="skip_menu"></a>
+   <h1>006 - Fixed-Length Data Elements-Additional Material Characteristics (R)</h1>
+   <hr>
+   <div class="formatname">MARC 21 Bibliographic - Concise</div>
+   <div class="datename">2010</div>
+   <hr>
+   <p>Eighteen character positions (00-17) that provide for coding information about special aspects of the item being cataloged that cannot be coded in field 008 (Fixed-Length Data Elements). It is used in cases when an item has multiple characteristics (e.g., printed material with an accompanying cassette or a map that is issued serially) and to record the coded serial aspects of nontextual continuing resources. </p>
+   <p>Field has a generic tree structure, whereby the code given in 006/00 (Form of material) determines the data elements defined for subsequent character positions. Except for code s (Serial/Integrating resource), the codes in field 006/00 correspond to those in Leader/06 (Type of record). For each occurrence of field 006, the codes defined for character positions 01-17 will be the same as those defined in the corresponding field 008, character positions 18-34. Configurations of field 006 are given in the following order: books, computer files/electronic resources, maps, music, continuing resources, visual materials, and mixed materials. </p>
+   <hr>
+   <p><strong>006--BOOKS</strong></p>
+   <div class="description">For descriptions of character positions 01-17, see the descriptions of corresponding character positions 18-34 in the <a href="bd008b.html">008--BOOKS</a> section of Control Field 008. </div>
+   <p><em>Character Positions</em></p>
+   <div class="characterposition"><strong>00 - Form of material </strong>
+      <div class="charactervalue">a - Language material</div>
+      <div class="charactervalue">t - Manuscript language material</div>
+   </div>
+   <div class="characterposition"><strong>01-04 - Illustrations </strong>
+      <div class="description">See the description of positions 18-21 (Illustrations) under <em><a href="bd008b.html">008--BOOKS</a></em></div>
+   </div>
+   <div class="characterposition"><strong>05 - Target audience </strong>
+      <div class="description">See the description of position 22 (Target audience) under <em><a href="bd008b.html">008--BOOKS</a></em></div>
+   </div>
+   <div class="characterposition"><strong>06 - Form of item </strong>
+      <div class="description">See the description of position 23 (Form of item) under <em><a href="bd008b.html">008--BOOKS</a></em></div>
+   </div>
+   <div class="characterposition"><strong>07-10 - Nature of contents </strong>
+      <div class="description">See the description of positions 24-27 (Nature of contents) under <em><a href="bd008b.html">008--BOOKS</a></em></div>
+   </div>
+   <div class="characterposition"><strong>11 - Government publication </strong>
+      <div class="description">See the description of position 28 (Government publication) under <em><a href="bd008b.html">008--BOOKS</a></em></div>
+   </div>
+   <div class="characterposition"><strong>12 - Conference publication </strong>
+      <div class="description">See the description of position 29 (Conference publication) under <em><a href="bd008b.html">008--BOOKS</a></em></div>
+   </div>
+   <div class="characterposition"><strong>13 - Festschrift </strong>
+      <div class="description">See the description of position 30 (Festschrift) under <em><a href="bd008b.html">008--BOOKS</a></em></div>
+   </div>
+   <div class="characterposition"><strong>14 - Index </strong>
+      <div class="description">See the description of position 31 (Index) under <em><a href="bd008b.html">008--BOOKS</a></em></div>
+   </div>
+   <div class="characterposition"><strong>15 - Undefined </strong>
+      <div class="description">Contains a blank (#) or a fill (|) character</div>
+   </div>
+   <div class="characterposition"><strong>16 - Literary form </strong>
+      <div class="description">See the description of position 33 (Literary form) under <em><a href="bd008b.html">008--BOOKS</a></em></div>
+   </div>
+   <div class="characterposition"><strong>17 - Biography </strong>
+      <div class="description">See the description of position 34 (Biography) under <em><a href="bd008b.html">008--BOOKS</a></em></div>
+   </div>
+   <hr>
+   <p><strong>006--COMPUTER FILES/ELECTRONIC RESOURCES </strong></p>
+   <div class="description">For descriptions of character positions 01-17, see the descriptions of corresponding character positions 18-34 in the <a href="bd008c.html">008--COMPUTER FILES</a> section of Control Field 008. </div>
+   <p><em>Character Positions</em></p>
+   <div class="characterposition"><strong>00 - Form of material </strong>
+      <div class="description">
+      </div>
+      <div class="charactervalue">m - Computer file/Electronic resource</div>
+   </div>
+   <div class="characterposition"><strong>01-04 - Undefined </strong>
+      <div class="description">Each contains a blank (#) or a fill (|) character</div>
+   </div>
+   <div class="characterposition"><strong>05 - Target audience </strong>
+      <div class="description">See the description of position 22 (Target audience) under <em><a href="bd008c.html">008--COMPUTER FILES</a></em></div>
+   </div>
+   <div class="characterposition"><strong>06 - Form of item </strong>
+      <div class="description">See the description of position 23 (Form of item) under <em><a href="bd008c.html">008--COMPUTER FILES</a></em></div>
+   </div>
+   <div class="characterposition"><strong>07-08 - Undefined </strong>
+      <div class="description">Each contains a blank (#) or a fill (|) character</div>
+   </div>
+   <div class="characterposition"><strong>09 - Type of computer file </strong>
+      <div class="description">See the description of position 26 (Type of computer file) under <em><a href="bd008c.html">008--COMPUTER FILES</a></em></div>
+   </div>
+   <div class="characterposition"><strong>10 - Undefined </strong>
+      <div class="description">Contains a blank (#) or a fill (|) character</div>
+   </div>
+   <div class="characterposition"><strong>11 - Government publication </strong>
+      <div class="description">See the description of position 28 (Government publication) under <em>
+            <a href="bd008c.html">008--COMPUTER FILES</a></em></div>
+   </div>
+   <div class="characterposition"><strong>12-17 - Undefined </strong>
+      <div class="description">Each contains a blank (#) or a fill (|) character</div>
+   </div>
+   <hr>
+   <p><strong>006--MAPS </strong></p>
+   <div class="description">For descriptions of character positions 01-17, see the descriptions of corresponding character positions 18-34 in the <a href="bd008p.html">008--MAPS</a> section of Control Field 008. </div>
+   <p><em>Character Positions</em></p>
+   <div class="characterposition"><strong>00 - Form of material </strong>
+      <div class="charactervalue">e - Cartographic material</div>
+      <div class="charactervalue">f - Manuscript cartographic material</div>
+   </div>
+   <div class="characterposition"><strong>01-04 - Relief </strong>
+      <div class="description">See the description of positions 18-21 (Relief) under <em><a href="bd008p.html">008--MAPS</a></em></div>
+   </div>
+   <div class="characterposition"><strong>05-06 - Projection </strong>
+      <div class="description">See the description of positions 22-23 (Projection) under <em><a href="bd008p.html">008--MAPS</a></em></div>
+   </div>
+   <div class="characterposition"><strong>07 - Undefined </strong>
+      <div class="description">Contains a blank (#) or a fill (|) character</div>
+   </div>
+   <div class="characterposition"><strong>08 - Type of cartographic material </strong>
+      <div class="description">See the description of position 25 (Type of cartographic material) under <em><a href="bd008p.html">008--MAPS</a></em></div>
+   </div>
+   <div class="characterposition"><strong>09-10 - Undefined </strong>
+      <div class="description">Each contains a blank (#) or a fill (|) character</div>
+   </div>
+   <div class="characterposition"><strong>11 - Government publication </strong>
+      <div class="description">See the description of position 28 (Government publication) under <em><a href="bd008p.html">008--MAPS</a></em></div>
+   </div>
+   <div class="characterposition"><strong>12 - Form of item </strong>
+      <div class="description">See the description of position 23 (Form of item) under <em><a href="bd008p.html">008--MAPS</a></em></div>
+   </div>
+   <div class="characterposition"><strong>13 - Undefined </strong>
+      <div class="description">Contains a blank (#) or a fill (|) character</div>
+   </div>
+   <div class="characterposition"><strong>14 - Index </strong>
+      <div class="description">See the description of position 31 (Index) under <em><a href="bd008p.html">008--MAPS</a></em></div>
+   </div>
+   <div class="characterposition"><strong>15 - Undefined </strong>
+      <div class="description">Contains a blank (#) or a fill (|) character</div>
+   </div>
+   <div class="characterposition"><strong>16-17 - Special format characteristics </strong>
+      <div class="description">See the description of positions 33-34 (Special format characteristics) under <em><a href="bd008p.html">008--MAPS</a></em></div>
+   </div>
+   <hr>
+   <p><strong>006--MIXED MATERIALS </strong></p>
+   <div class="description">For descriptions of character positions 01-17, see the descriptions of corresponding character positions 18-34 in the <a href="bd008x.html">008--MIXED MATERIALS</a> section of Control Field 008. </div>
+   <p><em>Character Positions</em></p>
+   <div class="characterposition"><strong>00 - Form of material </strong>
+      <div class="charactervalue">p - Mixed material</div>
+   </div>
+   <div class="characterposition"><strong>01-05 - Undefined </strong>
+      <div class="description">Each contains a blank (#) or a fill (|) character</div>
+   </div>
+   <div class="characterposition"><strong>06 - Form of item </strong>
+      <div class="description">See the description of position 23 (Form of item) under <em><a href="bd008x.html">008--MIXED MATERIALS</a></em></div>
+   </div>
+   <div class="characterposition"><strong>07-17 - Undefined </strong>
+      <div class="description">Each contains a blank (#) or a fill (|) character</div>
+   </div>
+   <hr>
+   <p><strong>006--MUSIC </strong></p>
+   <div class="description">For descriptions of character positions 01-17, see the descriptions of corresponding character positions 18-34 in the <a href="bd008m.html">008--MUSIC</a> section of Control Field 008. </div>
+   <p><em>Character Positions</em></p>
+   <div class="characterposition"><strong>00 - Form of material </strong>
+      <div class="charactervalue">c - Notated music</div>
+      <div class="charactervalue">d - Manuscript notated music</div>
+      <div class="charactervalue">i - Nonmusical sound recording</div>
+      <div class="charactervalue">j - Musical sound recording</div>
+   </div>
+   <div class="characterposition"><strong>01-02 - Form of composition </strong>
+      <div class="description">See the description of positions 18-19 (Form of composition) under <em><a href="bd008m.html">008--MUSIC</a></em></div>
+   </div>
+   <div class="characterposition"><strong>03 - Format of music </strong>
+      <div class="description">See the description of position 20 (Format of music) under <em><a href="bd008m.html">008--MUSIC</a></em></div>
+   </div>
+   <div class="characterposition"><strong>04 - Music parts </strong>
+      <div class="description">See the description of position 21 (Music parts) under <em><a href="bd008m.html">008--MUSIC</a></em></div>
+   </div>
+   <div class="characterposition"><strong>05 - Target audience </strong>
+      <div class="description">See the description of position 22 (Target audience) under <em><a href="bd008m.html">008--MUSIC</a></em></div>
+   </div>
+   <div class="characterposition"><strong>06 - Form of item </strong>
+      <div class="description">See the description of position 23 (Form of item) under <em><a href="bd008m.html">008--MUSIC</a></em></div>
+   </div>
+   <div class="characterposition"><strong>07-12 - Accompanying matter </strong>
+      <div class="description">See the description of positions 24-29 (Accompanying matter) under <em><a href="bd008m.html">008--MUSIC</a></em></div>
+   </div>
+   <div class="characterposition"><strong>13-14 - Literary text for sound recordings </strong>
+      <div class="description">See the description of positions 30-31 (Literary text for sound recordings) under <em><a href="bd008m.html">008--MUSIC</a></em></div>
+   </div>
+   <div class="characterposition"><strong>15 - Undefined </strong>
+      <div class="description">Contains a blank (#) or a fill (|) character</div>
+   </div>
+   <div class="characterposition"><strong>16 - Transposition and arrangement </strong>
+      <div class="description">See the description of position 33 (Transposition and arrangement) under <em><a href="bd008m.html">008--MUSIC</a></em></div>
+   </div>
+   <div class="characterposition"><strong>17 - Undefined </strong>
+      <div class="description">Contains a blank (#) or a fill (|) character</div>
+   </div>
+   <hr>
+   <p><strong>006--CONTINUING RESOURCES </strong></p>
+   <div class="description">For descriptions of character positions 01-17, see the descriptions of corresponding character positions 18-34 in the <a href="bd008s.html">008--CONTINUING RESOURCES</a> section of Control Field 008. </div>
+   <p><em>Character Positions</em></p>
+   <div class="characterposition"><strong>00 - Form of material </strong>
+      <div class="charactervalue">s - Serial/Integrating resource</div>
+   </div>
+   <div class="characterposition"><strong>01 - Frequency </strong>
+      <div class="description">See the description of position 18 (Frequency) under <em><a href="bd008s.html">008--CONTINUING RESOURCES</a></em></div>
+   </div>
+   <div class="characterposition"><strong>02 - Regularity </strong>
+      <div class="description">See the description of position 19 (Regularity) under <em><a href="bd008s.html">008--CONTINUING RESOURCES</a></em></div>
+   </div>
+   <div class="characterposition"><strong>03 - Undefined </strong>
+      <div class="description">Contains a blank (#) or a fill (|) character</div>
+   </div>
+   <div class="characterposition"><strong>04 - Type of continuing resource </strong>
+      <div class="description">See the description of position 21 (Type of continuing resource) under <em><a href="bd008s.html">008--CONTINUING RESOURCES</a></em></div>
+   </div>
+   <div class="characterposition"><strong>05 - Form of original item </strong>
+      <div class="description">See the description of position 22 (Form of original item) under <em><a href="bd008s.html">008--CONTINUING RESOURCES</a></em></div>
+   </div>
+   <div class="characterposition"><strong>06 - Form of item </strong>
+      <div class="description">See the description of position 23 (Form of item) under <em><a href="bd008s.html">008--CONTINUING RESOURCES</a></em></div>
+   </div>
+   <div class="characterposition"><strong>07 - Nature of entire work </strong>
+      <div class="description">See the description of position 24 (Nature of entire work) under <em><a href="bd008s.html">008--CONTINUING RESOURCES</a></em></div>
+   </div>
+   <div class="characterposition"><strong>08-10 - Nature of contents </strong>
+      <div class="description">See the description of positions 24-27 (Nature of contents) under <em><a href="bd008s.html">008--CONTINUING RESOURCES</a></em></div>
+   </div>
+   <div class="characterposition"><strong>11 - Government publication </strong>
+      <div class="description">See the description of position 28 (Government publication) under <em><a href="bd008s.html">008--CONTINUING RESOURCES</a></em></div>
+   </div>
+   <div class="characterposition"><strong>12 - Conference publication </strong>
+      <div class="description">See the description of position 29 (Conference publication) under <em><a href="bd008s.html">008--CONTINUING RESOURCES</a></em></div>
+   </div>
+   <div class="characterposition"><strong>13-15 - Undefined </strong>
+      <div class="description">Each contains a blank (#) or a fill (|) character</div>
+   </div>
+   <div class="characterposition"><strong>16 - Original alphabet or script of title </strong>
+      <div class="description">See the description of position 33 (Original alphabet or script of title) under <em><a href="bd008s.html">008--CONTINUING RESOURCES</a></em></div>
+   </div>
+   <div class="characterposition"><strong>17 - Entry convention </strong>
+      <div class="description">See the description of position 34 (Entry convention) under <em><a href="bd008s.html">008--CONTINUING RESOURCES</a></em></div>
+   </div>
+   <hr>
+   <p><strong>006--VISUAL MATERIALS </strong></p>
+   <div class="description">For descriptions of character positions 01-17, see the descriptions of corresponding character positions 18-34 in the <a href="bd008v.html">008--VISUAL MATERIALS</a> section of Control Field 008. </div>
+   <p><em>Character Positions</em></p>
+   <div class="characterposition"><strong>00 - Form of material </strong>
+      <div class="charactervalue">g - Projected medium</div>
+      <div class="charactervalue">k - Two-dimensional nonprojected graphic</div>
+      <div class="charactervalue">o - Kit</div>
+      <div class="charactervalue">r - Three-dimensional artifact or naturally occurring object</div>
+   </div>
+   <div class="characterposition"><strong>01-03 - Running time </strong>
+      <div class="description">See the description of positions 18-20 (Running time) under <em><a href="bd008v.html">008--VISUAL MATERIALS</a></em></div>
+   </div>
+   <div class="characterposition"><strong>04 - Undefined </strong>
+      <div class="description">Contains a blank (#) or a fill (|) character</div>
+   </div>
+   <div class="characterposition"><strong>05 - Target audience </strong>
+      <div class="description">See the description of position 22 (Target audience) under <em><a href="bd008v.html">008--VISUAL MATERIALS</a></em></div>
+   </div>
+   <div class="characterposition"><strong>06-10 - Undefined </strong>
+      <div class="description">Each contains a blank (#) or a fill (|) character</div>
+   </div>
+   <div class="characterposition"><strong>11 - Government publication </strong>
+      <div class="description">See the description of position 28 (Government publication) under <em><a href="bd008v.html">008--VISUAL MATERIALS</a></em></div>
+   </div>
+   <div class="characterposition"><strong>12 - Form of item </strong>
+      <div class="description">See the description of position 29 (Form of item) under <em><a href="bd008v.html">008--VISUAL MATERIALS</a></em></div>
+   </div>
+   <div class="characterposition"><strong>13-15 - Undefined </strong>
+      <div class="description">Each contains a blank (#) or a fill (|) character</div>
+   </div>
+   <div class="characterposition"><strong>16 - Type of visual material </strong>
+      <div class="description">See the description of position 33 (Type of visual material) under <em><a href="bd008v.html">008--VISUAL MATERIALS</a></em></div>
+   </div>
+   <div class="characterposition"><strong>17 - Technique </strong>
+      <div class="description">See the description of position 34 (Technique) under <em><a href="bd008v.html">008--VISUAL MATERIALS</a></em></div>
+   </div>
+   <hr>
+   <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr valign="bottom">
+         <td>
+            <div class="head-nav"><a href="http://www.loc.gov/">Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/marc/">MARC</a> &gt;&gt; <a href="../index.htm">Bibliographic</a> &gt;&gt; <a href="../bd00x.html">00X</a> &gt;&gt;<strong>006</strong></div> (03/05/2010)
+         </td>
+         <td align="right"><a href="/cdn-cgi/l/email-protection#9bf5fff6e8f4dbf7f4f8b5fcf4ed">Contact Us</a></td>
+      </tr>
+   </table>
+   <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+   <script>if (window['_satellite']) { _satellite.pageBottom(); }</script>
+</body>
+
+</html>
