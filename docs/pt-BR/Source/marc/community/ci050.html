@@ -1,0 +1,429 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html40/loose.dtd">
+<html>
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>MARC 21 Format for Community Information Data: 050: Library of Congress Classification Number (Network Development and MARC Standards Office, Library of Congress) </title>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="description" content="This field contains the Library of Congress classification number (Network Development and MARC Standards Office, Library of Congress)">
+   <meta name="keywords" content="marc, marc21, marc standards">
+   <meta name="author" content="Library of Congress Network Development and MARC Standards Office">
+   <link href="../marc-generic.css" rel="stylesheet" type="text/css">
+   <style type="text/css">
+      body {
+         margin-left: 2em;
+         margin-right: 2em;
+      }
+
+      h1 {
+         font-family: Arial, Helvetica, sans-serif;
+      }
+
+      h3 {
+         text-align: left;
+      }
+
+      h4 {
+         margin-top: .5em;
+         margin-bottom: .5em;
+      }
+
+      p {
+         text-align: justify;
+         margin-left: 2em;
+         margin-right: 2em;
+      }
+
+      .formatname {
+         font-weight: bold;
+         font-family: Arial, Helvetica, sans-serif;
+         margin-left: .5em
+      }
+
+      .datename {
+         font-weight: bold;
+         text-align: right;
+         font-family: Arial, Helvetica, sans-serif;
+         margin-top: -1.2em;
+      }
+
+      .font_small {
+         font-size: 9pt;
+      }
+
+      .fieldtoc {
+         margin-left: 2em;
+      }
+
+      .subfieldtoc {
+         margin-left: 3em;
+      }
+
+      .box {
+         font-family: ZapfDingbats;
+      }
+
+      .description {
+         text-align: justify;
+         margin-left: 2em;
+      }
+
+      .description2 {
+         text-align: justify;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .description3 {
+         text-align: justify;
+         margin-top: 1em;
+         margin-bottom: 1em;
+         margin-left: 2em;
+      }
+
+      .indicator {
+         text-align: left;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .indicatorvalue {
+         margin-left: 2em;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .subfieldvalue {
+         margin-left: 2em;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .subfield {
+         text-align: left;
+         margin-top: 1em;
+         margin-bottom: 1em;
+         margin-left: 2em;
+      }
+
+      .characterposition {
+         text-align: left;
+         margin-top: 1em;
+         margin-bottom: 1em;
+         margin-left: 2em;
+      }
+
+      .charactervalue {
+         margin-left: 2em;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .characterpositionhistory {
+         text-align: left;
+         margin-top: .5em;
+         margin-bottom: .5em;
+         margin-left: 2em;
+      }
+
+      .charactervaluehistory {
+         margin-left: 2em;
+         margin-top: .1em;
+         margin-bottom: .1em;
+      }
+
+      .example {
+         margin-left: 4em;
+      }
+
+      .changed {
+         color: #FF0000;
+      }
+
+      .captiontext {
+         font-style: italic;
+      }
+
+      .displaytext {
+         margin-bottom: .5em;
+         margin-top: .5em;
+      }
+
+      .displaycontent {
+         text-align: left;
+      }
+
+      .table {
+         margin-left: 2em;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .head-nav {
+         font-family: Arial, Helvetica, sans-serif;
+         font-size: 9pt;
+      }
+
+      .summary {
+         margin-left: 2em;
+      }
+
+      .summarytable {
+         margin-left: 4em;
+      }
+
+      .update {
+         text-align: center;
+         font-weight: bold;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .changebox {
+         font-style: italic;
+         margin-top: .5em;
+      }
+
+      .changesection {
+         text-align: left;
+         margin-left: 2em;
+         font-weight: bold;
+         margin-top: .5em;
+      }
+
+      .changefield {
+         text-align: left;
+         margin-left: 1em;
+         font-weight: bold;
+      }
+
+      .changefieldlabel {
+         margin-left: 3em;
+         font-weight: bold;
+      }
+
+      .changeindicator {
+         margin-left: 3em;
+      }
+
+      .changeindicatorfieldname {
+         margin-left: 2em;
+      }
+
+      .changeindicatorvalue {
+         margin-left: 4em;
+         font-weight: bold;
+      }
+
+      .changesubfield {
+         margin-left: 3em;
+         font-weight: bold;
+      }
+
+      .changesubfieldname {
+         margin-left: 1em;
+         font-weight: bold;
+      }
+
+      .changesubfieldlocation {
+         text-align: justify;
+         font-weight: normal;
+      }
+
+      .glossaryentry {
+         margin-left: 2em;
+         margin-top: 1em;
+         font-weight: bold;
+      }
+
+      .glossaryentrydescription {
+         margin-left: 4em;
+         margin-bottom: 1em;
+         text-align: justify;
+      }
+
+      .glossaryentryfields {
+         margin-left: 4em;
+         margin-bottom: 1em;
+         text-align: justify;
+         font-weight: bold;
+      }
+
+      .citationaddress {
+         margin-left: 2em;
+         text-align: justify;
+      }
+
+      .citationinternet {
+         margin-left: 2em;
+         text-align: justify;
+      }
+
+      .citationname {
+         font-style: italic;
+         margin-top: 1em;
+      }
+   </style>
+   <script src="../../dac62e20b491e735c6b56e64c39134d8ee93f9cf/satelliteLib-6b47f831c184878d7338d4683ecf773a17973bb9.js"></script>
+</head>
+
+<body bgcolor="#ffffff">
+   <div class="head-nav"><a href="http://www.loc.gov/">Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/marc/">MARC</a> &gt;&gt; <a href="index.htm">Community Information</a> &gt;&gt; <a href="ci01x08x.html">01X-08X</a> &gt;&gt; <strong>050</strong></div>
+   <hr><a name="skip_menu"></a>
+   <h1>050 - Library of Congress Classification Number (R)</h1>
+   <hr>
+   <div class="formatname">MARC 21 Community Information - Full</div>
+   <div class="datename">October 2000</div>
+   <hr>
+   <table width="100%">
+      <tr valign="top">
+         <td width="45%"><strong>First Indicator</strong><br><em>Undefined</em><br># - Undefined <br><br></td>
+         <td width="45%"><strong>Second Indicator</strong><br><em>Source of class number</em><br>0 - Assigned by LC <br>4 - Assigned by agency other than LC <br><br></td>
+      </tr>
+   </table>
+   <hr>
+   <table width="100%">
+      <tr valign="top">
+         <td valign="top" width="50%" align="left"></td>
+         <td valign="top" width="50%" align="left"></td>
+      </tr>
+      <tr valign="top">
+         <td colspan="2"><strong>Subfield Codes</strong><br></td>
+      </tr>
+      <tr valign="top">
+         <td colspan="1">$a - Classification number (R) <br>$b - Item number (NR) <br>$3 - Materials specified (NR) <br></td>
+         <td colspan="1">$6 - Linkage (NR) <br>$8 - Field link and sequence number (R) <br></td>
+      </tr>
+   </table>
+   <hr>
+   <h3>FIELD DEFINITION AND SCOPE</h3>
+   <p>Classification number or call number assigned from <em>Library of Congress Classification</em> or <em>LC Classification--Additions and Changes</em>, both of which are maintained by the Library of Congress. </p>
+   <p>The second indicator values distinguish between content actually assigned by the Library of Congress and content assigned by an organization other than LC. </p>
+   <hr>
+   <h3>GUIDELINES FOR APPLYING CONTENT DESIGNATORS</h3>
+   <h4><span class="box">&#9632;</span> INDICATORS </h4>
+   <div class="indicator"><strong>First Indicator - Undefined</strong>
+      <div class="description">Undefined and contains a blank (#). </div>
+   </div>
+   <div class="indicator"><strong>Second Indicator - Source of class number</strong>
+      <div class="description">Value that indicates whether the number has been assigned by the Library of Congress or another organization. <div class="indicatorvalue"><strong>0 - Assigned by LC</strong>
+            <div class="description">Source of the class number is the Library of Congress. Also used when an institution is transcribing field 050 from LC cataloging copy. </div>
+         </div>
+         <div class="indicatorvalue"><strong>4 - Assigned by agency other than LC</strong>
+            <div class="description">Source of the class number is an organization other than the Library of Congress. <div class="example">
+                  <table width="100%">
+                     <tr>
+                        <td valign="top" width="5%" align="left"></td>
+                        <td valign="top" width="10%" align="left"></td>
+                        <td valign="top" width="10%" align="left"></td>
+                        <td valign="top" width="10%" align="left"></td>
+                        <td valign="top" width="10%" align="left"></td>
+                        <td valign="top" width="10%" align="left"></td>
+                        <td valign="top" width="10%" align="left"></td>
+                        <td valign="top" width="10%" align="left"></td>
+                        <td valign="top" width="10%" align="left"></td>
+                        <td valign="top" width="15%" align="left"></td>
+                     </tr>
+                     <tr>
+                        <td valign="top" colspan="1" align="left">110</td>
+                        <td valign="top" colspan="9" align="left">2#$aHospice of Huntington, Inc.</td>
+                     </tr>
+                     <tr>
+                        <td valign="top" colspan="1" align="left"><strong>050</strong></td>
+                        <td valign="top" colspan="9" align="left"><strong>#4</strong><strong>$a</strong>R726.8 </td>
+                     </tr>
+                  </table>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <h4><span class="box">&#9632;</span> SUBFIELD CODES </h4>
+   <div class="subfield"><strong>$a - Classification number</strong>
+      <div class="description">The source of the classification number is <em>Library of Congress Classification</em> and the <em>LC Classification-Additions and Changes</em> that are maintained by the Library of Congress. Subfield $a is repeated to record an alternative class number. </div>
+      <div class="example">
+         <table width="100%">
+            <tr>
+               <td valign="top" width="5%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="15%" align="left"></td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">110</td>
+               <td valign="top" colspan="9" align="left">2#$aAmerican Dance Therapy Association.</td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left"><strong>050</strong></td>
+               <td valign="top" colspan="9" align="left"><strong>#4</strong><strong>$a</strong>RC489.D3 </td>
+            </tr>
+         </table>
+      </div>
+      <div class="example">
+         <table width="100%">
+            <tr>
+               <td valign="top" width="5%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="15%" align="left"></td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">110</td>
+               <td valign="top" colspan="9" align="left">2#$aAutism Training Center.</td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left"><strong>050</strong></td>
+               <td valign="top" colspan="9" align="left"><strong>#4</strong><strong>$a</strong>RJ506.A9 </td>
+            </tr>
+         </table>
+      </div>
+   </div>
+   <div class="subfield"><strong>$b - Item number</strong>
+      <div class="description">Item number portion of a call number. An item number is the Cutter, date, term, etc. that is added to a classification number to distinguish an entity from any other entity assigned the same classification number. The delimiter and subfield code b precede the last capital letter in the call number or the period, if present, preceding it. </div>
+      <div class="description2">
+         <div class="description">Organizations that use the <em>Cutter-Sanborn Three-Figure Author Table</em> may conform to LC item number practice by applying <em>Subject Cataloging Manual: Shelflisting</em> procedures. </div>
+      </div>
+   </div>
+   <div class="subfield"><strong>$3 - Materials specified</strong>
+      <div class="description">Part of the described material to which the field applies.</div>
+      <div class="description2">
+         <div class="description">Used with archival-type materials; its use is parallel with the use of subfield $3 in other fields. </div>
+      </div>
+   </div>
+   <div class="subfield"><strong>$6 - Linkage</strong>
+      <div class="description">See the description of this subfield in Appendix A: <em><a href="eccicntf.html">Control Subfields</a></em>. </div>
+   </div>
+   <div class="subfield"><strong>$8 - Field link and sequence number</strong>
+      <div class="description">See the description of this subfield in Appendix A: <em><a href="eccicntf.html">Control Subfields</a></em>. </div>
+   </div>
+   <hr>
+   <h3>INPUT CONVENTIONS</h3>
+   <div class="description2"><strong>Punctuation</strong> - Field 050 does not end with a period. </div>
+   <div class="description2"><strong>Capitalization</strong> - Alphabetic characters in the classification number are generally uppercase. </div>
+   <div class="description2"><strong>Spacing</strong> - Any spaces that are desired as part of the classification number must be input. </div>
+   <hr>
+   <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr valign="bottom">
+         <td>
+            <div class="head-nav"><a href="http://www.loc.gov/">Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/marc/">MARC</a> &gt;&gt; <a href="index.htm">Community Information</a> &gt;&gt; <a href="ci01x08x.html">01X-08X</a> &gt;&gt; <strong>050</strong></div> (03/18/2008)
+         </td>
+         <td align="right"><a href="/cdn-cgi/l/email-protection#620c060f110d220e0d014c050d14">Contact Us</a></td>
+      </tr>
+   </table>
+   <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+   <script>if (window['_satellite']) { _satellite.pageBottom(); }</script>
+</body>
+
+</html>
