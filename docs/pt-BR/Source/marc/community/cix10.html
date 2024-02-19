@@ -1,0 +1,579 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>MARC 21 Format for Community Information Data: X10: Corporate Names-General Information (Network Development and MARC Standards Office, Library of Congress) </title>
+   <meta name="description" content="This field contains the  (Network Development and MARC Standards Office, Library of Congress)">
+   <meta name="keywords" content="marc, marc21, marc standards">
+   <meta name="author" content="Library of Congress Network Development and MARC Standards Office">
+   <link href="../styles.css" rel="stylesheet" type="text/css">
+   <link href="../print.css" rel="stylesheet" type="text/css" media="print">
+   <script src="../../dac62e20b491e735c6b56e64c39134d8ee93f9cf/satelliteLib-6b47f831c184878d7338d4683ecf773a17973bb9.js"></script>
+</head>
+
+<body class="full">
+   <div class="head-nav">
+      <div class="noprint"><a href="http://www.loc.gov/">Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/marc/">MARC</a> &gt;&gt; <a href="index.htm">Community Information</a> &gt;&gt; <span class="caps"><a href="cinames.html">Name Fields</a>  &gt;&gt; <strong>X10</strong></span></div>
+   </div>
+   <hr><a name="skip_menu"></a>
+   <h1><span>X10</span> - <span>Corporate Names-General Information</span></h1>
+   <hr>
+   <div class="formatname">MARC 21 Community Information</div>
+   <div class="datename">December 2017</div>
+   <hr>
+   <div class="noprint">
+      <p>"<strong>Full</strong>" documentation refers to the <em>MARC 21 Format for Community Information</em> that contains detailed descriptions of every data element, along with examples, input conventions and history sections. </p>
+      <p>"<strong>Concise</strong>" documentation refers to the <em>MARC 21 Format for Community Information</em> that contains abridged descriptions of every data element, along with examples. </p>
+   </div>
+   <ul class="toc">
+      <li><strong>110 - Primary Name - Corporate</strong><span> (NR)</span><span class="noprint">  <a href="ci110.html">Full</a> | <a href="concise/ci110.html">Concise</a></span></li>
+      <li><strong>610 - Subject Added Entry - Corporate Name</strong><span> (R)</span><span class="noprint">  <a href="ci610.html">Full</a> | <a href="concise/ci610.html">Concise</a></span></li>
+      <li><strong>710 - Added Entry - Corporate Name</strong><span> (R)</span><span class="noprint">  <a href="ci710.html">Full</a> | <a href="concise/ci710.html">Concise</a></span></li>
+   </ul>
+   <hr>
+   <table width="100%" class="indicators">
+      <tr>
+         <th width="45%"> First Indicator </th>
+         <th width="45%"> Second Indicator </th>
+      </tr>
+      <tr>
+         <td><em>Type of corporate name entry element</em><br><span>0 - Inverted name</span><br><span>1 - Jurisdiction name</span><br><span>2 - Name in direct order</span><br><br></td>
+         <td><strong>110 - </strong><em>Undefined</em><br><span># - Undefined</span><br><br><strong>610 - </strong><em>Thesaurus</em><br><span>0 - Library of Congress Subject Headings</span><br><span>1 - Library of Congress Children's and Young Adults' Subject Headings</span><br><span>2 - Medical Subject Headings</span><br><span>3 - National Agricultural Library subject authority file</span><br><span>4 - Source not specified</span><br><span>5 - Canadian Subject Headings</span><br><span>6 - Répertoire de vedettes-matière</span><br><span>7 - Source specified in subfield $2</span><br><br><strong>710 - </strong><em>Undefined</em><br><span># - Undefined</span><br><br><br></td>
+      </tr>
+   </table>
+   <hr>
+   <table width="100%" class="subfields">
+      <tr>
+         <td width="50%"></td>
+         <td width="50%"></td>
+      </tr>
+      <tr>
+         <th colspan="2">Subfield Codes</th>
+      </tr>
+      <tr>
+         <td>
+            <p class="groupHeading">Name portion</p>
+            <ul class="nomark">
+               <li>$a - Corporate name or jurisdiction name as entry element<span> (NR)</span></li>
+               <li>$b - Subordinate unit<span> (R)</span></li>
+               <li>$c - Location of meeting<span> (R)</span></li>
+               <li>$e - Relator term<span> (R)</span></li>
+               <li>$n - Number of meeting<span> (NR)</span><em>   [110]</em></li>
+               <li>$u - Affiliation<span> (NR)</span></li>
+               <li>$4 - Relator code<span> (R)</span></li>
+            </ul><br>
+            <p class="groupHeading">Name and title portions</p>
+            <ul class="nomark">
+               <li>$d - Date of meeting<span> (NR)</span></li>
+               <li>$g - Miscellaneous information<span> (R)</span></li>
+               <li>$n - Number of part/section/meeting<span> (R)</span><em>   [610/710]</em></li>
+            </ul><br>
+            <p class="groupHeading">Title portion</p>
+            <ul class="nomark">
+               <li>$f - Date of a work<span> (NR)</span><em>   [610/710]</em></li>
+               <li>$p - Name of part/section<span> (R)</span><em>   [610/710]</em></li>
+               <li>$s - Version<span> (NR)</span><em>   [610/710]</em></li>
+               <li>$t - Title<span> (NR)</span><em>   [610/710]</em></li>
+            </ul><br>
+         </td>
+         <td>
+            <p class="groupHeading">Subject subdivision portion</p>
+            <ul class="nomark">
+               <li>$v - Form subdivision<span> (R)</span><em>   [610]</em></li>
+               <li>$x - General subdivision<span> (R)</span><em>   [610]</em></li>
+               <li>$y - Chronological subdivision<span> (R)</span><em>   [610]</em></li>
+               <li>$z - Geographic subdivision<span> (R)</span><em>   [610]</em></li>
+            </ul><br>
+            <p class="groupHeading">Control subfields</p>
+            <ul class="nomark">
+               <li>$0 - Authority record control number or standard number<span> (R)</span></li>
+               <li>$1 - Real World Object URI<span> (R)</span></li>
+               <li>$2 - Source of heading or term<span> (NR)</span><em>   [610]</em></li>
+               <li>$6 - Linkage<span> (NR)</span></li>
+               <li>$8 - Field link and sequence number<span> (R)</span></li>
+            </ul><br>
+         </td>
+      </tr>
+   </table>
+   <hr>
+   <h3>GUIDELINES FOR APPLYING CONTENT DESIGNATORS</h3>
+   <div class="guidelines">
+      <div>
+         <p>Subelements occurring in corporate name fields. A corporate name, a title of a work, event, program, etc., and/or a city section name entered under the name of a jurisdiction are X10 corporate names. A name of a jurisdiction that represents an ecclesiastical entity is an X10 corporate name. For subject purposes, other names of jurisdictions used alone or followed by subject subdivisions are geographic names and are contained in field 651. For non-subject purposes, other names of jurisdictions used alone are contained in 110 and 710 fields. A named meeting that is entered under a corporate name is contained in the X10 fields. A meeting entered directly under its own name is contained in the X11 fields. Corporate names used in phrase subject headings (e.g., Catholic Church in art) are contained in field 650. </p>
+         <p>Guidelines for applying all content designators except the second indicator position are given in this section. A field-specific list of content designators and guidelines for applying the second indicator position are provided under the description for each specific X10 field. </p>
+      </div>
+      <h4><span class="box">■</span> INDICATORS </h4>
+      <div class="indicators">
+         <div class="indicator">
+            <div>
+               <p class="label"><strong>First Indicator - Type of corporate name entry element</strong></p>
+               <div>
+                  <p>Form of the entry element of the field. The values distinguish among an inverted name, a jurisdiction name, and a corporate name in direct order used as the entry element. </p>
+               </div>
+               <div class="value">
+                  <div><span class="valueLabel">0 - Inverted name</span>
+                     <div>
+                        <p>Corporate name begins with a personal name in inverted order (<em>surname, forename</em>). </p>
+                     </div>
+                     <div class="example">
+                        <table>
+                           <tr>
+                              <td>110</td>
+                              <td colspan="9">0#$aNewman (Jean and Dorothy) Industrial Relations Library. </td>
+                           </tr>
+                        </table>
+                     </div>
+                     <div>
+                        <p>Corporate names beginning with a personal surname alone, a personal name in direct order (not inverted), or containing a personal name other than as the entry element are identified by value 2. </p>
+                     </div>
+                     <div class="example">
+                        <table>
+                           <tr>
+                              <td>110</td>
+                              <td colspan="9">2#$aEdwin Markham Child Care Center.</td>
+                           </tr>
+                        </table>
+                     </div>
+                  </div>
+               </div>
+               <div class="value">
+                  <div><span class="valueLabel">1 - Jurisdiction name</span>
+                     <div>
+                        <p>Name of a jurisdiction that is also an ecclesiastical entity or is a jurisdiction name under which a corporate name or a title is entered. In fields 110 and 710, the value can indicate that the entry element is a name of jurisdiction used alone. </p>
+                     </div>
+                     <div class="example">
+                        <table>
+                           <tr>
+                              <td>110</td>
+                              <td colspan="9">1#$aPennsylvania.$bState Board of Examiners of Nursing Home Administrators. </td>
+                           </tr>
+                           <tr>
+                              <td>110</td>
+                              <td colspan="9">1#$aWest Virginia.$bDept. of Veterans Affairs.</td>
+                           </tr>
+                        </table>
+                     </div>
+                     <div>
+                        <p>Corporate names containing a jurisdiction name as an integral part of the name or qualified by a jurisdiction name are identified by value 2. </p>
+                     </div>
+                     <div class="example">
+                        <table>
+                           <tr>
+                              <td>110</td>
+                              <td colspan="9">2#$aUniversity of Illinois at Urbana-Champaign.$bExperimental Music Studios.</td>
+                           </tr>
+                           <tr>
+                              <td>110</td>
+                              <td colspan="9">2#$aArizona Family Planning Council.</td>
+                           </tr>
+                        </table>
+                     </div>
+                  </div>
+               </div>
+               <div class="value">
+                  <div><span class="valueLabel">2 - Name in direct order</span>
+                     <div>
+                        <p>Name is in direct order. The heading may contain a parenthetical qualifier or may be an acronym or an initialism. </p>
+                     </div>
+                     <div class="example">
+                        <table>
+                           <tr>
+                              <td>110</td>
+                              <td colspan="9">2#$aHarvard University.</td>
+                           </tr>
+                           <tr>
+                              <td>110</td>
+                              <td colspan="9">2#$aNational Gardening Association (U.S.) </td>
+                           </tr>
+                           <tr>
+                              <td>110</td>
+                              <td colspan="9">2#$aELESAIR Project.</td>
+                           </tr>
+                        </table>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="indicator">
+            <div>
+               <p class="label"><strong>Second Indicator</strong></p>
+               <div>
+                  <p>Unique to the function of the corporate name field. It is described under the following fields: 110 (Primary Name-Corporate); 610 (Subject Added Entry-Corporate Name); and 710 (Added Entry-Corporate Name). </p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <h4><span class="box">■</span> SUBFIELD CODES </h4>
+      <div class="subfields">
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$a - Corporate name or jurisdiction name as entry element</strong>
+               </p>
+               <div>
+                  <p>Name of a corporate body or the first entity when subordinate units are present; a jurisdiction name under which a corporate body, city section, or a title of a work, event, program, etc. is entered; or a jurisdiction name that is also an ecclesiastical entity. In fields 110 and 710, the subfield can contain the name of a jurisdiction used alone. A parenthetical qualifying term, jurisdiction name, or date (other than the date of a meeting) is not separately subfield coded. </p>
+               </div>
+               <div class="example">
+                  <table>
+                     <tr>
+                        <td>110</td>
+                        <td colspan="9">2#$aAmerican Physical Therapy Association of Maryland. </td>
+                     </tr>
+                     <tr>
+                        <td>110</td>
+                        <td colspan="9">2#$aPlanned Parenthood of Southern Indiana.</td>
+                     </tr>
+                     <tr>
+                        <td>110</td>
+                        <td colspan="9">2#$aKiddie Day Care.</td>
+                     </tr>
+                     <tr>
+                        <td>110</td>
+                        <td colspan="9">1#$aBirmingham (Ala.)$bBoard of Health.</td>
+                     </tr>
+                     <tr>
+                        <td>110</td>
+                        <td colspan="9">2#$aNew York Gray Panthers.</td>
+                     </tr>
+                  </table>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$b - Subordinate unit</strong>
+               </p>
+               <div>
+                  <p>Name of a subordinate corporate unit, a name of a city section, or a name of a meeting entered under a corporate or a jurisdiction name. </p>
+               </div>
+               <div class="example">
+                  <table>
+                     <tr>
+                        <td>110</td>
+                        <td colspan="9">2#$aAmerican Red Cross.$bWestern West Virginia Chapter.</td>
+                     </tr>
+                  </table>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$c - Location of meeting</strong>
+               </p>
+               <div>
+                  <p>Place name or a name of an institution where a meeting is held. Multiple adjacent locations are contained in a repeatable subfield $c.</p>
+               </div>
+               <div class="example">
+                  <table>
+                     <tr>
+                        <td>110</td>
+                        <td colspan="9">2#$aAmerican Library Association.$bConference$c(Washington, D.C.; $cLondon, England)</td>
+                     </tr>
+                  </table>
+               </div>
+               <div>
+                  <p>Place name added parenthetically to a corporate name as a qualifier is not separately subfield coded. </p>
+               </div>
+               <div class="example">
+                  <table>
+                     <tr>
+                        <td>610</td>
+                        <td colspan="9">20$aEmpire State Building (New York, N.Y.)</td>
+                     </tr>
+                  </table>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$d - Date of meeting</strong>
+               </p>
+               <div class="example">
+                  <table>
+                     <tr>
+                        <td>110</td>
+                        <td colspan="9">2#$aInternational Labour Organisation.$bEuropean Regional Conference$n(2nd :$d1968 :$cGeneva, Switzerland)</td>
+                     </tr>
+                  </table>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$e - Relator term</strong>
+               </p>
+               <div>
+                  <p>Designation of function that describes the relationship between a name and a community information entity. </p>
+                  <p>Relator codes, which also specify the relationship of a corporate body to a community information entity, are contained in subfield $4.</p>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$f - Date of a work</strong> <em>   [610/710]</em></p>
+               <div>
+                  <p>Date of publication used with a title of a work in a name/title field.</p>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$g - Miscellaneous information</strong>
+               </p>
+               <div>
+                  <p>Data element that is not more appropriately contained in another defined subfield. In a heading for a meeting entered under a corporate body, subfield $g also contains a subelement that is not more appropriately contained in subfields $c, $d, or $n.</p>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$n - Number of meeting</strong> <em>   [110]</em></p>
+               <div>
+                  <p><em>Number of a meeting</em> that is entered under a corporate name. </p>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$n - Number of part/section/meeting</strong> <em>   [610/710]</em></p>
+               <div>
+                  <p><em>Number of a meeting</em> that is entered under a corporate name. </p>
+               </div>
+               <div class="example">
+                  <table>
+                     <tr>
+                        <td>610</td>
+                        <td colspan="9">10$aUnited States.$bCongress$n(97th, 2nd session :$d1982).$bHouse.</td>
+                     </tr>
+                  </table>
+               </div>
+               <div>
+                  <p>Can also contain a <em>number</em> designation for a part/section of a work used with a title in a name/title field. It can also contain a <em>number</em> designation for a part/section of an event, program, etc. used with a title of an event, program, etc. in a name/title field. <em>Numbering</em> is defined as an indication of sequencing in any form, (e.g., Part 1, Supplement A, Book two). For music, the serial, opus, or thematic index number, or date used as a number, is contained in subfield $n. </p>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$p - Name of part/section</strong> <em>   [610/710]</em></p>
+               <div>
+                  <p>Can contain a <em>name</em> designation of a part/section of a work used with a title in a name/title field. It can also contain a <em>name</em> designation of a part/section of an event, program, etc. used with a title of an event, program, etc. in a name/title field. </p>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$s - Version</strong> <em>   [610/710]</em></p>
+               <div>
+                  <p>Version, edition, etc., information used with a title of a work in a name/title field. </p>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$t - Title</strong> <em>   [610/710]</em></p>
+               <div>
+                  <p>Title page title of a work or the name of an event, program, etc. used in a name/title field. </p>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$u - Affiliation</strong>
+               </p>
+               <div>
+                  <p>Affiliation or address of the corporate name.</p>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$v - Form subdivision</strong> <em>   [610]</em></p>
+               <div>
+                  <p>Form subdivision that designates a specific kind or genre of material as defined by the thesaurus being used. Subfield $v is appropriate only when a form subject subdivision is added to a corporate name or name/title to form an extended subject heading. Subfield $v is used for form terms when they function as indicated above. Subfield $x may be used if the terms function as general subdivisions. A form subdivision in subfield $v is generally the last subfield in the field. The subfield may be repeated if more than one form subdivision is used.</p>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$x - General subdivision</strong> <em>   [610]</em></p>
+               <div>
+                  <p>Subject subdivision that is not more appropriately contained in subfield $v (Form subdivision), subfield $y (Chronological subdivision) or subfield $z (Geographic subdivision). Subfield $x is appropriate only when a general topical subdivision is added to a name or a name/title field.</p>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$y - Chronological subdivision</strong> <em>   [610]</em></p>
+               <div>
+                  <p>Subject subdivision that represents a period of time. Subfield $y is appropriate only when a chronological subject subdivision is added to a name or a name/title field.</p>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$z - Geographic subdivision</strong> <em>   [610]</em></p>
+               <div>
+                  <p>Geographic subject subdivision. Subfield $z is appropriate only when a geographic subject subdivision is added to a name or a name/title field.</p>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$0 - Authority record control number or standard number</strong>
+               </p>
+               <div>
+                  <p>See description of this subfield in Appendix A: <em><a href="eccicntf.html">Control Subfields</a></em>. </p>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$1 - Real World Object URI</strong>
+               </p>
+               <div>
+                  <p>See description of this subfield in Appendix A: <em><a href="eccicntf.html">Control Subfields</a></em>. </p>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$2 - Source of heading or term</strong> <em>   [610]</em></p>
+               <div>
+                  <p>MARC code that identifies the thesaurus or authority file that is the source list from which the heading or term in a Subject Added Entry field was assigned. It is used only when the second indicator position contains value 7 (Source specified in subfield $2). Code from: <em><a href="http://www.loc.gov/standards/sourcelist/subject.html">Subject Heading and Term Source Codes</a></em>. </p>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$4 - Relator code</strong>
+               </p>
+               <div>
+                  <p>MARC code that specifies the relationship between a name and a community information entity. More than one relator code may be used if the corporate entity has more than one function. Code from: <em><a href="http://www.loc.gov/marc/relators/">MARC Code List for Relators</a></em>. The code is given after the name portion in name/title fields. </p>
+               </div>
+               <div class="example">
+                  <table>
+                     <tr>
+                        <td>110</td>
+                        <td colspan="9">1#$aUnited States.$bEnergy Research and Development Administration.$4fnd</td>
+                     </tr>
+                  </table>
+               </div>
+               <div>
+                  <p>Relator terms, which also specify the relationship of a corporate body to a community information entity, are contained in subfield $e.</p>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$6 - Linkage</strong>
+               </p>
+               <div>
+                  <p>See description of this subfield in Appendix A: <em><a href="eccicntf.html">Control Subfields</a></em>. </p>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$8 - Field link and sequence number</strong>
+               </p>
+               <div>
+                  <p>See description of this subfield in Appendix A: <em><a href="eccicntf.html">Control Subfields</a></em>. </p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <hr>
+   <h3>INPUT CONVENTIONS</h3>
+   <div class="conventions">
+      <div>
+         <p><strong>Ambiguous Headings - </strong>See <a href="ambiguous-headings.html">Appendix D</a>. </p>
+      </div>
+      <div>
+         <p><strong>Punctuation - </strong>Fields 110, 610, and 710 end with a mark of punctuation or a closing parenthesis. If the final subfield is subfield $0, $2 or $4, the mark of punctuation or closing parenthesis precedes these subfields. </p>
+         <div class="example">
+            <table>
+               <tr>
+                  <td>110</td>
+                  <td colspan="9">2#$aOklahoma Council on Juvenile Delinquency.</td>
+               </tr>
+               <tr>
+                  <td>110</td>
+                  <td colspan="9">2#$aMartin Marietta Corporation.$bSpace Systems Division.</td>
+               </tr>
+            </table>
+         </div>
+         <p>Name portion of a name/subordinate body or name/title field ends with a mark of punctuation. The mark of punctuation is placed inside a closing quotation mark. </p>
+         <p>Name or title portion followed by a subject subdivision does not end with a mark of punctuation unless the name or title portion ends with an abbreviation, initial/letter, or open date. </p>
+      </div>
+      <div>
+         <p><strong>Spacing - </strong>No spaces are used in initialisms or personal name initials/letters. </p>
+         <div class="example">
+            <table>
+               <tr>
+                  <td>110</td>
+                  <td colspan="9">2#$aMetallurgical Society of AIME.$bNew Jersey Chapter.</td>
+               </tr>
+               <tr>
+                  <td>110</td>
+                  <td colspan="9">2#$aJ.W.J. Headstart Program.</td>
+               </tr>
+            </table>
+         </div>
+         <p>One space is used between preceding and succeeding initials if an abbreviation consists of more than a single phrase (e.g., W. Va.). </p>
+      </div>
+      <div>
+         <p><strong>Display Constant - </strong>Dash (-) that precedes a subject subdivision in an extended subject heading is not carried in the machine-readable record. It may be system generated as a display constant associated with the content of subfields $v, $x, $y, and $z. </p>
+      </div>
+      <div>
+         <p><strong>Initial Articles - </strong>Initial articles (e.g., Der) occurring at the beginning of name heading fields are usually omitted in most languages (except when the intent is to file on the article). </p>
+         <div class="example">
+            <table>
+               <tr>
+                  <td>110</td>
+                  <td colspan="9">2#$aLos Angeles County Bar Association.</td>
+               </tr>
+            </table>
+         </div>
+         <p>Initial articles occurring at the beginning of the title and/or part portion of a name/title added entry (i.e., 610 or 710) are also omitted. Any diacritics and/or special characters occurring at the beginning of fields are retained. Note that such characters are usually ignored for purposes of sorting or filing. </p>
+      </div>
+   </div>
+   <hr>
+   <h3>CONTENT DESIGNATOR HISTORY</h3>
+   <div class="history">
+      <div class="historySubfield">
+         <div><em>$c - Location of meeting [CHANGED, 2014]</em>
+            <div class="subfieldHistoryDsc">
+               <p>In 2014, subfield $c was made repeatable.</p>
+            </div>
+         </div>
+      </div>
+      <div class="historySubfield">
+         <div><em>$g - Miscellaneous information [CHANGED, 2014]</em>
+            <div class="subfieldHistoryDsc">
+               <p>In 2014, subfield $g was made repeatable.</p>
+            </div>
+         </div>
+      </div>
+      <div class="historySubfield">
+         <div><em>$0 - Authority record control number [NEW, 2007]</em></div>
+      </div>
+      <div class="historySubfield">
+         <div><em>$0 - Authority record control number [REDEFINED, 2010]</em></div>
+      </div>
+      <div class="historySubfield">
+         <div><em>$1 - Real World Object URI [NEW, 2017]</em></div>
+      </div>
+   </div>
+   <hr class="clear">
+   <div class="head-nav">
+      <div class="noprint"><a href="http://www.loc.gov/">Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/marc/">MARC</a> &gt;&gt; <a href="index.htm">Community Information</a> &gt;&gt; <span class="caps"><a href="cinames.html">Name Fields</a>  &gt;&gt; <strong>X10</strong></span></div>
+   </div>
+   <div class="left"><span class="noprint">(12/18/2017)</span></div>
+   <div class="right"><a href="/cdn-cgi/l/email-protection#38565c554b577854575b165f574e" class="noprint">Contact Us</a></div>
+   <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+   <script>if (window['_satellite']) { _satellite.pageBottom(); }</script>
+</body>
+
+</html>
