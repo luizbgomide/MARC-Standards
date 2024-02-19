@@ -1,0 +1,707 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html40/loose.dtd">
+<html>
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>MARC 21 Concise Format for Community Information Data: 270: Address (Network Development and MARC Standards Office, Library of Congress) </title>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="description" content="This field contains the address (Network Development and MARC Standards Office, Library of Congress)">
+   <meta name="keywords" content="marc, marc21, marc standards">
+   <meta name="author" content="Library of Congress Network Development and MARC Standards Office">
+   <link href="../../marc-generic.css" rel="stylesheet" type="text/css">
+   <style type="text/css">
+      body {
+         margin-left: 2em;
+         margin-right: 2em;
+      }
+
+      h1 {
+         font-family: Arial, Helvetica, sans-serif;
+      }
+
+      h3 {
+         text-align: left;
+      }
+
+      h4 {
+         margin-top: .5em;
+         margin-bottom: .5em;
+      }
+
+      p {
+         text-align: justify;
+         margin-left: 2em;
+         margin-right: 2em;
+      }
+
+      .characterposition {
+         text-align: left;
+         margin-top: .1em;
+         margin-bottom: .1em;
+         margin-left: 2em;
+      }
+
+      .charactervalue {
+         margin-left: 2em;
+         margin-top: .1em;
+         margin-bottom: .1em;
+      }
+
+      .formatname {
+         font-weight: bold;
+         font-family: Arial, Helvetica, sans-serif;
+         margin-left: .5em
+      }
+
+      .datename {
+         font-weight: bold;
+         text-align: right;
+         font-family: Arial, Helvetica, sans-serif;
+         margin-top: -1.2em;
+      }
+
+      .description {
+         text-align: justify;
+         margin-left: 2em;
+      }
+
+      .description2 {
+         text-align: justify;
+         margin-top: 1em;
+         margin-bottom: 1em;
+         margin-left: 2em;
+      }
+
+      .description3 {
+         text-align: justify;
+         margin-top: 1em;
+         margin-bottom: 1em;
+         margin-left: 2em;
+      }
+
+      .indicatorhead {
+         font-weight: bold;
+         margin-top: 1em;
+      }
+
+      .indicator {
+         text-align: left;
+      }
+
+      .indicatorvalue {
+         margin-left: 2em;
+      }
+
+      .subfieldvalue {
+         margin-left: 2em;
+      }
+
+      .subfieldhead {
+         font-weight: bold;
+         margin-top: 1em;
+      }
+
+      .subfieldvalue {
+         text-align: left;
+         margin-left: 2em;
+      }
+
+      .examplehead {
+         font-weight: bold;
+         margin-top: 1em;
+      }
+
+      .example {
+         margin-left: 4em;
+      }
+
+      .changed {
+         color: #FF0000;
+      }
+
+      .table {
+         margin-left: 2em;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .head-nav {
+         font-family: Arial, Helvetica, sans-serif;
+         font-size: 9pt;
+      }
+   </style>
+   <script src="../../../dac62e20b491e735c6b56e64c39134d8ee93f9cf/satelliteLib-6b47f831c184878d7338d4683ecf773a17973bb9.js"></script>
+</head>
+
+<body bgcolor="#ffffff">
+   <div class="head-nav"><a href="http://www.loc.gov/">Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/marc/">MARC</a> &gt;&gt; <a href="../index.htm">Community Information</a> &gt;&gt; <a href="../ci2xx.html">2XX</a> &gt;&gt; <strong>270</strong></div>
+   <hr><a name="skip_menu"></a>
+   <h1>270 - Address (R)</h1>
+   <hr>
+   <div class="formatname">MARC 21 Community Information - Concise</div>
+   <div class="datename"> 2007 </div>
+   <hr>
+   <p>Address (as well as electronic access data such as telephone, fax, TTY, etc. number) associated with the community information. Multiple addresses, such as mailing address and address corresponding to the physical location of a resource or facility, are recorded in separate occurrences of field 270. </p>
+   <div class="indicatorhead">Indicators</div>
+   <div class="indicatorvalue">First - Level <div class="indicatorvalue"># - No level specified</div>
+      <div class="indicatorvalue">1 - Primary</div>
+      <div class="indicatorvalue">2 - Secondary</div>
+   </div>
+   <div class="indicatorvalue">Second - Type of address <div class="indicatorvalue"># - No type specified</div>
+      <div class="indicatorvalue">0 - Mailing</div>
+      <div class="indicatorvalue">7 - Type specified in subfield $i</div>
+   </div>
+   <div class="subfieldhead">Subfield Codes</div>
+   <div class="subfieldvalue">$a - Address (R) <div class="description">Subfield $a repeatability permits multiline display of the address. </div>
+   </div>
+   <div class="subfieldvalue">$b - City (NR)</div>
+   <div class="subfieldvalue">$c - State or province (NR)</div>
+   <div class="subfieldvalue">$d - Country (NR)</div>
+   <div class="subfieldvalue">$e - Postal code (NR)</div>
+   <div class="subfieldvalue">$f - Title preceding attention name (NR)</div>
+   <div class="subfieldvalue">$g - Attention name (NR)</div>
+   <div class="subfieldvalue">$h - Title following attention name (NR)</div>
+   <div class="subfieldvalue">$i - Type of address (NR) <div class="description">First subfield in the field when no subfield $6 is present.</div>
+   </div>
+   <div class="subfieldvalue">$j - Specialized telephone number (R) <div class="description">Service number (e.g., a hotline number) other than the administrative or other number contained in subfield $k, $l, or $n. </div>
+   </div>
+   <div class="subfieldvalue">$k - Telephone number (R)</div>
+   <div class="subfieldvalue">$l - Fax number (R)</div>
+   <div class="subfieldvalue">$m - Electronic mail address (R)</div>
+   <div class="subfieldvalue">$n - TDD or TTY number (R)</div>
+   <div class="subfieldvalue">$p - Contact person (R) <div class="description">Not used if the contact person is named in subfield $g.</div>
+   </div>
+   <div class="subfieldvalue">$q - Title of contact person (R)</div>
+   <div class="subfieldvalue">$r - Hours (R) <div class="description">Hours that access to the address, contact, and or telephone numbers is available. </div>
+   </div>
+   <div class="subfieldvalue">$z - Public note (R)</div>
+   <div class="subfieldvalue">$4 - Relator code (R) <div class="description">MARC code that specifies the relationship between information in field 270 and the item described in the record. Code from: <em><a href="http://www.loc.gov/marc/relators/">MARC Code Lists for Relators, Sources, Description Conventions</a></em>. </div>
+   </div>
+   <div class="subfieldvalue">$6 - Linkage (NR) <div class="description">See the description of this subfield in Appendix A: <em><a href="../eccicntf.html">Control Subfields</a></em>. </div>
+   </div>
+   <div class="subfieldvalue">$8 - Field link and sequence number (R) <div class="description">See the description of this subfield in Appendix A: <em><a href="../eccicntf.html">Control Subfields</a></em>. </div>
+   </div>
+   <div class="examplehead">Examples</div>
+   <div class="example">
+      <table width="100%">
+         <tr>
+            <td valign="top" width="5%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="15%" align="left"></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>270</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>##</strong><strong>$a</strong>Johns Hopkins University<strong>$a</strong>5457 Twin Knolls Road<strong>$b</strong>Columbia<strong>$c</strong>MD<strong>$e</strong>21045<strong>$k</strong>+1-410-997-8045<strong>$r</strong>M-F 8:30am-5:00pm USA </td>
+         </tr>
+      </table>
+   </div>
+   <div class="example">
+      <table width="100%">
+         <tr>
+            <td valign="top" width="5%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="15%" align="left"></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>270</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>1#</strong><strong>$a</strong>St. Louis County Government Center, Room 212<strong>$b</strong>Clayton<strong>$c</strong>MO<strong>$e</strong>63143<strong>$k</strong>878-0238<strong>$p</strong>Marilyn Saunders </td>
+         </tr>
+      </table>
+   </div>
+   <div class="example">
+      <table width="100%">
+         <tr>
+            <td valign="top" width="5%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="15%" align="left"></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>270</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>20</strong><strong>$a</strong>Taylor, Barley and Winter<strong>$a</strong>1 East 90th St.<strong>$b</strong>New York<strong>$c</strong>NY<strong>$e</strong>10021 </td>
+         </tr>
+      </table>
+   </div>
+   <div class="example">
+      <table width="100%">
+         <tr>
+            <td valign="top" width="5%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="15%" align="left"></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>270</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>1#</strong><strong>$a</strong>Buckley School<strong>$a</strong>305 S. First St.<strong>$b</strong>Buckley<strong>$c</strong>MI<strong>$e</strong>49620 </td>
+         </tr>
+      </table>
+   </div>
+   <div class="example">
+      <table width="100%">
+         <tr>
+            <td valign="top" width="5%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="15%" align="left"></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>270</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>20</strong><strong>$a</strong>Socorro Independent School District<strong>$a</strong>P.O. Box 27400<strong>$b</strong>El Paso<strong>$c</strong>TX<strong>$e</strong>79978 </td>
+         </tr>
+      </table>
+   </div>
+   <div class="example">
+      <table width="100%">
+         <tr>
+            <td valign="top" width="5%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="15%" align="left"></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>270</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>27</strong><strong>$i</strong>U.S. business address<strong>$a</strong>Editorial Inca<strong>$a</strong>9610 SW 58th St.<strong>$b</strong>Miami<strong>$c</strong>FL<strong>$e</strong>33173 </td>
+         </tr>
+      </table>
+   </div>
+   <div class="example">
+      <table width="100%">
+         <tr>
+            <td valign="top" width="5%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="15%" align="left"></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>270</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>##</strong><strong>$a</strong>6 Manor Court<strong>$b</strong>Baltimore<strong>$c</strong>MD<strong>$e</strong>21210<strong>$k</strong>1-410-377-2860 </td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>270</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>1#</strong><strong>$a</strong>Prichard Building, 9th St. and 6th Ave., Suite 524<strong>$b</strong>Huntington<strong>$c</strong>WV<strong>$e</strong>25701<strong>$k</strong>1-304-523-2827 </td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>270</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>1#</strong><strong>$a</strong>c/o St. Luke's Church, 308 W. 46th St.<strong>$b</strong>New York<strong>$c</strong>NY </td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>270</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>10</strong><strong>$g</strong>c/o M. Ballweg<strong>$a</strong>87 Woodward Ave., Staten Island<strong>$c</strong>NY<strong>$e</strong>10314<strong>$k</strong>1-718-761-5679[A mailing address for a society that has no physical location.] </td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>270</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>##</strong><strong>$a</strong>5470 Beaverkill Road<strong>$a</strong>Florence Bain Center<strong>$b</strong>Columbia<strong>$c</strong>MD<strong>$k</strong>1-410-964-0415 (Eve)<strong>$k</strong>1-410-461-0275 (Day) </td>
+         </tr>
+      </table>
+   </div>
+   <div class="example">
+      <table width="100%">
+         <tr>
+            <td valign="top" width="5%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="15%" align="left"></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>270</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>##</strong><strong>$a</strong>622 Central Avenue<strong>$b</strong>Towson<strong>$c</strong>MD<strong>$e</strong>21204 </td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>270</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>##</strong><strong>$a</strong>2150 300 W, Suite #16<strong>$b</strong>Salt Lake City<strong>$c</strong>UT<strong>$e</strong>84115 </td>
+         </tr>
+      </table>
+   </div>
+   <div class="example">
+      <table width="100%">
+         <tr>
+            <td valign="top" width="5%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="15%" align="left"></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>270</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>##</strong><strong>$a</strong>P.O. Box 8344<strong>$b</strong>Salt Lake City<strong>$c</strong>UT<strong>$e</strong>84108 </td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>270</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>##</strong><strong>$a</strong>1430 S. Boulder<strong>$b</strong>Tulsa<strong>$c</strong>OK<strong>$e</strong>74119<strong>$k</strong>1-918-583-7171 </td>
+         </tr>
+      </table>
+   </div>
+   <div class="example">
+      <table width="100%">
+         <tr>
+            <td valign="top" width="5%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="15%" align="left"></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>270</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>##</strong><strong>$a</strong>University of Alaska, 707 A St.<strong>$b</strong>Anchorage<strong>$c</strong>AK<strong>$e</strong>99501<strong>$k</strong>1-901-279-4523 </td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>270</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>##</strong><strong>$a</strong>Biblioth&egrave;que am&eacute;ricaine &agrave; Paris, 10, rue du G&eacute;n&eacute;ral Camou<strong>$b</strong>Paris<strong>$d</strong>France<strong>$e</strong>75007 </td>
+         </tr>
+      </table>
+   </div>
+   <div class="example">
+      <table width="100%">
+         <tr>
+            <td valign="top" width="5%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="15%" align="left"></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>270</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>##</strong><strong>$g</strong>Kerry Cook<strong>$a</strong>6172 Devon Drive<strong>$b</strong>Columbia<strong>$c</strong>MD<strong>$e</strong>21045<strong>$k</strong>1-301-596-1011 </td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>270</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>##</strong><strong>$g</strong>Executive Officer<strong>$a</strong>3701 Old Court Road, Suite 20<strong>$b</strong>Baltimore<strong>$c</strong>MD<strong>$e</strong>21208<strong>$k</strong>1-410-486-5515 </td>
+         </tr>
+      </table>
+   </div>
+   <div class="example">
+      <table width="100%">
+         <tr>
+            <td valign="top" width="5%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="15%" align="left"></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>270</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>1#</strong><strong>$g</strong>George Smith<strong>$h</strong>Director<strong>$a</strong>8899 South Lobo St.<strong>$b</strong>Vancouver<strong>$c</strong>BC<strong>$d</strong>Canada<strong>$e</strong>V2N 1Z5<strong>$j</strong>1-800-543-1234<strong>$k</strong>1-604-947-1255<strong>$l</strong>1-604-947-0505<strong>$m</strong>GSMITHBC </td>
+         </tr>
+      </table>
+   </div>
+   <div class="example">
+      <table width="100%">
+         <tr>
+            <td valign="top" width="5%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="15%" align="left"></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>270</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>27</strong><strong>$i</strong>Billing address:<strong>$a</strong>Sears Credit<strong>$a</strong>7023 Albert Pick Rd.<strong>$b</strong>Greensboro<strong>$c</strong>NC<strong>$e</strong>27409<strong>$d</strong>USA<strong>$j</strong>1-800-347-8425 </td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>270</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>17</strong><strong>$i</strong>Office:<strong>$a</strong>325 Spring St.<strong>$b</strong>New York<strong>$c</strong>NY<strong>$e</strong>10013 </td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>270</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>#7</strong><strong>$i</strong>Center:<strong>$a</strong>179 Varick St.<strong>$b</strong>New York<strong>$c</strong>NY </td>
+         </tr>
+      </table>
+   </div>
+   <div class="example">
+      <table width="100%">
+         <tr>
+            <td valign="top" width="5%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="15%" align="left"></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>270</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>##</strong><strong>$a</strong>P.O. Box 50007<strong>$b</strong>Pasadena<strong>$c</strong>CA<strong>$e</strong>91115<strong>$j</strong>1-213-681-2626 (24 hour hotline) </td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>270</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>##</strong><strong>$a</strong>2500 Route 60 East<strong>$b</strong>Ona<strong>$c</strong>WV<strong>$e</strong>25545<strong>$j</strong>1-304-743-5500 (Emergency Dispatch Line)<strong>$k</strong>1-304-743-3262 </td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>270</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>##</strong><strong>$a</strong>666 Broadway<strong>$b</strong>New York<strong>$c</strong>NY<strong>$e</strong>10012<strong>$j</strong>1-800-221-4602<strong>$k</strong>1-212-460-9330<strong>$p</strong>Donna M. Rosenthal </td>
+         </tr>
+      </table>
+   </div>
+   <div class="example">
+      <table width="100%">
+         <tr>
+            <td valign="top" width="5%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="15%" align="left"></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>270</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>##</strong><strong>$a</strong>4844 Broadway<strong>$b</strong>New York<strong>$c</strong>NY<strong>$k</strong>1-212-569-5050 </td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>270</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>##</strong><strong>$a</strong>100 Longridge Court<strong>$b</strong>Timonium<strong>$c</strong>MD<strong>$e</strong>21093<strong>$k</strong>1-410-252-9326<strong>$k</strong>1-410-252-1318<strong>$p</strong>John or Sally Tullis </td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>270</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>##</strong><strong>$a</strong>8950 Route 108, Gorman Plaza, Suite 116<strong>$b</strong>Columbia<strong>$c</strong>MD<strong>$e</strong>21045<strong>$j</strong>1-410-997-CASA (hotline)<strong>$k</strong>1-410-997-0304 </td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>270</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>##</strong><strong>$a</strong>5470 Beaverkill Road<strong>$a</strong>Florence Bain Center<strong>$b</strong>Columbia<strong>$c</strong>MD<strong>$k</strong>1-410-964-0415 (Eve)<strong>$k</strong>1-410-461-0275 (Day) </td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>270</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>##</strong><strong>$a</strong>P.O. Box 74<strong>$a</strong>Staten Island<strong>$c</strong>NY<strong>$k</strong>no phone/sin tel&eacute;fono </td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>270</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>##</strong><strong>$k</strong>1-800-522-7116<strong>$n</strong>1-800-523-3494 (TTY)[Telephone numbers for an association that has no physical location.] </td>
+         </tr>
+      </table>
+   </div>
+   <div class="example">
+      <table width="100%">
+         <tr>
+            <td valign="top" width="5%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="15%" align="left"></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>270</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>##</strong><strong>$a</strong>InterNIC Information Services<strong>$b</strong>San Diego<strong>$c</strong>CA<strong>$k</strong>1-619-455-4600<strong>$l</strong>1-619-455-3900 </td>
+         </tr>
+      </table>
+   </div>
+   <div class="example">
+      <table width="100%">
+         <tr>
+            <td valign="top" width="5%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="15%" align="left"></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>270</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>##</strong><strong>$a</strong>Library of Congress,<strong>$a</strong>Network Development and MARC Standards Office<strong>$b</strong>Washington<strong>$c</strong>DC<strong>$d</strong>U.S.<strong>$e</strong>20540-4402<strong>$l</strong>1-202-707-0115<strong>$m</strong><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="acc2c8c1dfc3ecc0c3cf82cbc3da">[email&#160;protected]</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="example">
+      <table width="100%">
+         <tr>
+            <td valign="top" width="5%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="15%" align="left"></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>270</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>##</strong><strong>$a</strong>Little Patuxent Parkway<strong>$b</strong>Columbia<strong>$c</strong>MD<strong>$k</strong>1-410-992-4800<strong>$n</strong>1-410-992-4822 (TDD) </td>
+         </tr>
+      </table>
+   </div>
+   <div class="example">
+      <table width="100%">
+         <tr>
+            <td valign="top" width="5%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="15%" align="left"></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>270</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>20</strong><strong>$a</strong>P.O. Box 223<strong>$b</strong>Broken Arrow<strong>$c</strong>OK<strong>$e</strong>74013<strong>$p</strong>Sgt. Kathy Hibner </td>
+         </tr>
+      </table>
+   </div>
+   <div class="example">
+      <table width="100%">
+         <tr>
+            <td valign="top" width="5%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="15%" align="left"></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>270</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>##</strong><strong>$a</strong>Hannah More Academy Center, 12035 Reisterstown Rd.<strong>$b</strong>Reisterstown<strong>$c</strong>MD<strong>$e</strong>21136<strong>$k</strong>1-410-887-1139<strong>$p</strong>Ian J. Forrest<strong>$q</strong>Bureau Chief </td>
+         </tr>
+      </table>
+   </div>
+   <div class="example">
+      <table width="100%">
+         <tr>
+            <td valign="top" width="5%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="15%" align="left"></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>270</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>##</strong><strong>$a</strong>Johns Hopkins University<strong>$a</strong>5457 Twin Knolls Road<strong>$b</strong>Columbia<strong>$c</strong>MD<strong>$e</strong>21045<strong>$k</strong>+1-410-997-8045<strong>$r</strong>M-F 8:30am-5:00pm USA EST </td>
+         </tr>
+      </table>
+   </div>
+   <div class="example">
+      <table width="100%">
+         <tr>
+            <td valign="top" width="5%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="15%" align="left"></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>270</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>1#</strong><strong>$a</strong>OCLC Online Computer Library Center<strong>$a</strong>6565 Frantz Rd.<strong>$b</strong>Dublin<strong>$c</strong>OH<strong>$e</strong>43017<strong>$4</strong>org </td>
+         </tr>
+      </table>
+   </div>
+   <hr>
+   <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr valign="bottom">
+         <td>
+            <div class="head-nav"><a href="http://www.loc.gov/">Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/marc/">MARC</a> &gt;&gt; <a href="../index.htm">Community Information</a> &gt;&gt; <a href="../ci2xx.html">2XX</a> &gt;&gt; <strong>270</strong></div> (03/19/2008)
+         </td>
+         <td align="right"><a href="/cdn-cgi/l/email-protection#95fbf1f8e6fad5f9faf6bbf2fae3">Contact Us</a></td>
+      </tr>
+   </table>
+   <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+   <script>if (window['_satellite']) { _satellite.pageBottom(); }</script>
+</body>
+
+</html>
