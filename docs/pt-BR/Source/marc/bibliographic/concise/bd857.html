@@ -1,0 +1,220 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>MARC 21 Format for Bibliographic Data: 857: Electronic Archive Location and Access (Network Development and MARC Standards Office, Library of Congress) </title>
+   <meta name="description" content="This field contains the  (Network Development and MARC Standards Office, Library of Congress)">
+   <meta name="keywords" content="marc, marc21, marc standards">
+   <meta name="author" content="Library of Congress Network Development and MARC Standards Office">
+   <link href="../styles.css" rel="stylesheet" type="text/css">
+   <link href="../print.css" rel="stylesheet" type="text/css" media="print">
+   <script src="../../../dac62e20b491e735c6b56e64c39134d8ee93f9cf/satelliteLib-6b47f831c184878d7338d4683ecf773a17973bb9.js"></script>
+</head>
+
+<body class="concise">
+   <div class="head-nav">
+      <div class="noprint"><a href="http://www.loc.gov/">Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/marc/">MARC</a> &gt;&gt; <a href="../index.htm">Bibliographic</a> &gt;&gt; <span class="caps"><a href="../bd84188x.html">841-88X</a>  &gt;&gt; <strong>857</strong></span></div>
+   </div>
+   <hr><a name="skip_menu"></a>
+   <h1><span>857</span> - <span>Electronic Archive Location and Access</span><span> (R)</span></h1>
+   <hr>
+   <div class="formatname">MARC 21 Bibliographic - concise</div>
+   <div class="datename">June 2023</div>
+   <hr>
+   <div class="definition">
+      <div>
+         <p>Information needed to locate and access an electronic resource from a Web archive or a digital archive repository. This field may be used in a bibliographic record for a resource when that resource or a subset of it is stored in a Web archive or digital repository. The field may be used in addition to or in place of field 856 if it is desired to provide additional information about archived resources beyond what is possible in field 856. The field may also be used to provide location and access to a digitized archived version of a tangible resource, e.g., a book or CD-ROM described in the record, or a related archived resource. </p>
+      </div>
+      <div>
+         <p>Field 857 is repeated when an electronic resource has been stored in more than one Web archive or digital archive repository. </p>
+      </div>
+   </div>
+   <div class="guidelines">
+      <h4>Indicators</h4>
+      <div class="indicators">
+         <dl>
+            <dt>First - Access method</dt>
+            <dd># - No information provided</dd>
+            <dd>1 - FTP</dd>
+            <dd>4 - HTTP</dd>
+            <dd>7 - Method specified in subfield $2</dd>
+            <dt>Second - Relationship</dt>
+            <dd># - No information provided</dd>
+            <dd>0 - Resource</dd>
+            <dd>1 - Version of resource</dd>
+            <dd>2 - Related resource</dd>
+            <dd>3 - Component part(s) of resource</dd>
+            <dd>4 - Version of component part(s) of resource</dd>
+            <dd>8 - No display constant generated</dd>
+         </dl>
+      </div>
+      <h4>Subfield Codes</h4>
+      <div class="subfields">
+         <dl>
+            <dt>$b - Name of archiving agency <span> (NR)</span></dt>
+            <dd style="margin-left:1.75em;"><span>Agency responsible for the Web archive or digital archive repository.</span><br></dd>
+         </dl>
+         <dl>
+            <dt>$c - Name of Web archive or digital archive repository <span> (NR)</span></dt>
+            <dd style="margin-left:1.75em;"><span>The name by which the Web archive or digital archive repository is known.</span><br></dd>
+         </dl>
+         <dl>
+            <dt>$d - Date range of archived material <span> (NR)</span></dt>
+         </dl>
+         <dl>
+            <dt>$e - Data provenance <span> (R)</span></dt>
+            <dd style="margin-left:1.75em;"><span>See description of this subfield in Appendix J: <em><a href="../bdapndxj.html">Data Provenance Subfields</a></em>.</span><br></dd>
+         </dl>
+         <dl>
+            <dt>$f - Archive completeness <span> (NR)</span></dt>
+         </dl>
+         <dl>
+            <dt>$g - Persistent identifier <span> (R)</span></dt>
+         </dl>
+         <dl>
+            <dt>$h - Non-functioning Uniform Resource Identifier <span> (R)</span></dt>
+         </dl>
+         <dl>
+            <dt>$l - Standardized information governing access <span> (R)</span></dt>
+         </dl>
+         <dl>
+            <dt>$m - Contact for access assistance <span> (R)</span></dt>
+         </dl>
+         <dl>
+            <dt>$n - Terms governing access <span> (R)</span></dt>
+         </dl>
+         <dl>
+            <dt>$q - Electronic format type <span> (R)</span></dt>
+         </dl>
+         <dl>
+            <dt>$r - Standardized information governing use and reproduction <span> (R)</span></dt>
+         </dl>
+         <dl>
+            <dt>$s - File size <span> (R)</span></dt>
+         </dl>
+         <dl>
+            <dt>$t - Terms governing use and reproduction <span> (R)</span></dt>
+         </dl>
+         <dl>
+            <dt>$u - Uniform Resource Identifier <span> (R)</span></dt>
+            <dd style="margin-left:1.75em;"><span>Uniform Resource Identifier (URI), which provides standard syntax for locating an object using existing Internet protocols or by resolution of a persistent identifier (PID).</span><br></dd>
+            <dd style="margin-left:1.75em;"><span>Subfield $u may be repeated if more than one URI is recorded.</span><br></dd>
+         </dl>
+         <dl>
+            <dt>$x - Nonpublic note <span> (R)</span></dt>
+         </dl>
+         <dl>
+            <dt>$y - Link text <span> (R)</span></dt>
+         </dl>
+         <dl>
+            <dt>$z - Public note <span> (R)</span></dt>
+         </dl>
+         <dl>
+            <dt>$2 - Access method <span> (NR)</span></dt>
+            <dd style="margin-left:1.75em;"><span>Access method when the first indicator position contains value 7. Code from: <em><a href="http://www.loc.gov/standards/valuelist/electronaccess.html">Electronic Access Methods Code List</a></em>.</span><br></dd>
+         </dl>
+         <dl>
+            <dt>$3 - Materials specified <span> (NR)</span></dt>
+         </dl>
+         <dl>
+            <dt>$5 - Institution to which field applies <span> (NR)</span></dt>
+            <dd style="margin-left:1.75em;"><span>See description of this subfield in Appendix A: <em><a href="../ecbdcntf.html">Control Subfields</a></em>.</span><br></dd>
+         </dl>
+         <dl>
+            <dt>$6 - Linkage <span> (NR)</span></dt>
+            <dd style="margin-left:1.75em;"><span>See description of this subfield in Appendix A: <em><a href="../ecbdcntf.html">Control Subfields</a></em>.</span><br></dd>
+         </dl>
+         <dl>
+            <dt>$7 - Access status <span> (NR)</span></dt>
+            <dd style="margin-left:1.75em;"><span>Code indicating the availability of access to the networked electronic resource the address of which appears in subfield $u. Subfield $7 applies to all subfields $u present in the field.</span><br></dd>
+         </dl>
+         <dl>
+            <dt>$8 - Field link and sequence number <span> (R)</span></dt>
+            <dd style="margin-left:1.75em;"><span>See description of this subfield in Appendix A: <em><a href="../ecbdcntf.html">Control Subfields</a></em>.</span><br></dd>
+         </dl>
+      </div>
+      <h4>Examples</h4>
+      <div class="examplesec">
+         <div class="example">
+            <table>
+               <tr>
+                  <td><strong>857</strong></td>
+                  <td colspan="9"><strong>40</strong><strong>$b</strong>Internet Archive<strong>$d</strong>2011-2017<strong>$f</strong>saved 45<strong>$q</strong>https://www.nationalarchives.gov.uk/PRONOM/fmt/96<strong>$u</strong>https://web.archive.org/web/*/http://www.landesbioscience.com/journals/worm/ </td>
+               </tr>
+            </table>
+         </div>
+         <div class="example">
+            <table>
+               <tr>
+                  <td><strong>857</strong></td>
+                  <td colspan="9"><strong>40</strong><strong>$b</strong>National Library of Finland<strong>$c</strong>The Finnish Web Archive<strong>$d</strong>2006-01-16-<strong>$f</strong>saved 9431 times as of 2022-03-14<strong>$n</strong>Onsite access in legal deposit libraries<strong>$q</strong>text/html<strong>$u</strong>https://verkkoarkisto.kansalliskirjasto.fi/wayback/*/www.hs.fi </td>
+               </tr>
+               <tr>
+                  <td><strong>857</strong></td>
+                  <td colspan="9"><strong>40</strong><strong>$b</strong>Internet Archive<strong>$d</strong>2003-12-18-<strong>$f</strong>saved 21238 times as of 2022-03-15<strong>$n</strong>Free access<strong>$u</strong>https://web.archive.org/web/*/hs.fi </td>
+               </tr>
+               <tr>
+                  <td><strong>857</strong></td>
+                  <td colspan="9"><strong>#0</strong><strong>$b</strong>Center for scientific computing - CSC<strong>$c</strong>National Digital Archive<strong>$e</strong>National Library of Finland<strong>$n</strong>Dark archive; consult a librarian on the use<strong>$q</strong>text/xml<strong>$q</strong>https://www.loc.gov/standards/mets/<strong>$z</strong>Preservation copy of the content in the Finnish Web Archive </td>
+               </tr>
+            </table>
+         </div>
+         <div class="example">
+            <table>
+               <tr>
+                  <td><strong>857</strong></td>
+                  <td colspan="9"><strong>40</strong><strong>$b</strong>CLOCKSS<strong>$d</strong>2016-<strong>$n</strong>Dark archive<strong>$u</strong>http://www.clockss.org/clockss/Comparative_cultural_studies </td>
+               </tr>
+               <tr>
+                  <td><strong>857</strong></td>
+                  <td colspan="9"><strong>40</strong><strong>$b</strong>Internet Archive <strong>$c</strong>FatCat<strong>$d</strong>2021-<strong>$f</strong>selected articles<strong>$q</strong>application/pdf<strong>$u</strong>https://fatcat.wiki/container/pv7gnxzaj5eydnvan65xus4uiy </td>
+               </tr>
+            </table>
+         </div>
+         <div class="example">
+            <table>
+               <tr>
+                  <td><strong>857</strong></td>
+                  <td colspan="9"><strong>40</strong><strong>$b</strong>Library of Congress<strong>$d</strong>2013-<strong>$n</strong>Onsite access only<strong>$g</strong>http://hdl.loc.gov/loc.gdc/ejournal.021602<strong>$u</strong>http://hdl.loc.gov/loc.gdc/ejournal.021602<strong>$7</strong>1 </td>
+               </tr>
+            </table>
+         </div>
+         <div class="example">
+            <table>
+               <tr>
+                  <td><strong>857</strong></td>
+                  <td colspan="9"><strong>41</strong><strong>$c</strong>HathiTrust Digital Library<strong>$d</strong>1894-1922<strong>$f</strong>incomplete<strong>$u</strong>http://catalog.hathitrust.org/api/volumes/oclc/1769261.html </td>
+               </tr>
+               <tr>
+                  <td><strong>857</strong></td>
+                  <td colspan="9"><strong>41</strong><strong>$b</strong>Bibliothèque nationale de France<strong>$c</strong>Gallica<strong>$d</strong>1917-1917<strong>$f</strong>incomplete<strong>$g</strong>https://gallicaintramuros.bnf.fr/ark:/12148/cb34471903t/date </td>
+               </tr>
+               <tr>
+                  <td><strong>857</strong></td>
+                  <td colspan="9"><strong>41</strong><strong>$b</strong>Internet Archive<strong>$d</strong>1892-2014<strong>$f</strong>Complete<strong>$u</strong>https://archive.org/details/pub_vogue </td>
+               </tr>
+            </table>
+         </div>
+         <div class="example">
+            <table>
+               <tr>
+                  <td><strong>857</strong></td>
+                  <td colspan="9"><strong>40</strong><strong>$b</strong>Internet Archive<strong>$f</strong>Complete<strong>$g</strong>urn:lcp:finalreportoftru0000trut:lcpdf:19723006-6ec5-4ccd-8f64-a68dd14ca05d<strong>$q</strong>PDF<strong>$u</strong>https://archive.org/search.php?query=external-identifier%3A%22urn%3Alcp%3Afinalreportoftru0000trut%3Alcpdf%3A19723006-6ec5-4ccd-8f64-a68dd14ca05d%22<strong>$7</strong>1 </td>
+               </tr>
+            </table>
+         </div>
+      </div>
+   </div>
+   <div class="history"></div>
+   <hr class="clear">
+   <div class="head-nav">
+      <div class="noprint"><a href="http://www.loc.gov/">Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/marc/">MARC</a> &gt;&gt; <a href="../index.htm">Bibliographic</a> &gt;&gt; <span class="caps"><a href="../bd84188x.html">841-88X</a>  &gt;&gt; <strong>857</strong></span></div>
+   </div>
+   <div class="left"><span class="noprint">(06/21/2023)</span></div>
+   <div class="right"><a href="/cdn-cgi/l/email-protection#a4cac0c9d7cbe4c8cbc78ac3cbd2" class="noprint">Contact Us</a></div>
+   <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+   <script>if (window['_satellite']) { _satellite.pageBottom(); }</script>
+</body>
+
+</html>
