@@ -1,0 +1,915 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>MARC 21 Format for Classification Data: 761: Add or Divide Like Instructions (Network Development and MARC Standards Office, Library of Congress)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="description" content="This field contains the add or divide like instructions (Network Development and MARC Standards Office, Library of Congress)">
+  <meta name="keywords" content="marc, marc21, marc standards">
+  <meta name="author" content="Library of Congress Network Development and MARC Standards Office">
+  <link type="text/css" rel="stylesheet" href="update10-stylesheet.css">
+  <script src="../../dac62e20b491e735c6b56e64c39134d8ee93f9cf/satelliteLib-6b47f831c184878d7338d4683ecf773a17973bb9.js"></script>
+</head>
+
+<body>
+  <div class="head-nav">
+    <a href="http://www.loc.gov/">Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/marc/">MARC</a> &gt;&gt; <a href="index.htm">Classification</a> &gt;&gt; <a href="cd76x.html">76X</a> &gt;&gt; <strong>761</strong>
+  </div>
+  <hr>
+  <a name="skip_menu" id="skip_menu"></a>
+  <h1>761 - Add or Divide Like Instructions (R)</h1>
+  <hr>
+  <div class="formatname"> MARC 21 Classification - Full </div>
+  <div class="datename"> October 2008 </div>
+  <hr>
+  <table width="100%">
+    <tr valign="top">
+      <td width="45%"><strong>First Indicator</strong><br>
+        <em>Undefined</em><br> # - Undefined<br>
+        <br>
+      </td>
+      <td width="45%"><strong>Second Indicator</strong><br>
+        <em>Combined note types</em><br> 0 - Not a combined note<br> 1 - Add or divide like portion of a combined note<br> 2 - Class elsewhere portion of a combined note<br> 3 - Relocation portion of a combined note<br>
+        <br>
+      </td>
+    </tr>
+  </table>
+  <hr>
+  <table width="100%">
+    <tr valign="top">
+      <td valign="top" width="50%" align="left"></td>
+      <td valign="top" width="50%" align="left"></td>
+    </tr>
+    <tr valign="top">
+      <td colspan="2"><strong>Subfield Codes</strong><br></td>
+    </tr>
+    <tr valign="top">
+      <td colspan="1">$a - Number where instructions are found-single number or beginning number of span (R)<br> $b - Base number (NR)<br> $c - Classification number-ending number of span (R)<br> $d - Divided like number (R)<br> $e - Example class number (R)<br> $f - Facet designator (R)<br> $i - Explanatory text (R)</td>
+      <td colspan="1">$n - Negative example class number (R)<br> $r - Root number (R)<br> $t - Topic (R)<br> $x - Other classification number (R)<br> $y - Table sequence number for internal subarrangement or add table (R)<br> $z - Table identification (R)<br> $6 - Linkage (NR)<br> $8 - Field link and sequence number (NR)</td>
+    </tr>
+  </table>
+  <hr>
+  <h3>FIELD DEFINITION AND SCOPE</h3>
+  <p>Information necessary to construct a classification number by adding numbers from other parts of a schedule or from a table or by basing it on numbers defined in other parts of a schedule (dividing it the way numbers in other parts of the schedule are divided).</p>
+  <hr>
+  <h3>GUIDELINES FOR APPLYING CONTENT DESIGNATORS</h3>
+  <h4><span class="box">■</span> INDICATORS</h4>
+  <div class="indicator">
+    <strong>First Indicator - Undefined</strong>
+    <div class="description"> Undefined and contains a blank (#). </div>
+  </div>
+  <div class="indicator">
+    <strong>Second Indicator - Combined note types</strong>
+    <div class="description"> Whether the add or divide like instruction is combined with another type of instruction that is logically tied to the add or divide like note. If the note is a combination, it is split into separate but consecutive 761 fields according to note type and the second indicator value shows which type is contained in each 761 field. <div class="description2"> An example is a statement of exceptions to an add note, where the pattern span cannot be used for a particular topic because the topic is classed elsewhere. </div>
+      <div class="indicatorvalue">
+        <strong>0 - Not a combined note</strong>
+      </div>
+      <div class="example">
+        <table width="100%">
+          <tr>
+            <td valign="top" width="5%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="15%" align="left"></td>
+          </tr>
+          <tr>
+            <td valign="top" colspan="1" align="left">084</td>
+            <td valign="top" colspan="9" align="left">0#$alcc<br>
+              <em>[Library of Congress Classification]</em>
+            </td>
+          </tr>
+          <tr>
+            <td valign="top" colspan="1" align="left">153</td>
+            <td valign="top" colspan="9" align="left">## $HB911$cHB1108$hEconomic theory. Demography $hDemography. Population. Vital events$hBirths. Fertility$jBy region or country</td>
+          </tr>
+          <tr>
+            <td valign="top" colspan="1" align="left">
+              <strong>761</strong>
+            </td>
+            <td valign="top" colspan="9" align="left">
+              <strong>#0</strong><strong>$i</strong>Add country number in table to<strong>$b</strong>910
+            </td>
+          </tr>
+          <tr>
+            <td valign="top" colspan="1" align="left">762</td>
+            <td valign="top" colspan="9" align="left">##$zH2</td>
+          </tr>
+          <tr>
+            <td valign="top" colspan="1" align="left">&nbsp;</td>
+            <td valign="top" colspan="9" align="left">&nbsp;</td>
+          </tr>
+        </table>
+      </div>
+      <div class="example">
+        <table width="100%">
+          <tr>
+            <td valign="top" width="5%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="15%" align="left"></td>
+          </tr>
+          <tr>
+            <td valign="top" colspan="1" align="left">084</td>
+            <td valign="top" colspan="9" align="left"> 0#$addc$c22<br>
+              <em>[Dewey Decimal Classification]</em>
+            </td>
+          </tr>
+          <tr>
+            <td valign="top" colspan="1" align="left">153</td>
+            <td valign="top" colspan="9" align="left"> ##$a025.29$hComputer science, information, general works$hLibrary and information sciences$hOperations of libraries, archives, information centers $hAcquisitions and collection development $kAcquisitions of and collection development for specific types of materials$jAcquisitions of and collection development for materials from geographic areas</td>
+          </tr>
+          <tr>
+            <td valign="top" colspan="1" align="left">
+              <strong>761</strong>
+            </td>
+            <td valign="top" colspan="9" align="left">
+              <strong>#0</strong><strong>$i</strong>Add to base number<strong>$b</strong>025.29<strong>$i</strong>notation <strong>$z</strong>2<strong>$d</strong>1<strong>$c</strong>9<strong> $i</strong> from Table 2, e.g., acquisition of materials from Latin America <strong>$e</strong>025.298
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="indicatorvalue">
+        <strong>1 - Add or divide like portion of a combined note</strong>
+      </div>
+      <div class="example">
+        <table width="100%">
+          <tr>
+            <td valign="top" width="5%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="15%" align="left"></td>
+          </tr>
+          <tr>
+            <td valign="top" colspan="1" align="left">084</td>
+            <td valign="top" colspan="9" align="left"> 0#$addc$c22<br>
+              <em>[Dewey Decimal Classification]</em>
+            </td>
+          </tr>
+          <tr>
+            <td valign="top" colspan="1" align="left">153</td>
+            <td valign="top" colspan="9" align="left"> ##$a338.17$hSocial sciences$hEconomics$hProduction$kSpecific kinds of industries$kPrimary industries (Extractive industries)$hAgriculture$jProducts</td>
+          </tr>
+          <tr>
+            <td valign="top" colspan="1" align="left">
+              <strong>761</strong>
+            </td>
+            <td valign="top" colspan="9" align="left">
+              <strong>#1$8</strong>1.1<strong>$i</strong>Add to base number <strong>$b</strong>338.17<strong>$i</strong>the numbers following<strong>$r</strong>63<strong>$i</strong>in<strong> $d</strong>633<strong>$c</strong>638,<strong>$i</strong>e.g., rice or seed rice<strong>$e</strong>338.17318,<strong>$i</strong>forestry <strong>$e</strong>338.1749,<strong>$i</strong>forest products<strong>$e</strong>338.17498;<strong>$i</strong>however,
+            </td>
+          </tr>
+          <tr>
+            <td valign="top" colspan="1" align="left">
+              <strong>761</strong>
+            </td>
+            <td valign="top" colspan="9" align="left">
+              <strong>#2$8</strong>1.2<strong>$i</strong>for supply of timber in nature, see<strong>$x</strong>333.7511;
+            </td>
+          </tr>
+          <tr>
+            <td valign="top" colspan="1" align="left">
+              <strong>761</strong>
+            </td>
+            <td valign="top" colspan="9" align="left">
+              <strong>#3$8</strong>1.3<strong>$i</strong>for demand for timber, see<strong>$x</strong>333.7512
+            </td>
+          </tr>
+          <tr>
+            <td valign="top" colspan="1" align="left">&nbsp;</td>
+            <td valign="top" colspan="9" align="left">&nbsp;</td>
+          </tr>
+          <tr>
+            <td valign="top" colspan="1" align="left">084</td>
+            <td valign="top" colspan="9" align="left"> 0#$addc$c21<br>
+              <em>[Dewey Decimal Classification]</em>
+            </td>
+          </tr>
+          <tr>
+            <td valign="top" colspan="1" align="left">153</td>
+            <td valign="top" colspan="9" align="left"> ##<strong>$a</strong>660.2844 <strong>$h</strong>Technology (Applied sciences)<strong>$h</strong> Chemical engineering and related technologies<strong>$h</strong> General topics in chemical engineering<strong>$h</strong>Specific types of chemical plant and specific activities in chemical plants<strong>$h</strong>Unit operations and unit processes<strong>$j</strong>Unit processes</td>
+          </tr>
+          <tr>
+            <td valign="top" colspan="1" align="left">
+              <strong>761</strong>
+            </td>
+            <td valign="top" colspan="9" align="left">
+              <strong>#1$8</strong>1.1<strong>$i</strong>Add to base number<strong>$b</strong>660.2844<strong>$i</strong>the numbers following<strong>$r</strong>547.2 <strong>$i</strong>in<strong>$d</strong>547.21<strong> $c</strong>547.29, <strong>$i</strong>e.g., fermentation<strong>$e</strong>660.28449;<strong>$i</strong>however,
+            </td>
+          </tr>
+          <tr>
+            <td valign="top" colspan="1" align="left">
+              <strong>761</strong>
+            </td>
+            <td valign="top" colspan="9" align="left">
+              <strong>#3$8</strong>1.2<strong>$i</strong>polymerization relocated from<strong>$x</strong>660.28448<strong>;$i</strong> to<strong>$x</strong>668.92<br>
+              <em>[Note: The "however" is kept in the add or divide like portion rather than put at the front of the next portion to avoid puzzling users if the add portion is not displayed to the public while the class elsewhere or relocation portion is displayed.]</em>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="indicatorvalue">
+        <strong>2 - Class elsewhere portion of a combined note</strong>
+      </div>
+      <div class="example">
+        <table width="100%">
+          <tr>
+            <td valign="top" colspan="1" align="left">084</td>
+            <td valign="top" colspan="9" align="left"> 0#$addc$c22<br>
+              <em>[Dewey Decimal Classification]</em>
+            </td>
+          </tr>
+          <tr>
+            <td valign="top" colspan="1" align="left">153</td>
+            <td valign="top" colspan="9" align="left"> ##<strong>$a</strong>333.852<strong>$c</strong>333.859<strong> $h</strong>Social sciences <strong>$h</strong>Economics<strong>$k</strong>Economics of labor, finance, land, energy<strong>$h</strong>Economics of land and energy<strong>$k</strong>Natural resources and energy<strong>$h</strong>Subsurface resources<strong>$h</strong> Minerals<strong>$j</strong>Specific minerals</td>
+          </tr>
+          <tr>
+            <td valign="top" colspan="1" align="left">
+              <strong>761</strong>
+            </td>
+            <td valign="top" colspan="9" align="left">
+              <strong>#1$8</strong>1.1<strong>$i</strong>Add to base number<strong>$b</strong>333.85<strong>$i</strong>the numbers following<strong>$r</strong>553<strong>$i</strong>in<strong> $d</strong>553.2<strong>$c</strong>553.9,<strong>$i</strong>e.g., tin <strong>$e</strong>333.85453,<strong>$i</strong>uranium<strong> $e</strong> 333.854932 ;<strong>$i</strong>however,
+            </td>
+          </tr>
+          <tr>
+            <td valign="top" colspan="1" align="left">
+              <strong>761</strong>
+            </td>
+            <td valign="top" colspan="9" align="left">
+              <strong>#2$8</strong>1.2<strong>$i</strong>for fossil fuels, see<strong>$x</strong>333.82;
+            </td>
+          </tr>
+          <tr>
+            <td valign="top" colspan="1" align="left">
+              <strong>761</strong>
+            </td>
+            <td valign="top" colspan="9" align="left">
+              <strong>#2$8</strong>1.3<strong>$i</strong>for groundwater, see<strong>$x</strong>333.9104
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="indicatorvalue">
+        <strong>3 - Relocation portion of a combined note</strong>
+      </div>
+      <div class="example">
+        <table width="100%">
+          <tr>
+            <td valign="top" colspan="1" align="left">084</td>
+            <td valign="top" colspan="9" align="left"> 0#$addc$c21<br>
+              <em>[Dewey Decimal Classification]</em>
+            </td>
+          </tr>
+          <tr>
+            <td valign="top" colspan="1" align="left">153</td>
+            <td valign="top" colspan="9" align="left"> ##<strong>$a</strong>759.3<strong>$c</strong>759.8<strong> $h</strong>The arts. Fine and decorative arts<strong>$k</strong>Fine and decorative arts<strong>$h</strong>Painting and paintings<strong>$h</strong> Historical, geographic, persons treatment<strong>$k</strong>Geographic treatment<strong>$k</strong>Europe<strong>$j</strong> Miscellaneous parts of Europe</td>
+          </tr>
+          <tr>
+            <td valign="top" colspan="1" align="left">
+              <strong>761</strong>
+            </td>
+            <td valign="top" colspan="9" align="left">
+              <strong>#1$8</strong>1.1<strong>$i</strong>Add to base number<strong>$b</strong>759<strong>$i</strong>the numbers following<strong>$z</strong>2<strong>$r</strong>4<strong> $i</strong>in notation<strong>$z</strong>2<strong>$d</strong>43 <strong>$c</strong>48<strong>$i</strong>from Table 2, e.g., painting and paintings of France<strong>$e</strong>759.4 ;<strong>$i</strong>however,
+            </td>
+          </tr>
+          <tr>
+            <td valign="top" colspan="1" align="left">
+              <strong>761</strong>
+            </td>
+            <td valign="top" colspan="9" align="left">
+              <strong>#3$8</strong>1.2<strong>$i</strong>individual painters from countries of former Soviet Central Asia relocated from<strong>$x</strong>759.7<strong>$i</strong>to<strong> $x</strong>759.9584<strong>$c</strong>759.9587
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <h4><span class="box">■</span> SUBFIELD CODES</h4>
+  <div class="subfield">
+    <strong>$a - Number where instructions are found-single number or beginning number of span</strong>
+    <div class="description"> Classification number (single number or beginning number of span) under which an add table or further instructions are found. </div>
+    <div class="example">
+      <table width="100%">
+        <tr>
+          <td valign="top" width="5%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="15%" align="left"></td>
+        </tr>
+        <tr>
+          <td valign="top" colspan="1" align="left">084</td>
+          <td valign="top" colspan="9" align="left"> 0#$addc$c22<br>
+            <em>[Dewey Decimal Classification]</em>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top" colspan="1" align="left">153</td>
+          <td valign="top" colspan="9" align="left"> ##$z3B$a30872$hSubdivisions for the Arts, for Individual Literatures, for Specific Literary Forms$hSubdivisions for Works by or about More than One Author $kSpecific forms$hFiction$kFiction of specific scopes and kinds$hSpecific kinds of fiction$hAdventure fiction$jDetective, mystery, suspense, spy, Gothic fiction</td>
+        </tr>
+        <tr>
+          <td valign="top" colspan="1" align="left">
+            <strong>761</strong>
+          </td>
+          <td valign="top" colspan="9" align="left">
+            <strong>#0</strong><strong>$i</strong>Add as instructed under<strong>$a</strong>102<strong>$c</strong>107
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="subfield">
+    <strong>$b - Base number</strong>
+    <div class="description"> Base classification number to which one or more other numbers will be added. </div>
+    <div class="example">
+      <table width="100%">
+        <tr>
+          <td valign="top" width="5%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="15%" align="left"></td>
+        </tr>
+        <tr>
+          <td valign="top" colspan="1" align="left">084</td>
+          <td valign="top" colspan="9" align="left">0#$alcc<br>
+            <em>[Library of Congress Classification]</em>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top" colspan="1" align="left">153</td>
+          <td valign="top" colspan="9" align="left"> ##$aNB201$cNB1114$hSculpture$hHistory$jSpecial countries</td>
+        </tr>
+        <tr>
+          <td valign="top" colspan="1" align="left">
+            <strong>761</strong>
+          </td>
+          <td valign="top" colspan="9" align="left">
+            <strong>#0</strong><strong>$i</strong>Add country number in table to<strong>$b</strong>NB200
+          </td>
+        </tr>
+        <tr>
+          <td valign="top" colspan="1" align="left">762</td>
+          <td valign="top" colspan="9" align="left">##$zN5 $imodified</td>
+        </tr>
+      </table>
+    </div>
+    <div class="example">
+      <table width="100%">
+        <tr>
+          <td valign="top" width="5%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="15%" align="left"></td>
+        </tr>
+        <tr>
+          <td valign="top" colspan="1" align="left">084</td>
+          <td valign="top" colspan="9" align="left"> 0#$addc$c22<br>
+            <em>[Dewey Decimal Classification]</em>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top" colspan="1" align="left">153</td>
+          <td valign="top" colspan="9" align="left"> ##$a025.06001$c025.06999$hComputer science, information, general works$hLibrary and information sciences$hOperations of libraries, archives, information centers$hInformation storage and retrieval systems devoted to specific disciplines and subjects$jSpecific disciplines and subjects</td>
+        </tr>
+        <tr>
+          <td valign="top" colspan="1" align="left">
+            <strong>761</strong>
+          </td>
+          <td valign="top" colspan="9" align="left">
+            <strong>#0</strong><strong>$i</strong>Add to base number<strong>$b</strong>025.06<strong>$i</strong>notation<strong> $d</strong>001<strong>$c</strong>999,<strong>$i</strong>e.g., MEDLINE<strong>$e</strong> 025.0661
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="subfield">
+    <strong>$c - Classification number-ending number of span</strong>
+    <div class="description"> Identifies the ending number of a classification number span. The beginning number of the span may be in subfield $a, $d, $e, $r or $x. </div>
+    <div class="example">
+      <table width="100%">
+        <tr>
+          <td valign="top" width="5%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="15%" align="left"></td>
+        </tr>
+        <tr>
+          <td valign="top" colspan="1" align="left">084</td>
+          <td valign="top" colspan="9" align="left"> 0#$addc$c22<br>
+            <em>[Dewey Decimal Classification]</em>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top" colspan="1" align="left">153</td>
+          <td valign="top" colspan="9" align="left"> ##$a725.1$hThe arts. Fine and decorative arts$hArchitecture$kSpecific aspects of architecture$kSpecific types of structures$hPublic structures$jGovernment buildings</td>
+        </tr>
+        <tr>
+          <td valign="top" colspan="1" align="left">
+            <strong>761</strong>
+          </td>
+          <td valign="top" colspan="9" align="left">
+            <strong>#0</strong><strong>$i</strong>Add as instructed under<strong>$a</strong>721<strong>$c</strong>729
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="subfield">
+    <strong>$d - Divided like number</strong>
+    <div class="description"> Classification number or span that will be used as the pattern for constructing another classification number. If the number is part of a classification number span, subfield $c is used for the ending number in the span. </div>
+    <div class="example">
+      <table width="100%">
+        <tr>
+          <td valign="top" width="5%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="15%" align="left"></td>
+        </tr>
+        <tr>
+          <td valign="top" colspan="1" align="left">084</td>
+          <td valign="top" colspan="9" align="left">0#$alcc<br>
+            <em>[Library of Congress Classification]</em>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top" colspan="1" align="left">153</td>
+          <td valign="top" colspan="9" align="left"> ##$aND1314$cND1314.6$hPainting$hSpecial subjects of painting$hPortraits. Group portraits. Self-portraits$hHistory$hSpecial countries$hEurope$jGreat Britain</td>
+        </tr>
+        <tr>
+          <td valign="top" colspan="1" align="left">
+            <strong>761</strong>
+          </td>
+          <td valign="top" colspan="9" align="left">
+            <strong>#0</strong><strong>$i</strong>Divide like<strong>$d</strong>ND1309<strong>$c</strong>ND1309.6
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="example">
+      <table width="100%">
+        <tr>
+          <td valign="top" width="5%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="15%" align="left"></td>
+        </tr>
+        <tr>
+          <td valign="top" colspan="1" align="left">084</td>
+          <td valign="top" colspan="9" align="left"> 0#$addc$c21<br>
+            <em>[Dewey Decimal Classification]</em>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top" colspan="1" align="left">153</td>
+          <td valign="top" colspan="9" align="left"> ##$a016$hGeneralities$hBibliography$kBibliographies and catalogs of individuals, of works by specific classes of authors, of anonymous and pseudonymous works, of works from specific places, of works on specific subjects or in specific disciplines$j Bibliographies and catalogs of works on specific subjects or in specific disciplines</td>
+        </tr>
+        <tr>
+          <td valign="top" colspan="1" align="left">
+            <strong>761</strong>
+          </td>
+          <td valign="top" colspan="9" align="left">
+            <strong>#0</strong><strong>$i</strong>Add to base number<strong>$b</strong>016 notation<strong>$d</strong>001<strong>$c</strong>999,<strong> $i</strong>e.g., bibliographies of philosophy<strong>$e</strong>016.1,<strong>$i</strong>of novels<strong>$e</strong>016.80883
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="subfield">
+    <strong>$e - Example class number</strong>
+    <div class="description"> Example of the classification number resulting from the add or divide like instruction. </div>
+    <div class="example">
+      <table width="100%">
+        <tr>
+          <td valign="top" width="5%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="15%" align="left"></td>
+        </tr>
+        <tr>
+          <td valign="top" colspan="1" align="left">084</td>
+          <td valign="top" colspan="9" align="left"> 0#$addc$c22<br>
+            <em>[Dewey Decimal Classification]</em>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top" colspan="1" align="left">153</td>
+          <td valign="top" colspan="9" align="left"> ##$a780.0001$c780.0999$hThe arts. Fine and decorative arts$hMusic$jRelation of music to other subjects</td>
+        </tr>
+        <tr>
+          <td valign="top" colspan="1" align="left">
+            <strong>761</strong>
+          </td>
+          <td valign="top" colspan="9" align="left">
+            <strong>#0</strong><strong>$i</strong>Add to base number<strong>$b</strong>780.0<strong>$i</strong>three-digit notation<strong>$d</strong>001<strong>$c</strong>999,<strong> $i</strong>e.g., music and literature<strong>$e</strong>780.08,<strong>$i</strong>music and Welsh literature<strong>$e</strong>780.0891<strong>$i</strong>(not<strong> $n</strong>780.089166),<strong>$i</strong>music and the performing arts<strong>$e</strong>780.079<strong>$i</strong>(not<strong> $n</strong>780.07902)
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="subfield">
+    <strong>$f - Facet designator</strong>
+    <div class="description"> Extra character(s) to be added to classification numbers that indicate facets. </div>
+    <div class="example">
+      <table width="100%">
+        <tr>
+          <td valign="top" width="5%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="15%" align="left"></td>
+        </tr>
+        <tr>
+          <td valign="top" colspan="1" align="left">084</td>
+          <td valign="top" colspan="9" align="left"> 0#$addc$c22<br>
+            <em>[Dewey Decimal Classification]</em>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top" colspan="1" align="left">153</td>
+          <td valign="top" colspan="9" align="left"> ##$a327.123$c327.129$hSocial sciences$hPolitical science (Politics and government)$hInternational relations$hForeign policy and specific topics in international relations$hEspionage and subversion$jEspionage and subversion by specific nations</td>
+        </tr>
+        <tr>
+          <td valign="top" colspan="1" align="left">
+            <strong>761</strong>
+          </td>
+          <td valign="top" colspan="9" align="left">
+            <strong>#0</strong><strong>$i</strong>Add to base number<strong>$b</strong>327.12<strong>$i</strong>notation<strong> $z</strong>2<strong>$d</strong>3<strong>$c</strong>9<strong> $i</strong>from Table 2, e.g., espionage by France<strong>$e</strong>327.1244 ;<strong>$i</strong>then for espionage and subversion by that country in another area add<strong>$f</strong>0<strong>$i</strong>and to the result add notation<strong>$z</strong>2<strong>$d</strong>1<strong> $c</strong>9<strong>$i</strong>from Table 2, e.g., espionage by France in developing countries<strong>$e</strong>327.124401724
+          </td>
+        </tr>
+        <tr>
+          <td valign="top" colspan="1" align="left">
+            <strong>761</strong>
+          </td>
+          <td valign="top" colspan="9" align="left">
+            <strong>#0</strong><strong>$i</strong>Add<strong>$f</strong>00<strong> $i</strong>for standard subdivisions; see instructions at beginning of Table 1
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="subfield">
+    <strong>$i - Explanatory text</strong>
+    <div class="example">
+      <table width="100%">
+        <tr>
+          <td valign="top" width="5%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="15%" align="left"></td>
+        </tr>
+        <tr>
+          <td valign="top" colspan="1" align="left">084</td>
+          <td valign="top" colspan="9" align="left">0#$alcc<br>
+            <em>[Library of Congress Classification]</em>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top" colspan="1" align="left">153</td>
+          <td valign="top" colspan="9" align="left"> ##$aQC793.5.G552$cQC793.5.G5529$hPhysics$hNuclear and particle physics. Atomic energy. Radioactivity$hElementary particle physics$hSpecial nuclear and subnuclear particles, antiparticles, and families of particles, A-Z$jGluons</td>
+        </tr>
+        <tr>
+          <td valign="top" colspan="1" align="left">
+            <strong>761</strong>
+          </td>
+          <td valign="top" colspan="9" align="left">
+            <strong>#0</strong><strong>$i</strong>Subarrange like<strong>$d</strong>QC793.5.A22<strong>$c</strong>QC793.5.A229
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="example">
+      <table width="100%">
+        <tr>
+          <td valign="top" width="5%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="15%" align="left"></td>
+        </tr>
+        <tr>
+          <td valign="top" colspan="1" align="left">084</td>
+          <td valign="top" colspan="9" align="left"> 0#$addc$c22<br>
+            <em>[Dewey Decimal Classification]</em>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top" colspan="1" align="left">153</td>
+          <td valign="top" colspan="9" align="left"> ##$a880.1$c888$hLiterature (Belles-lettres) and rhetoric$kLiteratures of specific languages and language families$hLiteratures of Hellenic languages. Classical Greek literature$jSubdivisions of classical Greek literature</td>
+        </tr>
+        <tr>
+          <td valign="top" colspan="1" align="left">
+            <strong>761</strong>
+          </td>
+          <td valign="top" colspan="9" align="left">
+            <strong>#0</strong><strong>$i</strong>Add to base number<strong>$b</strong>88<strong>$i</strong>as instructed at beginning of Table 3, e.g., a collection of classical Greek literature<strong>$e</strong>880.8;<strong>$i</strong>however, observe the special interpretations of and exceptions to notation from Table 3 that appear below, e.g., classical Greek poetry of the ancient period<strong>$e</strong>881.01,<strong>$i</strong>classical Greek epic poetry and fiction of the ancient period<strong>$e</strong>883.01
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="subfield">
+    <strong>$n - Negative example class number</strong>
+    <div class="description"> Example of the incorrect classification number for the topic used to illustrate the add or divide like instruction. </div>
+    <div class="example">
+      <table width="100%">
+        <tr>
+          <td valign="top" width="5%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="15%" align="left"></td>
+        </tr>
+        <tr>
+          <td valign="top" colspan="1" align="left">084</td>
+          <td valign="top" colspan="9" align="left"> 0#$addc$c22<br>
+            <em>[Dewey Decimal Classification]</em>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top" colspan="1" align="left">153</td>
+          <td valign="top" colspan="9" align="left"> ##$a780.0001$c780.0999$hThe arts. Fine and decorative arts$hMusic$jRelation of music to other subjects</td>
+        </tr>
+        <tr>
+          <td valign="top" colspan="1" align="left">
+            <strong>761</strong>
+          </td>
+          <td valign="top" colspan="9" align="left">
+            <strong>#0</strong><strong>$i</strong>Add to base number<strong>$b</strong>780.0<strong>$i</strong>three-digit notation<strong>$d</strong>001<strong>$c</strong>999,<strong> $i</strong>e.g., music and literature<strong>$e</strong>780.08,<strong>$i</strong>music and Welsh literature<strong>$e</strong>780.0891<strong>$i</strong>(not<strong> $n</strong>780.089166),<strong>$i</strong>music and the performing arts<strong>$e</strong>780.079<strong>$i</strong>(not<strong> $n</strong>780.07902)
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="subfield">
+    <strong>$r - Root number</strong>
+    <div class="description"> Initial digits of the pattern number or span when these digits are not added. If this subfield is present, subfield $d (Divided like number) must also be present to specify the digits that are added. </div>
+    <div class="example">
+      <table width="100%">
+        <tr>
+          <td valign="top" width="5%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="15%" align="left"></td>
+        </tr>
+        <tr>
+          <td valign="top" colspan="1" align="left">084</td>
+          <td valign="top" colspan="9" align="left"> 0#$addc$c22<br>
+            <em>[Dewey Decimal Classification]</em>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top" colspan="1" align="left">153</td>
+          <td valign="top" colspan="9" align="left"> ##$a014$hComputer science, information, general works$hBibliography$kBibliographies and catalogs of individuals, of anonymous and pseudonymous works, of works from specific places, of works on specific subjects or in specific disciplines$jBibliographies and catalogs of anonymous and pseudonymous works</td>
+        </tr>
+        <tr>
+          <td valign="top" colspan="1" align="left">
+            <strong>761</strong>
+          </td>
+          <td valign="top" colspan="9" align="left">
+            <strong>#0</strong><strong>$i</strong>Add to base number<strong>$b</strong>014<strong>$i</strong>the numbers following<strong>$r</strong>03<strong>$i</strong>in<strong> $d</strong>031<strong>$c</strong>039<strong>$i</strong>(but not notation 02 for books of miscellaneous facts), e.g., bibliographies and catalogs of anonymous and pseudonymous works in Russian<strong>$e</strong>014.71
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="subfield">
+    <strong>$t - Topic</strong>
+    <div class="description"> Topics that describe the scope. </div>
+    <div class="example">
+      <table width="100%">
+        <tr>
+          <td valign="top" width="5%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="15%" align="left"></td>
+        </tr>
+        <tr>
+          <td valign="top" colspan="1" align="left">
+            <strong>761</strong>
+          </td>
+          <td valign="top" colspan="9" align="left">
+            <strong>#0</strong><strong>$i</strong>Add to base number<strong>$b</strong>025.29<strong>$i</strong>notation<strong> $z</strong>2<strong>$d</strong>1<strong>$c</strong>9<strong> $i</strong>from Table 2, e.g.,<strong>$t</strong>acquisition of materials from Latin America<strong>$e</strong>025.298
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="subfield">
+    <strong>$x - Other classification number</strong>
+    <div class="description"> Classification numbers other than those that belong in one of the other defined subfields. If the number is part of a classification number span, subfield $c is used for the ending number in the span. </div>
+    <div class="example">
+      <table width="100%">
+        <tr>
+          <td valign="top" width="5%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="15%" align="left"></td>
+        </tr>
+        <tr>
+          <td valign="top" colspan="1" align="left">084</td>
+          <td valign="top" colspan="9" align="left"> 0#$addc$c22<br>
+            <em>[Dewey Decimal Classification]</em>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top" colspan="1" align="left">153</td>
+          <td valign="top" colspan="9" align="left">##$a755$hThe arts. Fine and decorative arts$hPainting and paintings$kIconography$jReligion</td>
+        </tr>
+        <tr>
+          <td valign="top" colspan="1" align="left">
+            <strong>761</strong>
+          </td>
+          <td valign="top" colspan="9" align="left">
+            <strong>#1</strong><strong>$8</strong>1.1<strong>$i</strong>Add to base number<strong>$b</strong>755<strong>$i</strong>the numbers following<strong>$r</strong>704.948<strong>$i</strong>in<strong> $d</strong>704.9482<strong>$c</strong>704.9489,<strong>$i</strong>e.g., paintings of Holy Family<strong>$e</strong>755.56<strong>$i</strong>; however,
+          </td>
+        </tr>
+        <tr>
+          <td valign="top" colspan="1" align="left">
+            <strong>761</strong>
+          </td>
+          <td valign="top" colspan="9" align="left">
+            <strong>#2</strong><strong>$8</strong>1.2<strong>$i</strong>for individual painters, see<strong>$x</strong>759.1<strong>$c</strong>759.9
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="subfield">
+    <strong>$y - Table sequence number for internal subarrangement or add table</strong>
+    <div class="description"> Sequence number or other identifier for an internal classification subarrangement or add table. If the first or only add table found at a classification number is the number 1, succeeding integers are used for any following add tables found at that number. </div>
+  </div>
+  <div class="subfield">
+    <strong>$z - Table identification</strong>
+    <div class="description"> Table identification to which a classification number recorded in field 761 belongs. Subfield $z is not repeatable; it is input before the classification number to which it refers. </div>
+    <div class="example">
+      <table width="100%">
+        <tr>
+          <td valign="top" width="5%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="10%" align="left"></td>
+          <td valign="top" width="15%" align="left"></td>
+        </tr>
+        <tr>
+          <td valign="top" colspan="1" align="left">084</td>
+          <td valign="top" colspan="9" align="left"> 0#$addc$c22<br>
+            <em>[Dewey Decimal Classification]</em>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top" colspan="1" align="left">153</td>
+          <td valign="top" colspan="9" align="left"> ##$z4$a24$hSubdivisions of Individual Languages$kDescription and analysis of the standard form of the language$hEtymology of the standard form of the language $jForeign elements</td>
+        </tr>
+        <tr>
+          <td valign="top" colspan="1" align="left">
+            <strong>761</strong>
+          </td>
+          <td valign="top" colspan="9" align="left">
+            <strong>#0</strong><strong>$i</strong>Add to<strong>$z</strong>4<strong>$b</strong>24<strong>$i</strong>notation<strong> $z</strong>6<strong>$d</strong>1<strong>$c</strong>9<strong> $i</strong>from Table 6, e.g., French words in the language<strong>$z</strong>4<strong>$e</strong>2441,<strong> $i</strong>French words in English<strong>$e</strong>422.441
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="subfield">
+    <strong>$6 - Linkage</strong>
+    <div class="description"> See the description of this subfield in Appendix A: <em><a href="eccdcntf.html">Control Subfields</a></em>. </div>
+  </div>
+  <div class="subfield">
+    <strong>$8 - Field link and sequence number</strong>
+    <div class="description"> See the description of this subfield in Appendix A: <em><a href="eccdcntf.html">Control Subfields</a></em>. </div>
+  </div>
+  <hr>
+  <h3>SCHEME-SPECIFIC CONVENTIONS</h3>
+  <div class="description2">
+    <strong>Library of Congress Classification</strong> - May be used to record divide like notes only if it is impractical to indicate the subarrangement either in separate classification schedule or table records.
+  </div>
+  <div class="description2">
+    <strong>Dewey Decimal Classification</strong> - For the <em>DDC</em>, this field includes instructions about how many zeros to add for standard subdivisions. In these cases, the zeros are recorded in subfield $f (Facet designator). This field does not include general advice about number building, such as that at the start of <em>DDC</em> Table 3; such general advice is recorded in fields 683 (Application Instruction Note) or 684 (Auxiliary Instruction Note).<br>
+    <br> In <em>DDC</em>, a single add note may be a combination of an add note and a class elsewhere note or a relocation note, or (rarely) all three. The <em>DDC</em> add note at 659.29001-659.29999 is an example of a note with all three types. A system may display all three portions together in one paragraph, as is done in the printed volumes; it may display them as separate but consecutive notes; or it may suppress display of the add portion while displaying the class elsewhere or relocation part.<br>
+    <br> In <em>DDC</em>, subfield $d (Divided like number) is used for pattern numbers or spans when either a complete number or an incomplete number is added (concatenated). If digits are dropped from the beginning of the pattern number or span and only the remaining digits added, subfield $r (Root number) must be present to specify the digits dropped.
+  </div>
+  <hr>
+  <h3>CONTENT DESIGNATOR HISTORY</h3>
+  <div class="font_small">
+    <em>$t - Topic [NEW, 2008]</em><br>
+    <em>$y - Table sequence number for internal subarrangement or add table [NEW, 2008]</em>
+  </div>
+  <hr>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr valign="bottom">
+      <td>
+        <div class="head-nav">
+          <a href="http://www.loc.gov/">Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/marc/">MARC</a> &gt;&gt; <a href="index.htm">Classification</a> &gt;&gt; <a href="cd76x.html">76X</a> &gt;&gt; <strong>761</strong>
+        </div>(09/01/2008)
+      </td>
+      <td align="right"><a href="/cdn-cgi/l/email-protection#fe909a938d91be92919dd0999188">Contact Us</a></td>
+    </tr>
+  </table>
+  <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+  <script>if (window['_satellite']) { _satellite.pageBottom(); }</script>
+</body>
+
+</html>
