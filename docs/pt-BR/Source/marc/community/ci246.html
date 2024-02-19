@@ -1,0 +1,279 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>MARC 21 Format for Community Information Data: 246: Varying Form of Title (Network Development and MARC Standards Office, Library of Congress) </title>
+   <meta name="description" content="This field contains the  (Network Development and MARC Standards Office, Library of Congress)">
+   <meta name="keywords" content="marc, marc21, marc standards">
+   <meta name="author" content="Library of Congress Network Development and MARC Standards Office">
+   <link href="../styles.css" rel="stylesheet" type="text/css">
+   <link href="../print.css" rel="stylesheet" type="text/css" media="print">
+   <script src="../../dac62e20b491e735c6b56e64c39134d8ee93f9cf/satelliteLib-6b47f831c184878d7338d4683ecf773a17973bb9.js"></script>
+</head>
+
+<body class="full">
+   <div class="head-nav">
+      <div class="noprint"><a href="http://www.loc.gov/">Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/marc/">MARC</a> &gt;&gt; <a href="index.htm">Community Information</a> &gt;&gt; <span class="caps"><a href="ci2xx.html">2XX</a>  &gt;&gt; <strong>246</strong></span></div>
+   </div>
+   <hr><a name="skip_menu"></a>
+   <h1><span>246</span> - <span>Varying Form of Title</span><span> (R)</span></h1>
+   <hr>
+   <div class="formatname">MARC 21 Community Information - full</div>
+   <div class="datename">October 2014</div>
+   <hr>
+   <table width="100%" class="indicators">
+      <tr>
+         <th width="45%"> First Indicator </th>
+         <th width="45%"> Second Indicator </th>
+      </tr>
+      <tr>
+         <td><em>Undefined</em><br><span># - Undefined</span><br><br></td>
+         <td><em>Type of title</em><br><span>0 - Portion of title</span><br><span>1 - Parallel title</span><br><span>2 - Acronym</span><br><span>3 - Other title</span><br><br></td>
+      </tr>
+   </table>
+   <hr>
+   <table width="100%" class="subfields">
+      <tr>
+         <td width="50%"></td>
+         <td width="50%"></td>
+      </tr>
+      <tr>
+         <th colspan="2">Subfield Codes</th>
+      </tr>
+      <tr>
+         <td>
+            <ul class="nomark">
+               <li>$a - Title proper/short title<span> (NR)</span></li>
+               <li>$b - Remainder of title<span> (NR)</span></li>
+               <li>$f - Date or sequential designation<span> (NR)</span></li>
+               <li>$g - Miscellaneous information<span> (R)</span></li>
+               <li>$h - Medium<span> (NR)</span></li>
+            </ul>
+         </td>
+         <td>
+            <ul class="nomark">
+               <li>$n - Number of part/section of the title<span> (R)</span></li>
+               <li>$p - Name of part/section of the title<span> (R)</span></li>
+               <li>$6 - Linkage<span> (NR)</span></li>
+               <li>$8 - Field link and sequence number<span> (R)</span></li>
+            </ul>
+         </td>
+      </tr>
+   </table>
+   <hr>
+   <h3>FIELD DEFINITION AND SCOPE</h3>
+   <div class="definition">
+      <div>
+         <p> Variant title of the event, program, etc. present in field 245 (Title). Variant forms of names recorded in 1XX (Primary Names), 6XX (Subject Entries,) and 7XX (Added Entries) are not recorded in this field. Access to these variants is usually provided in MARC authority record 4XX (See From Tracing) fields. </p>
+      </div>
+      <div>
+         <p>When displayed/printed as a note, varying forms of titles are in some instances preceded by an introductory term or phrase that is generated as a display constant based on the second indicator value. </p>
+      </div>
+   </div>
+   <hr>
+   <h3>GUIDELINES FOR APPLYING CONTENT DESIGNATORS</h3>
+   <div class="guidelines">
+      <h4><span class="box">■</span> INDICATORS </h4>
+      <div class="indicators">
+         <div class="indicator">
+            <div>
+               <p class="label"><strong>First Indicator - Undefined</strong></p>
+               <div>
+                  <p>Undefined and contains a blank (#).</p>
+               </div>
+            </div>
+         </div>
+         <div class="indicator">
+            <div>
+               <p class="label"><strong>Second Indicator - Type of title</strong></p>
+               <div>
+                  <p>Value that specifies the type of title recorded in field 246 and controls the generation of a note. It is also used in some instances to generate a display constant that precedes a title when a note is created from the field. (See Input Conventions.) </p>
+               </div>
+               <div class="value">
+                  <div><span class="valueLabel">0 - Portion of title</span>
+                     <div>
+                        <p>Title recorded is a portion of the title found in field 245 (Title). No note is usually generated. </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="value">
+                  <div><span class="valueLabel">1 - Parallel title</span>
+                     <div>
+                        <p>Title recorded is a parallel title, i.e., a title in another language. No note is usually generated. When one or more parallel titles have been recorded in field 245, each parallel title is also recorded in a separate field 246. </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="value">
+                  <div><span class="valueLabel">2 - Acronym</span>
+                     <div>
+                        <p>Title recorded is an acronym of the title recorded in field 245.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="value">
+                  <div><span class="valueLabel">3 - Other title</span>
+                     <div>
+                        <p>Title recorded is a variant title associated with the title in field 245 but which is not specified by one of the other second indicator values. <em>Other title:</em> may be generated for display. </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <h4><span class="box">■</span> SUBFIELD CODES </h4>
+      <div class="subfields">
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$a - Title proper/short title</strong>
+               </p>
+               <div>
+                  <p>Variant title (exclusive of any name or number of a part/section, remainder of title, and medium designator) of the event, program, etc. </p>
+               </div>
+               <div class="example">
+                  <table>
+                     <tr>
+                        <td>245</td>
+                        <td colspan="9">#0$aStage Front :$bThe Arts Downcast.</td>
+                     </tr>
+                     <tr>
+                        <td><strong>246</strong></td>
+                        <td colspan="9"><strong>#0</strong><strong>$a</strong>Arts Downcast </td>
+                     </tr>
+                  </table>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$b - Remainder of title</strong>
+               </p>
+               <div>
+                  <p>Remainder of the title information.</p>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$f - Date or sequential designation</strong>
+               </p>
+               <div>
+                  <p>Dates or sequential designations, such as those that indicate when the variant title was used. </p>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$g - Miscellaneous information</strong>
+               </p>
+               <div>
+                  <p>Miscellaneous information that is not more appropriately recorded in another subfield, such as the phrase <em>varies slightly</em>, enclosed in parentheses. </p>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$h - Medium</strong>
+               </p>
+               <div>
+                  <p>Medium designator used in the title.</p>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$n - Number of part/section of the title</strong>
+               </p>
+               <div>
+                  <p><em>Number</em> designation for a part/section of the title. <em>Numbering</em> is defined as an indication of sequencing of any form, e.g., Part 1, Section A. </p>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$p - Name of part/section of the title</strong>
+               </p>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$6 - Linkage</strong>
+               </p>
+               <div>
+                  <p>See the description of this subfield in Appendix A: <em><a href="eccicntf.html">Control Subfields</a></em>. </p>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$8 - Field link and sequence number</strong>
+               </p>
+               <div>
+                  <p>See the description of this subfield in Appendix A: <em><a href="eccicntf.html">Control Subfields</a></em>. </p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <hr>
+   <h3>INPUT CONVENTIONS</h3>
+   <div class="conventions">
+      <div>
+         <p><strong>Punctuation - </strong>Field 246 does not end with a mark of punctuation unless the last word in the field is an abbreviation, initial/letter, or data that ends with a mark of punctuation. </p>
+      </div>
+      <div>
+         <p><strong>Initial Articles - </strong>Initial articles (e.g., The, La) are generally not recorded in field 246 unless the intent is to file on the article. </p>
+      </div>
+      <div>
+         <p><strong>Multiple Fields - </strong>Order of input of multiple 246 fields is customarily determined by the value in the second indicator position. Multiple Varying Form of Title fields are recorded in order of the numeric value in the second indicator position, i.e., 246 fields with second indicator value 0, 246 fields with second indicator value 1, etc. </p>
+      </div>
+      <div>
+         <p><strong>Display Constants - </strong>Introductory term <em>Acronym:</em>or phrase <em>Other title:</em> that are used with notes generated from this field are not carried in the MARC record. They may be generated as a display constant associated with the second indicator value. </p>
+         <div class="table">
+            <table>
+               <tr>
+                  <th><u>Second indicator</u></th>
+                  <th><u>Display constant</u></th>
+               </tr>
+               <tr>
+                  <td>0</td>
+                  <td><em>[no note is usually generated]</em></td>
+               </tr>
+               <tr>
+                  <td>1</td>
+                  <td><em>[no note is usually generated]</em></td>
+               </tr>
+               <tr>
+                  <td>2</td>
+                  <td> Acronym: </td>
+               </tr>
+               <tr>
+                  <td>3</td>
+                  <td>Other title:</td>
+               </tr>
+            </table>
+         </div>
+      </div>
+   </div>
+   <hr>
+   <h3>CONTENT DESIGNATOR HISTORY</h3>
+   <div class="history">
+      <div class="historySubfield">
+         <div><em>$g - Miscellaneous information [CHANGED, 2014]</em>
+            <div class="subfieldHistoryDsc">
+               <p>In 2014, subfield $g was made repeatable.</p>
+            </div>
+         </div>
+      </div>
+   </div>
+   <hr class="clear">
+   <div class="head-nav">
+      <div class="noprint"><a href="http://www.loc.gov/">Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/marc/">MARC</a> &gt;&gt; <a href="index.htm">Community Information</a> &gt;&gt; <span class="caps"><a href="ci2xx.html">2XX</a>  &gt;&gt; <strong>246</strong></span></div>
+   </div>
+   <div class="left"><span class="noprint">(10/20/2014)</span></div>
+   <div class="right"><a href="/cdn-cgi/l/email-protection#19777d746a765975767a377e766f" class="noprint">Contact Us</a></div>
+   <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+   <script>if (window['_satellite']) { _satellite.pageBottom(); }</script>
+</body>
+
+</html>
