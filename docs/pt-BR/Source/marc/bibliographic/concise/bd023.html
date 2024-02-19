@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>MARC 21 Format for Bibliographic Data: 023: Cluster ISSN (Network Development and MARC Standards Office, Library of Congress) </title>
+   <meta name="description" content="This field contains the  (Network Development and MARC Standards Office, Library of Congress)">
+   <meta name="keywords" content="marc, marc21, marc standards">
+   <meta name="author" content="Library of Congress Network Development and MARC Standards Office">
+   <link href="../styles.css" rel="stylesheet" type="text/css">
+   <link href="../print.css" rel="stylesheet" type="text/css" media="print">
+   <script src="../../../dac62e20b491e735c6b56e64c39134d8ee93f9cf/satelliteLib-6b47f831c184878d7338d4683ecf773a17973bb9.js"></script>
+</head>
+
+<body class="concise">
+   <div class="head-nav">
+      <div class="noprint"><a href="http://www.loc.gov/">Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/marc/">MARC</a> &gt;&gt; <a href="../index.htm">Bibliographic</a> &gt;&gt; <span class="caps"><a href="../bd01x09x.html">01X-09X</a>  &gt;&gt; <strong>023</strong></span></div>
+   </div>
+   <hr><a name="skip_menu"></a>
+   <h1><span>023</span> - <span>Cluster ISSN</span><span> (R)</span></h1>
+   <hr>
+   <div class="formatname">MARC 21 Bibliographic - concise</div>
+   <div class="datename">December 2023</div>
+   <hr>
+   <div class="definition">
+      <div>
+         <p>Field to record the Cluster ISSN, a mechanism first defined in ISO 3297:2020 to provide for the identification of specific groups of ISSN (International Standard Serial Number), such as the various medium editions of a continuing resource, or serials related by preceding and succeeding title relationships. </p>
+      </div>
+   </div>
+   <div class="guidelines">
+      <h4>Indicators</h4>
+      <div class="indicators">
+         <dl>
+            <dt>First - Type of Cluster ISSN</dt>
+            <dd>0 - ISSN-L</dd>
+            <dd>1 - ISSN-H</dd>
+            <dt>Second - Undefined</dt>
+            <dd># - Undefined</dd>
+         </dl>
+      </div>
+      <h4>Subfield Codes</h4>
+      <div class="subfields">
+         <dl>
+            <dt>$a - Cluster ISSN <span> (NR)</span></dt>
+            <dd style="margin-left:1.75em;"><span>As designated by the ISSN International Centre, Cluster ISSNs group together resources with specific relationships to each other such as medium versions (ISSN-L), and clusters such as earlier and later titles (ISSN-H). The appropriate prefix for the ISSN type denoted by the first indicator value may be generated for display, for value 0: <em>ISSN-L</em>; for value 1: <em>ISSN-H</em>.</span><br></dd>
+         </dl>
+         <dl>
+            <dt>$y - Incorrect Cluster ISSN <span> (R)</span></dt>
+         </dl>
+         <dl>
+            <dt>$0 - Authority record control number or standard number <span> (NR)</span></dt>
+            <dd style="margin-left:1.75em;"><span>A URI for the Cluster ISSN in subfield $a.</span><br></dd>
+            <dd style="margin-left:1.75em;"><span>See description of this subfield in Appendix A: <em><a href="../ecbdcntf.html">Control Subfields</a></em>.</span><br></dd>
+         </dl>
+         <dl>
+            <dt>$1 - Real World Object URI <span> (R)</span></dt>
+            <dd style="margin-left:1.75em;"><span>See description of this subfield in Appendix A: <em><a href="../ecbdcntf.html">Control Subfields</a></em>.</span><br></dd>
+         </dl>
+         <dl>
+            <dt>$2 - Source <span> (NR)</span></dt>
+            <dd style="margin-left:1.75em;"><span>Code from: <em>ISSN Manual</em>, Annex 3: <em><a href="../../../wp-content/uploads/2023/11/Country_codes_centres_codes_2023.pdf">List of ISSN Centre codes</a></em> [PDF, 199 KB].</span><br></dd>
+         </dl>
+         <dl>
+            <dt>$6 - Linkage <span> (NR)</span></dt>
+            <dd style="margin-left:1.75em;"><span>See description of this subfield in Appendix A: <em><a href="../ecbdcntf.html">Control Subfields</a></em>.</span><br></dd>
+         </dl>
+         <dl>
+            <dt>$8 - Field link and sequence number <span> (R)</span></dt>
+            <dd style="margin-left:1.75em;"><span>See description of this subfield in Appendix A: <em><a href="../ecbdcntf.html">Control Subfields</a></em>.</span><br></dd>
+         </dl>
+      </div>
+      <h4>Examples</h4>
+      <table class="examples">
+         <tr>
+            <td><strong>023</strong></td>
+            <td colspan="9"><strong>0#</strong><strong>$a</strong>0028-0836<strong>$2</strong>0 </td>
+         </tr>
+         <tr>
+            <td><strong>023</strong></td>
+            <td colspan="9"><strong>0#</strong><strong>$a</strong>1063-3928<strong>$2</strong>0 </td>
+         </tr>
+         <tr>
+            <td><strong>023</strong></td>
+            <td colspan="9"><strong>1#</strong><strong>$a</strong>9999-9999<strong>$2</strong>0 </td>
+         </tr>
+         <tr>
+            <td><strong>023</strong></td>
+            <td colspan="9"><strong>0#</strong><strong>$a</strong>0151-4105<strong>$2</strong>0<strong>$y</strong>0048-7996 </td>
+         </tr>
+         <tr>
+            <td><strong>023</strong></td>
+            <td colspan="9"><strong>0#</strong><strong>$a</strong> 1043-0253<strong>$2</strong>0<strong>$z</strong>0147-8745 </td>
+         </tr>
+      </table>
+   </div>
+   <div class="conventions"></div>
+   <div class="history"></div>
+   <hr class="clear">
+   <div class="head-nav">
+      <div class="noprint"><a href="http://www.loc.gov/">Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/marc/">MARC</a> &gt;&gt; <a href="../index.htm">Bibliographic</a> &gt;&gt; <span class="caps"><a href="../bd01x09x.html">01X-09X</a>  &gt;&gt; <strong>023</strong></span></div>
+   </div>
+   <div class="left"><span class="noprint">(12/07/2023)</span></div>
+   <div class="right"><a href="/cdn-cgi/l/email-protection#82ece6eff1edc2eeede1ace5edf4" class="noprint">Contact Us</a></div>
+   <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+   <script>if (window['_satellite']) { _satellite.pageBottom(); }</script>
+</body>
+
+</html>
