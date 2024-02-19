@@ -1,0 +1,205 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>MARC 21 Format for Authority Data: 034: Coded Cartographic Mathematical Data (Network Development and MARC Standards Office, Library of Congress) </title>
+   <meta name="description" content="This field contains the  (Network Development and MARC Standards Office, Library of Congress)">
+   <meta name="keywords" content="marc, marc21, marc standards">
+   <meta name="author" content="Library of Congress Network Development and MARC Standards Office">
+   <link href="../styles.css" rel="stylesheet" type="text/css">
+   <link href="../print.css" rel="stylesheet" type="text/css" media="print">
+   <script src="../../../dac62e20b491e735c6b56e64c39134d8ee93f9cf/satelliteLib-6b47f831c184878d7338d4683ecf773a17973bb9.js"></script>
+</head>
+
+<body class="concise">
+   <div class="head-nav">
+      <div class="noprint"><a href="http://www.loc.gov/">Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/marc/">MARC</a> &gt;&gt; <a href="../index.htm">Authority</a> &gt;&gt; <span class="caps"><a href="../ad01x09x.html">01X-09X</a>  &gt;&gt; <strong>034</strong></span></div>
+   </div>
+   <hr><a name="skip_menu"></a>
+   <h1><span>034</span> - <span>Coded Cartographic Mathematical Data</span><span> (R)</span></h1>
+   <hr>
+   <div class="formatname">MARC 21 Authority - concise</div>
+   <div class="datename">July 2022</div>
+   <hr>
+   <div class="definition">
+      <div>
+         <p>Coded form of the cartographic mathematical data relevant to the geographic aspect of the entity in the 1XX. The data that is recorded usually derives from authoritative sources. </p>
+      </div>
+   </div>
+   <div class="guidelines">
+      <h4>Indicators</h4>
+      <div class="indicators">
+         <dl>
+            <dt>First - Undefined</dt>
+            <dd># - Undefined</dd>
+            <dt>Second - Type of ring</dt>
+            <dd># - Not applicable</dd>
+            <dd>0 - Outer ring</dd>
+            <dd>1 - Exclusion ring</dd>
+         </dl>
+      </div>
+      <h4>Subfield Codes</h4>
+      <div class="subfields">
+         <dl>
+            <dt>$d - Coordinates - westernmost longitude <span> (NR)</span></dt>
+         </dl>
+         <dl>
+            <dt>$e - Coordinates - easternmost longitude <span> (NR)</span></dt>
+         </dl>
+         <dl>
+            <dt>$f - Coordinates - northernmost latitude <span> (NR)</span></dt>
+         </dl>
+         <dl>
+            <dt>$g - Coordinates - southernmost latitude <span> (NR)</span></dt>
+            <dd style="margin-left:1.75em;"><span>Subfields $d, $e, $f, and $g always appear together. The coordinates may be recorded in the form <em>hdddmmss</em> (hemisphere-degrees-minutes-seconds), however, other forms are also allowed, such as decimal degrees. The subelements are each right justified and unused positions contain zeros.</span><br></dd>
+         </dl>
+         <dl>
+            <dt>$j - Declination - northern limit <span> (NR)</span></dt>
+         </dl>
+         <dl>
+            <dt>$k - Declination - southern limit <span> (NR)</span></dt>
+            <dd style="margin-left:1.75em;"><span>Subfields $j and $k are each eight characters in length and record the declination in the form <em>hdddmmss</em> (hemisphere-degrees-minutes-seconds). The degree, minute and second elements are each right justified and the unused positions contain zeros. (If declination of center is known, it is repeated in both subfields).</span><br></dd>
+         </dl>
+         <dl>
+            <dt>$m - Right ascension - eastern limit <span> (NR)</span></dt>
+         </dl>
+         <dl>
+            <dt>$n - Right ascension - western limit <span> (NR)</span></dt>
+            <dd style="margin-left:1.75em;"><span>Subfields $m and $n are each six characters in length and record the right ascension in the form <em>hhmmss</em> (hour-minute-seconds). The hour, minute and second elements are each right justified and the unused positions contain zeros. (If the right ascension of center is known, it is repeated in both subfields).</span><br></dd>
+         </dl>
+         <dl>
+            <dt>$p - Equinox <span> (NR)</span></dt>
+            <dd style="margin-left:1.75em;"><span>Equinox or epoch for a celestial entity. Usually recorded in the form <em>yyyy</em> (year) according to the Gregorian calendar, but may include a decimal including the month in the form <em>yyyy.mm</em> (year-month).</span><br></dd>
+         </dl>
+         <dl>
+            <dt>$r - Distance from earth <span> (NR)</span></dt>
+            <dd style="margin-left:1.75em;"><span>Distance of celestial bodies, such as planets or stars, from the Earth in light-years.</span><br></dd>
+         </dl>
+         <dl>
+            <dt>$s - G-ring latitude <span> (R)</span></dt>
+         </dl>
+         <dl>
+            <dt>$t - G-ring longitude <span> (R)</span></dt>
+         </dl>
+         <dl>
+            <dt>$x - Beginning date <span> (NR)</span></dt>
+            <dd style="margin-left:1.75em;"><span>Beginning of the time frame specific to the coordinates. The date is structured in the form of <em>yyyymmdd</em>. When no date is recorded, it is assumed that the coordinate information is current.</span><br></dd>
+         </dl>
+         <dl>
+            <dt>$y - Ending date <span> (NR)</span></dt>
+            <dd style="margin-left:1.75em;"><span>Ending of the time frame specific to the coordinates. The date is structured in the form of <em>yyyymmdd</em>. When no date is recorded, it is assumed that the coordinate information is current.</span><br></dd>
+         </dl>
+         <dl>
+            <dt>$z - Name of extraterrestrial body <span> (NR)</span></dt>
+            <dd style="margin-left:1.75em;"><span>Name of a planet or other extraterrestrial body specified when the coordinate data recorded in subfields $d, $e, $f and $g do not describe an entity on Earth.</span><br></dd>
+         </dl>
+         <dl>
+            <dt>$0 - Authority record control number or standard number <span> (R)</span></dt>
+            <dd style="margin-left:1.75em;"><span>See description of this subfield in Appendix A: <em><a href="../ecadcntf.html">Control Subfields</a></em>.</span><br></dd>
+         </dl>
+         <dl>
+            <dt>$1 - Real World Object URI <span> (R)</span></dt>
+            <dd style="margin-left:1.75em;"><span>See description of this subfield in Appendix A: <em><a href="../ecadcntf.html">Control Subfields</a></em>.</span><br></dd>
+         </dl>
+         <dl>
+            <dt>$2 - Source <span> (NR)</span></dt>
+            <dd style="margin-left:1.75em;"><span>MARC code that identifies the source of the data recorded in field 034. If different sources are recorded, separate fields should be used. Code from: <em><a href="http://www.loc.gov/standards/sourcelist/cartographic-data.html">Cartographic Data Source Codes</a></em>.</span><br></dd>
+         </dl>
+         <dl>
+            <dt>$3 - Materials specified <span> (NR)</span></dt>
+         </dl>
+         <dl>
+            <dt>$6 - Linkage <span> (NR)</span></dt>
+            <dd style="margin-left:1.75em;"><span>See description of this subfield in Appendix A: <em><a href="../ecadcntf.html">Control Subfields</a></em>.</span><br></dd>
+         </dl>
+         <dl>
+            <dt>$7 - Data provenance <span> (R)</span></dt>
+            <dd style="margin-left:1.75em;"><span>See description of this subfield in Appendix H: <em><a href="../adapndxh.html">Data Provenance Subfields</a></em>.</span><br></dd>
+         </dl>
+         <dl>
+            <dt>$8 - Field link and sequence number <span> (R)</span></dt>
+            <dd style="margin-left:1.75em;"><span>See description of this subfield in Appendix A: <em><a href="../ecadcntf.html">Control Subfields</a></em>.</span><br></dd>
+         </dl>
+      </div>
+      <h4>Examples</h4>
+      <table class="examples">
+         <tr>
+            <td><strong>034</strong></td>
+            <td colspan="9"><strong>##</strong><strong>$d</strong>W097.5000<strong>$e</strong>W089.000<strong>$f</strong>N049.5000<strong>$g</strong>N043.000<strong>$2</strong>[code for Minnesota Geographic Data Clearinghouse] </td>
+         </tr>
+         <tr>
+            <td><strong>034</strong></td>
+            <td colspan="9"><strong>##</strong><strong>$d</strong>W095.1400<strong>$e</strong>W094.6500<strong>$f</strong>N046.3800<strong>$g</strong>N045.7600<strong>$2</strong>[code for Minnesota Geographic Data Clearinghouse] </td>
+         </tr>
+         <tr>
+            <td><strong>034</strong></td>
+            <td colspan="9"><strong>##</strong><strong>$d</strong>W0772200<strong>$e</strong>W0772200<strong>$f</strong>N0011300<strong>$g</strong>N0011300<strong>$2</strong>[code for GEOnet] </td>
+         </tr>
+         <tr>
+            <td><strong>034</strong></td>
+            <td colspan="9"><strong>##</strong><strong>$d</strong>W113.0000<strong>$e</strong>W113.0000<strong>$f</strong>N000.0000<strong>$g</strong>N00.0000<strong>$z</strong>Mars<strong>$2</strong>[code for Mars Global Surveyor] </td>
+         </tr>
+         <tr>
+            <td><strong>034</strong></td>
+            <td colspan="9"><strong>##</strong><strong>$d</strong>W0735848<strong>$e</strong>W0735848<strong>$f</strong>N0404554<strong>$g</strong>N0404554<strong>$2</strong>wikiped </td>
+         </tr>
+         <tr>
+            <td><strong>034</strong></td>
+            <td colspan="9"><strong>##</strong><strong>$d</strong>W0381200<strong>$e</strong>W0841500<strong>$f</strong>N0381200<strong>$g</strong>N0381200<strong>$2</strong>cgotw </td>
+         </tr>
+         <tr>
+            <td><strong>034</strong></td>
+            <td colspan="9"><strong>##</strong><strong>$d</strong>E079.533265<strong>$e</strong>E086.216635<strong>$f</strong>S012.583377<strong>$g</strong>S020.419532 </td>
+         </tr>
+         <tr>
+            <td><strong>034</strong></td>
+            <td colspan="9"><strong>##</strong><strong>$d</strong>+079.533265<strong>$e</strong>+086.216635<strong>$f</strong>-012.583377<strong>$g</strong>-020.419532 </td>
+         </tr>
+         <tr>
+            <td><strong>034</strong></td>
+            <td colspan="9"><strong>##</strong><strong>$j</strong>N0545600<strong>$k</strong>N0545600<strong>$m</strong>134518<strong>$n</strong>134518<strong>$p</strong>2000.00<strong>$r</strong>78<strong>$2</strong>csa </td>
+         </tr>
+         <tr>
+            <td><strong>034</strong></td>
+            <td colspan="9"><strong>##</strong><strong>$j</strong>N0300000<strong>$k</strong>N0300000<strong>$m</strong>021800<strong>$n</strong>021800 </td>
+         </tr>
+         <tr>
+            <td><strong>034</strong></td>
+            <td colspan="9"><strong>##</strong><strong>$j</strong>N0545600<strong>$k</strong>N0545600<strong>$m</strong>134518<strong>$n</strong>134518<strong>$p</strong>2000.00<strong>$r</strong>78<strong>$2</strong>[code for Cambridge star atlas] </td>
+         </tr>
+         <tr>
+            <td><strong>034</strong></td>
+            <td colspan="9"><strong>##</strong><strong>$d</strong>E0110000<strong>$e</strong>E0320000<strong>$f</strong>N0690000<strong>$g</strong>N0550000<strong>$x</strong>17210000<strong>$y</strong>19171200<strong>$2</strong>[code for Hammond atlas of world history] </td>
+         </tr>
+         <tr>
+            <td><strong>034</strong></td>
+            <td colspan="9"><strong>##</strong><strong>$d</strong>E0110000<strong>$e</strong>E0240000<strong>$f</strong>N0690000<strong>$g</strong>N0550000<strong>$x</strong>19171200<strong>$2</strong>[code for The statesman's year-book] </td>
+         </tr>
+         <tr>
+            <td><strong>034</strong></td>
+            <td colspan="9"><strong>##</strong><strong>$d</strong>W2450000<strong>$e</strong>E2570000<strong>$f</strong>N0160000<strong>$g</strong>N0190000<strong>$z</strong>Mars<strong>$2</strong>gpn </td>
+         </tr>
+         <tr>
+            <td><strong>034</strong></td>
+            <td colspan="9"><strong>##</strong><strong>$3</strong>Mouth<strong>$d</strong>-124.0579299<strong>$e</strong>-124.0579299<strong>$f</strong>46.2442673 <strong>$g</strong>46.2442673<strong>$2</strong>gnis </td>
+         </tr>
+         <tr>
+            <td><strong>034</strong></td>
+            <td colspan="9"><strong>##</strong><strong>$3</strong>Source<strong>$d</strong>W1174106<strong>$e</strong>W1174106<strong>$f</strong>N485723<strong>$g</strong>N485723<strong>$2</strong>gnis </td>
+         </tr>
+      </table>
+   </div>
+   <div class="conventions"></div>
+   <div class="history"></div>
+   <hr class="clear">
+   <div class="head-nav">
+      <div class="noprint"><a href="http://www.loc.gov/">Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/marc/">MARC</a> &gt;&gt; <a href="../index.htm">Authority</a> &gt;&gt; <span class="caps"><a href="../ad01x09x.html">01X-09X</a>  &gt;&gt; <strong>034</strong></span></div>
+   </div>
+   <div class="left"><span class="noprint">(07/07/2022)</span></div>
+   <div class="right"><a href="/cdn-cgi/l/email-protection#d4bab0b9a7bb94b8bbb7fab3bba2" class="noprint">Contact Us</a></div>
+   <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+   <script>if (window['_satellite']) { _satellite.pageBottom(); }</script>
+</body>
+
+</html>
