@@ -1,0 +1,531 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html40/loose.dtd">
+<html>
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>MARC 21 Format for Holdings Data: 853-878: Holdings Data-General Information (Network Development and MARC Standards Office, Library of Congress) </title>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="description" content="This page lists the holdings data fields (Network Development and MARC Standards Office, Library of Congress)">
+   <meta name="keywords" content="marc, marc21, marc standards">
+   <meta name="author" content="Library of Congress Network Development and MARC Standards Office">
+   <link href="../marc-generic.css" rel="stylesheet" type="text/css">
+   <style type="text/css">
+      body {
+         margin-left: 2em;
+         margin-right: 2em;
+      }
+
+      h1 {
+         font-family: Arial, Helvetica, sans-serif;
+      }
+
+      h3 {
+         text-align: left;
+      }
+
+      h4 {
+         margin-top: .5em;
+         margin-bottom: .5em;
+      }
+
+      p {
+         text-align: justify;
+         margin-left: 2em;
+         margin-right: 2em;
+      }
+
+      .formatname {
+         font-weight: bold;
+         font-family: Arial, Helvetica, sans-serif;
+         margin-left: .5em
+      }
+
+      .datename {
+         font-weight: bold;
+         text-align: right;
+         font-family: Arial, Helvetica, sans-serif;
+         margin-top: -1.2em;
+      }
+
+      .font_small {
+         font-size: 9pt;
+      }
+
+      .fieldtoc {
+         margin-left: 2em;
+      }
+
+      .subfieldtoc {
+         margin-left: 3em;
+      }
+
+      .box {
+         font-family: ZapfDingbats;
+      }
+
+      .description {
+         text-align: justify;
+         margin-left: 2em;
+      }
+
+      .description2 {
+         text-align: justify;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .description3 {
+         text-align: justify;
+         margin-top: 1em;
+         margin-bottom: 1em;
+         margin-left: 2em;
+      }
+
+      .indicator {
+         text-align: left;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .indicatorvalue {
+         margin-left: 2em;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .subfieldvalue {
+         margin-left: 2em;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .subfield {
+         text-align: left;
+         margin-top: 1em;
+         margin-bottom: 1em;
+         margin-left: 2em;
+      }
+
+      .characterposition {
+         text-align: left;
+         margin-top: 1em;
+         margin-bottom: 1em;
+         margin-left: 2em;
+      }
+
+      .charactervalue {
+         margin-left: 2em;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .characterpositionhistory {
+         text-align: left;
+         margin-top: .5em;
+         margin-bottom: .5em;
+         margin-left: 2em;
+      }
+
+      .charactervaluehistory {
+         margin-left: 2em;
+         margin-top: .1em;
+         margin-bottom: .1em;
+      }
+
+      .example {
+         margin-left: 4em;
+      }
+
+      .changed {
+         color: #FF0000;
+      }
+
+      .captiontext {
+         font-style: italic;
+      }
+
+      .displaytext {
+         font-style: italic;
+         margin-bottom: .5em;
+         margin-top: .5em;
+      }
+
+      .displaycontent {
+         text-align: left;
+      }
+
+      .table {
+         margin-left: 2em;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .head-nav {
+         font-family: Arial, Helvetica, sans-serif;
+         font-size: 9pt;
+      }
+
+      .summary {
+         margin-left: 2em;
+      }
+
+      .summarytable {
+         margin-left: 4em;
+      }
+
+      .update {
+         text-align: center;
+         font-weight: bold;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .changebox {
+         font-style: italic;
+         margin-top: .5em;
+      }
+
+      .changesection {
+         text-align: left;
+         margin-left: 2em;
+         font-weight: bold;
+         margin-top: .5em;
+      }
+
+      .changefield {
+         text-align: left;
+         margin-left: 1em;
+         font-weight: bold;
+      }
+
+      .changefieldlabel {
+         margin-left: 3em;
+         font-weight: bold;
+      }
+
+      .changeindicator {
+         margin-left: 3em;
+      }
+
+      .changeindicatorfieldname {
+         margin-left: 2em;
+      }
+
+      .changeindicatorvalue {
+         margin-left: 4em;
+         font-weight: bold;
+      }
+
+      .changesubfield {
+         margin-left: 3em;
+         font-weight: bold;
+      }
+
+      .changesubfieldname {
+         margin-left: 1em;
+         font-weight: bold;
+      }
+
+      .changesubfieldlocation {
+         text-align: justify;
+         font-weight: normal;
+      }
+
+      .glossaryentry {
+         margin-left: 2em;
+         margin-top: 1em;
+         font-weight: bold;
+      }
+
+      .glossaryentrydescription {
+         margin-left: 4em;
+         margin-bottom: 1em;
+         text-align: justify;
+      }
+
+      .citationaddress {
+         margin-left: 2em;
+         text-align: justify;
+      }
+
+      .citationinternet {
+         margin-left: 2em;
+         text-align: justify;
+      }
+
+      .citationname {
+         font-style: italic;
+         margin-top: 1em;
+      }
+   </style>
+   <script src="../../dac62e20b491e735c6b56e64c39134d8ee93f9cf/satelliteLib-6b47f831c184878d7338d4683ecf773a17973bb9.js"></script>
+</head>
+
+<body bgcolor="#ffffff">
+   <div class="head-nav"><a href="http://www.loc.gov/">Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/marc/">MARC</a> &gt;&gt; <a href="index.htm">Holdings</a> &gt;&gt; <strong>853-878</strong></div>
+   <hr><a name="skip_menu"></a>
+   <h1>853-878 - Holdings Data-General Information</h1>
+   <hr>
+   <div class="formatname">MARC 21 Holdings</div>
+   <div class="datename">October 2004</div>
+   <hr>
+   <div class="description">&quot;<strong>Full</strong>&quot; documentation refers to the <em>MARC 21 Format for Holdings Data</em> that contains detailed descriptions of every data element, along with examples, input conventions and history sections. </div>
+   <p></p>
+   <div class="description"> &quot;<strong>Concise</strong>&quot; documentation refers to the <em>MARC 21 Concise Format for Holdings Data</em> that contains abridged descriptions of every data element, along with examples. </div>
+   <p></p>
+   <div class="fieldtoc"><strong>853 - Captions and Pattern - Basic Bibliographic Unit</strong> (R) <a href="hd853.html">Full</a> | <a href="concise/hd853.html">Concise</a>
+   </div>
+   <div class="fieldtoc"><strong>854 - Captions and Pattern - Supplementary Material</strong> (R) <a href="hd854.html">Full</a> | <a href="concise/hd854.html">Concise</a>
+   </div>
+   <div class="fieldtoc"><strong>855 - Captions and Pattern - Indexes</strong> (R) <a href="hd855.html">Full</a> | <a href="concise/hd855.html">Concise</a>
+   </div>
+   <div class="fieldtoc"><strong>863 - Enumeration and Chronology - Basic Bibliographic Unit</strong> (R) <a href="hd863.html">Full</a> | <a href="concise/hd863.html">Concise</a>
+   </div>
+   <div class="fieldtoc"><strong>864 - Enumeration and Chronology - Supplementary Material</strong> (R) <a href="hd864.html">Full</a> | <a href="concise/hd864.html">Concise</a>
+   </div>
+   <div class="fieldtoc"><strong>865 - Enumeration and Chronology - Indexes</strong> (R) <a href="hd865.html">Full</a> | <a href="concise/hd865.html">Concise</a>
+   </div>
+   <div class="fieldtoc"><strong>866 - Textual Holdings - Basic Bibliographic Unit</strong> (R) <a href="hd866.html">Full</a> | <a href="concise/hd866.html">Concise</a>
+   </div>
+   <div class="fieldtoc"><strong>867 - Textual Holdings - Supplementary Material</strong> (R) <a href="hd867.html">Full</a> | <a href="concise/hd867.html">Concise</a>
+   </div>
+   <div class="fieldtoc"><strong>868 - Textual Holdings - Indexes</strong> (R) <a href="hd868.html">Full</a> | <a href="concise/hd868.html">Concise</a>
+   </div>
+   <div class="fieldtoc"><strong>876 - Item Information - Basic Bibliographic Unit</strong> (R) <a href="hd876.html">Full</a> | <a href="concise/hd876.html">Concise</a>
+   </div>
+   <div class="fieldtoc"><strong>877 - Item Information - Supplementary Material</strong> (R) <a href="hd877.html">Full</a> | <a href="concise/hd877.html">Concise</a>
+   </div>
+   <div class="fieldtoc"><strong>878 - Item Information - Indexes</strong> (R) <a href="hd878.html">Full</a> | <a href="concise/hd878.html">Concise</a></div>
+   <hr>
+   <h3>DEFINITION AND SCOPE</h3>
+   <p>Four related sets of fields are defined for recording information about the items actually held by the reporting organization: </p>
+   <ul>
+      <li class="nobullet">Captions and Pattern</li>
+      <li class="nobullet">Enumeration and Chronology</li>
+      <li class="nobullet">Textual Holdings</li>
+      <li class="nobullet">Item Information</li>
+   </ul>
+   <p>These holdings data fields accommodate three basic types of items: <strong>single-part</strong> items (Leader/06, Type of record, code x), <strong>multipart</strong> items (Leader/06, code v), and <strong>serial</strong> items (Leader/06, code y). </p>
+   <p>Within each set of fields, separate fields are defined for three categories:</p>
+   <ul>
+      <li class="nobullet">Basic Bibliographic Unit</li>
+      <li class="nobullet">Supplementary Material</li>
+      <li class="nobullet">Indexes</li>
+   </ul>
+   <p><strong>Basic bibliographic unit</strong> is an entity for which a bibliographic description exists, for example, a serial, a one-volume book, a multivolume encyclopedia. This category includes an index or supplementary material for which a separate bibliographic record exists. The <strong>supplementary material</strong> and <strong>indexes</strong> categories are used for supplementary materials and indexes for which the cataloging is included in the catalog record for the basic bibliographic unit, that is, no separate cataloging record exists. </p>
+   <p><strong>Subfield $8 (Field link and sequence number)</strong> is defined to link related 853-878 holdings data fields. In these fields, subfield $8 is structured as follows: </p>
+   <p>&lt;linking number&gt;.&lt;sequence number&gt;</p>
+   <p>Only the linking number portion is used in 853-855 Caption and Pattern and 866-868 Textual Holdings fields. In 863-865 Enumeration and Chronology and 876-878 Item Information fields subfield $8 contains both a linking number and a sequence number. The description of subfield $8 is found in Appendix A: <em><a href="echdcntf.html">Control Subfields</a></em>. </p>
+   <h4><span class="box">&#9632;</span> CAPTIONS AND PATTERN (FIELDS 853-855)</h4>
+   <p>These fields specify the caption appropriate for each level of enumeration and chronology present in the 863-865 Enumeration and Chronology field that is linked to it by subfield $8 (Field link and sequence number). A caption is a word, phrase, or abbreviation that describes the type of parts into which a multipart or serial item has been divided, for example, volume, number, part, side. These fields may also contain codes that define the publication pattern of the bibliographic item, for example, frequency, regularity pattern. These codes allow information in the 863-865 Enumeration and Chronology fields to be compressed or expanded by computer algorithm. </p>
+   <p>When no captions and/or compression or expansion capability for an 863-865 field is desired, the 853-855 Captions and Pattern fields are not required in a holdings statement. </p>
+   <h4><span class="box">&#9632;</span> ENUMERATION AND CHRONOLOGY (FIELDS 863-865)</h4>
+   <p>These fields contain the numeric, alphabetic, and/or date designation used on the bibliographic item that identifies its parts and shows the relationship of the parts to the whole. </p>
+   <p>The 853-855 Captions and Pattern and 863-865 Enumeration and Chronology fields, linked by subfield $8 (Field link and sequence number), are generally used for multipart and serials items when a caption is needed for an intelligible display of the enumeration and chronology data or when publication pattern data is needed to allow the compression or expansion of an 863-865 field by computer algorithm. </p>
+   <h4><span class="box">&#9632;</span> TEXTUAL HOLDINGS (FIELDS 866-868) </h4>
+   <p>These fields contain free-text enumeration and chronology data. They are generally not used for recording holdings for single-part items. They may be used <em>instead of</em> the coded 853-855 Captions and Pattern and 863-865 Enumeration and Chronology fields for multipart and serial items when those fields cannot be used adequately to describe the holdings. The 866-868 fields may also be used <em>in addition to</em> an Enumeration and Chronology field and any associated Captions and Pattern field to record and generate an alternative display for all or part of the data contained in those fields. </p>
+   <p>Subfield $8 (Field link and sequence number) is defined for the Textual Holdings fields to link the field with the 853-855 Captions and Pattern and 863-865 Enumeration and Chronology fields that it replaces or supplements. </p>
+   <p>The guidelines for applying the content designators and the input conventions for the holdings data fields are given in the following <em>General Information</em> sections: <em>853-855</em>, <em>863-865</em>, and <em>866-868</em>. </p>
+   <h4><span class="box">&#9632;</span> ITEM INFORMATION (FIELDS 876-878) </h4>
+   <p>These fields contain item level information about the copy described in field 852. They contain various data elements that need to be recorded for specific items for use, for example in acquisitions or circulation applications, among others. </p>
+   <p>Either subfield $3 or subfield $8 is used to link an Item Information field with another holdings field, depending upon which other field is used to record the holdings data. Subfield $3 is used to link to field 852 or 866-868; subfield $8 is used to link to fields 863-866, in which case the enumeration and chronology field must not be compressed beyond the individual physical piece. </p>
+   <h4><span class="box">&#9632;</span> COMPRESSIBILITY AND EXPANDABILITY </h4>
+   <p>A computer algorithm may be used to compress or expand (itemize) the enumeration and chronology data contained in an 863 Basic Bibliographic Unit or 864 Supplementary Material field. </p>
+   <p>Compression or expansion capability is indicated by the value assigned to the first indicator position (Compressibility and expandability) of the 853 or 854 Captions and Pattern field. The 853/863 and 854/864 fields are linked by the number in subfield $8 (Field link and sequence number) in each field. </p>
+   <p>Contents of an 865 Enumeration and Chronology field for an index may not be compressed or expanded by computer algorithm because an ambiguous holdings string could result. For example, compressed holdings for the first twenty-four volumes of an index that cumulates every fifth volume could be either <em>v. 1-24</em> or <em>v. 1/5-24</em>. In the second holdings string, the first cumulation is shown but nothing is known about subsequent cumulations. The second indicator position of field 855 (Captions and Pattern-Indexes) is undefined. </p>
+   <p><strong>Compression</strong> means that the content of the enumeration and chronology subfields ($a-$m) in one or more 863 or 864 fields can be converted from an itemized report of a range of holdings to one that expresses the same holdings in terms of the enumeration or chronology of only the first and last part held. </p>
+   <p><em>Expanded (itemized) holdings:</em></p>
+   <div class="example">
+      <table width="100%">
+         <tr>
+            <td valign="top" width="5%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="15%" align="left"></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left">853</td>
+            <td valign="top" colspan="9" align="left">20$81$av.$bno.$u6$vr$i(year)$j(month)$wm$x01,07</td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left">863</td>
+            <td valign="top" colspan="9" align="left">40$81.1$a113$i1923$j01-06</td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left">863</td>
+            <td valign="top" colspan="9" align="left">40$81.2$a114$i1923$j07-12</td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left">863</td>
+            <td valign="top" colspan="9" align="left">40$81.3$a115$b1-2$i1924$j01-02</td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left">863</td>
+            <td valign="top" colspan="9" align="left">40$81.4$a115$b5-6$i1924$j05-06 </td>
+         </tr>
+         <tr>
+            <td></td>
+            <td colspan="9">
+               <div class="displaytext">Display example:&nbsp;</div>
+            </td>
+         </tr>
+         <tr>
+            <td></td>
+            <td colspan="9">
+               <div class="displaycontent">v.113 (1923:Jan.-Jun.); v.114 (1923:Jul.-Dec.); v.115, pt.1-2 (1924:Jan.-1924:Feb.); v.115, pt.5-6 (1924:May-1924:Jun.) </div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <p><em>Compressed holdings:</em></p>
+   <div class="example">
+      <table width="100%">
+         <tr>
+            <td valign="top" width="5%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="15%" align="left"></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left">853</td>
+            <td valign="top" colspan="9" align="left">20$81$av.$bno.$u6$vr$i(year)$j(month)$wm$x01,07</td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left">863</td>
+            <td valign="top" colspan="9" align="left">30$81.1$a113-115$i1923-1924$j01-06 </td>
+         </tr>
+         <tr>
+            <td></td>
+            <td colspan="9">
+               <div class="displaytext">Display example:&nbsp;</div>
+            </td>
+         </tr>
+         <tr>
+            <td></td>
+            <td colspan="9">
+               <div class="displaycontent">v.113-115 (1923:Jan.-1924:Jun.) Holdings Level 3 does not indicate gaps. </div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <p><strong>Expansion</strong> means that the content of the enumeration and chronology subfields ($a-$m) in one or more 863 or 864 fields can be converted from a compressed first-and-last-part-held listing of a range of holdings to an explicit itemization of each part held. </p>
+   <p><em>Compressed holdings:</em></p>
+   <div class="example">
+      <table width="100%">
+         <tr>
+            <td valign="top" width="5%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="15%" align="left"></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left">853</td>
+            <td valign="top" colspan="9" align="left">20$81$av.$bno.$u4$vr$i(year)$j(season)$wq$x21</td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left">863</td>
+            <td valign="top" colspan="9" align="left">30$81.1$a6-7$i1976-1977$j21-24</td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left">863</td>
+            <td valign="top" colspan="9" align="left">40$81.2$a8$b1-3$i1978$j21-23 </td>
+         </tr>
+         <tr>
+            <td></td>
+            <td colspan="9">
+               <div class="displaytext">Display example:&nbsp;</div>
+            </td>
+         </tr>
+         <tr>
+            <td></td>
+            <td colspan="9">
+               <div class="displaycontent">v.6-8:no.3 (1976-1978:Autumn) </div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <p><em>Expanded (itemized) holdings:</em></p>
+   <div class="example">
+      <table width="100%">
+         <tr>
+            <td valign="top" width="5%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="15%" align="left"></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left">853</td>
+            <td valign="top" colspan="9" align="left">20$81$av.$bno.$u4$vr$i(year)$j(season)$wq$x21</td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left">863</td>
+            <td valign="top" colspan="9" align="left">41$81.1$a6$b1$i1976$j21</td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left">863</td>
+            <td valign="top" colspan="9" align="left">41$81.2$a6$b2$i1976$j22</td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left">863</td>
+            <td valign="top" colspan="9" align="left">41$81.3$a6$b3$i1976$j23...</td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left">863</td>
+            <td valign="top" colspan="9" align="left">41$81.12$a8$b4$i1978$j24 </td>
+         </tr>
+         <tr>
+            <td></td>
+            <td colspan="9">
+               <div class="displaytext">Display example:&nbsp;</div>
+            </td>
+         </tr>
+         <tr>
+            <td></td>
+            <td colspan="9">
+               <div class="displaycontent">v.6:no.1-4 (1976:Spring-Winter); v.7:no.1-4 (1977:Spring-Winter); v.8: no.1-3 (1978:Spring-Autumn) </div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <p>Specific data element requirements for compression and expansion by computer algorithm are given in the <em>Input Conventions</em> area of the <em>853-855 Captions and Pattern-General Information</em> section. </p>
+   <hr>
+   <h3>CONTENT DESIGNATOR HISTORY</h3>
+   <div class="font_small"><em>$8 - Field link and sequence number [NEW, 1991]</em></div>
+   <hr>
+   <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr valign="bottom">
+         <td>
+            <div class="head-nav"><a href="http://www.loc.gov/">Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/marc/">MARC</a> &gt;&gt; <a href="index.htm">Holdings</a> &gt;&gt; <strong>853-878</strong></div> (03/10/2008)
+         </td>
+         <td align="right"><a href="/cdn-cgi/l/email-protection#abc5cfc6d8c4ebc7c4c885ccc4dd">Contact Us</a></td>
+      </tr>
+   </table>
+   <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+   <script>if (window['_satellite']) { _satellite.pageBottom(); }</script>
+</body>
+
+</html>
