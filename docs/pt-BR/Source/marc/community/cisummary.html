@@ -1,0 +1,1056 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html40/loose.dtd">
+<html>
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>MARC 21 Format for Community Information Data: Summary Statement of Content Designators(Network Development and MARC Standards Office, Library of Congress) </title>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="description" content="This page contains the summary statement of content designators for the MARC 21 community information format  (Network Development and MARC Standards Office, Library of Congress)">
+   <meta name="keywords" content="marc, marc21, marc standards">
+   <meta name="author" content="Library of Congress Network Development and MARC Standards Office">
+   <link href="../marc-generic.css" rel="stylesheet" type="text/css">
+   <style type="text/css">
+      body {
+         margin-left: 2em;
+         margin-right: 2em;
+      }
+
+      h1 {
+         font-family: Arial, Helvetica, sans-serif;
+      }
+
+      h3 {
+         text-align: left;
+      }
+
+      h4 {
+         margin-top: .5em;
+         margin-bottom: .5em;
+      }
+
+      p {
+         text-align: justify;
+         margin-left: 2em;
+         margin-right: 2em;
+      }
+
+      .formatname {
+         font-weight: bold;
+         font-family: Arial, Helvetica, sans-serif;
+         margin-left: .5em
+      }
+
+      .datename {
+         font-weight: bold;
+         text-align: right;
+         font-family: Arial, Helvetica, sans-serif;
+         margin-top: -1.2em;
+      }
+
+      .font_small {
+         font-size: 9pt;
+      }
+
+      .fieldtoc {
+         margin-left: 2em;
+      }
+
+      .subfieldtoc {
+         margin-left: 3em;
+      }
+
+      .box {
+         font-family: ZapfDingbats;
+      }
+
+      .description {
+         text-align: justify;
+         margin-left: 2em;
+      }
+
+      .description2 {
+         text-align: justify;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .description3 {
+         text-align: justify;
+         margin-top: 1em;
+         margin-bottom: 1em;
+         margin-left: 2em;
+      }
+
+      .indicator {
+         text-align: left;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .indicatorvalue {
+         margin-left: 2em;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .subfieldvalue {
+         margin-left: 2em;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .subfield {
+         text-align: left;
+         margin-top: 1em;
+         margin-bottom: 1em;
+         margin-left: 2em;
+      }
+
+      .characterposition {
+         text-align: left;
+         margin-top: 1em;
+         margin-bottom: 1em;
+         margin-left: 2em;
+      }
+
+      .charactervalue {
+         margin-left: 2em;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .characterpositionhistory {
+         text-align: left;
+         margin-top: .5em;
+         margin-bottom: .5em;
+         margin-left: 2em;
+      }
+
+      .charactervaluehistory {
+         margin-left: 2em;
+         margin-top: .1em;
+         margin-bottom: .1em;
+      }
+
+      .example {
+         margin-left: 4em;
+      }
+
+      .changed {
+         color: #FF0000;
+      }
+
+      .captiontext {
+         font-style: italic;
+      }
+
+      .displaytext {
+         margin-bottom: .5em;
+         margin-top: .5em;
+      }
+
+      .displaycontent {
+         text-align: left;
+      }
+
+      .table {
+         margin-left: 2em;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .head-nav {
+         font-family: Arial, Helvetica, sans-serif;
+         font-size: 9pt;
+      }
+
+      .summary {
+         margin-left: 2em;
+      }
+
+      .summarytable {
+         margin-left: 4em;
+      }
+
+      .update {
+         text-align: center;
+         font-weight: bold;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .changebox {
+         font-style: italic;
+         margin-top: .5em;
+      }
+
+      .changesection {
+         text-align: left;
+         margin-left: 2em;
+         font-weight: bold;
+         margin-top: .5em;
+      }
+
+      .changefield {
+         text-align: left;
+         margin-left: 1em;
+         font-weight: bold;
+      }
+
+      .changefieldlabel {
+         margin-left: 3em;
+         font-weight: bold;
+      }
+
+      .changeindicator {
+         margin-left: 3em;
+      }
+
+      .changeindicatorfieldname {
+         margin-left: 2em;
+      }
+
+      .changeindicatorvalue {
+         margin-left: 4em;
+         font-weight: bold;
+      }
+
+      .changesubfield {
+         margin-left: 3em;
+         font-weight: bold;
+      }
+
+      .changesubfieldname {
+         margin-left: 1em;
+         font-weight: bold;
+      }
+
+      .changesubfieldlocation {
+         text-align: justify;
+         font-weight: normal;
+      }
+
+      .glossaryentry {
+         margin-left: 2em;
+         margin-top: 1em;
+         font-weight: bold;
+      }
+
+      .glossaryentrydescription {
+         margin-left: 4em;
+         margin-bottom: 1em;
+         text-align: justify;
+      }
+
+      .glossaryentryfields {
+         margin-left: 4em;
+         margin-bottom: 1em;
+         text-align: justify;
+         font-weight: bold;
+      }
+
+      .citationaddress {
+         margin-left: 2em;
+         text-align: justify;
+      }
+
+      .citationinternet {
+         margin-left: 2em;
+         text-align: justify;
+      }
+
+      .citationname {
+         font-style: italic;
+         margin-top: 1em;
+      }
+   </style>
+   <script src="../../dac62e20b491e735c6b56e64c39134d8ee93f9cf/satelliteLib-6b47f831c184878d7338d4683ecf773a17973bb9.js"></script>
+</head>
+
+<body bgcolor="#ffffff">
+   <div class="head-nav"><a href="http://www.loc.gov/">Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/marc/">MARC</a> &gt;&gt; <a href="index.htm">Community Information</a> &gt;&gt; <strong>Summary Statement of Content Designators </strong></div>
+   <hr><a name="skip_menu"></a>
+   <h1>SUMMARY STATEMENT OF CONTENT DESIGNATORS</h1>
+   <hr>
+   <div class="formatname">MARC 21 Community Information</div>
+   <div class="datename">June 2023</div>
+   <hr>
+   <div class="description">&quot;<strong>Full</strong>&quot; documentation refers to the <em>MARC 21 Format for Community Information</em> that contains detailed descriptions of every data element, along with examples, input conventions and history sections. </div>
+   <p></p>
+   <div class="description"> &quot;<strong>Concise</strong>&quot; documentation refers to the <em>MARC 21 Concise Format for Community Information</em> that contains abridged descriptions of every data element, along with examples. </div>
+   <p><strong><a href="cileader.html">LEADER</a></strong></p>
+   <p><strong><a href="cidirectory.html">DIRECTORY</a></strong></p>
+   <p><strong>VARIABLE CONTROL FIELDS</strong></p>
+   <div class="summary">
+      <p><em>00X &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="ci00x.html">Control Fields&#8722;General Information</a></em></p>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">001</td>
+            <td width="611">Control Number <a href="ci001.html">Full</a> | <a href="concise/ci001.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">003</td>
+            <td width="611">Control Number Identifier <a href="ci003.html">Full</a> | <a href="concise/ci003.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">005</td>
+            <td width="611">Date and Time of Latest Transaction <a href="ci005.html">Full</a> | <a href="concise/ci005.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">007</td>
+            <td width="611">Physical Description Fixed Field <a href="ci007.html">Full</a> | <a href="concise/ci007.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">008</td>
+            <td width="611">Fixed Length Data Elements <a href="ci008.html">Full</a> | <a href="concise/ci008.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <p><strong>VARIABLE DATA FIELDS</strong></p>
+   <div class="summary">
+      <p><em>01X-08X &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="ci01x08x.html">Numbers and Codes</a></em></p>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">010</td>
+            <td width="611">Library of Congress Control Number <a href="ci010.html">Full</a> | <a href="concise/ci010.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">016</td>
+            <td width="611">National Bibliographic Agency Control Number <a href="ci016.html">Full</a> | <a href="concise/ci016.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">035</td>
+            <td width="611">System Control Number <a href="ci035.html">Full</a> | <a href="concise/ci035.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">040</td>
+            <td width="611">Record Source <a href="ci040.html">Full</a> | <a href="concise/ci040.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">041</td>
+            <td width="611">Language Code <a href="ci041.html">Full</a> | <a href="concise/ci041.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">043</td>
+            <td width="611">Geographic Area Code <a href="ci043.html">Full</a> | <a href="concise/ci043.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">046</td>
+            <td width="611">Special Coded Dates <a href="ci046.html">Full</a> | <a href="concise/ci046.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">050</td>
+            <td width="611">Library of Congress Classification Number <a href="ci050.html">Full</a> | <a href="concise/ci050.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">052</td>
+            <td width="611">Geographic Classification <a href="ci052.html">Full</a> | <a href="concise/ci052.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">060</td>
+            <td width="611">National Library of Medicine Classification Number <a href="ci060.html">Full</a> | <a href="concise/ci060.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">066</td>
+            <td width="611">Character Sets Present <a href="ci066.html">Full</a> | <a href="concise/ci066.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">070</td>
+            <td width="611">National Agricultural Library Classification Number <a href="ci070.html">Full</a> | <a href="concise/ci070.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">072</td>
+            <td width="611">Human Services Code <a href="ci072.html">Full</a> | <a href="concise/ci072.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">073</td>
+            <td width="611">Type of Program or Organization Code <a href="ci073.html">Full</a> | <a href="concise/ci073.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">080</td>
+            <td width="611">Universal Decimal Classification Number <a href="ci080.html">Full</a> | <a href="concise/ci080.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">082</td>
+            <td width="611">Dewey Decimal Classification Number <a href="ci082.html">Full</a> | <a href="concise/ci082.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">084</td>
+            <td width="611">Other Classification Number <a href="ci084.html">Full</a> | <a href="concise/ci084.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summary">
+      <p><em><a href="cinames.html">Names &#8722; General Information Sections</a></em></p>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">X00</td>
+            <td width="611"><a href="cix00.html">Personal Names&#8722;General Information</a></td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">X10</td>
+            <td width="611"><a href="cix10.html">Corporate Names&#8722;General Information</a></td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">X11</td>
+            <td width="611"><a href="cix11.html">Meeting Names&#8722;General Information</a></td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">X30</td>
+            <td width="611"><a href="cix30.html">Uniform Titles&#8722;General Information</a></td>
+         </tr>
+      </table>
+   </div>
+   <div class="summary">
+      <p><em>1XX &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="ci1xx.html">Primary Names&#8722;General Information</a></em></p>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">100</td>
+            <td width="611">Primary Name&#8722;Personal <a href="ci100.html">Full</a> | <a href="concise/ci100.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">110</td>
+            <td width="611">Primary Name&#8722;Corporate <a href="ci110.html">Full</a> | <a href="concise/ci110.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">111</td>
+            <td width="611">Primary Name&#8722;Meeting <a href="ci111.html">Full</a> | <a href="concise/ci111.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summary">
+      <p><em>2XX &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="ci2xx.html">Title, Addresses -- General Information</a></em></p>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">245</td>
+            <td width="611">Title <a href="ci245.html">Full</a> | <a href="concise/ci245.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">246</td>
+            <td width="611">Varying Form of Title <a href="ci246.html">Full</a> | <a href="concise/ci246.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">247</td>
+            <td width="611">Former Title <a href="ci247.html">Full</a> | <a href="concise/ci247.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">270</td>
+            <td width="611">Address <a href="ci270.html">Full</a> | <a href="concise/ci270.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summary">
+      <p><em>3XX &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="ci3xx.html">Physical Description, Etc. &#8722; General Information</a></em></p>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">303</td>
+            <td width="611">Subordinate Entities <a href="ci303.html">Full</a> | <a href="concise/ci303.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">307</td>
+            <td width="611">Hours, Etc. <a href="ci307.html">Full</a> | <a href="concise/ci307.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">311</td>
+            <td width="611">Meeting Rooms and Facilities Available <a href="ci311.html">Full</a> | <a href="concise/ci311.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">312</td>
+            <td width="611">Equipment Available <a href="ci312.html">Full</a> | <a href="concise/ci312.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summary">
+      <p><em>4XX &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="ci4xx.html">Series Statements &#8722; General Information</a></em></p>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">440</td>
+            <td width="611">Series Statement/Added Entry - Title <a href="ci440.html">Full</a> | <a href="concise/ci440.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summary">
+      <p><em>5XX &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="ci5xx.html">Notes-General Information</a></em></p>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">500</td>
+            <td width="611">General Note <a href="ci500.html">Full</a> | <a href="concise/ci500.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">501</td>
+            <td width="611">Currency of Information Note <a href="ci501.html">Full</a> | <a href="concise/ci501.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">505</td>
+            <td width="611">Programs Note <a href="ci505.html">Full</a> | <a href="concise/ci505.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">511</td>
+            <td width="611">Participant or Performer Note <a href="ci511.html">Full</a> | <a href="concise/ci511.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">520</td>
+            <td width="611">Description Note <a href="ci520.html">Full</a> | <a href="concise/ci520.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">521</td>
+            <td width="611">Target Group Note <a href="ci521.html">Full</a> | <a href="concise/ci521.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">522</td>
+            <td width="611">Geographic Coverage Note <a href="ci522.html">Full</a> | <a href="concise/ci522.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">531</td>
+            <td width="611">Eligibility, Fees, Procedures Note <a href="ci531.html">Full</a> | <a href="concise/ci531.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">536</td>
+            <td width="611">Funding Source Note <a href="ci536.html">Full</a> | <a href="concise/ci536.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">545</td>
+            <td width="611">Biographical or Historical Note <a href="ci545.html">Full</a> | <a href="concise/ci545.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">546</td>
+            <td width="611">Language Note <a href="ci546.html">Full</a> | <a href="concise/ci546.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">551</td>
+            <td width="611">Budget Note <a href="ci551.html">Full</a> | <a href="concise/ci551.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">570</td>
+            <td width="611">Personnel Note <a href="ci570.html">Full</a> | <a href="concise/ci570.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">571</td>
+            <td width="611">Volunteers Note <a href="ci571.html">Full</a> | <a href="concise/ci571.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">572</td>
+            <td width="611">Affiliation and Other Relationships Note <a href="ci572.html">Full</a> | <a href="concise/ci572.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">573</td>
+            <td width="611">Credentials Note <a href="ci573.html">Full</a> | <a href="concise/ci573.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">574</td>
+            <td width="611">Transportation and Directions Note <a href="ci574.html">Full</a> | <a href="concise/ci574.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">575</td>
+            <td width="611">Accommodations for the Disabled Note <a href="ci575.html">Full</a> | <a href="concise/ci575.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">576</td>
+            <td width="611">Services Available Note <a href="ci576.html">Full</a> | <a href="concise/ci576.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">581</td>
+            <td width="611">Publications Note <a href="ci581.html">Full</a> | <a href="concise/ci581.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">587</td>
+            <td width="611">Other Information Available Note <a href="ci587.html">Full</a> | <a href="concise/ci587.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summary">
+      <p><em>6XX &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="ci6xx.html">Subject Access Fields &#8722; General Information</a></em></p>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">600</td>
+            <td width="611">Subject Added Entry&#8722;Personal Name <a href="ci600.html">Full</a> | <a href="concise/ci600.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">610</td>
+            <td width="611">Subject Added Entry&#8722;Corporate Name <a href="ci610.html">Full</a> | <a href="concise/ci610.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">611</td>
+            <td width="611">Subject Added Entry&#8722;Meeting Name <a href="ci611.html">Full</a> | <a href="concise/ci611.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">630</td>
+            <td width="611">Subject Added Entry&#8722;Uniform Title <a href="ci630.html">Full</a> | <a href="concise/ci630.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">648</td>
+            <td width="611">Subject Added Entry&#8211;Chronological Term <a href="ci648.html">Full</a> | <a href="concise/ci648.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">650</td>
+            <td width="611">Subject Added Entry&#8722;Topical Term <a href="ci650.html">Full</a> | <a href="concise/ci650.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">651</td>
+            <td width="611">Subject Added Entry&#8722;Geographic Name <a href="ci651.html">Full</a> | <a href="concise/ci651.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">653</td>
+            <td width="611">Index Term&#8722;Uncontrolled <a href="ci653.html">Full</a> | <a href="concise/ci653.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">654</td>
+            <td width="611">Subject Added Entry&#8722;Faceted Topical Terms <a href="ci654.html">Full</a> | <a href="concise/ci654.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">656</td>
+            <td width="611">Index Term&#8722;Occupation <a href="ci656.html">Full</a> | <a href="concise/ci656.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">657</td>
+            <td width="611">Index Term&#8722;Function <a href="ci657.html">Full</a> | <a href="concise/ci657.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">658</td>
+            <td width="611">Index Term&#8722;Curriculum Objective <a href="ci658.html">Full</a> | <a href="concise/ci658.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summary">
+      <p><em>7XX &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="ci7xx.html">Added Entries &#8722; General Information</a></em></p>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">700</td>
+            <td width="611">Added Entry&#8722;Personal Name <a href="ci700.html">Full</a> | <a href="concise/ci700.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">710</td>
+            <td width="611">Added Entry&#8722;Corporate Name <a href="ci710.html">Full</a> | <a href="concise/ci710.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">711</td>
+            <td width="611">Added Entry&#8722;Meeting Name <a href="ci711.html">Full</a> | <a href="concise/ci711.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">720</td>
+            <td width="611">Added Entry&#8722;Uncontrolled Name <a href="ci720.html">Full</a> | <a href="concise/ci720.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">730</td>
+            <td width="611">Added Entry&#8722;Publication Title <a href="ci730.html">Full</a> | <a href="concise/ci730.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">740</td>
+            <td width="611">Added Entry&#8722;Specific Program Title <a href="ci740.html">Full</a> | <a href="concise/ci740.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summary">
+      <p><em>8XX &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="ci8xx.html">Other Variable Fields ? General Information</a></em></p>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">856</td>
+            <td width="611">Electronic Location and Access <a href="ci856.html">Full</a> | <a href="concise/ci856.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">857</td>
+            <td width="611">Electronic Archive Location and Access <a href="ci857.html">Full</a> | <a href="concise/ci857.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">880</td>
+            <td width="611">Alternate Graphic Representation <a href="ci880.html">Full</a> | <a href="concise/ci880.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="summarytable">
+      <table>
+         <tr>
+            <td width="55">883</td>
+            <td width="611">Metadata Provenance <a href="ci883.html">Full</a> | <a href="concise/ci883.html">Concise</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <hr>
+   <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr valign="bottom">
+         <td>
+            <div class="head-nav"><a href="http://www.loc.gov/">Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/marc/">MARC</a> &gt;&gt; <a href="index.htm">Community Information</a> &gt;&gt; <strong>Summary Statement of Content Designators </strong></div> (06/21/2023)
+         </td>
+         <td align="right"><a href="/cdn-cgi/l/email-protection#08666c657b674864676b266f677e">Contact Us</a></td>
+      </tr>
+   </table>
+   <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+   <script>if (window['_satellite']) { _satellite.pageBottom(); }</script>
+</body>
+
+</html>
