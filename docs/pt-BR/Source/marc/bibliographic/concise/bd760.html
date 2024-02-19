@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>MARC 21 Format for Bibliographic Data: 760: Main Series Entry (Network Development and MARC Standards Office, Library of Congress) </title>
+   <meta name="description" content="This field contains the  (Network Development and MARC Standards Office, Library of Congress)">
+   <meta name="keywords" content="marc, marc21, marc standards">
+   <meta name="author" content="Library of Congress Network Development and MARC Standards Office">
+   <link href="../styles.css" rel="stylesheet" type="text/css">
+   <link href="../print.css" rel="stylesheet" type="text/css" media="print">
+   <script src="../../../dac62e20b491e735c6b56e64c39134d8ee93f9cf/satelliteLib-6b47f831c184878d7338d4683ecf773a17973bb9.js"></script>
+</head>
+
+<body class="concise">
+   <div class="head-nav">
+      <div class="noprint"><a href="http://www.loc.gov/">Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/marc/">MARC</a> &gt;&gt; <a href="../index.htm">Bibliographic</a> &gt;&gt; <span class="caps"><a href="../bd760787.html">760-787</a>  &gt;&gt; <strong>760</strong></span></div>
+   </div>
+   <hr><a name="skip_menu"></a>
+   <h1><span>760</span> - <span>Main Series Entry</span><span> (R)</span></h1>
+   <hr>
+   <div class="formatname">MARC 21 Bibliographic - concise</div>
+   <div class="datename">July 2022</div>
+   <hr>
+   <div class="definition">
+      <div>
+         <p>Information concerning the related main series when the target item is a subseries (vertical relationship). When a note is generated from this field, the introductory phrase <em>Main series:</em> or <em>Subseries of:</em> may be generated based on the field tag for display. </p>
+      </div>
+   </div>
+   <div class="guidelines">
+      <h4>Indicators</h4>
+      <div class="indicators">
+         <dl>
+            <dt>First - Note controller</dt>
+            <dd>0 - Display note</dd>
+            <dd>1 - Do not display note <p><span><span>Textual note is contained in field 580 (Linking Entry Complexity Note).</span><br></span></p>
+            </dd>
+            <dt>Second - Display constant controller</dt>
+            <dd># - Main series</dd>
+            <dd>8 - No display constant generated</dd>
+         </dl>
+      </div>
+      <h4>Subfield Codes</h4>
+      <div class="subfields">
+         <dl>
+            <dt>$a - Main entry heading <span> (NR)</span></dt>
+            <dd style="margin-left:1.75em;"><span>Main entry heading from the 100 (Main Entry Personal Name), 110 (Main Entry Corporate Name) or 111 (Main Entry Meeting Name) field of the related record.</span><br></dd>
+         </dl>
+         <dl>
+            <dt>$b - Edition <span> (NR)</span></dt>
+            <dd style="margin-left:1.75em;"><span>Name of the edition from field 250 (Edition Statement) of the related record.</span><br></dd>
+         </dl>
+         <dl>
+            <dt>$c - Qualifying information <span> (NR)</span></dt>
+            <dd style="margin-left:1.75em;"><span>Parenthetical qualifying information from subfield $b (Qualifying information) of field 222 (Key Title) or other data needed to distinguish between two titles.</span><br></dd>
+         </dl>
+         <dl>
+            <dt>$d - Place, publisher, and date of publication <span> (NR)</span></dt>
+            <dd style="margin-left:1.75em;"><span>Publication information from subfields $a, $b, and/or $c of field 260 (Publication, Distribution, etc. (Imprint)) of the related record.</span><br></dd>
+         </dl>
+         <dl>
+            <dt>$g - Related parts <span> (R)</span></dt>
+            <dd style="margin-left:1.75em;"><span>Data that indicates the specific piece or pieces of the related item that are involved in the relationship with the resource described in the 1XX/245 of the record, such as dates and volumes. The related parts information includes the location of a component part in a target item.</span><br></dd>
+         </dl>
+         <dl>
+            <dt>$h - Physical description <span> (NR)</span></dt>
+         </dl>
+         <dl>
+            <dt>$i - Relationship information <span> (R)</span></dt>
+            <dd style="margin-left:1.75em;"><span>Designation of a relationship between the resource described in the 760 field and the resource described in the 1XX/245 of the record.</span><br></dd>
+         </dl>
+         <dl>
+            <dt>$l - Data provenance <span> (R)</span></dt>
+            <dd style="margin-left:1.75em;"><span>See description of this subfield in Appendix J: <em><a href="../bdapndxj.html">Data Provenance Subfields</a></em>.</span><br></dd>
+         </dl>
+         <dl>
+            <dt>$m - Material-specific details <span> (NR)</span></dt>
+         </dl>
+         <dl>
+            <dt>$n - Note <span> (R)</span></dt>
+         </dl>
+         <dl>
+            <dt>$o - Other item identifier <span> (R)</span></dt>
+         </dl>
+         <dl>
+            <dt>$s - Uniform title <span> (NR)</span></dt>
+            <dd style="margin-left:1.75em;"><span>Title from field 240 (Uniform Title) or field 243 (Collective Uniform Title) of the related record.</span><br></dd>
+         </dl>
+         <dl>
+            <dt>$t - Title <span> (NR)</span></dt>
+            <dd style="margin-left:1.75em;"><span>Title from subfields $a, $n, and $p of field 245 (Title Statement) or subfield $a of fields 130 (Uniform Title) or 222 (Key Title) of the related record.</span><br></dd>
+         </dl>
+         <dl>
+            <dt>$w - Record control number <span> (R)</span></dt>
+            <dd style="margin-left:1.75em;"><span>System control number of the related record preceded by the MARC code, enclosed in parentheses, for the agency to which the control number applies.</span><br></dd>
+            <dd style="margin-left:1.75em;"><span>See <em><a href="http://www.loc.gov/marc/organizations/orgshome.html">Organization Code Sources</a></em> for a listing of sources used in MARC 21 records.</span><br></dd>
+         </dl>
+         <dl>
+            <dt>$x - International Standard Serial Number <span> (NR)</span></dt>
+            <dd style="margin-left:1.75em;"><span>ISSN for a serial title from field 022 (International Standard Serial Number) in the related record. The initialism <em>ISSN</em> may be generated for display.</span><br></dd>
+         </dl>
+         <dl>
+            <dt>$y - CODEN designation <span> (NR)</span></dt>
+            <dd style="margin-left:1.75em;"><span>CODEN designation from field 030 (CODEN Designation) in the related record. The acronym <em>CODEN</em> may be generated for display.</span><br></dd>
+         </dl>
+         <dl>
+            <dt>$4 - Relationship <span> (R)</span></dt>
+            <dd style="margin-left:1.75em;"><span>Code or URI that specifies the relationship from the entity described in the record to the entity referenced in the field.</span><br></dd>
+         </dl>
+         <dl>
+            <dt>$6 - Linkage <span> (NR)</span></dt>
+            <dd style="margin-left:1.75em;"><span>See description of this subfield in Appendix A: <em><a href="../ecbdcntf.html">Control Subfields</a></em>.</span><br></dd>
+         </dl>
+         <dl>
+            <dt>$7 - Control subfield <span> (NR)</span></dt>
+            <dd style="margin-left:1.75em;"><span>Four fixed-position character positions (designated as $7/0, $7/1, etc.) that indicate special characteristics of the linked entry. Because the definitions of the codes in subfield $7 are dependent on the character position in which they occur, the coding of any character position mandates that each preceding character position contains a code or the fill character ( | ); succeeding character positions need not be used.</span><br></dd>
+            <dd class="subfieldCharacter">0 - Type of main entry heading</dd>
+            <dd class="subfieldCharacterDsc"><span><span>One-character code that indicates the type of name contained in subfield $a. The code corresponds to the 1XX tag in the record for the related item.</span><br></span></dd>
+            <dd class="subfieldCharactervalue">p - Personal name</dd>
+            <dd class="subfieldCharactervalue">c - Corporate name</dd>
+            <dd class="subfieldCharactervalue">m - Meeting name</dd>
+            <dd class="subfieldCharactervalue">u - Uniform title</dd>
+            <dd class="subfieldCharactervalue">n - Not applicable</dd>
+            <dd class="subfieldCharacter">1 - Form of name</dd>
+            <dd class="subfieldCharacterDsc"><span><span>One-character code that indicates the form of the name contained in subfield $a. The code corresponds to the first indicator value in the 1XX field in the record for the related item and is interpreted in conjunction with the value in $7/0.</span><br></span></dd>
+            <dd class="subfieldCharactervalue">0 - Forename</dd>
+            <dd class="subfieldCharactervalue">1 - Single surname</dd>
+            <dd class="subfieldCharactervalue">2 - Multiple surname</dd>
+            <dd class="subfieldCharactervalue">3 - Family name</dd>
+            <dd class="subfieldCharactervalue">0 - Inverted name</dd>
+            <dd class="subfieldCharactervalue">1 - Jurisdiction name</dd>
+            <dd class="subfieldCharactervalue">2 - Name in direct order</dd>
+            <dd class="subfieldCharactervalue">n - Not applicable</dd>
+            <dd class="subfieldCharacter">2 - Type of record</dd>
+            <dd class="subfieldCharacterDsc"><span><span>One-character code that indicates the type of record for the related item. The code corresponds to that in Leader/06 (Type of record) in the record for the related item.</span><br></span></dd>
+            <dd class="subfieldCharactervalue">a - Language material</dd>
+            <dd class="subfieldCharactervalue">c - Notated music</dd>
+            <dd class="subfieldCharactervalue">d - Manuscript notated music</dd>
+            <dd class="subfieldCharactervalue">e - Cartographic material</dd>
+            <dd class="subfieldCharactervalue">f - Manuscript cartographic material</dd>
+            <dd class="subfieldCharactervalue">g - Projected medium</dd>
+            <dd class="subfieldCharactervalue">i - Nonmusical sound recording</dd>
+            <dd class="subfieldCharactervalue">j - Musical sound recording</dd>
+            <dd class="subfieldCharactervalue">k - Two-dimensional nonprojectable graphic</dd>
+            <dd class="subfieldCharactervalue">m - Computer file</dd>
+            <dd class="subfieldCharactervalue">o - Kit</dd>
+            <dd class="subfieldCharactervalue">p - Mixed material</dd>
+            <dd class="subfieldCharactervalue">r - Three-dimensional artifact or naturally occurring object</dd>
+            <dd class="subfieldCharactervalue">t - Manuscript language material</dd>
+            <dd class="subfieldCharacter">3 - Bibliographic level</dd>
+            <dd class="subfieldCharacterDsc"><span><span>One-character code that indicates the bibliographic level of the related item. The code corresponds to that in Leader/07 (Bibliographic level) in the record for the related item.</span><br></span></dd>
+            <dd class="subfieldCharactervalue">a - Monographic component part</dd>
+            <dd class="subfieldCharactervalue">b - Serial component part</dd>
+            <dd class="subfieldCharactervalue">c - Collection</dd>
+            <dd class="subfieldCharactervalue">d - Subunit</dd>
+            <dd class="subfieldCharactervalue">m - Monograph/item</dd>
+            <dd class="subfieldCharactervalue">s - Serial</dd>
+            <dd class="subfieldCharactervalue">i - Integrating resource</dd>
+         </dl>
+         <dl>
+            <dt>$8 - Field link and sequence number <span> (R)</span></dt>
+            <dd style="margin-left:1.75em;"><span>See description of this subfield in Appendix A: <em><a href="../ecbdcntf.html">Control Subfields</a></em>.</span><br></dd>
+         </dl>
+      </div>
+      <h4>Examples</h4>
+      <div class="examplesec">
+         <div class="example">
+            <table>
+               <tr>
+                  <td><strong>760</strong></td>
+                  <td colspan="9"><strong>0#</strong><strong>$7</strong>c1as<strong>$a</strong>United States. Geological Survey.<strong>$t</strong>Water supply papers </td>
+               </tr>
+            </table>
+         </div>
+      </div>
+   </div>
+   <hr class="clear">
+   <div class="head-nav">
+      <div class="noprint"><a href="http://www.loc.gov/">Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/marc/">MARC</a> &gt;&gt; <a href="../index.htm">Bibliographic</a> &gt;&gt; <span class="caps"><a href="../bd760787.html">760-787</a>  &gt;&gt; <strong>760</strong></span></div>
+   </div>
+   <div class="left"><span class="noprint">(07/07/2022)</span></div>
+   <div class="right"><a href="/cdn-cgi/l/email-protection#f59b9198869ab5999a96db929a83" class="noprint">Contact Us</a></div>
+   <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+   <script>if (window['_satellite']) { _satellite.pageBottom(); }</script>
+</body>
+
+</html>
