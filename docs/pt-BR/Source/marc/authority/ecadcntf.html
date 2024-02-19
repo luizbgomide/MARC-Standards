@@ -1,0 +1,407 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>MARC 21 Format for Authority Data: Appendix A: Control Subfields (Network Development and MARC Standards Office, Library of Congress) </title>
+   <meta name="description" content="This field contains the  (Network Development and MARC Standards Office, Library of Congress)">
+   <meta name="keywords" content="marc, marc21, marc standards">
+   <meta name="author" content="Library of Congress Network Development and MARC Standards Office">
+   <link href="../styles.css" rel="stylesheet" type="text/css">
+   <link href="../print.css" rel="stylesheet" type="text/css" media="print">
+   <script src="../../dac62e20b491e735c6b56e64c39134d8ee93f9cf/satelliteLib-6b47f831c184878d7338d4683ecf773a17973bb9.js"></script>
+</head>
+
+<body class="full">
+   <div class="head-nav">
+      <div class="noprint"><a href="http://www.loc.gov/">Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/marc/">MARC</a> &gt;&gt; <a href="index.htm">Authority</a> &gt;&gt; <span class="caps"><strong>appendix a</strong></span></div>
+   </div>
+   <hr><a name="skip_menu"></a>
+   <h1><span>Appendix A</span> - <span>Control Subfields</span></h1>
+   <hr>
+   <div class="formatname">MARC 21 Authority</div>
+   <div class="datename">November 2018</div>
+   <hr>
+   <table width="100%" class="subfields">
+      <tr>
+         <td width="50%"></td>
+         <td width="50%"></td>
+      </tr>
+      <tr>
+         <th colspan="2">Subfield Codes</th>
+      </tr>
+      <tr>
+         <td>
+            <ul class="nomark">
+               <li>$0 - Authority record control number or standard number</li>
+               <li>$1 - Real World Object URI</li>
+               <li>$5 - Institution to which field applies</li>
+            </ul>
+         </td>
+         <td>
+            <ul class="nomark">
+               <li>$6 - Linkage</li>
+               <li>$8 - Field link and sequence number</li>
+            </ul>
+         </td>
+      </tr>
+   </table>
+   <hr>
+   <div class="definition">
+      <div>
+         <p>Descriptions of subfields that are used to link field data to specific institutions, to other records, or to other fields. These subfields are defined for most fields in the format, and thus their descriptions are brought together in this appendix. The subfields are included in field level subfield lists wherever they are defined, with pointers to this appendix. </p>
+      </div>
+   </div>
+   <hr>
+   <div class="guidelines">
+      <h4><span class="box">■</span> SUBFIELD CODES </h4>
+      <div class="subfields">
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$0 - Authority record control number or standard number</strong>
+               </p>
+               <div>
+                  <p>Subfield $0 contains the system control number of the related authority or classification record, or a standard identifier. These identifiers may be in the form of text or a Uniform Resource Identifier (URI). If the identifier is text, the control number or identifier is preceded by the appropriate MARC Organization code (for a related authority record) or the Standard Identifier source code (for a standard identifier scheme), enclosed in parentheses. When the identifier is given in the form of a Web retrieval protocol, e.g., HTTP URI, no preceding parenthetical is used. </p>
+                  <p>Subfield $0 may contain a URI that identifies a name or label for an entity. When dereferenced, the URI points to information describing that name. A URI that directly identifies the entity itself is contained in subfield $1.</p>
+                  <p>See <em><a href="http://www.loc.gov/marc/organizations/orgshome.html">MARC Code List for Organizations</a></em> for a listing of organization codes and <em><a href="http://www.loc.gov/standards/sourcelist/standard-identifier.html"> Standard Identifier Source Codes</a></em> for code systems for standard identifiers. Subfield $0 is repeatable for different control numbers or identifiers. </p>
+               </div>
+               <div class="example">
+                  <table>
+                     <tr>
+                        <td>710</td>
+                        <td colspan="9">20$aRoyal Society of Medicine Services (Great Britain)$0(DLC)n##86108151#</td>
+                     </tr>
+                     <tr>
+                        <td>511</td>
+                        <td colspan="9">20$aCongrès européen de droit rural$0(DLC)n##82111965#</td>
+                     </tr>
+                     <tr>
+                        <td>730</td>
+                        <td colspan="9">#0$aDead Sea scrolls$0(DLC)n##79071139#</td>
+                     </tr>
+                     <tr>
+                        <td>751</td>
+                        <td colspan="9">#0$aZimbabwe$0(DLC)n##80089993#</td>
+                     </tr>
+                  </table>
+               </div>
+               <div class="example">
+                  <table>
+                     <tr>
+                        <td>024</td>
+                        <td colspan="9">7#$a0000000121491740$2isni<em><span><br><span>[ISNI for Ruth Rendell]</span></span></em></td>
+                     </tr>
+                     <tr>
+                        <td>100</td>
+                        <td colspan="9">1#$aRendell, Ruth,$d1930-</td>
+                     </tr>
+                     <tr>
+                        <td>500</td>
+                        <td colspan="9">1#$aVine, Barbara,$d1930$0(isni)0000000368647620$0http://id.loc.gov/authorities/names/n88276221<em><span><br><span>[ISNI for Barbara Vine] [Barbara Vine is a pseudonym used by Ruth Rendell.]</span></span></em></td>
+                     </tr>
+                  </table>
+               </div>
+               <div class="example">
+                  <table>
+                     <tr>
+                        <td>500</td>
+                        <td colspan="9">1#$aYeats, W. B.$q(William Butler),$d1865-1939$0http://id.loc.gov/authorities/names/n78095579$1http://id.loc.gov/rwo/agents/n78095579</td>
+                     </tr>
+                  </table>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$1 - Real World Object URI</strong>
+               </p>
+               <div>
+                  <p>Subfield $1 contains a URI that identifies an entity, sometimes referred to as a Thing, a Real World Object or RWO, whether actual or conceptual. When dereferenced, the URI points to a description of that entity. A URI that identifies a name or label for an entity is contained in $0.</p>
+               </div>
+               <div class="example">
+                  <table>
+                     <tr>
+                        <td>500</td>
+                        <td colspan="9">1#$aGoings, Mary Seach,$d1916-2015$0http://id.loc.gov/authorities/names/no2016071283$1http://id.loc.gov/rwo/agents/no2016071283</td>
+                     </tr>
+                  </table>
+               </div>
+               <div class="example">
+                  <table>
+                     <tr>
+                        <td>500</td>
+                        <td colspan="9">1#$alang, k. d.$q(Kathy Dawn),$d1961-$0http://id.loc.gov/authorities/names/n90689264$1https://isni.org/isni/000000007839184X</td>
+                     </tr>
+                  </table>
+               </div>
+               <div class="example">
+                  <table>
+                     <tr>
+                        <td>374</td>
+                        <td colspan="9">##$aAstronauts$0http://id.loc.gov/authorities/subjects/sh85008988$1http://dbpedia.org/resource/Astronaut$2lcsh</td>
+                     </tr>
+                  </table>
+               </div>
+               <div class="example">
+                  <table>
+                     <tr>
+                        <td>380</td>
+                        <td colspan="9">##$aHorror films$0http://id.loc.gov/authorities/genreForms/gf2011026321$1http://www.wikidata.org/entity/Q200092$2lcgft</td>
+                     </tr>
+                  </table>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$5 - Institution to which field applies</strong>
+               </p>
+               <div>
+                  <p>MARC code of the institution or organization that has added a tracing, reference, or linking entry field to an authority file record. It is used for institution-specific information that may or may not apply to the universal use of the authority record. </p>
+               </div>
+               <div>
+                  <p>See <em><a href="http://www.loc.gov/marc/organizations/orgshome.html">MARC Code List for Organizations</a></em> for a listing of sources used in MARC 21 records. </p>
+               </div>
+               <div class="example">
+                  <table>
+                     <tr>
+                        <td>400</td>
+                        <td colspan="9">1#$aKing, Kennedy$5NNU</td>
+                     </tr>
+                     <tr>
+                        <td>485</td>
+                        <td colspan="9">##$vArt songs$5NjP</td>
+                     </tr>
+                     <tr>
+                        <td>585</td>
+                        <td colspan="9">##$vAcronyms$5DLC</td>
+                     </tr>
+                     <tr>
+                        <td>700</td>
+                        <td colspan="9">05$wa$aFrancis, of Assisi,$cSaint,$d1182-1226$5CaOONL</td>
+                     </tr>
+                  </table>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$6 - Linkage</strong>
+               </p>
+               <div>
+                  <p>Data that links fields that are different script representations of each other. Subfield $6 may contain the tag number of an associated field, an occurrence number, a code that identifies the first script encountered in a left-to-right scan of the field, and an indication that the orientation for a display of the field data is right-to-left. A regular (non-880) field may be linked to one or more 880 fields that all contain different script representations of the same data. Subfield $6 is structured as follows:</p>
+               </div>
+               <div>
+                  <p>$6[linking tag]-[occurrence number]/[script identification code]/[field orientation code]</p>
+               </div>
+               <div>
+                  <p>Subfield $6 is always the first subfield in the field.</p>
+               </div>
+               <div>
+                  <p>Descriptions of multiscript records, with examples, are in <em><a href="ecadmulti.html">Multiscript Records</a></em>; specifications for field 880 are under that field; specifications for character sets and repertoires for scripts are found in <em><a href="http://www.loc.gov/marc/specifications/spechome.html">MARC 21 Specifications for Record Structure, Character Sets, and Exchange Media</a></em>. </p>
+               </div>
+               <div>
+                  <p><strong>Linking tag and occurrence number - </strong><em>Linking tag</em> part contains the tag number of the associated field. This part is followed immediately by a hyphen and the two-digit <em>occurrence number</em> part. A different occurrence number is assigned to each set of associated fields within a single record. The function of an <em>occurrence number</em> is to permit the matching of the associated fields (not to sequence the fields within the record). An <em>occurrence number</em> may be assigned at random for each set of associated fields. An <em>occurrence number</em> of less than two digits is right justified and the unused position contains a zero. </p>
+               </div>
+               <div>
+                  <p>When there is no associated field to which a field 880 is linked, the <em>occurrence number</em> in subfield $6 is 00. It is used if an agency wants to separate scripts in a record (See <em><a href="ecadmulti.html">Multiscript Records</a></em>). The <em>linking tag</em> part of subfield $6 will contain the tag that the associated regular field would have had if it had existed in the record. </p>
+               </div>
+               <div class="example">
+                  <table>
+                     <tr>
+                        <td>100</td>
+                        <td colspan="9">1#$6880-01$a [Heading in Latin script] </td>
+                     </tr>
+                     <tr>
+                        <td>880</td>
+                        <td colspan="9">1#$6100-01/(2/r$a [Heading in Hebrew script] </td>
+                     </tr>
+                     <tr>
+                        <td>880</td>
+                        <td colspan="9">##$6675-00/(2/r$a [Source citation in Hebrew script] <em><span><br><span>[The second 880 field is not linked to an associated field. The occurrence number is 00.] </span></span></em></td>
+                     </tr>
+                  </table>
+               </div>
+               <div>
+                  <p><strong>Script identification code - </strong>Occurrence number is followed immediately by a slash (/) and the <em>script identification code</em>. This code identifies the alternate script found in the field. The following codes are used: </p>
+                  <div class="table">
+                     <table>
+                        <tr>
+                           <td><em>Code</em></td>
+                           <td><em>Script</em></td>
+                        </tr>
+                        <tr>
+                           <td>(3</td>
+                           <td>Arabic</td>
+                        </tr>
+                        <tr>
+                           <td>(B</td>
+                           <td>Latin</td>
+                        </tr>
+                        <tr>
+                           <td>$1</td>
+                           <td>Chinese, Japanese, Korean</td>
+                        </tr>
+                        <tr>
+                           <td>(N</td>
+                           <td>Cyrillic</td>
+                        </tr>
+                        <tr>
+                           <td>(S</td>
+                           <td>Greek</td>
+                        </tr>
+                        <tr>
+                           <td>(2</td>
+                           <td>Hebrew</td>
+                        </tr>
+                     </table>
+                  </div>
+               </div>
+               <div class="example">
+                  <table>
+                     <tr>
+                        <td>880</td>
+                        <td colspan="9">1#$6100-01/(N$a [Heading in Cyrillic script] </td>
+                     </tr>
+                  </table>
+               </div>
+               <div>
+                  <p>These codes have been defined based on the MARC-8 coded character set escape sequences defined in accordance with ISO IEC 2022, "Character Code Structure and Extension Techniques" (equivalent to ANSI X3.41, "Code Extension Techniques for Use with 7-bit and 8-bit Character Sets"). The codes are described in <a href="http://www.loc.gov/marc/specifications/speccharmarc8.html">MARC character set documentation</a>. </p>
+                  <p>In a Unicode environment, script identification codes may instead be taken from <a href="http://www.unicode.org/iso15924/">ISO 15924</a> "Codes for the representation of names of scripts". Either the alphabetic values (consisting of four letters) or the numerical values (consisting of three digits) may be used. </p>
+               </div>
+               <div class="example">
+                  <table>
+                     <tr>
+                        <td>880</td>
+                        <td colspan="9">1#$6100-01/Cyrl$a[Heading in Cyrillic script]</td>
+                     </tr>
+                  </table>
+               </div>
+               <div class="example">
+                  <table>
+                     <tr>
+                        <td>880</td>
+                        <td colspan="9">1#$6100-01/220$a[Heading in Cyrillic script]</td>
+                     </tr>
+                  </table>
+               </div>
+               <div>
+                  <p>The entire field need not be in the script identified in subfield $6. If more than one script is present in the field, subfield $6 will contain the identification of the <em>first</em> alternate script encountered in a left-to-right scan of the field. </p>
+               </div>
+               <div>
+                  <p>Note also that the <em>script identification code</em> is used in field 880, subfield $6, but this data element is not generally used for subfield $6 of the associated regular field. In the associated field, the data is assumed to be the primary script(s) for the record. </p>
+               </div>
+               <div>
+                  <p><strong>Orientation code - </strong>In a MARC record, the contents of field 880 are always recorded in their logical order, from the first character to the last, regardless of field orientation. For a display of the field, the default field orientation is left-to-right. When the field contains text that has a right-to-left orientation, the <em>script identification code</em> is followed by a slash (/) and the field <em>orientation code</em>. The MARC field <em>orientation code</em> for right-to-left scripts is the letter r. The <em>orientation code</em> is only included in fields with right-to-left orientation, since left-to-right orientation is the default orientation in 880 fields. (See <em><a href="http://www.loc.gov/marc/specifications/spechome.html">MARC 21 Specifications for Record Structure, Character Sets, and Exchange Media</a></em> for a detailed description of field orientation.) </p>
+               </div>
+               <div class="example">
+                  <table>
+                     <tr>
+                        <td>880</td>
+                        <td colspan="9">##$6675-00/(2/r$a [Source citation in Hebrew script] <em><span><br><span>[The r indicates the right-to-left orientation of the Hebrew script.] </span></span></em></td>
+                     </tr>
+                  </table>
+               </div>
+               <div>
+                  <p>Note that the <em>orientation code</em> is used in field 880, subfield $6, but this data element is not generally used for subfield $6 of the associated regular field. In the associated field, the data is assumed to be the usual orientation of the primary script(s) for the record. </p>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$8 - Field link and sequence number</strong>
+               </p>
+               <div>
+                  <p>Data that identifies linked fields and may also propose a sequence for the linked fields. Subfield $8 may be repeated to link a field to more than one other group of fields. The structure and syntax for the field link and sequence number subfield is:</p>
+               </div>
+               <div>
+                  <p>$8[linking number].[sequence number]\[field link type]</p>
+               </div>
+               <div>
+                  <p><strong>Linking number</strong> is the first data element in the subfield and required if the subfield is used. It is a variable-length whole number that occurs in subfield $8 in all fields that are to be linked. Fields with the same linking number are considered linked. </p>
+               </div>
+               <div>
+                  <p><strong>Sequence number</strong> is separated from the linking number by a period "." and is optional. It is a variable- length whole number that may be used to indicate the relative order for display of the linked fields (lower sequence numbers displaying before higher ones). If it is used it must occur in all $8 subfields containing the same linking number. </p>
+               </div>
+               <div>
+                  <p><strong>Field link type</strong> is separated from preceding data by a reverse slash "\". It is a code indicating the reason for the link and it follows the link number, or sequence number if present. The following one-character field link type codes have been defined for use in subfield $8: </p>
+               </div>
+               <div class="value">
+                  <div><span class="valueLabel">p - Metadata provenance</span>
+                     <div>
+                        <p>Used in a record to link a field with another field containing information about provenance of the metadata recorded in the linked field. </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="value">
+                  <div><span class="valueLabel">u - General linking, type unspecified</span>
+                     <div>
+                        <p>Used in cases when a specific link type is not appropriate. Code “u” may serve as a default value when there is no information about the reason for the link available. </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <hr>
+   <h3>CONTENT DESIGNATOR HISTORY</h3>
+   <div class="history">
+      <div class="historySubfield">
+         <div><em>$0 - Record control number [REDEFINED, 2010]</em>
+            <div class="subfieldHistoryDsc"></div>
+         </div>
+      </div>
+      <div class="historySubfield">
+         <div><em>$0 - Authority record control number or standard number [REDESCRIBED, 2016]</em>
+            <div class="subfieldHistoryDsc">
+               <p>In 2016, the requirement to precede a dereferenceable URI (such as an HTTP URI) in subfield $0 with the parenthetical prefix code "(uri)" was removed. </p>
+            </div>
+            <div class="subfieldHistoryDsc"></div>
+         </div>
+      </div>
+      <div class="historySubfield">
+         <div><em>$0 - Authority record control number or standard number [REDESCRIBED, 2017]</em>
+            <div class="subfieldHistoryDsc">
+               <p>In 2017, the scope of subfield $0 was broadened to include classification record control number.</p>
+            </div>
+            <div class="subfieldHistoryDsc"></div>
+         </div>
+      </div>
+      <div class="historySubfield">
+         <div><em>$1 - Real World Object URI [NEW, 2017]</em>
+            <div class="subfieldHistoryDsc"></div>
+         </div>
+      </div>
+      <div class="historySubfield">
+         <div><em>$6 - Linkage [REDESCRIBED, 2018]</em>
+            <div class="subfieldHistoryDsc">
+               <p>Scope of $6 broadened to allow for the recording of script identification codes taken from ISO 15924.</p>
+            </div>
+            <div class="subfieldHistoryDsc"></div>
+         </div>
+      </div>
+      <div class="historySubfield">
+         <div><em>$8 - Field Link and Sequence Number</em>
+            <div class="subfieldHistoryDsc">
+               <div class="valuehistory">
+                  <div><em>p - Metadata provenance [NEW, 2012]</em></div>
+               </div>
+               <div class="valuehistory">
+                  <div><em>u - General linking, type unspecified [NEW, 2016]</em></div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <hr class="clear">
+   <div class="head-nav">
+      <div class="noprint"><a href="http://www.loc.gov/">Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/marc/">MARC</a> &gt;&gt; <a href="index.htm">Authority</a> &gt;&gt; <span class="caps"><strong>appendix a</strong></span></div>
+   </div>
+   <div class="left"><span class="noprint">(06/03/2021)</span></div>
+   <div class="right"><a href="/cdn-cgi/l/email-protection#701e141d031f301c1f135e171f06" class="noprint">Contact Us</a></div>
+   <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+   <script>if (window['_satellite']) { _satellite.pageBottom(); }</script>
+</body>
+
+</html>
