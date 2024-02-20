@@ -1,0 +1,490 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html40/loose.dtd">
+<html>
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>MARC 21 Concise Format for Classification Data: 763: Internal Subarrangement or Add Table Entry (Network Development and MARC Standards Office, Library of Congress) </title>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="description" content="This field contains the internal subarrangement or add table entry (Network Development and MARC Standards Office, Library of Congress)">
+   <meta name="keywords" content="marc, marc21, marc standards">
+   <meta name="author" content="Library of Congress Network Development and MARC Standards Office">
+   <link href="../../marc-generic.css" rel="stylesheet" type="text/css">
+   <style type="text/css">
+      body {
+         margin-left: 2em;
+         margin-right: 2em;
+      }
+
+      h1 {
+         font-family: Arial, Helvetica, sans-serif;
+      }
+
+      h3 {
+         text-align: left;
+      }
+
+      h4 {
+         margin-top: .5em;
+         margin-bottom: .5em;
+      }
+
+      p {
+         text-align: justify;
+         margin-left: 2em;
+         margin-right: 2em;
+      }
+
+      .characterposition {
+         text-align: left;
+         margin-top: .1em;
+         margin-bottom: .1em;
+         margin-left: 2em;
+      }
+
+      .charactervalue {
+         margin-left: 2em;
+         margin-top: .1em;
+         margin-bottom: .1em;
+      }
+
+      .formatname {
+         font-weight: bold;
+         font-family: Arial, Helvetica, sans-serif;
+         margin-left: .5em
+      }
+
+      .datename {
+         font-weight: bold;
+         text-align: right;
+         font-family: Arial, Helvetica, sans-serif;
+         margin-top: -1.2em;
+      }
+
+      .description {
+         text-align: justify;
+         margin-left: 2em;
+      }
+
+      .description2 {
+         text-align: justify;
+         margin-top: 1em;
+         margin-bottom: 1em;
+         margin-left: 2em;
+      }
+
+      .description3 {
+         text-align: justify;
+         margin-top: 1em;
+         margin-bottom: 1em;
+         margin-left: 2em;
+      }
+
+      .indicatorhead {
+         font-weight: bold;
+         margin-top: 1em;
+      }
+
+      .indicator {
+         text-align: left;
+      }
+
+      .indicatorvalue {
+         margin-left: 2em;
+      }
+
+      .subfieldvalue {
+         margin-left: 2em;
+      }
+
+      .subfieldhead {
+         font-weight: bold;
+         margin-top: 1em;
+      }
+
+      .subfieldvalue {
+         text-align: left;
+         margin-left: 2em;
+      }
+
+      .examplehead {
+         font-weight: bold;
+         margin-top: 1em;
+      }
+
+      .example {
+         margin-left: 4em;
+      }
+
+      .changed {
+         color: #FF0000;
+      }
+
+      .table {
+         margin-left: 2em;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .head-nav {
+         font-family: Arial, Helvetica, sans-serif;
+         font-size: 9pt;
+      }
+   </style>
+   <script src="../../../dac62e20b491e735c6b56e64c39134d8ee93f9cf/satelliteLib-6b47f831c184878d7338d4683ecf773a17973bb9.js"></script>
+</head>
+
+<body bgcolor="#ffffff">
+   <div class="head-nav"><a href="http://www.loc.gov/">Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/marc/">MARC</a> &gt;&gt; <a href="../index.htm">Classification</a> &gt;&gt; <a href="../cd76x.html">76X</a> &gt;&gt; <strong>763</strong></div>
+   <hr><a name="skip_menu"></a>
+   <h1>763 - Internal Subarrangement or Add Table Entry (R)</h1>
+   <hr>
+   <div class="formatname">MARC 21 Classification - Concise</div>
+   <div class="datename"> 2007 </div>
+   <hr>
+   <p>One entry in an internal classification subarrangement or add table. The entry may consist of a classification number and its associated caption, a note, or a see reference. A classification number that is part of an external table is recorded in field 153 (Classification Number) with the table identification recorded in subfield $z (Table identification) of that field. An internal table may also be coded as an external one and identified in subfield $z of field 153 to the record to which it applies. In this case, the table which provides the arrangement for or addition to the classification number or number span recorded in 153 is recorded in subfield $z of this field. </p>
+   <div class="indicatorhead">Indicators</div>
+   <div class="indicatorvalue">First - Classification number validity <div class="indicatorvalue">0 - Not a classification number entry</div>
+      <div class="indicatorvalue">1 - Standard valid classification number</div>
+      <div class="indicatorvalue">2 - Standard invalid classification number</div>
+      <div class="indicatorvalue">3 - Optional valid classification number</div>
+      <div class="indicatorvalue">4 - Optional invalid classification number</div>
+      <div class="indicatorvalue">5 - Obsolete classification number</div>
+   </div>
+   <div class="indicatorvalue">Second - Type of classification number <div class="indicatorvalue">0 - Single number</div>
+      <div class="indicatorvalue">1 - Defined number span</div>
+      <div class="indicatorvalue">2 - Summary number span</div>
+      <div class="indicatorvalue">8 - Other</div>
+   </div>
+   <div class="subfieldhead">Subfield Codes</div>
+   <div class="subfieldvalue">$a - Classification number-single number or beginning number of span (R)</div>
+   <div class="subfieldvalue">$b - Base number (NR)</div>
+   <div class="subfieldvalue">$c - Classification number-ending number of span (R)</div>
+   <div class="subfieldvalue">$d - Divided like number (R)</div>
+   <div class="subfieldvalue">$e - Example class number (R)</div>
+   <div class="subfieldvalue">$h - Caption hierarchy (R) <div class="description">Caption for each higher level of the caption hierarchy that precedes the caption in subfield $j (Caption) that is associated with a classification number as part of an internal subarrangement entry. A caption for a classification number in a summary number span in the <em>Dewey Decimal Classification</em> is contained in subfield $k (Summary number span caption hierarchy). </div>
+   </div>
+   <div class="subfieldvalue">$i - Explanatory text (R)</div>
+   <div class="subfieldvalue">$j - Caption (R)</div>
+   <div class="subfieldvalue">$k - Summary number span caption hierarchy (R) <div class="description">Caption at a level higher than the last for a summary number span in the <em>Dewey Decimal Classification</em> scheme. Caption hierarchies for a single classification number, defined number span, or other type of summary number span are contained in subfield $h. </div>
+   </div>
+   <div class="subfieldvalue">$m - Manual note (NR) <div class="description">Note from a classification manual that is part of an internal classification subarrangement. A reference from a schedule internal subarrangement to a manual is recorded in subfield $i (Explanatory text). </div>
+   </div>
+   <div class="subfieldvalue">$n - Number where instructions are found (R)</div>
+   <div class="subfieldvalue">$p - Corresponding classification field (R) <div class="description">Field tag of the field in which the internal subarrangement data would appear if it were not part of an internal subarrangement. May be repeated for option notes to show that the note would appear in field 683 (Application Instruction Note) or in some other field if it were not an option. </div>
+   </div>
+   <div class="subfieldvalue">$r - Root number (R) <div class="description">Initial digits of the pattern number or span when these digits are not added. If this subfield is present, subfield $d must also be present to specify the digits that are added. </div>
+   </div>
+   <div class="subfieldvalue">$s - See reference (R) <div class="description">Classification number to which a see reference in an internal classification subarrangement refers. </div>
+   </div>
+   <div class="subfieldvalue">$x - Other classification number (R) <div class="description">Classification numbers other than those that belong in one of the other defined subfields. </div>
+   </div>
+   <div class="subfieldvalue">$y - Type of division (R) <div class="description">Type of division to which a table specified in subfield $z applies.</div>
+   </div>
+   <div class="subfieldvalue">$z - Table identification (R)</div>
+   <div class="subfieldvalue">$6 - Linkage (NR) <div class="description">See the description of this subfield in Appendix A: <em><a href="../eccdcntf.html">Control Subfields</a></em>. </div>
+   </div>
+   <div class="subfieldvalue">$8 - Field link and sequence number (NR) <div class="description">See the description of this subfield in Appendix A: <em><a href="../eccdcntf.html">Control Subfields</a></em>. </div>
+   </div>
+   <div class="examplehead">Examples</div>
+   <div class="example">
+      <table width="100%">
+         <tr>
+            <td valign="top" width="5%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="15%" align="left"></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>763</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>08</strong><strong>$8</strong>1.3<strong>$i</strong>Including state documents<strong>$p</strong>680 </td>
+         </tr>
+      </table>
+   </div>
+   <div class="example">
+      <table width="100%">
+         <tr>
+            <td valign="top" width="5%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="15%" align="left"></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>763</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>08</strong><strong>$8</strong>1.34<strong>$i</strong>Class here comprehensive works on emergency therapy for specific diseases or kinds of diseases<strong>$p</strong>680 </td>
+         </tr>
+      </table>
+   </div>
+   <div class="example">
+      <table width="100%">
+         <tr>
+            <td valign="top" width="5%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="15%" align="left"></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>763</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>50</strong><strong>$8</strong>1.9<strong>$a</strong>[0459]<strong>$h</strong>Special topics<strong>$h</strong>Physical chemistry<strong>$j</strong>Chemical reactions<strong>$i</strong>Relocated to<strong>$x</strong>547.2<strong>$p</strong>685 </td>
+         </tr>
+      </table>
+   </div>
+   <div class="example">
+      <table width="100%">
+         <tr>
+            <td valign="top" width="5%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="15%" align="left"></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>763</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>08</strong><strong>$8</strong>1.14<strong>$i</strong>5 nos. </td>
+         </tr>
+      </table>
+   </div>
+   <div class="example">
+      <table width="100%">
+         <tr>
+            <td valign="top" width="5%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="15%" align="left"></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>763</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>18</strong><strong>$8</strong>1.61<strong>$a</strong>071<strong>$i</strong>vs.<strong>$a</strong>01<strong>$j</strong>Etiology vs. Microbiology<strong>$p</strong>684 </td>
+         </tr>
+      </table>
+   </div>
+   <div class="example">
+      <table width="100%">
+         <tr>
+            <td valign="top" width="5%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="15%" align="left"></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>763</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>08</strong><strong>$8</strong>1.12<strong>$i</strong>Add to<strong>$b</strong>21<strong>$i</strong>the numbers following<strong>$r</strong>352.1<strong>$i</strong>in<strong>$d</strong>352.105<strong>$c</strong>352.19,<strong>$i</strong>e.g., international administration<strong>$e</strong>211<strong>$p</strong>761 </td>
+         </tr>
+      </table>
+   </div>
+   <div class="example">
+      <table width="100%">
+         <tr>
+            <td valign="top" width="5%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="15%" align="left"></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>763</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>10</strong><strong>$8</strong>1.3<strong>$a</strong>62<strong>$k</strong>Specific forms of action<strong>$h</strong>Control<strong>$j</strong>Standards </td>
+         </tr>
+      </table>
+   </div>
+   <div class="example">
+      <table width="100%">
+         <tr>
+            <td valign="top" width="5%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="15%" align="left"></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>763</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>08</strong><strong>$8</strong>1.9<strong>$i</strong>Do not use; class in<strong>$s</strong>027<strong>$p</strong>253 </td>
+         </tr>
+      </table>
+   </div>
+   <div class="example">
+      <table width="100%">
+         <tr>
+            <td valign="top" width="5%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="15%" align="left"></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>763</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>08</strong><strong>$8</strong>1.16<strong>$i</strong>Add to<strong>$b</strong>009<strong>$i</strong>the numbers following<strong>$z</strong>2<strong>$r</strong>1<strong>$i</strong>in notation<strong>$z</strong>2<strong>$d</strong>11<strong>$c</strong>18<strong>$i</strong>from table 2, e.g., urban regions<strong>$e</strong>009732<strong>$p</strong>761 </td>
+         </tr>
+      </table>
+   </div>
+   <div class="example">
+      <table width="100%">
+         <tr>
+            <td valign="top" width="5%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="15%" align="left"></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>763</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>08</strong><strong>$z</strong>G6041.S<strong>$y</strong>history </td>
+         </tr>
+      </table>
+   </div>
+   <div class="example">
+      <table width="100%">
+         <tr>
+            <td valign="top" width="5%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="15%" align="left"></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>763</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>08</strong><strong>$8</strong>1.20<strong>$i</strong>Class persons of a specific period in<strong>$s</strong>01<strong>$c</strong>09,<strong>$i</strong>plus notation<strong>$z</strong>1<strong>$a</strong>092<strong>$i</strong>from Table 1;<strong>$p</strong>253 </td>
+         </tr>
+      </table>
+   </div>
+   <div class="example">
+      <table width="100%">
+         <tr>
+            <td valign="top" width="5%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="15%" align="left"></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>763</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>08</strong><strong>$i</strong>Under each: </td>
+         </tr>
+      </table>
+   </div>
+   <div class="example">
+      <table width="100%">
+         <tr>
+            <td valign="top" width="5%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="15%" align="left"></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>763</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>08</strong><strong>$8</strong>1.18<strong>$i</strong>(OPTIONAL PERIOD TABLE FOR SPANISH) </td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>763</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>30</strong><strong>$8</strong>1.29<strong>$a</strong>(5<strong>$j</strong>2000- )<strong>$p</strong>683 </td>
+         </tr>
+      </table>
+   </div>
+   <div class="example">
+      <table width="100%">
+         <tr>
+            <td valign="top" width="5%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="15%" align="left"></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>763</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>08</strong><strong>$8</strong>1.2<strong>$i</strong>As modified under<strong>$x</strong>616.1<strong>$c</strong>616.9<strong>$p</strong>683 [. . .] </td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>763</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>08</strong><strong>$8</strong>1.9<strong>$m</strong>Do not use<strong>$x</strong>06<strong>$m</strong>by itself under numbers whose meaning is limited to surgery, since surgery is a therapy. Add subdivisions of<strong>$x</strong>06<strong>$m</strong>to surgery numbers for specific physical therapies used in preparation for or rehabilitation from operative surgery, or for branches of surgery not limited to operative surgery, e.g., drug therapy in treatment of burns<strong>$x</strong>617.11061.<strong>$m</strong>Use notation<strong>$x</strong>06<strong>$m</strong>freely under numbers not limited to surgery, e.g., ophthalmological therapy<strong>$x</strong>617.706.<strong>$p</strong>684 [...] </td>
+         </tr>
+      </table>
+   </div>
+   <hr>
+   <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr valign="bottom">
+         <td>
+            <div class="head-nav"><a href="http://www.loc.gov/">Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/marc/">MARC</a> &gt;&gt; <a href="../index.htm">Classification</a> &gt;&gt; <a href="../cd76x.html">76X</a> &gt;&gt; <strong>763</strong></div> (03/14/2008)
+         </td>
+         <td align="right"><a href="/cdn-cgi/l/email-protection#5c3238312f331c30333f723b332a">Contact Us</a></td>
+      </tr>
+   </table>
+   <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+   <script>if (window['_satellite']) { _satellite.pageBottom(); }</script>
+</body>
+
+</html>

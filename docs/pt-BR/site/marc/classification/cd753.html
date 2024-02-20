@@ -1,0 +1,876 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>MARC 21 Format for Classification Data: 753: Index Term-Uncontrolled (Network Development and MARC Standards Office, Library of Congress) </title>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="description" content="This field contains the index term-uncontrolled (Network Development and MARC Standards Office, Library of Congress)">
+   <meta name="keywords" content="marc, marc21, marc standards">
+   <meta name="author" content="Library of Congress Network Development and MARC Standards Office">
+   <link href="../marc-generic.css" rel="stylesheet" type="text/css">
+   <style type="text/css">
+      body {
+         margin-left: 2em;
+         margin-right: 2em;
+      }
+
+      h1 {
+         font-family: Arial, Helvetica, sans-serif;
+      }
+
+      h3 {
+         text-align: left;
+      }
+
+      h4 {
+         margin-top: .5em;
+         margin-bottom: .5em;
+      }
+
+      p {
+         text-align: justify;
+         margin-left: 2em;
+         margin-right: 2em;
+      }
+
+      .formatname {
+         font-weight: bold;
+         font-family: Arial, Helvetica, sans-serif;
+         margin-left: .5em
+      }
+
+      .datename {
+         font-weight: bold;
+         text-align: right;
+         font-family: Arial, Helvetica, sans-serif;
+         margin-top: -1.2em;
+      }
+
+      .font_small {
+         font-size: 9pt;
+      }
+
+      .fieldtoc {
+         margin-left: 2em;
+      }
+
+      .subfieldtoc {
+         margin-left: 3em;
+      }
+
+      .box {
+         font-family: ZapfDingbats;
+      }
+
+      .description {
+         text-align: justify;
+         margin-left: 2em;
+      }
+
+      .description2 {
+         text-align: justify;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .description3 {
+         text-align: justify;
+         margin-top: 1em;
+         margin-bottom: 1em;
+         margin-left: 2em;
+      }
+
+      .indicator {
+         text-align: left;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .indicatorvalue {
+         margin-left: 2em;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .subfieldvalue {
+         margin-left: 2em;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .subfield {
+         text-align: left;
+         margin-top: 1em;
+         margin-bottom: 1em;
+         margin-left: 2em;
+      }
+
+      .characterposition {
+         text-align: left;
+         margin-top: 1em;
+         margin-bottom: 1em;
+         margin-left: 2em;
+      }
+
+      .charactervalue {
+         margin-left: 2em;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .characterpositionhistory {
+         text-align: left;
+         margin-top: .5em;
+         margin-bottom: .5em;
+         margin-left: 2em;
+      }
+
+      .charactervaluehistory {
+         margin-left: 2em;
+         margin-top: .1em;
+         margin-bottom: .1em;
+      }
+
+      .example {
+         margin-left: 4em;
+      }
+
+      .changed {
+         color: #FF0000;
+      }
+
+      .captiontext {
+         font-style: italic;
+      }
+
+      .displaytext {
+         margin-bottom: .5em;
+         margin-top: .5em;
+      }
+
+      .displaycontent {
+         text-align: left;
+      }
+
+      .table {
+         margin-left: 2em;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .head-nav {
+         font-family: Arial, Helvetica, sans-serif;
+         font-size: 9pt;
+      }
+
+      .summary {
+         margin-left: 2em;
+      }
+
+      .summarytable {
+         margin-left: 4em;
+      }
+
+      .update {
+         text-align: center;
+         font-weight: bold;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .changebox {
+         font-style: italic;
+         margin-top: .5em;
+      }
+
+      .changesection {
+         text-align: left;
+         margin-left: 2em;
+         font-weight: bold;
+         margin-top: .5em;
+      }
+
+      .changefield {
+         text-align: left;
+         margin-left: 1em;
+         font-weight: bold;
+      }
+
+      .changefieldlabel {
+         margin-left: 3em;
+         font-weight: bold;
+      }
+
+      .changeindicator {
+         margin-left: 3em;
+      }
+
+      .changeindicatorfieldname {
+         margin-left: 2em;
+      }
+
+      .changeindicatorvalue {
+         margin-left: 4em;
+         font-weight: bold;
+      }
+
+      .changesubfield {
+         margin-left: 3em;
+         font-weight: bold;
+      }
+
+      .changesubfieldname {
+         margin-left: 1em;
+         font-weight: bold;
+      }
+
+      .changesubfieldlocation {
+         text-align: justify;
+         font-weight: normal;
+      }
+
+      .glossaryentry {
+         margin-left: 2em;
+         margin-top: 1em;
+         font-weight: bold;
+      }
+
+      .glossaryentrydescription {
+         margin-left: 4em;
+         margin-bottom: 1em;
+         text-align: justify;
+      }
+
+      .glossaryentryfields {
+         margin-left: 4em;
+         margin-bottom: 1em;
+         text-align: justify;
+         font-weight: bold;
+      }
+
+      .citationaddress {
+         margin-left: 2em;
+         text-align: justify;
+      }
+
+      .citationinternet {
+         margin-left: 2em;
+         text-align: justify;
+      }
+
+      .citationname {
+         font-style: italic;
+         margin-top: 1em;
+      }
+   </style>
+   <script src="../../dac62e20b491e735c6b56e64c39134d8ee93f9cf/satelliteLib-6b47f831c184878d7338d4683ecf773a17973bb9.js"></script>
+</head>
+
+<body bgcolor="#ffffff">
+   <div class="head-nav"><a href="http://www.loc.gov/">Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/marc/">MARC</a> &gt;&gt; <a href="index.htm">Classification</a> &gt;&gt; <a href="cd70x75x.html">70X-75X</a> &gt;&gt; <strong>753</strong></div>
+   <hr><a name="skip_menu"></a>
+   <h1>753 - Index Term-Uncontrolled (R)</h1>
+   <hr>
+   <div class="formatname">MARC 21 Classification - Full</div>
+   <div class="datename">October 2007</div>
+   <hr>
+   <table width="100%">
+      <tr valign="top">
+         <td width="45%"><strong>First Indicator</strong><br><em>Undefined</em><br># - Undefined <br><br></td>
+         <td width="45%"><strong>Second Indicator</strong><br>
+            <em>Type of term or name</em><br> # - No information provided <br> 0 - Topical term <br> 1 - Personal name <br> 2 - Corporate name <br> 3 - Meeting name <br> 4 - Chronological term <br> 5 - Geographic name <br> 6 - Genre/form term<br>
+            <br>
+         </td>
+      </tr>
+   </table>
+   <hr>
+   <table width="100%">
+      <tr valign="top">
+         <td valign="top" width="50%" align="left"></td>
+         <td valign="top" width="50%" align="left"></td>
+      </tr>
+      <tr valign="top">
+         <td colspan="2"><strong>Subfield Codes</strong><br></td>
+      </tr>
+      <tr valign="top">
+         <td colspan="1">$a - Index term (R) <br>$b - Index term-succeeding level (R) <br>$d - Index term referred from (R) <br>$e - Example class number (R) <br>$i - Explanatory text (R) <br>$s - See also reference term (NR) <br></td>
+         <td colspan="1">$t - See also reference term-succeeding level (R) <br>$u - Use reference term (NR) <br>$v - Use reference term-succeeding level (R) <br>$6 - Linkage (NR) <br>$8 - Field link and sequence number (R) <br></td>
+      </tr>
+   </table>
+   <hr>
+   <h3>FIELD DEFINITION AND SCOPE</h3>
+   <p>Uncontrolled index terms to supplement terms derived from data in the MARC classification record that are not derived from a controlled subject heading system/thesaurus that provide subject access to a classification number or span in field 153 (Classification number) or an index term in field 154 (General Explanatory Index Term). </p>
+   <p>May be used to provide additional terms not appearing in the classification data record, such as synonyms or permutations of phrases, to provide references between related terms, and to provide vocabulary control using see references. Such index terms are not controlled by a thesaurus or other authority file, such as <em>LCSH</em> or <em>MeSH</em>. Index terms that are controlled are recorded in fields 700, 710, 711, 730, 750, or 751. </p>
+   <p>An uncontrolled index term in field 753 is contained in the record for the classification number or general index term to which it refers. If the index term is associated with a classification number the record contains field 153 (Classification Number). If an index term has no classification number associated with it or with any of its subtopics and thus cannot be contained in a record with a classification number in field 153, an index term record may be created (008/06 (Kind of record), code c) containing the index term in field 154 (General Explanatory Index Term), with the associated text in field 753. </p>
+   <hr>
+   <h3>GUIDELINES FOR APPLYING CONTENT DESIGNATORS</h3>
+   <h4><span class="box">&#9632;</span> INDICATORS </h4>
+   <div class="indicator"><strong>First Indicator - Undefined</strong>
+      <div class="description">Undefined and contains a blank (#). </div>
+   </div>
+   <div class="indicator"><strong>Second Indicator - Type of term or name</strong>
+      <div class="description">Distinguishes uncontrolled index terms by type. <div class="indicatorvalue"><strong># - No information provided</strong> </div>
+         <div class="indicatorvalue"><strong>0 - Topical term</strong> </div>
+         <div class="indicatorvalue"><strong>1 - Personal name</strong> </div>
+         <div class="indicatorvalue"><strong>2 - Corporate name</strong> </div>
+         <div class="indicatorvalue"><strong>3 - Meeting name</strong> </div>
+         <div class="indicatorvalue"><strong>4 - Chronological term</strong> </div>
+         <div class="indicatorvalue"><strong>5 - Geographic name</strong> </div>
+         <div class="indicatorvalue"><strong>6 - Genre/form term</strong> </div>
+      </div>
+   </div>
+   <h4><span class="box">&#9632;</span> SUBFIELD CODES </h4>
+   <div class="subfield"><strong>$a - Index term</strong>
+      <div class="description">Terms comprising the entry in an index to a classification schedule. If the entry consists of several terms at several levels, additional levels are contained in subfield $b (Index term--succeeding level) </div>
+      <div class="description2">
+         <div class="description">Term in subfield $a is used for a classification number citation in the published index. If the index term is an unused term that is followed by the used term in subfield $u or a term under which a see also reference appears, it is contained in subfield $d (Index term referred from). </div>
+      </div>
+      <div class="example">
+         <table width="100%">
+            <tr>
+               <td valign="top" width="5%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="15%" align="left"></td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">084</td>
+               <td valign="top" colspan="9" align="left">0#$alcc<br><em>[Library of Congress Classification] </em></td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">153</td>
+               <td valign="top" colspan="9" align="left">##$aPS648.W58$hAmerican Literature$hCollections of American literature$hProse (General)$hSpecial forms and topics, A-Z$jWolf children</td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left"><strong>753</strong></td>
+               <td valign="top" colspan="9" align="left"><strong>##</strong><strong>$a</strong>Wolf children in literature<strong>$b</strong>American<strong>$b</strong>Collections<strong>$b</strong>Prose </td>
+            </tr>
+         </table>
+         <table>
+            <tr>
+               <td width="21">&nbsp;</td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="10" align="left"><em>Display example:</em><br></td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="10" align="left">Wolf children in literature</td>
+            </tr>
+            <tr>
+               <td>&nbsp;</td>
+               <td valign="top" colspan="10" align="left">American</td>
+            </tr>
+            <tr>
+               <td>&nbsp;</td>
+               <td width="59">&nbsp;</td>
+               <td width="488" colspan="10" align="left" valign="top">Collections</td>
+            </tr>
+            <tr>
+               <td>&nbsp;</td>
+               <td>&nbsp;</td>
+               <td valign="top" colspan="10" align="left">Prose: PS648.W58</td>
+            </tr>
+         </table>
+      </div>
+   </div>
+   <div class="subfield"><strong>$b - Index term-succeeding level</strong>
+      <div class="description">Term at a level after the first in an index term. May also be used for the succeeding level of an index term referred from, which is contained in subfield $d. </div>
+      <div class="example">
+         <table width="100%">
+            <tr>
+               <td valign="top" width="5%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="15%" align="left"></td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">084</td>
+               <td valign="top" colspan="9" align="left">0#$addc$c21<br><em>[Dewey Decimal Classification] </em></td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">153</td>
+               <td valign="top" colspan="9" align="left">##$a338.47$hSocial sciences$hEconomics$hProduction$kSpecific kinds of industries$hSecondary industries and services$jGoods and services</td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">680</td>
+               <td valign="top" colspan="9" align="left">1#$iClass here quantities produced, shortages, surpluses, stockpiles, forecasts, and projections of supply and demand </td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left"><strong>753</strong></td>
+               <td valign="top" colspan="9" align="left"><strong>##</strong><strong>$a</strong>Demand<strong>$b</strong>forecasts<strong>$b</strong>secondary industries </td>
+            </tr>
+         </table>
+         <table>
+            <tr>
+               <td width="41">&nbsp;</td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="10" align="left"><em>Display example:</em><br></td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="10" align="left">Demand</td>
+            </tr>
+            <tr>
+               <td>&nbsp;</td>
+               <td valign="top" colspan="10" align="left">forecasts</td>
+            </tr>
+            <tr>
+               <td>&nbsp;</td>
+               <td width="33">&nbsp;</td>
+               <td width="526" colspan="10" align="left" valign="top">secondary industries: 338.47</td>
+            </tr>
+         </table>
+      </div>
+   </div>
+   <div class="subfield"><strong>$d - Index term referred from</strong>
+      <div class="description">Index term that refers to another index term, either as a see or see also reference. When subfield $d is used, the field also contains either subfield $s (See also reference term) or subfield $u (Use reference term). </div>
+      <div class="example">
+         <table width="100%">
+            <tr>
+               <td valign="top" width="5%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="15%" align="left"></td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">084</td>
+               <td valign="top" colspan="9" align="left">0#$addc$c21<br><em>[Dewey Decimal Classification] </em></td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">153</td>
+               <td valign="top" colspan="9" align="left">##$a362.2$hSocial sciences$hSocial problems and services; associations$kSocial problems and services$kSpecific social problems and services$hSocial welfare problems and services$kProblems of and services to persons with illnesses and disabilities$jMental and emotional illnesses and disturbances </td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left"><strong>753</strong></td>
+               <td valign="top" colspan="9" align="left"><strong>##</strong><strong>$a</strong>Mental illness </td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left"><strong>753</strong></td>
+               <td valign="top" colspan="9" align="left"><strong>##</strong><strong>$d</strong>Compulsive lying<strong>$s</strong>Mental illness </td>
+            </tr>
+         </table>
+         <table>
+            <tr>
+               <td width="38">&nbsp;</td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="10" align="left"><em>Display example:</em>
+               </td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="10" align="left">Compulsive lying</td>
+            </tr>
+            <tr>
+               <td>&nbsp;</td>
+               <td width="556" colspan="10" align="left" valign="top"><em>see also</em> Mental illness </td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="10" align="left">Mental illness: 362.2</td>
+            </tr>
+         </table>
+      </div>
+   </div>
+   <div class="subfield"><strong>$e - Example class number</strong>
+      <div class="description">Classification number or span that functions as an example related to data in other subfields in field 753. </div>
+      <div class="example">
+         <table width="100%">
+            <tr>
+               <td valign="top" width="5%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="15%" align="left"></td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">084</td>
+               <td valign="top" colspan="9" align="left">0#$anlm$c5th ed., rev.<br><em>[National Library of Medicine Classification] </em></td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">154</td>
+               <td valign="top" colspan="9" align="left">##$aFollow-up studies</td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left"><strong>753</strong></td>
+               <td valign="top" colspan="9" align="left"><strong>##</strong><strong>$i</strong>Form number 20 in any NLM schedule where applicable </td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left"><strong>753</strong></td>
+               <td valign="top" colspan="9" align="left"><strong>##</strong><strong>$i</strong>In a particular area, with the subject of the original study, e.g. Heart Diseases,<strong>$e</strong>WG 210 </td>
+            </tr>
+         </table>
+      </div>
+   </div>
+   <div class="subfield"><strong>$i - Explanatory text</strong>
+      <div class="description">Explanatory text associated with the index term.</div>
+      <div class="example">
+         <table width="100%">
+            <tr>
+               <td valign="top" width="5%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="15%" align="left"></td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">084</td>
+               <td valign="top" colspan="9" align="left">0#$anlm$c5th ed., rev.<br><em>[National Library of Medicine Classification] </em></td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">154</td>
+               <td valign="top" colspan="9" align="left">##$aFollow-up studies</td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left"><strong>753</strong></td>
+               <td valign="top" colspan="9" align="left"><strong>##</strong><strong>$i</strong>Form number 20 in any NLM schedule where applicable </td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left"><strong>753</strong></td>
+               <td valign="top" colspan="9" align="left"><strong>##</strong><strong>$i</strong>In a particular area, with the subject of the original study, e.g. Heart Diseases,<strong>$e</strong>WG 210<br><em>[The record is an index only term record, identified by code c in 008/06 (Kind of record).] </em></td>
+            </tr>
+         </table>
+         <table>
+            <tr>
+               <td width="48">&nbsp;</td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="10" align="left"><em>Display example:</em><br></td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="10" align="left">Follow-up studies</td>
+            </tr>
+            <tr>
+               <td>&nbsp;</td>
+               <td valign="top" colspan="10" align="left">(Form number 20 in any NLM schedule where applicable)</td>
+            </tr>
+            <tr>
+               <td>&nbsp;</td>
+               <td width="24">&nbsp;</td>
+               <td valign="top" colspan="10" align="left">In a particular area, with the subject of the original</td>
+            </tr>
+            <tr>
+               <td>&nbsp;</td>
+               <td>&nbsp;</td>
+               <td width="44">&nbsp;</td>
+               <td width="479" colspan="10" align="left" valign="top">study, e.g., Heart Diseases WG210</td>
+            </tr>
+         </table>
+      </div>
+   </div>
+   <div class="subfield"><strong>$s - See also reference term</strong>
+      <div class="description">Term to which a see also reference is made from the term in subfield $d (Index term referred from). </div>
+      <div class="example">
+         <table width="100%">
+            <tr>
+               <td valign="top" width="5%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="15%" align="left"></td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">084</td>
+               <td valign="top" colspan="9" align="left">0#$addc$c21<br><em>[Dewey Decimal Classification] </em></td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">153</td>
+               <td valign="top" colspan="9" align="left">##$a362.0425$hSocial sciences$hSocial problems and services; associations$kSocial problems and services$kSpecific social problems and services$hSocial welfare problems and services$hSpecial topics$hSocial problems$jSocial action</td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left"><strong>753</strong></td>
+               <td valign="top" colspan="9" align="left"><strong>##</strong><strong>$a</strong>Employment services<strong>$b</strong>social services </td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left"><strong>753</strong></td>
+               <td valign="top" colspan="9" align="left"><strong>##</strong><strong>$a</strong>Sheltered employment </td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left"><strong>753</strong></td>
+               <td valign="top" colspan="9" align="left"><strong>##</strong><strong>$d</strong>Sheltered employment<strong>$s</strong>Employment services<strong>$t</strong>social services </td>
+            </tr>
+         </table>
+         <table>
+            <tr>
+               <td width="39">&nbsp;</td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="10" align="left"><em>Display example:</em><br></td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="10" align="left">Employment services</td>
+            </tr>
+            <tr>
+               <td>&nbsp;</td>
+               <td width="542" colspan="10" align="left" valign="top">social services: 362.0425</td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="10" align="left">Sheltered employment: 362.0425</td>
+            </tr>
+            <tr>
+               <td>&nbsp;</td>
+               <td valign="top" colspan="10" align="left"><em>see also</em> Employment services - social services </td>
+            </tr>
+         </table>
+      </div>
+   </div>
+   <div class="subfield"><strong>$t - See also reference term-succeeding level</strong>
+      <div class="description">Term at a level after the first in a see also reference term.</div>
+      <div class="example">
+         <table width="100%">
+            <tr>
+               <td valign="top" width="5%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="15%" align="left"></td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">084</td>
+               <td valign="top" colspan="9" align="left">0#$addc$c21<br><em>[Dewey Decimal Classification] </em></td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">153</td>
+               <td valign="top" colspan="9" align="left">##$a363.1929$hSocial sciences$hSocial problems and services; associations$kSocial problems and services$kSpecific social problems and services$hOther social problems and services$hPublic safety programs$hProduct hazards$hFoods$jSpecific foods</td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left">680</td>
+               <td valign="top" colspan="9" align="left">0#$aIncluding beverages, canned goods, dairy products, meats </td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left"><strong>753</strong></td>
+               <td valign="top" colspan="9" align="left"><strong>##</strong><strong>$a</strong>Dairy products<strong>$b</strong>product safety </td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left"><strong>753</strong></td>
+               <td valign="top" colspan="9" align="left"><strong>##</strong><strong>$d</strong>Dairy products<strong>$b</strong>product safety<strong>$s</strong>Food<strong>$t</strong>product safety </td>
+            </tr>
+         </table>
+         <table>
+            <tr>
+               <td width="32">&nbsp;</td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="10" align="left"><em>Display example:</em><br></td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="10" align="left">Dairy products</td>
+            </tr>
+            <tr>
+               <td>&nbsp;</td>
+               <td valign="top" colspan="10" align="left">product safety: 363.1929</td>
+            </tr>
+            <tr>
+               <td>&nbsp;</td>
+               <td width="42">&nbsp;</td>
+               <td width="492" colspan="10" align="left" valign="top"><em>see also</em> Food - product safety </td>
+            </tr>
+         </table>
+      </div>
+   </div>
+   <div class="subfield"><strong>$u - Use reference term</strong>
+      <div class="description">Term under which a classification number citation will appear when the term in subfield $d (Index term referred from) or field 154 (General Explanatory Index Term) contains an unused term. </div>
+   </div>
+   <div class="subfield"><strong>$v - Use reference term-succeeding level</strong>
+      <div class="description">Term at a level after the first under which a classification number citation will appear when the term in subfield $d (Index term referred from) or field 154 (General Explanatory Index Term) contains an unused term. </div>
+      <div class="example">
+         <table width="100%">
+            <tr>
+               <td valign="top" width="5%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="10%" align="left"></td>
+               <td valign="top" width="15%" align="left"></td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="1" align="left"><strong>753</strong></td>
+               <td valign="top" colspan="9" align="left"><strong>##</strong><strong>$d</strong>State labor<strong>$b</strong>Wages<strong>$u</strong>Wages<strong>$v</strong>State labor </td>
+            </tr>
+         </table>
+         <table>
+            <tr>
+               <td width="29">&nbsp;</td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="10" align="left"><em>Display example:</em><br></td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="10" align="left">State labor: [Classification Number]</td>
+            </tr>
+            <tr>
+               <td>&nbsp;</td>
+               <td width="517" colspan="10" align="left" valign="top">Wages, <u>see</u> Wages - State labor </td>
+            </tr>
+         </table>
+      </div>
+   </div>
+   <div class="subfield"><strong>$6 - Linkage</strong>
+      <div class="description">See the description of this subfield in Appendix A: <em><a href="eccdcntf.html">Control Subfields</a></em>. </div>
+   </div>
+   <div class="subfield"><strong>$8 - Field link and sequence number</strong>
+      <div class="description">See the description of this subfield in Appendix A: <em><a href="eccdcntf.html">Control Subfields</a></em>. </div>
+   </div>
+   <h4><span class="box">&#9632;</span> EXAMPLES </h4>
+   <div class="example">
+      <table width="100%">
+         <tr>
+            <td valign="top" width="5%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="15%" align="left"></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left">084</td>
+            <td valign="top" colspan="9" align="left">0#$addc$c21<br><em>[Dewey Decimal Classification] </em></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left">153</td>
+            <td valign="top" colspan="9" align="left">##$a786.7$hThe arts. Fine and decorative arts$hMusic$kPrinciples, forms, ensembles, voices, instruments$kEnsembles, voices, instruments$kInstruments and their music$kSpecific instruments and their music$hKeyboard, mechanical, electrophonic, percussion instruments$jElectrophones. Electronic instruments </td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>753</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>##</strong><strong>$a</strong>Electronic musical instruments </td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>753</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>##</strong><strong>$d</strong>Electronic musical instruments<strong>$s</strong>Electrophones </td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>753</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>##</strong><strong>$a</strong>Electrophones </td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left"><strong>753</strong></td>
+            <td valign="top" colspan="9" align="left"><strong>##</strong><strong>$d</strong>Computers<strong>$b</strong>music<strong>$s</strong>Electrophones<br><em>[The last index term, which is a see also reference, acts like a tracing, since it is located in the record representing the term to which it refers, i.e. the record for Electrophones, not the record for Computers--music.] </em></td>
+         </tr>
+      </table>
+      <table>
+         <tr>
+            <td width="33">&nbsp;</td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="10" align="left"><em>Display example:</em><br></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="10" align="left">Computers</td>
+         </tr>
+         <tr>
+            <td>&nbsp;</td>
+            <td valign="top" colspan="10" align="left">music</td>
+         </tr>
+         <tr>
+            <td>&nbsp;</td>
+            <td width="55">&nbsp;</td>
+            <td width="512" colspan="10" align="left" valign="top"><em>see also</em> Electrophones </td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="10" align="left">Electronic musical instruments: 786.7</td>
+         </tr>
+         <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td valign="top" colspan="10" align="left"><em>see also</em> Electrophones </td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="10" align="left">Electrophones: 786.7</td>
+         </tr>
+      </table>
+   </div>
+   <hr>
+   <h3>INPUT CONVENTIONS</h3>
+   <div class="description2"><strong>Use of terms</strong> - In addition to terms in a classification index, this field may include any term which might be useful to the classifier, e.g. equivalent topics in other languages, commonly used terms, etc. </div>
+   <div class="description2"><strong>Display constants</strong> - Display constants may be system generated and associated with a subfield code. The following subfield codes may be associated with display constants: <div class="table">
+         <table>
+            <tr>
+               <td width="151" align="left" valign="top"><u>Subfield</u></td>
+               <td width="405" align="left" valign="top"><u>Display constant</u></td>
+            </tr>
+            <tr>
+               <td valign="top" align="left">$b</td>
+               <td valign="top" align="left">-</td>
+            </tr>
+            <tr>
+               <td valign="top" align="left">$s</td>
+               <td valign="top" align="left"><em>see also</em></td>
+            </tr>
+            <tr>
+               <td valign="top" align="left">$t</td>
+               <td valign="top" align="left">-</td>
+            </tr>
+            <tr>
+               <td valign="top" align="left">$u</td>
+               <td valign="top" align="left"><em>see</em></td>
+            </tr>
+            <tr>
+               <td valign="top" align="left">$v</td>
+               <td valign="top" align="left">-</td>
+            </tr>
+         </table>
+      </div>
+   </div>
+   <hr>
+   <h3>CONTENT DESIGNATOR HISTORY</h3>
+   <div class="font_small"><em>Indicator 2 - Type of term or name [NEW, 2007]</em><br>
+   </div>
+   <hr>
+   <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr valign="bottom">
+         <td>
+            <div class="head-nav"><a href="http://www.loc.gov/">Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/marc/">MARC</a> &gt;&gt; <a href="index.htm">Classification</a> &gt;&gt; <a href="cd70x75x.html">70X-75X</a> &gt;&gt; <strong>753</strong></div> (03/14/2008)
+         </td>
+         <td align="right"><a href="/cdn-cgi/l/email-protection#2b454f4658446b474448054c445d">Contact Us</a></td>
+      </tr>
+   </table>
+   <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+   <script>if (window['_satellite']) { _satellite.pageBottom(); }</script>
+</body>
+
+</html>

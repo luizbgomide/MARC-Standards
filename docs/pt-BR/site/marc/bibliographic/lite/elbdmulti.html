@@ -1,0 +1,155 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html40/loose.dtd">
+<html>
+
+<head>
+  <title>Multiscript Records</title>
+  <!-- Removed by WebCopy --><!--<base href="http://www.loc.gov/marc/bibliographic/lite/elbdmulti.html">--><!-- Removed by WebCopy -->
+  <meta name="description" content="This document contains the Multiscript Records section of the MARC 21 LITE Bibliographic format which includes all related data elements and many examples.">
+  <meta name="keywords" content="MARC 21 LITE, Multiscript Records bibliographic format">
+  <script src="../../../dac62e20b491e735c6b56e64c39134d8ee93f9cf/satelliteLib-6b47f831c184878d7338d4683ecf773a17973bb9.js"></script>
+</head>
+
+<body bgcolor="#FFFFFF">
+  <a name="top"></a>
+  <hr>
+  <h1><em>MARC 21 LITE Bibliographic Format: <br> Multiscript Records </em></h1>
+  <hr>
+  <p>This section describes and illustrates models for recording data in multiple scripts in MARC records. One script may be considered the primary script of the <em>data content</em> of the record, even though other scripts are also used for data content. (Note: ASCII is used for the structural elements of the record, and most coded data are also specified within the ASCII range of characters.) The general models for multiscript data that are followed with MARC 21 are described below.
+  <p>
+    <hr>
+  <dl>
+    <dt><strong>Model A</strong>: <em>Vernacular and transliteration.</em></dt>
+  </dl>
+  <dl>
+    <dd>This model focuses on inclusion of vernacular and transliteration in the same record and involves a MARC 21 field 880 (Alternate graphic representation) and a control subfield, subfield $6 (Linkage), which have not been identified for MARC 21 LITE records. If an agency using the <em>MARC 21 LITE Bibliographic Format</em> prefers to use model A, see the specifications for it in the <em><a href="../ecbdmulti.html">MARC 21 Concise Formats</a>.</em></dd>
+  </dl>
+  <p><strong>Model B</strong>: <em>Simple multiscript records.</em></p>
+  <dl>
+    <dd>All data is contained in regular fields and script varies depending on the requirements of the data. Fields may also include transliterated data. Repeatability specifications of all fields should be followed. </dd>
+  </dl>
+  <hr>
+  <h2><strong>Model B: Simple Multiscript Record Model</strong></h2>
+  <p>All data is contained in regular fields and script varies depending on the requirements of the data. Repeatability specifications of all fields should be followed.
+  <h3><strong>Examples</strong></h3>
+  <p>Although the data in the following records are taken from actual bibliographic items, these records are included for illustration only and are not necessarily usable for bibliographic purposes. The creator of the bibliographic data is not specified in these sample records. Character set escape sequences are not included in the example records.
+  <p>This first example is a multiscript record that follows Model B. In this example the language of cataloging is English (Latin script), thus the notes, subjects, etc. are in English. The bibliographic item is a mixed Russian language (Cyrillic script) and Arabic language (Arabic script) text.
+  <table>
+    <tr>
+      <td valign="top"><br><strong>040</strong></td>
+      <td valign="top"><br><strong>##$a</strong>*** <strong>$b</strong>eng <strong>$c</strong>***</td>
+    </tr>
+    <tr>
+      <td valign="top"><br><strong>041</strong></td>
+      <td valign="top"><br><strong>1#$a</strong>rus <strong>$a</strong>ara</td>
+    </tr>
+    <tr>
+      <td valign="top"><br><strong>066</strong></td>
+      <td valign="top"><br><strong>##$b</strong>(N <strong>$c</strong>(B <strong>$c</strong>(3</td>
+    </tr>
+    <tr>
+      <td valign="top"><br><strong>100</strong></td>
+      <td valign="top"><br><strong>1#$a</strong>Ruzhkov, V. I. <strong>$q</strong> (Viktor Ivanovich)</td>
+    </tr>
+    <tr>
+      <td valign="top"><br><strong>245</strong></td>
+      <td valign="top"><br><strong>00$a</strong>&lt;Title in Cyrillic&gt; : <strong>$b</strong>&lt;Remainder of title in Cyrillic&gt; / <strong>$c</strong>&lt;Statement of responsibility in Cyrillic&gt;</td>
+    </tr>
+    <tr>
+      <td valign="top"><br><strong>246</strong></td>
+      <td valign="top"><br><strong>31$a</strong>&lt;Title proper in Arabic&gt;</td>
+    </tr>
+    <tr>
+      <td valign="top"><br><strong>260</strong></td>
+      <td valign="top"><br><strong>##$a</strong>&lt;Place of publication in Cyrillic&gt; : <strong>$b</strong>&lt;Name of publisher in Cyrillic&gt;, <strong>$c</strong>1988.</td>
+    </tr>
+    <tr>
+      <td valign="top"><br><strong>300</strong></td>
+      <td valign="top"><br><strong>##$a</strong> &lt;Extent in Cyrillic&gt; ; <strong>$c</strong> &lt;Dimensions in Cyrillic&gt;.</td>
+    </tr>
+    <tr>
+      <td valign="top"><br><strong>650</strong></td>
+      <td valign="top"><br><strong>#0$a</strong>Technology <strong>$v</strong>Dictionaries <strong>$x</strong>Russian.</td>
+    </tr>
+    <tr>
+      <td valign="top"><br><strong>650</strong></td>
+      <td valign="top"><br><strong>#0$a</strong>Russian language <strong>$v</strong>Dictionaries <strong>$x</strong>Arabic.</td>
+    </tr>
+    <tr>
+      <td valign="top"><br><strong>700</strong></td>
+      <td valign="top"><br><strong>1#$a</strong>Tkhorzhevskii, L. L. <strong>$q</strong>(Lev L'vovich)</td>
+    </tr>
+    <tr>
+      <td valign="top"><br><strong>700</strong></td>
+      <td valign="top"><br><strong>1#$a</strong>Shagal', V. E. <strong>$q</strong>(Vladimir Eduardovich)</td>
+    </tr>
+    <tr>
+      <td valign="top"><br><strong>700</strong></td>
+      <td valign="top"><br>
+        <strong>1#$a</strong>Munir, Dawud Sulayman.
+      </td>
+    </tr>
+  </table>
+  <p>
+    <hr>
+  <p> This last example is a multiscript record that follows Model B. In this example the language of cataloging is Russian (Cyrillic script) and the bibliographic item is mixed Russian language (Cyrillic script) and English language (Latin script) text.
+  <table>
+    <tr>
+      <td valign="top"><br><strong>040</strong></td>
+      <td valign="top"><br><strong>##$a</strong>*** <strong>$b</strong>rus <strong>$c</strong>***</td>
+    </tr>
+    <tr>
+      <td valign="top"><br><strong>041</strong></td>
+      <td valign="top"><br><strong>1#$a</strong>rus <strong>$a</strong>eng</td>
+    </tr>
+    <tr>
+      <td valign="top"><br><strong>066</strong></td>
+      <td valign="top"><br><strong>##$b</strong>(N <strong>$c</strong>(B</td>
+    </tr>
+    <tr>
+      <td valign="top"><br><strong>245</strong></td>
+      <td valign="top"><br><strong>00$a</strong>&lt;Title in Cyrillic&gt; <strong>$b</strong> Who is who in oil and gas industry of the CIS / <strong>$c</strong>[&lt;Statement of responsibility in Cyrillic&gt;]</td>
+    </tr>
+    <tr>
+      <td valign="top"><br><strong>246</strong></td>
+      <td valign="top"><br><strong>31$a</strong>Who is who in oil and gas industry of the CIS</td>
+    </tr>
+    <tr>
+      <td valign="top"><br><strong>260</strong></td>
+      <td valign="top"><br><strong>##$a</strong> &lt;Place of publication in Cyrillic&gt; : <strong>$b</strong>&lt;Name of publisher in Cyrillic&gt;, <strong>$c</strong>1992.</td>
+    </tr>
+    <tr>
+      <td valign="top"><br><strong>300</strong></td>
+      <td valign="top"><br><strong>##$a</strong> &lt;Extent in Cyrillic&gt; ; <strong>$c</strong> &lt;Dimensions in Cyrillic&gt;.</td>
+    </tr>
+    <tr>
+      <td valign="top"><br><strong>546</strong></td>
+      <td valign="top"><br><strong>##$a</strong>&lt;Note in Cyrillic&gt;</td>
+    </tr>
+    <tr>
+      <td valign="top"><br><strong>650</strong></td>
+      <td valign="top"><br><strong>#0$a</strong>&lt;Topical term in Cyrillic&gt; <strong>$z</strong>&lt;Geographic subdivision in Cyrillic&gt; <strong>$v</strong>&lt;Form subdivision in Cyrillic&gt; </td>
+    </tr>
+    <tr>
+      <td valign="top"><br><strong>700</strong></td>
+      <td valign="top"><br><strong>1#$a</strong>&lt;Personal name in Cyrillic&gt; <strong>$q</strong>&lt;(Fuller form of name in Cyrillic)&gt;</td>
+    </tr>
+  </table>
+  <p><a href="#top">Go to top of document</a></p>
+  <hr>
+  <p><strong>Go to</strong>:
+  <ul>
+    <li><em><a href="index.htm">MARC 21 LITE Format for Bibliographic Data</a></em> </li>
+    <li><a href="http://www.loc.gov/marc/"> MARC Home Page</a> <br>
+    </li>
+  </ul>
+  <hr>
+  <img src="http://www.loc.gov/homepage/lc2.gif" alt="Library of Congress"> <strong>Library of Congress</strong><br>
+  <address>
+    <!--help desk email start -->
+    <a href="http://www.loc.gov/help/help-desk.html">Library of Congress Help Desk</a>
+    <!--help desk email end --> ( <!-- #BeginDate format:Am3 -->03/30/2006<!-- #EndDate --> )
+  </address>
+  <script>if (window['_satellite']) { _satellite.pageBottom(); }</script>
+</body>
+
+</html>

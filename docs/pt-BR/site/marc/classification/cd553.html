@@ -1,0 +1,339 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>MARC 21 Format for Classification Data: 553: Valid Number Tracing (Network Development and MARC Standards Office, Library of Congress)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="description" content="This field contains the valid number tracing (Network Development and MARC Standards Office, Library of Congress)">
+  <meta name="keywords" content="marc, marc21, marc standards">
+  <meta name="author" content="Library of Congress Network Development and MARC Standards Office">
+  <link type="text/css" rel="stylesheet" href="update10-stylesheet.css">
+  <script src="../../dac62e20b491e735c6b56e64c39134d8ee93f9cf/satelliteLib-6b47f831c184878d7338d4683ecf773a17973bb9.js"></script>
+</head>
+
+<body>
+  <div class="head-nav">
+    <a href="http://www.loc.gov/">Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/marc/">MARC</a> &gt;&gt; <a href="index.htm">Classification</a> &gt;&gt; <a href="cdtracing.html">Tracings and References</a> &gt;&gt; <strong>553</strong>
+  </div>
+  <hr>
+  <a name="skip_menu" id="skip_menu"></a>
+  <h1>553 - Valid Number Tracing (R)</h1>
+  <hr>
+  <div class="formatname"> MARC 21 Classification - Full </div>
+  <div class="datename"> October 2008 </div>
+  <hr>
+  <table width="100%">
+    <tr valign="top">
+      <td width="45%"><strong>First Indicator</strong><br>
+        <em>Source of classification number</em><br> 0 - Schedule<br> 1 - Table<br>
+        <br>
+      </td>
+      <td width="45%"><strong>Second Indicator</strong><br>
+        <em>Undefined</em><br> # - Undefined<br>
+        <br>
+      </td>
+    </tr>
+  </table>
+  <hr>
+  <table width="100%">
+    <tr valign="top">
+      <td valign="top" width="50%" align="left"></td>
+      <td valign="top" width="50%" align="left"></td>
+    </tr>
+    <tr valign="top">
+      <td colspan="2"><strong>Subfield Codes</strong><br></td>
+    </tr>
+    <tr valign="top">
+      <td colspan="1">$a - Classification number--single number or beginning number of span (R)<br> $c - Classification number--ending number of span (R)<br> $h - Caption hierarchy (R)<br> $i - Reference instruction phrase (NR)<br> $j - Caption (NR)<br> $k - Summary number span caption hierarchy (R)<br> $t - Topic (NR)</td>
+      <td colspan="1">$w - Control subfield (NR)<br> &nbsp;&nbsp;&nbsp;&nbsp;/0 - Special relationship<br> &nbsp;&nbsp;&nbsp;&nbsp;/1 - Hierarchical relationship<br> &nbsp;&nbsp;&nbsp;&nbsp;/2 - Reference display<br> &nbsp;&nbsp;&nbsp;&nbsp;/3 - History reference<br> $y - Table sequence number for internal subarrangement or add table (R)<br> $z - Table identification (R)<br> $6 - Linkage (NR)<br> $8 - Field link and sequence number (R)</td>
+    </tr>
+  </table>
+  <hr>
+  <h3>FIELD DEFINITION AND SCOPE</h3>
+  <p>Tracing for a cross reference from one valid classification number to another valid classification number. If the classification number in the tracing is valid for some topics but invalid for others, this field is used, and the topics that refer to another number are specified in subfield $t (Topic).</p>
+  <p>Used in a record for a valid or partially valid classification number (008/08, Classification validity, code a, b or c). The content designators used in the classification number and caption portions of field 553 are the same as those defined for fields 153 (Classification Number) and 453 (Invalid Number Tracing).</p>
+  <hr>
+  <h3>GUIDELINES FOR APPLYING CONTENT DESIGNATORS</h3>
+  <p>Guidelines for applying these content designators, including indicators, scheme-specific conventions and input conventions are given in the <em><a href="cdx53.html">X53 Classification Numbers-General Information</a></em> section. The guidelines for applying tracing subfield codes $i (Reference instruction phrase), $t (Topic) and $w (Control subfield), are given in the <em><a href="cdtracing.html">Tracing and Reference Fields-General Information</a></em> section.</p>
+  <h4><span class="box">■</span> EXAMPLES</h4>
+  <div class="example">
+    <table width="100%">
+      <tr>
+        <td valign="top" width="5%" align="left"></td>
+        <td valign="top" width="10%" align="left"></td>
+        <td valign="top" width="10%" align="left"></td>
+        <td valign="top" width="10%" align="left"></td>
+        <td valign="top" width="10%" align="left"></td>
+        <td valign="top" width="10%" align="left"></td>
+        <td valign="top" width="10%" align="left"></td>
+        <td valign="top" width="10%" align="left"></td>
+        <td valign="top" width="10%" align="left"></td>
+        <td valign="top" width="15%" align="left"></td>
+      </tr>
+      <tr>
+        <td valign="top" colspan="1" align="left">084</td>
+        <td valign="top" colspan="9" align="left">0#$addc$c22<br>
+          <em>[Dewey Decimal Classification]</em>
+        </td>
+      </tr>
+      <tr>
+        <td valign="top" colspan="1" align="left">153</td>
+        <td valign="top" colspan="9" align="left"> ##$a347.4202$c347.4204$hSocial sciences$hLaw$kBranches of law; laws, regulations, cases; law of specific jurisdictions, areas, socioeconomic regions$kBranches of law$hCivil procedure and courts$hSpecific jurisdictions and areas$kModern world; extraterrestial worlds$hEurope. Western Europe$hCivil procedure and courts of England$jCourts with specific kinds of jurisdiction</td>
+      </tr>
+      <tr>
+        <td valign="top" colspan="1" align="left">
+          <strong>553</strong>
+        </td>
+        <td valign="top" colspan="9" align="left">
+          <strong>0#</strong><strong>$w</strong>jg<strong>$a</strong>347.4201<strong> $h</strong>Social sciences<strong>$h</strong>Law<strong>$k</strong>Branches of law; laws, regulations, cases; law of specific jurisdictions, areas, socioeconomic regions<strong>$k</strong>Branches of law<strong>$h</strong>Civil procedure and courts<strong>$h</strong>Specific jurisdictions and areas<strong>$k</strong>Modern world; extraterrestial worlds<strong>$h</strong>Europe. Western Europe<strong>$h</strong>Civil procedure and courts of England<strong>$j</strong>Courts<strong>$t</strong>Courts with specific kinds of jurisdiction
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div class="example">
+    <table width="100%">
+      <tr>
+        <td valign="top" width="5%" align="left"></td>
+        <td valign="top" width="10%" align="left"></td>
+        <td valign="top" width="10%" align="left"></td>
+        <td valign="top" width="10%" align="left"></td>
+        <td valign="top" width="10%" align="left"></td>
+        <td valign="top" width="10%" align="left"></td>
+        <td valign="top" width="10%" align="left"></td>
+        <td valign="top" width="10%" align="left"></td>
+        <td valign="top" width="10%" align="left"></td>
+        <td valign="top" width="15%" align="left"></td>
+      </tr>
+      <tr>
+        <td valign="top" colspan="1" align="left">084</td>
+        <td valign="top" colspan="9" align="left">0#$alcc<br>
+          <em>[Library of Congress Classification]</em>
+        </td>
+      </tr>
+      <tr>
+        <td valign="top" colspan="1" align="left">153</td>
+        <td valign="top" colspan="9" align="left"> ##$aTR210$cTR212$hPhotography$hTheory of photographic processes in general$jPhotographic chemistry and chemicals</td>
+      </tr>
+      <tr>
+        <td valign="top" colspan="1" align="left">
+          <strong>553</strong>
+        </td>
+        <td valign="top" colspan="9" align="left">
+          <strong>0#</strong><strong>$w</strong>l<strong>$a</strong>QD701<strong> $c</strong>QD731<strong>$h</strong>Chemistry<strong>$h</strong>Physical and theoretical chemistry<strong>$j</strong>Photochemistry<strong>$t</strong>Photographic chemistry and chemicals
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div class="example">
+    <table width="100%">
+      <tr>
+        <td valign="top" width="5%" align="left"></td>
+        <td valign="top" width="10%" align="left"></td>
+        <td valign="top" width="10%" align="left"></td>
+        <td valign="top" width="10%" align="left"></td>
+        <td valign="top" width="10%" align="left"></td>
+        <td valign="top" width="10%" align="left"></td>
+        <td valign="top" width="10%" align="left"></td>
+        <td valign="top" width="10%" align="left"></td>
+        <td valign="top" width="10%" align="left"></td>
+        <td valign="top" width="15%" align="left"></td>
+      </tr>
+      <tr>
+        <td valign="top" colspan="1" align="left">084</td>
+        <td valign="top" colspan="9" align="left">0#$addc$c22<br>
+          <em>[Dewey Decimal Classification]</em>
+        </td>
+      </tr>
+      <tr>
+        <td valign="top" colspan="1" align="left">153</td>
+        <td valign="top" colspan="9" align="left"> ##$a542.1$hNatural sciences and mathematics$hChemistry and allied sciences$kChemistry$kGeneral topics in chemistry$hTechniques, procedures, apparatus, equipment, materials$jLaboratories</td>
+      </tr>
+      <tr>
+        <td valign="top" colspan="1" align="left">
+          <strong>553</strong>
+        </td>
+        <td valign="top" colspan="9" align="left">
+          <strong>0#</strong><strong>$w</strong>m<strong>$a</strong>540.72<strong> $h</strong>Natural sciences and mathematics<strong>$h</strong>Chemistry and allied sciences<strong>$h</strong>Education, research, related topics<strong>$j</strong>Research; statistical methods<strong>$t</strong>laboratories
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div class="example">
+    <table width="100%">
+      <tr>
+        <td valign="top" width="5%" align="left"></td>
+        <td valign="top" width="10%" align="left"></td>
+        <td valign="top" width="10%" align="left"></td>
+        <td valign="top" width="10%" align="left"></td>
+        <td valign="top" width="10%" align="left"></td>
+        <td valign="top" width="10%" align="left"></td>
+        <td valign="top" width="10%" align="left"></td>
+        <td valign="top" width="10%" align="left"></td>
+        <td valign="top" width="10%" align="left"></td>
+        <td valign="top" width="15%" align="left"></td>
+      </tr>
+      <tr>
+        <td valign="top" colspan="1" align="left">084</td>
+        <td valign="top" colspan="9" align="left">0#$addc$c22<br>
+          <em>[Dewey Decimal Classification]</em>
+        </td>
+      </tr>
+      <tr>
+        <td valign="top" colspan="1" align="left">153</td>
+        <td valign="top" colspan="9" align="left"> ##$z2$a482$c484$hGeographic Areas, Historical Periods, Persons$kSpecific continents, countries, localities; extraterrestrial worlds$kModern world; extraterrestrial worlds$hEurope. Western Europe$hScandinavia$jDivisions of Norway</td>
+      </tr>
+      <tr>
+        <td valign="top" colspan="1" align="left">
+          <strong>553</strong>
+        </td>
+        <td valign="top" colspan="9" align="left">
+          <strong>1#</strong><strong>$w</strong>jg<strong>$z</strong>2<strong> $a</strong>481<strong>$h</strong>Geographic Areas, Historical Periods, Persons<strong>$k</strong>Specific continents, countries, localities; extraterrestrial worlds<strong>$k</strong>Modern world; extraterrestrial worlds<strong>$h</strong>Europe. Western Europe<strong>$h</strong>Scandinavia<strong>$j</strong>Norway<strong> $t</strong>divisions of Norway
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div class="example">
+    <table width="100%">
+      <tr>
+        <td valign="top" width="5%" align="left"></td>
+        <td valign="top" width="10%" align="left"></td>
+        <td valign="top" width="10%" align="left"></td>
+        <td valign="top" width="10%" align="left"></td>
+        <td valign="top" width="10%" align="left"></td>
+        <td valign="top" width="10%" align="left"></td>
+        <td valign="top" width="10%" align="left"></td>
+        <td valign="top" width="10%" align="left"></td>
+        <td valign="top" width="10%" align="left"></td>
+        <td valign="top" width="15%" align="left"></td>
+      </tr>
+      <tr>
+        <td valign="top" colspan="1" align="left">
+          <strong>553</strong>
+        </td>
+        <td valign="top" colspan="9" align="left">
+          <strong>0#</strong><strong>$w</strong>l<strong>$a</strong>NK5030<strong> $c</strong>NK5035<strong>$h</strong>Decorative arts. Applied arts. Decoration and ornament<strong>$h</strong>Other arts and art industries<strong>$j</strong>Fairground art<strong>$t</strong>Handicraft of carousel horses
+        </td>
+      </tr>
+      <tr>
+        <td valign="top" colspan="1" align="left">
+          <strong>553</strong>
+        </td>
+        <td valign="top" colspan="9" align="left">
+          <strong>0#</strong><strong>$w</strong>k<strong>$a</strong>541.24<strong> $h</strong>Natural sciences and mathematics<strong>$h</strong>Chemistry and allied sciences<strong>$k</strong>Chemistry<strong>$k</strong>General topics in chemistry<strong>$h</strong>Physical and theoretical chemistry<strong>$h</strong>Theoretical chemistry<strong>$j</strong>Atomic structure<strong>$t</strong>periodic table
+        </td>
+      </tr>
+      <tr>
+        <td valign="top" colspan="1" align="left">
+          <strong>553</strong>
+        </td>
+        <td valign="top" colspan="9" align="left">
+          <strong>0#</strong><strong>$w</strong>bnna<strong>$a</strong>787.2<strong> $h</strong>The arts. Fine and decorative arts<strong>$h</strong>Music<strong>$k</strong>Instruments and their music<strong>$k</strong>Specific instruments and their music<strong>$h</strong>Stringed instruments (Chordophones). Bowed string instruments<strong>$j</strong>Violins
+        </td>
+      </tr>
+      <tr>
+        <td valign="top" colspan="1" align="left">
+          <strong>553</strong>
+        </td>
+        <td valign="top" colspan="9" align="left">
+          <strong>1#</strong><strong>$w</strong>j<strong>$z</strong>P-PZ1<strong> $a</strong>691<strong>$h</strong>Table for languages<strong>$h</strong>Lexicography<strong>$h</strong>Dictionaries<strong> $h</strong>Other special lists<strong>$j</strong>Word frequency lists<strong>$t</strong>Research on word frequency, etc., in connection with machine translating
+        </td>
+      </tr>
+      <tr>
+        <td valign="top" colspan="1" align="left">
+          <strong>553</strong>
+        </td>
+        <td valign="top" colspan="9" align="left">
+          <strong>0#</strong><strong>$w</strong>jg<strong>$a</strong>621.42<strong> $h</strong>Technology (Applied sciences)<strong>$h</strong>Engineering and allied operations<strong>$h</strong>Applied physics<strong>$h</strong>Prime movers and heat engineering<strong>$j</strong>Stirling engines and air motors
+        </td>
+      </tr>
+      <tr>
+        <td valign="top" colspan="1" align="left">
+          <strong>553</strong>
+        </td>
+        <td valign="top" colspan="9" align="left">
+          <strong>0#</strong><strong>$w</strong>k<strong>$a</strong>331.2162<strong> $h</strong>Social sciences<strong>$h</strong>Economics<strong>$k</strong>Economics of labor, finance, land, energy<strong>$h</strong>Labor economics<strong>$h</strong>Conditions of employment<strong>$h</strong>Compensation<strong>$h</strong>Methods of compensation<strong>$t</strong>Time payments
+        </td>
+      </tr>
+      <tr>
+        <td valign="top" colspan="1" align="left">
+          <strong>553</strong>
+        </td>
+        <td valign="top" colspan="9" align="left">
+          <strong>0#</strong><strong>$w</strong>l<strong>$a</strong>331<strong> $h</strong>Social sciences<strong>$h</strong>Economics<strong>$k</strong>Economics of labor, finance, land, energy<strong>$j</strong>Labor economics<strong>$t</strong>sociology of laboring classes
+        </td>
+      </tr>
+      <tr>
+        <td valign="top" colspan="1" align="left">
+          <strong>553</strong>
+        </td>
+        <td valign="top" colspan="9" align="left">
+          <strong>0#</strong><strong>$w</strong>mh<strong>$a</strong>331.011<strong> $h</strong>Social sciences<strong>$h</strong>Economics<strong>$k</strong>Economics of labor, finance, land, energy<strong>$h</strong>Labor economics<strong>$h</strong>Philosophy and theory<strong>$j</strong>Rights and position of labor<strong>$t</strong>systems analysis applied to labor economics
+        </td>
+      </tr>
+      <tr>
+        <td valign="top" colspan="1" align="left">
+          <strong>553</strong>
+        </td>
+        <td valign="top" colspan="9" align="left">
+          <strong>0#</strong><strong>$w</strong>jg<strong>$a</strong>621.69<strong> $h</strong>Technology (Applied sciences)<strong>$h</strong>Engineering and allied operations<strong>$h</strong>Applied physics<strong>$h</strong>Blowers, fans, pumps<strong>$k</strong>Pumps<strong>$j</strong>Pumps. Pneumatic pumps<strong>$t</strong>hydraulic pumps
+        </td>
+      </tr>
+      <tr>
+        <td valign="top" colspan="1" align="left">
+          <strong>553</strong>
+        </td>
+        <td valign="top" colspan="9" align="left">
+          <strong>0#</strong><strong>$w</strong>jg<strong>$a</strong>621.69<strong> $h</strong>Technology (Applied sciences)<strong>$h</strong>Engineering and allied operations<strong>$h</strong>Applied physics<strong>$h</strong>Blowers, fans, pumps<strong>$k</strong>Pumps<strong>$j</strong>Pumps. Pneumatic pumps<strong>$t</strong>reciprocating pumps
+        </td>
+      </tr>
+      <tr>
+        <td valign="top" colspan="1" align="left">
+          <strong>553</strong>
+        </td>
+        <td valign="top" colspan="9" align="left">
+          <strong>0#</strong><strong>$w</strong>jg<strong>$a</strong>621.69<strong> $h</strong>Technology (Applied sciences)<strong>$h</strong>Engineering and allied operations<strong>$h</strong>Applied physics<strong>$h</strong>Blowers, fans, pumps<strong>$k</strong>Pumps<strong>$j</strong>Pumps. Pneumatic pumps<strong>$t</strong>rotary pumps
+        </td>
+      </tr>
+      <tr>
+        <td valign="top" colspan="1" align="left">
+          <strong>553</strong>
+        </td>
+        <td valign="top" colspan="9" align="left">
+          <strong>0#</strong><strong>$w</strong>jg<strong>$a</strong>621.69<strong> $h</strong>Technology (Applied sciences)<strong>$h</strong>Engineering and allied operations<strong>$h</strong>Applied physics<strong>$h</strong>Blowers, fans, pumps<strong>$k</strong>Pumps<strong>$j</strong>Pumps. Pneumatic pumps<strong>$t</strong>centrifugal pumps
+        </td>
+      </tr>
+      <tr>
+        <td valign="top" colspan="1" align="left">
+          <strong>553</strong>
+        </td>
+        <td valign="top" colspan="9" align="left">
+          <strong>0#</strong><strong>$w</strong>kh<strong>$a</strong>666.5<strong> $c</strong>666.6<strong>$h</strong>Technology (Applied sciences)<strong>$h</strong>Chemical engineering and related technologies<strong>$h</strong>Ceramic and allied technologies<strong>$j</strong>Specific types of pottery<strong>$t</strong>comprehensive works
+        </td>
+      </tr>
+      <tr>
+        <td valign="top" colspan="1" align="left">
+          <strong>553</strong>
+        </td>
+        <td valign="top" colspan="9" align="left">
+          <strong>0#</strong><strong>$w</strong>nga<strong>$a</strong>230<strong> $c</strong>280<strong>$h</strong>Religion<strong>$j</strong>Christianity
+        </td>
+      </tr>
+    </table>
+  </div>
+  <hr>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr valign="bottom">
+      <td>
+        <div class="head-nav">
+          <a href="http://www.loc.gov/">Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/marc/">MARC</a> &gt;&gt; <a href="index.htm">Classification</a> &gt;&gt; <a href="cdtracing.html"> Tracings and References</a> &gt;&gt; <strong>553</strong>
+        </div>(09/01/2008)
+      </td>
+      <td align="right"><a href="/cdn-cgi/l/email-protection#b0ded4ddc3dff0dcdfd39ed7dfc6">Contact Us</a></td>
+    </tr>
+  </table>
+  <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+  <script>if (window['_satellite']) { _satellite.pageBottom(); }</script>
+</body>
+
+</html>

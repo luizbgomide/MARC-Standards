@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>MARC 21 Format for Authority Data: 083: Dewey Decimal Classification Number (Network Development and MARC Standards Office, Library of Congress) </title>
+   <meta name="description" content="This field contains the  (Network Development and MARC Standards Office, Library of Congress)">
+   <meta name="keywords" content="marc, marc21, marc standards">
+   <meta name="author" content="Library of Congress Network Development and MARC Standards Office">
+   <link href="../styles.css" rel="stylesheet" type="text/css">
+   <link href="../print.css" rel="stylesheet" type="text/css" media="print">
+   <script src="../../../dac62e20b491e735c6b56e64c39134d8ee93f9cf/satelliteLib-6b47f831c184878d7338d4683ecf773a17973bb9.js"></script>
+</head>
+
+<body class="concise">
+   <div class="head-nav">
+      <div class="noprint"><a href="http://www.loc.gov/">Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/marc/">MARC</a> &gt;&gt; <a href="../index.htm">Authority</a> &gt;&gt; <span class="caps"><a href="../ad01x09x.html">01X-09X</a>  &gt;&gt; <strong>083</strong></span></div>
+   </div>
+   <hr><a name="skip_menu"></a>
+   <h1><span>083</span> - <span>Dewey Decimal Classification Number</span><span> (R)</span></h1>
+   <hr>
+   <div class="formatname">MARC 21 Authority - concise</div>
+   <div class="datename">June 2021</div>
+   <hr>
+   <div class="definition">
+      <div>
+         <p>Single Dewey classification number or a number span associated with a 1XX heading in an established heading record or a subdivision record. Source of the classification number is the <em>Dewey Decimal Classification</em>, accessed through electronic or printed versions. </p>
+      </div>
+      <div>
+         <p>Hyphen (-) between the two class numbers in a range of numbers may be generated based on the presence of both subfields $a and $b; the parentheses that may enclose an explanatory term in subfield $c in an established heading record; the abbreviation <em>T</em> before the table in subfield $z; the dash (-) between the table number and the class number in subfields $z and $a; and the abbreviation <em>dc</em> before the edition number in subfield $2 may be system generated for display. </p>
+      </div>
+   </div>
+   <div class="guidelines">
+      <h4>Indicators</h4>
+      <div class="indicators">
+         <dl>
+            <dt>First - Type of edition</dt>
+            <dd>0 - Full</dd>
+            <dd>1 - Abridged</dd>
+            <dd>7 - Other edition specified in subfield $2</dd>
+            <dt>Second - Source of classification number</dt>
+            <dd>0 - Assigned by LC</dd>
+            <dd>4 - Assigned by agency other than LC</dd>
+         </dl>
+      </div>
+      <h4>Subfield Codes</h4>
+      <div class="subfields">
+         <dl>
+            <dt>$a - Classification number element-single number or beginning number of span <span> (NR)</span></dt>
+         </dl>
+         <dl>
+            <dt>$b - Classification number element-ending number of span <span> (NR)</span></dt>
+         </dl>
+         <dl>
+            <dt>$c - Explanatory term <span> (NR)</span></dt>
+            <dd style="margin-left:1.75em;"><span>Descriptive term or phrase that specifies the topic of the class number. Normally used to differentiate between two or more class numbers associated with the heading. Parentheses that enclose the phrase or term may be generated for display.</span><br></dd>
+         </dl>
+         <dl>
+            <dt>$y - Table sequence number for internal subarrangement or add table <span> (R)</span></dt>
+         </dl>
+         <dl>
+            <dt>$z - Table identification-table number <span> (NR)</span></dt>
+         </dl>
+         <dl>
+            <dt>$2 - Edition information <span> (NR)</span></dt>
+         </dl>
+         <dl>
+            <dt>$5 - Institution to which field applies <span> (R)</span></dt>
+            <dd style="margin-left:1.75em;"><span>See description of this subfield in Appendix A: <em><a href="../ecadcntf.html">Control Subfields</a></em>.</span><br></dd>
+         </dl>
+         <dl>
+            <dt>$6 - Linkage <span> (NR)</span></dt>
+            <dd style="margin-left:1.75em;"><span>See description of this subfield in Appendix A: <em><a href="../ecadcntf.html">Control Subfields</a></em>.</span><br></dd>
+         </dl>
+         <dl>
+            <dt>$8 - Field link and sequence number <span> (R)</span></dt>
+            <dd style="margin-left:1.75em;"><span>See description of this subfield in Appendix A: <em><a href="../ecadcntf.html">Control Subfields</a></em>.</span><br></dd>
+         </dl>
+      </div>
+      <h4>Examples</h4>
+      <table class="examples">
+         <tr>
+            <td><strong>083</strong></td>
+            <td colspan="9"><strong>00</strong><strong>$a</strong>616.980213<strong>$2</strong>22 </td>
+         </tr>
+         <tr>
+            <td><strong>083</strong></td>
+            <td colspan="9"><strong>00</strong><strong>$a</strong>951<strong>$2</strong>22 </td>
+         </tr>
+         <tr>
+            <td><strong>083</strong></td>
+            <td colspan="9"><strong>04</strong><strong>$a</strong>411<strong>$2</strong>22<strong>$5</strong>[organization code] </td>
+         </tr>
+         <tr>
+            <td><strong>083</strong></td>
+            <td colspan="9"><strong>00</strong><strong>$z</strong>2<strong>$a</strong>51<strong>$2</strong>22 </td>
+         </tr>
+         <tr>
+            <td><strong>083</strong></td>
+            <td colspan="9"><strong>00</strong><strong>$a</strong>549.23<strong>$c</strong>Mineralogy<strong>$2</strong>22 </td>
+         </tr>
+         <tr>
+            <td><strong>083</strong></td>
+            <td colspan="9"><strong>00</strong><strong>$a</strong>362.29/6<strong>$2</strong>23/eng/20190402 </td>
+         </tr>
+      </table>
+   </div>
+   <div class="conventions"></div>
+   <div class="history"></div>
+   <hr class="clear">
+   <div class="head-nav">
+      <div class="noprint"><a href="http://www.loc.gov/">Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/marc/">MARC</a> &gt;&gt; <a href="../index.htm">Authority</a> &gt;&gt; <span class="caps"><a href="../ad01x09x.html">01X-09X</a>  &gt;&gt; <strong>083</strong></span></div>
+   </div>
+   <div class="left"><span class="noprint">(06/03/2021)</span></div>
+   <div class="right"><a href="/cdn-cgi/l/email-protection#0c6268617f634c60636f226b637a" class="noprint">Contact Us</a></div>
+   <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+   <script>if (window['_satellite']) { _satellite.pageBottom(); }</script>
+</body>
+
+</html>

@@ -1,0 +1,452 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>MARC 21 Format for Classification Data: 034: Coded Cartographic Mathematical Data (Network Development and MARC Standards Office, Library of Congress) </title>
+   <meta name="description" content="This field contains the  (Network Development and MARC Standards Office, Library of Congress)">
+   <meta name="keywords" content="marc, marc21, marc standards">
+   <meta name="author" content="Library of Congress Network Development and MARC Standards Office">
+   <link href="../styles.css" rel="stylesheet" type="text/css">
+   <link href="../print.css" rel="stylesheet" type="text/css" media="print">
+   <script src="../../dac62e20b491e735c6b56e64c39134d8ee93f9cf/satelliteLib-6b47f831c184878d7338d4683ecf773a17973bb9.js"></script>
+</head>
+
+<body class="full">
+   <div class="head-nav">
+      <div class="noprint"><a href="http://www.loc.gov/">Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/marc/">MARC</a> &gt;&gt; <a href="index.htm">Classification</a> &gt;&gt; <span class="caps"><a href="cd01x084.html">01X-084</a>  &gt;&gt; <strong>034</strong></span></div>
+   </div>
+   <hr><a name="skip_menu"></a>
+   <h1><span>034</span> - <span>Coded Cartographic Mathematical Data</span><span> (R)</span></h1>
+   <hr>
+   <div class="formatname">MARC 21 Classification - full</div>
+   <div class="datename">December 2017</div>
+   <hr>
+   <table width="100%" class="indicators">
+      <tr>
+         <th width="45%"> First Indicator </th>
+         <th width="45%"> Second Indicator </th>
+      </tr>
+      <tr>
+         <td><em>Undefined</em><br><span># - Undefined</span><br><br></td>
+         <td><em>Type of ring</em><br><span># - Not applicable</span><br><span>0 - Outer ring</span><br><span>1 - Exclusion ring</span><br><br></td>
+      </tr>
+   </table>
+   <hr>
+   <table width="100%" class="subfields">
+      <tr>
+         <td width="50%"></td>
+         <td width="50%"></td>
+      </tr>
+      <tr>
+         <th colspan="2">Subfield Codes</th>
+      </tr>
+      <tr>
+         <td>
+            <ul class="nomark">
+               <li>$d - Coordinates - westernmost longitude<span> (NR)</span></li>
+               <li>$e - Coordinates - easternmost longitude<span> (NR)</span></li>
+               <li>$f - Coordinates - northernmost latitude<span> (NR)</span></li>
+               <li>$g - Coordinates - southernmost latitude<span> (NR)</span></li>
+               <li>$j - Declination - northern limit<span> (NR)</span></li>
+               <li>$k - Declination - southern limit<span> (NR)</span></li>
+               <li>$m - Right ascension - eastern limit<span> (NR)</span></li>
+               <li>$n - Right ascension - western limit<span> (NR)</span></li>
+               <li>$p - Equinox<span> (NR)</span></li>
+               <li>$r - Distance from earth<span> (NR)</span></li>
+               <li>$s - G-ring latitude<span> (R)</span></li>
+            </ul>
+         </td>
+         <td>
+            <ul class="nomark">
+               <li>$t - G-ring longitude<span> (R)</span></li>
+               <li>$x - Beginning date<span> (NR)</span></li>
+               <li>$y - Ending date<span> (NR)</span></li>
+               <li>$z - Name of extraterrestrial body<span> (NR)</span></li>
+               <li>$0 - Authority record control number or standard number<span> (R)</span></li>
+               <li>$1 - Real World Object URI<span> (R)</span></li>
+               <li>$2 - Source<span> (NR)</span></li>
+               <li>$3 - Materials specified<span> (NR)</span></li>
+               <li>$6 - Linkage<span> (NR)</span></li>
+               <li>$8 - Field link and sequence number<span> (R)</span></li>
+            </ul>
+         </td>
+      </tr>
+   </table>
+   <hr>
+   <h3>FIELD DEFINITION AND SCOPE</h3>
+   <div class="definition">
+      <div>
+         <p>Coded form of the cartographic mathematical data relevant to the geographic aspect of the classification number and caption in field 153 (Classification Number). The data that is recorded usually derives from authoritative sources. </p>
+      </div>
+      <div>
+         <p>For digital items, the coordinates can represent a bounding rectangle, the outline of the area covered and/or the outline of an interior area not covered. For celestial entities, it may also contain zone, declination data, and/or right ascension data, and/or equinox. </p>
+      </div>
+      <div>
+         <p>In order to allow for entities whose coordinates change over time (e.g. changing boundaries for political entities), date information may be included in the appropriate subfields. </p>
+      </div>
+   </div>
+   <hr>
+   <h3>GUIDELINES FOR APPLYING CONTENT DESIGNATORS</h3>
+   <div class="guidelines">
+      <h4><span class="box">■</span> INDICATORS </h4>
+      <div class="indicators">
+         <div class="indicator">
+            <div>
+               <p class="label"><strong>First Indicator - Undefined</strong></p>
+               <div>
+                  <p>Contains a blank (#).</p>
+               </div>
+            </div>
+         </div>
+         <div class="indicator">
+            <div>
+               <p class="label"><strong>Second Indicator - Type of ring</strong></p>
+               <div>
+                  <p>Type of ring for digital cartographic items.</p>
+               </div>
+               <div class="value">
+                  <div><span class="valueLabel"># - Not applicable</span>
+                     <div>
+                        <p>Type of ring is not applicable.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="value">
+                  <div><span class="valueLabel">0 - Outer ring</span>
+                     <div>
+                        <p>Coordinate information represents the closed non-intersecting boundary of the area covered. </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="value">
+                  <div><span class="valueLabel">1 - Exclusion ring</span>
+                     <div>
+                        <p>Coordinate information represents the closed non-intersecting boundary of an area within the G-polygon outer ring that is excluded. </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <h4><span class="box">■</span> SUBFIELD CODES </h4>
+      <div class="subfields">
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$d - Coordinates - westernmost longitude</strong>
+               </p>
+               <div class="example">
+                  <table>
+                     <tr>
+                        <td><strong>034</strong></td>
+                        <td colspan="9"><strong>##</strong><strong>$d</strong>W0842300<strong>$e</strong>W0842300<strong>$f</strong>N0423600<strong>$g</strong>N0423600<strong>$2</strong>geonames </td>
+                     </tr>
+                     <tr>
+                        <td>043</td>
+                        <td colspan="9">##$an-us-mi</td>
+                     </tr>
+                     <tr>
+                        <td>153</td>
+                        <td colspan="9">##$z2$a77426$z2$e7742$hGeographic Areas, Historical Periods, Biography$kSpecific continents, countries, localities; extraterrestrial worlds$kModern world; extraterrestrial worlds$hNorth America$kSpecific states of United States$hNorth central United States$kLake states$hMichigan$kLower Peninsula$hSouth central counties of Lower Peninsula$jIngham County</td>
+                     </tr>
+                  </table>
+               </div>
+               <div class="example">
+                  <table>
+                     <tr>
+                        <td><strong>034</strong></td>
+                        <td colspan="9"><strong>##</strong><strong>$d</strong>W0140000<strong>$e</strong>W0140000<strong>$f</strong>N0140000<strong>$g</strong>N0140000<strong>$2</strong>geonames </td>
+                     </tr>
+                     <tr>
+                        <td>043</td>
+                        <td colspan="9">##$af-sg--</td>
+                     </tr>
+                     <tr>
+                        <td>153</td>
+                        <td colspan="9">##$z2$a663$z2$e66$hGeographic Areas, Historical Periods, Biography$kSpecific continents, countries, localities; extraterrestrial worlds$kModern world; extraterrestrial worlds$kAfrica$kWest Africa and offshore islands$jSenegal</td>
+                     </tr>
+                  </table>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$e - Coordinates - easternmost longitude</strong>
+               </p>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$f - Coordinates - northernmost latitude</strong>
+               </p>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$g - Coordinates - southernmost latitude</strong>
+               </p>
+               <div>
+                  <p>Subfields $d, $e, $f, and $g always appear together. The abbreviations for the hemispheres are: <em>N = North, S = South, E = East, W = West</em>. </p>
+               </div>
+               <div>
+                  <p>The coordinates may be recorded in the form <em>hdddmmss</em> (hemisphere-degrees-minutes-seconds), however, other forms are also allowed, such as decimal degrees </p>
+               </div>
+               <div>
+                  <p>The subelements are each right justified and unused positions contain zeros.</p>
+               </div>
+               <div class="example">
+                  <table>
+                     <tr>
+                        <td><strong>034</strong></td>
+                        <td colspan="9"><strong>##</strong><strong>$d</strong>W0381200<strong>$e</strong>W0841500<strong>$f</strong>N0381200<strong>$g</strong>N0381200<strong>$2</strong>cgotw </td>
+                     </tr>
+                  </table>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$j - Declination - northern limit</strong>
+               </p>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$k - Declination - southern limit</strong>
+               </p>
+               <div>
+                  <p>Subfields $j and $k are each eight characters in length and record the declination in the form <em>hdddmmss</em> (hemisphere-degrees-minutes-seconds). The degree, minute and second elements are each right justified and the unused positions contain zeros. (If declination of center is known, it is repeated in both subfields). </p>
+               </div>
+               <div class="example">
+                  <table>
+                     <tr>
+                        <td><strong>034</strong></td>
+                        <td colspan="9"><strong>##</strong><strong>$j</strong>N0545600<strong>$k</strong>N0545600<strong>$m</strong>134518<strong>$n</strong>134518<strong>$p</strong>2000.00<strong>$r</strong>78<strong>$2</strong>csa </td>
+                     </tr>
+                  </table>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$m - Right ascension - eastern limit</strong>
+               </p>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$n - Right ascension - western limit</strong>
+               </p>
+               <div>
+                  <p>Subfield $m and $n are each six characters in length and record the right ascension in the form <em>hhmmss</em> (hour-minute-seconds). The hour, minute and second elements are each right justified and the unused positions contain zeros. (If the right ascension of center is known, it is repeated in both subfields). </p>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$p - Equinox</strong>
+               </p>
+               <div>
+                  <p>Equinox or epoch for a celestial chart. Usually recorded in the form <em>yyyy</em> (year) according to the Gregorian calendar, but may include a decimal including the month in the form <em>yyyy.mm</em> (year-month). </p>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$r - Distance from earth</strong>
+               </p>
+               <div>
+                  <p>Distance of celestial bodies, such as planets or stars, from the Earth in light-years in star atlases. </p>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$s - G-ring latitude</strong>
+               </p>
+               <div>
+                  <p>Latitude of a point of the g-ring.</p>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$t - G-ring longitude</strong>
+               </p>
+               <div>
+                  <p>Longitude of a point of the g-ring.</p>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$x - Beginning date</strong>
+               </p>
+               <div>
+                  <p>Beginning of the time frame specific to the coordinates. The date is structured in the form of <em>yyyymmdd</em>. When no date is recorded, it is assumed that the coordinate information is current. </p>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$y - Ending date</strong>
+               </p>
+               <div>
+                  <p>Beginning of the time frame specific to the coordinates. The date is structured in the form of <em>yyyymmdd</em>. When no date is recorded, it is assumed that the coordinate information is current. </p>
+               </div>
+               <div class="example">
+                  <table>
+                     <tr>
+                        <td><strong>034</strong></td>
+                        <td colspan="9"><strong>##</strong><strong>$d</strong>E0110000<strong>$e</strong>E0320000<strong>$f</strong>N0690000<strong>$g</strong>N0550000<strong>$x</strong>17210000<strong>$y</strong>19171200 </td>
+                     </tr>
+                     <tr>
+                        <td><strong>034</strong></td>
+                        <td colspan="9"><strong>##</strong><strong>$d</strong>E0110000<strong>$e</strong>E0240000<strong>$f</strong>N0690000<strong>$g</strong>N0550000<strong>$x</strong>19171200 </td>
+                     </tr>
+                  </table>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$z - Name of extraterrestrial body</strong>
+               </p>
+               <div>
+                  <p>Name of a planet or other extraterrestrial body specified when the coordinate data recorded in subfields $d, $e, $f and $g do not describe an entity on Earth.</p>
+               </div>
+               <div class="example">
+                  <table>
+                     <tr>
+                        <td><strong>034</strong></td>
+                        <td colspan="9"><strong>##</strong><strong>$d</strong>W2450000<strong>$e</strong>E2570000<strong>$f</strong>N0160000<strong>$g</strong>N0190000<strong>$z</strong>Mars<strong>$2</strong>gpn </td>
+                     </tr>
+                  </table>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$0 - Authority record control number or standard number</strong>
+               </p>
+               <div>
+                  <p>See description of this subfield in Appendix A: <em><a href="eccdcntf.html">Control Subfields</a></em>. </p>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$1 - Real World Object URI</strong>
+               </p>
+               <div>
+                  <p>See description of this subfield in Appendix A: <em><a href="eccdcntf.html">Control Subfields</a></em>. </p>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$2 - Source</strong>
+               </p>
+               <div>
+                  <p>MARC code that identifies the source of the data recorded in field 034. If different sources are recorded, separate fields should be used. Code from: <em><a href="http://www.loc.gov/standards/sourcelist/cartographic-data.html">Cartographic Data Source Codes</a></em>. </p>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$3 - Materials specified</strong>
+               </p>
+               <div>
+                  <p>Information that specifies the part of the entity to which the field applies.</p>
+               </div>
+               <div class="example">
+                  <table>
+                     <tr>
+                        <td>153</td>
+                        <td colspan="9">##$aG4242.C62$jColumbia River</td>
+                     </tr>
+                     <tr>
+                        <td><strong>034</strong></td>
+                        <td colspan="9"><strong>##</strong><strong>$3</strong>Mouth<strong>$d</strong>-124.0579299<strong>$e</strong>-124.0579299<strong>$f</strong>46.2442673 <strong>$g</strong>46.2442673<strong>$2</strong>gnis </td>
+                     </tr>
+                  </table>
+               </div>
+               <div class="example">
+                  <table>
+                     <tr>
+                        <td>153</td>
+                        <td colspan="9">##$aG4242.C62$jColumbia River</td>
+                     </tr>
+                     <tr>
+                        <td><strong>034</strong></td>
+                        <td colspan="9"><strong>##</strong><strong>$3</strong>Source<strong>$d</strong>W1174106<strong>$e</strong>W1174106<strong>$f</strong>N485723<strong>$g</strong>N485723<strong>$2</strong>gnis </td>
+                     </tr>
+                  </table>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$6 - Linkage</strong>
+               </p>
+               <div>
+                  <p>See description of this subfield in Appendix A: <em><a href="../authority/ecadcntf.html">Control Subfields</a></em>. </p>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$8 - Field link and sequence number</strong>
+               </p>
+               <div>
+                  <p>See description of this subfield in Appendix A: <em><a href="../authority/ecadcntf.html">Control Subfields</a></em>. </p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <hr>
+   <h3>INPUT CONVENTIONS</h3>
+   <div class="conventions">
+      <div>
+         <p><strong>Punctuation - </strong>Field 034 does not end with a mark of punctuation. </p>
+         <p>In coordinates, the decimal sign may be either the period or the comma.</p>
+      </div>
+      <div class="example">
+         <table>
+            <tr>
+               <td><strong>034</strong></td>
+               <td colspan="9"><strong>##</strong><strong>$d</strong>E079,533265<strong>$e</strong>E086,216635<strong>$f</strong>S012,583377<strong>$g</strong>S020,419532 </td>
+            </tr>
+         </table>
+      </div>
+      <div class="example">
+         <table>
+            <tr>
+               <td><strong>034</strong></td>
+               <td colspan="9"><strong>##</strong><strong>$d</strong>W093.329163<strong>$e</strong>W093.193858<strong>$f</strong>N045.051250<strong>$g</strong>N044.890150 </td>
+            </tr>
+         </table>
+      </div>
+   </div>
+   <hr>
+   <h3>CONTENT DESIGNATOR HISTORY</h3>
+   <div class="history">
+      <div class="historyField">
+         <div><em>Field 034 - Coded Cartographic Mathematical Data [NEW, 2011]</em></div>
+      </div>
+      <div class="historySubfield">
+         <div><em>$1 - Real World Object URI [NEW, 2017]</em></div>
+      </div>
+   </div>
+   <hr class="clear">
+   <div class="head-nav">
+      <div class="noprint"><a href="http://www.loc.gov/">Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/marc/">MARC</a> &gt;&gt; <a href="index.htm">Classification</a> &gt;&gt; <span class="caps"><a href="cd01x084.html">01X-084</a>  &gt;&gt; <strong>034</strong></span></div>
+   </div>
+   <div class="left"><span class="noprint">(06/03/2021)</span></div>
+   <div class="right"><a href="/cdn-cgi/l/email-protection#80eee4edf3efc0ecefe3aee7eff6" class="noprint">Contact Us</a></div>
+   <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+   <script>if (window['_satellite']) { _satellite.pageBottom(); }</script>
+</body>
+
+</html>

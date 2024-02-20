@@ -1,0 +1,535 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html40/loose.dtd">
+<html>
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>MARC 21 Format for Holdings Data: Appendix E: Glossary (Network Development and MARC Standards Office, Library of Congress) </title>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="description" content="This page contains the glossary to the MARC 21 holdings format (Network Development and MARC Standards Office, Library of Congress)">
+   <meta name="keywords" content="marc, marc21, marc standards">
+   <meta name="author" content="Library of Congress Network Development and MARC Standards Office">
+   <link href="../marc-generic.css" rel="stylesheet" type="text/css">
+   <style type="text/css">
+      body {
+         margin-left: 2em;
+         margin-right: 2em;
+      }
+
+      h1 {
+         font-family: Arial, Helvetica, sans-serif;
+      }
+
+      h3 {
+         text-align: left;
+      }
+
+      h4 {
+         margin-top: .5em;
+         margin-bottom: .5em;
+      }
+
+      p {
+         text-align: justify;
+         margin-left: 2em;
+         margin-right: 2em;
+      }
+
+      .formatname {
+         font-weight: bold;
+         font-family: Arial, Helvetica, sans-serif;
+         margin-left: .5em
+      }
+
+      .datename {
+         font-weight: bold;
+         text-align: right;
+         font-family: Arial, Helvetica, sans-serif;
+         margin-top: -1.2em;
+      }
+
+      .font_small {
+         font-size: 9pt;
+      }
+
+      .fieldtoc {
+         margin-left: 2em;
+      }
+
+      .subfieldtoc {
+         margin-left: 3em;
+      }
+
+      .box {
+         font-family: ZapfDingbats;
+      }
+
+      .description {
+         text-align: justify;
+         margin-left: 2em;
+      }
+
+      .description2 {
+         text-align: justify;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .description3 {
+         text-align: justify;
+         margin-top: 1em;
+         margin-bottom: 1em;
+         margin-left: 2em;
+      }
+
+      .indicator {
+         text-align: left;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .indicatorvalue {
+         margin-left: 2em;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .subfieldvalue {
+         margin-left: 2em;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .subfield {
+         text-align: left;
+         margin-top: 1em;
+         margin-bottom: 1em;
+         margin-left: 2em;
+      }
+
+      .characterposition {
+         text-align: left;
+         margin-top: 1em;
+         margin-bottom: 1em;
+         margin-left: 2em;
+      }
+
+      .charactervalue {
+         margin-left: 2em;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .characterpositionhistory {
+         text-align: left;
+         margin-top: .5em;
+         margin-bottom: .5em;
+         margin-left: 2em;
+      }
+
+      .charactervaluehistory {
+         margin-left: 2em;
+         margin-top: .1em;
+         margin-bottom: .1em;
+      }
+
+      .example {
+         margin-left: 4em;
+      }
+
+      .changed {
+         color: #FF0000;
+      }
+
+      .captiontext {
+         font-style: italic;
+      }
+
+      .displaytext {
+         margin-bottom: .5em;
+         margin-top: .5em;
+      }
+
+      .displaycontent {
+         text-align: left;
+      }
+
+      .table {
+         margin-left: 2em;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .head-nav {
+         font-family: Arial, Helvetica, sans-serif;
+         font-size: 9pt;
+      }
+
+      .summary {
+         margin-left: 2em;
+      }
+
+      .summarytable {
+         margin-left: 4em;
+      }
+
+      .update {
+         text-align: center;
+         font-weight: bold;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .changebox {
+         font-style: italic;
+         margin-top: .5em;
+      }
+
+      .changesection {
+         text-align: left;
+         margin-left: 2em;
+         font-weight: bold;
+         margin-top: .5em;
+      }
+
+      .changefield {
+         text-align: left;
+         margin-left: 1em;
+         font-weight: bold;
+      }
+
+      .changefieldlabel {
+         margin-left: 3em;
+         font-weight: bold;
+      }
+
+      .changeindicator {
+         margin-left: 3em;
+      }
+
+      .changeindicatorfieldname {
+         margin-left: 2em;
+      }
+
+      .changeindicatorvalue {
+         margin-left: 4em;
+         font-weight: bold;
+      }
+
+      .changesubfield {
+         margin-left: 3em;
+         font-weight: bold;
+      }
+
+      .changesubfieldname {
+         margin-left: 1em;
+         font-weight: bold;
+      }
+
+      .changesubfieldlocation {
+         text-align: justify;
+         font-weight: normal;
+      }
+
+      .glossaryentry {
+         margin-left: 2em;
+         margin-top: 1em;
+         font-weight: bold;
+      }
+
+      .glossaryentrydescription {
+         margin-left: 4em;
+         margin-bottom: 1em;
+         text-align: justify;
+      }
+
+      .glossaryentryfields {
+         margin-left: 4em;
+         margin-bottom: 1em;
+         text-align: justify;
+         font-weight: bold;
+      }
+
+      .citationaddress {
+         margin-left: 2em;
+         text-align: justify;
+      }
+
+      .citationinternet {
+         margin-left: 2em;
+         text-align: justify;
+      }
+
+      .citationname {
+         font-style: italic;
+         margin-top: 1em;
+      }
+   </style>
+   <script src="../../dac62e20b491e735c6b56e64c39134d8ee93f9cf/satelliteLib-6b47f831c184878d7338d4683ecf773a17973bb9.js"></script>
+</head>
+
+<body bgcolor="#ffffff">
+   <div class="head-nav"><a href="http://www.loc.gov/">Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/marc/">MARC</a> &gt;&gt; <a href="index.htm">Holdings</a> &gt;&gt; <strong>Appendix E</strong></div>
+   <hr><a name="skip_menu"></a>
+   <h1>Appendix E - Glossary</h1>
+   <hr>
+   <div class="formatname">MARC 21 Holdings</div>
+   <div class="datename">January 2000</div>
+   <hr>
+   <p>Definitions for terms used in the <em>MARC 21 Format for Holdings Data</em>. Does not include definitions for terms used only in one of the holdings standards but not used in this format. When the term is used in connection with a specific field(s), the content designator to which it applies is in parentheses at the end of the definition. </p>
+   <hr>
+   <h3></h3>
+   <div class="glossaryentry">accompanying material</div>
+   <div class="glossaryentrydescription">See <em>supplementary material</em>. </div>
+   <div class="glossaryentry">alternative numbering scheme</div>
+   <div class="glossaryentrydescription">A secondary sequential designation(s) assigned to some serial and multipart items to provide a continuously numbered sequence in addition to a primary set of hierarchical designations. For example, "v.3:pt.1=fasc.7" reflects a primary numbering scheme of volumes and parts, and an alternative numbering scheme of fascicles. </div>
+   <div class="glossaryentryfields">Fields: 853-855; 863-865, $g and $h</div>
+   <div class="glossaryentry">basic bibliographic unit</div>
+   <div class="glossaryentrydescription">The main bibliographic entity for which holdings are being reported. See also <em>bibliographic unit</em>. </div>
+   <div class="glossaryentry">bibliographic item</div>
+   <div class="glossaryentrydescription">An item or set of items in any physical form, either serial or nonserial, published, issued or treated as an entity and, as such, forming the basis for a single bibliographic description. The bibliographic item is the entity referred to by the <em>item identifier</em>. Examples of bibliographic items are: a one-volume book, a set of maps, a musical score with parts, a compact digital disc, a multimedia kit, a manuscript collection, a microform journal, a videotape with an accompanying pamphlet, a looseleaf publication together with its serially-issued updates. See also <em>holdings item</em>. </div>
+   <div class="glossaryentry">bibliographic unit</div>
+   <div class="glossaryentrydescription">A discrete bibliographic entity that constitutes either the whole or a part of the <em>bibliographic item</em>. A bibliographic unit may be a <em>basic bibliographic unit</em> or <em>supplementary material</em>. Examples of bibliographic units are: a single volume, a multi-volume monograph, an accompanying pamphlet, a set of serially-issued updates. </div>
+   <div class="glossaryentry">caption</div>
+   <div class="glossaryentrydescription">A word, phrase, or abbreviation indicating the <em>bibliographic unit</em> into which a <em>serial</em> or <em>multipart item</em> has been divided by the publisher. A caption ordinarily appears on the piece immediately preceding the <em>enumeration</em>. Examples of captions are: volume, Band, Heft, part, number, tome, side (for a sound recording disc). A caption may be recorded in abbreviated form. </div>
+   <div class="glossaryentryfields">Fields: 853-855</div>
+   <div class="glossaryentry">chronology</div>
+   <div class="glossaryentrydescription">The date(s) used by the publisher on a serially-issued <em>bibliographic unit</em> to help identify it or indicate when it was issued. The chronology may reflect the dates of coverage, publication, or printing. See also <em>enumeration</em>. </div>
+   <div class="glossaryentryfields">Fields: 853-855; 863-865; 866-868</div>
+   <div class="glossaryentry">composite statement</div>
+   <div class="glossaryentrydescription">A <em>holdings statement</em> consisting of information about two or more copies of a <em>bibliographic item</em> held at a single location. A composite statement may also consist of holdings for copies at one or more sublocations, consolidated into a single statement. </div>
+   <div class="glossaryentryfields">Fields: 008/25</div>
+   <div class="glossaryentry">compressed enumeration and chronology</div>
+   <div class="glossaryentrydescription">A statement of <em>enumeration</em> and <em>chronology</em> which condenses one or more data elements by recording a range of holdings in terms of the <em>enumeration</em> of only the first and last parts held in order to express the same information with fewer characters; or a statement which indicates the holdings of a complete level of hierarchy by recording the <em>enumeration</em> of the next higher level of the hierarchy. See also <em>uncompressed enumeration and chronology</em>. </div>
+   <div class="glossaryentryfields">Fields: 853-855; 863-865</div>
+   <div class="example">
+      <table width="100%">
+         <tr>
+            <td valign="top" width="5%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="15%" align="left"></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left">853</td>
+            <td valign="top" colspan="9" align="left">20$81$av.$bno.$u4$vr$i(year)$j(season)$wq$x21</td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left">863</td>
+            <td valign="top" colspan="9" align="left">30$81.1$a1-10$i1943-1952$zbound</td>
+         </tr>
+      </table>
+   </div>
+   <div class="glossaryentry">detailed holdings statement</div>
+   <div class="glossaryentrydescription">That set of data elements required for holdings level 4 to identify and record the bibliographic units of a serial or multipart item held by a particular institution. A detailed holdings statement itemizes the holdings of each part of a <em>bibliographic unit</em> held. The holdings level is described in Leader/17 (Encoding level) and is based on the ANSI/NISO standards for holdings, Z39.44 and Z39.57. See also <em>uncompressed enumeration and chronology</em>. </div>
+   <div class="glossaryentryfields">Fields: Leader/17; 863-865</div>
+   <div class="example">
+      <table width="100%">
+         <tr>
+            <td valign="top" width="13%" align="left"></td>
+            <td valign="top" width="3%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="14%" align="left"></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="2" align="left">Leader/17</td>
+            <td valign="top" colspan="8" align="left">4<br><em>[item is currently received]</em></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left">004</td>
+            <td valign="top" colspan="8" align="left">[control number for related bibliographic record]</td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left">008/12</td>
+            <td valign="top" colspan="8" align="left">8<br><em>[holdings are permanently retained]</em></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left">008/16</td>
+            <td valign="top" colspan="8" align="left">2<br><em>[reporting organization holds an incomplete published run of the item]</em></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left">008/26-31</td>
+            <td valign="top" colspan="8" align="left">891017<br><em>[date of the holdings report]</em></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left">852</td>
+            <td valign="top" colspan="9" align="left">##$aCSf$bSpCol</td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left">853</td>
+            <td valign="top" colspan="9" align="left">00$81$ano.$i(year)$j(month)</td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left">863</td>
+            <td valign="top" colspan="9" align="left">40$81.1$a180-226$i1976-1981</td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left">222</td>
+            <td valign="top" colspan="9" align="left">44$81.2$a222</td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left">863</td>
+            <td valign="top" colspan="9" align="left">40$81.3$a230$i1982$jApril</td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left">863</td>
+            <td valign="top" colspan="9" align="left">40$81.4$a235$i1982$jDec.</td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left">863</td>
+            <td valign="top" colspan="9" align="left">40$81.5$a237$i1983$jMar.</td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left">863</td>
+            <td valign="top" colspan="9" align="left">40$81.6$a239-242$i1983$jJune-Oct.<br><em>[Multiple 863 fields contain detailed holdings statements for an incomplete published run of the item.] </em></td>
+         </tr>
+      </table>
+   </div>
+   <div class="glossaryentry">embedded holdings information</div>
+   <div class="glossaryentrydescription">A holdings report which is contained in the record for the bibliographic description for the <em>bibliographic item</em>. An embedded holdings report does not have its own <em>item identifier</em>. See also <em>separate holdings statement</em>. </div>
+   <div class="glossaryentry">enumeration</div>
+   <div class="glossaryentrydescription">The designation reflecting the alphabetic or numeric scheme used by the publisher on an item or assigned when the holdings statement is created to identify the individual bibliographic or physical parts and to show the relationship of each unit to the item as a whole. See also <em>chronology</em>. </div>
+   <div class="glossaryentryfields">Fields: 853-855; 863-865; 866-868</div>
+   <div class="glossaryentry">gap</div>
+   <div class="glossaryentrydescription">A published part that is missing from the holdings of an organization. See also <em>nongap break</em>. </div>
+   <div class="glossaryentryfields">Fields: 863-865, $w</div>
+   <div class="glossaryentry">holdings item</div>
+   <div class="glossaryentrydescription">A physical piece or pieces of a <em>bibliographic unit</em> for which a holdings record has been made. See also <em>bibliographic item</em>. </div>
+   <div class="glossaryentryfields">Fields: 876-878</div>
+   <div class="glossaryentry">holdings statement</div>
+   <div class="glossaryentrydescription">The record of the <em>location(s)</em> and <em>bibliographic units</em> of a specific <em>bibliographic item</em> held at one or more locations. The holdings statement reflects only current holdings-not items known no longer to be held nor items expected to be acquired. </div>
+   <div class="glossaryentry">item identifier</div>
+   <div class="glossaryentrydescription">The data element in the <em>holdings statement</em> that uniquely identifies the <em>bibliographic item</em> for which holdings are being reported. The item identifier may consist of such information as the International Standard Book or Serial Numbers, a record control number. </div>
+   <div class="glossaryentryfields">Fields: 004; 010; 020; 022; 023; 024; 027; 030</div>
+   <div class="glossaryentry">location</div>
+   <div class="glossaryentrydescription">The institution, physical site, or collection at which an item is located or from which it may be available, along with any sublocation, and shelving location. </div>
+   <div class="glossaryentryfields">Fields: 852</div>
+   <div class="glossaryentry">multipart item</div>
+   <div class="glossaryentrydescription">A <em>bibliographic unit</em>, complete, or intended to be complete, in a finite number of separate physical parts. </div>
+   <div class="glossaryentry">nongap break</div>
+   <div class="glossaryentrydescription">A break in the consecutive numbering, as in a publishing irregularity.</div>
+   <div class="glossaryentryfields">Fields: 863-865, $w</div>
+   <div class="glossaryentry">nonserial item</div>
+   <div class="glossaryentrydescription">A type of <em>bibliographic item</em> that is monographic in nature and may be complete in one part or complete, or intended to be completed, in a finite number of separate physical parts. </div>
+   <div class="glossaryentry">numeric or alphabetic designation</div>
+   <div class="glossaryentrydescription">See <em>enumeration</em>. </div>
+   <div class="glossaryentry">piece</div>
+   <div class="glossaryentrydescription">A single physical part. For <em>serials</em> and <em>multipart items</em>, a piece is a single portion which is a part of the whole <em>bibliographic item</em>; for single-part items it is the <em>bibliographic item</em>. See also <em>holdings item</em>. </div>
+   <div class="glossaryentry">related bibliographic record</div>
+   <div class="glossaryentrydescription">A bibliographic record representing the description of the <em>bibliographic unit</em> for which a <em>holdings statement</em> is created. </div>
+   <div class="glossaryentry">separate holdings statement</div>
+   <div class="glossaryentrydescription">A <em>holdings statement</em> which has its own <em>item identifier</em> and is linked to the record for the <em>related bibliographic item</em>. A separate holdings statement constitutes a complete record as opposed to <em>embedded holdings information</em>, which is contained in the record for the <em>bibliographic item</em>. See also <em>embedded holdings information</em>. </div>
+   <div class="glossaryentry">serial</div>
+   <div class="glossaryentrydescription">A <em>bibliographic item</em> that is issued in successive parts at regular or irregular intervals and intended to be continued indefinitely. </div>
+   <div class="glossaryentry">single-part item</div>
+   <div class="glossaryentrydescription">A <em>basic bibliographic unit</em> or <em>supplementary material</em> complete in a single physical part. </div>
+   <div class="glossaryentry">summary holdings statement</div>
+   <div class="glossaryentrydescription">That set of data elements required for Holdings level 3 to identify and record the bibliographic units of a serial or multipart item held by a particular institution. A summary holdings statement generally uses a <em>compressed</em> statement of <em>enumeration</em> and <em>chronology</em>. The holdings level is described in Leader/17 and is based on the ANSI/NISO standards for holdings, Z39.44 and Z39.57. See also <em>compressed enumeration and chronology</em>. </div>
+   <div class="glossaryentryfields">Fields: Leader/17; 863-865</div>
+   <div class="example">
+      <table width="100%">
+         <tr>
+            <td valign="top" width="12%" align="left"></td>
+            <td valign="top" width="4%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="14%" align="left"></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="2" align="left">Leader/17</td>
+            <td valign="top" colspan="8" align="left">3</td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left">004</td>
+            <td valign="top" colspan="8" align="left">[control number for related bibliographic record]</td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left">008/06</td>
+            <td valign="top" colspan="8" align="left">4<br><em>[item is currently received]</em></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left">008/12</td>
+            <td valign="top" colspan="8" align="left">8<br><em>[holdings are permanently retained]</em></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left">008/16</td>
+            <td valign="top" colspan="8" align="left">2<br><em>[reporting organization holds an incomplete published run of the item]</em></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left">008/26-31</td>
+            <td valign="top" colspan="8" align="left">891017<br><em>[date of the holdings report]</em></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left">852</td>
+            <td valign="top" colspan="9" align="left">##$aCSf$bSpCol</td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left">853</td>
+            <td valign="top" colspan="9" align="left">00$81$ano.$i(year)$j(month)</td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left">863</td>
+            <td valign="top" colspan="9" align="left">30$81.1$a180-242$i1976-1983</td>
+         </tr>
+      </table>
+   </div>
+   <div class="glossaryentry">supplementary material</div>
+   <div class="glossaryentrydescription">A part of a work, physically separate from the <em>basic bibliographic unit</em> and frequently in a different medium. Examples of supplementary material are maps inside a pocket inside a book cover, an answer book accompanying a textbook, or a pamphlet accompanying an audiodisc. </div>
+   <div class="glossaryentryfields">Fields: 864; 867</div>
+   <div class="glossaryentry">uncompressed enumeration and chronology</div>
+   <div class="glossaryentrydescription">A statement of <em>enumeration</em> and <em>chronology</em> which itemizes, explicitly and without compression, the holdings of each part of a <em>bibliographic unit</em> held. See also <em>compressed enumeration and chronology</em>. </div>
+   <div class="glossaryentryfields">Fields: 853-855; 863-865</div>
+   <div class="example">
+      <table width="100%">
+         <tr>
+            <td valign="top" width="5%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="10%" align="left"></td>
+            <td valign="top" width="15%" align="left"></td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left">853</td>
+            <td valign="top" colspan="9" align="left">20$81$av.$bpt.$u3$vc$i(year)$j(month)$wt$x01</td>
+         </tr>
+         <tr>
+            <td valign="top" colspan="1" align="left">863</td>
+            <td valign="top" colspan="9" align="left">41$81.1$a3$b2$i1974$j05</td>
+         </tr>
+      </table>
+   </div>
+   <hr>
+   <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr valign="bottom">
+         <td>
+            <div class="head-nav"><a href="http://www.loc.gov/">Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/marc/">MARC</a> &gt;&gt; <a href="index.htm">Holdings</a> &gt;&gt; <strong>Appendix E</strong></div> (03/11/2008)
+         </td>
+         <td align="right"><a href="/cdn-cgi/l/email-protection#7c1218110f133c10131f521b130a">Contact Us</a></td>
+      </tr>
+   </table>
+   <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+   <script>if (window['_satellite']) { _satellite.pageBottom(); }</script>
+</body>
+
+</html>

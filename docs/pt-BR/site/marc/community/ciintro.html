@@ -1,0 +1,508 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html40/loose.dtd">
+<html>
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>MARC 21 Format for Community Information Data: Introduction (Network Development and MARC Standards Office, Library of Congress) </title>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="description" content="This page includes the introduction to the MARC 21 community information format  (Network Development and MARC Standards Office, Library of Congress)">
+   <meta name="keywords" content="marc, marc21, marc standards">
+   <meta name="author" content="Library of Congress Network Development and MARC Standards Office">
+   <link href="../marc-generic.css" rel="stylesheet" type="text/css">
+   <style type="text/css">
+      body {
+         margin-left: 2em;
+         margin-right: 2em;
+      }
+
+      h1 {
+         font-family: Arial, Helvetica, sans-serif;
+      }
+
+      h3 {
+         text-align: left;
+      }
+
+      h4 {
+         margin-top: .5em;
+         margin-bottom: .5em;
+      }
+
+      p {
+         text-align: justify;
+         margin-left: 2em;
+         margin-right: 2em;
+      }
+
+      .formatname {
+         font-weight: bold;
+         font-family: Arial, Helvetica, sans-serif;
+         margin-left: .5em
+      }
+
+      .datename {
+         font-weight: bold;
+         text-align: right;
+         font-family: Arial, Helvetica, sans-serif;
+         margin-top: -1.2em;
+      }
+
+      .font_small {
+         font-size: 9pt;
+      }
+
+      .fieldtoc {
+         margin-left: 2em;
+      }
+
+      .subfieldtoc {
+         margin-left: 3em;
+      }
+
+      .box {
+         font-family: ZapfDingbats;
+      }
+
+      .description {
+         text-align: justify;
+         margin-left: 2em;
+      }
+
+      .description2 {
+         text-align: justify;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .description3 {
+         text-align: justify;
+         margin-top: 1em;
+         margin-bottom: 1em;
+         margin-left: 2em;
+      }
+
+      .indicator {
+         text-align: left;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .indicatorvalue {
+         margin-left: 2em;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .subfieldvalue {
+         margin-left: 2em;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .subfield {
+         text-align: left;
+         margin-top: 1em;
+         margin-bottom: 1em;
+         margin-left: 2em;
+      }
+
+      .characterposition {
+         text-align: left;
+         margin-top: 1em;
+         margin-bottom: 1em;
+         margin-left: 2em;
+      }
+
+      .charactervalue {
+         margin-left: 2em;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .characterpositionhistory {
+         text-align: left;
+         margin-top: .5em;
+         margin-bottom: .5em;
+         margin-left: 2em;
+      }
+
+      .charactervaluehistory {
+         margin-left: 2em;
+         margin-top: .1em;
+         margin-bottom: .1em;
+      }
+
+      .example {
+         margin-left: 4em;
+      }
+
+      .changed {
+         color: #FF0000;
+      }
+
+      .captiontext {
+         font-style: italic;
+      }
+
+      .displaytext {
+         margin-bottom: .5em;
+         margin-top: .5em;
+      }
+
+      .displaycontent {
+         text-align: left;
+      }
+
+      .table {
+         margin-left: 2em;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .head-nav {
+         font-family: Arial, Helvetica, sans-serif;
+         font-size: 9pt;
+      }
+
+      .summary {
+         margin-left: 2em;
+      }
+
+      .summarytable {
+         margin-left: 4em;
+      }
+
+      .update {
+         text-align: center;
+         font-weight: bold;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .changebox {
+         font-style: italic;
+         margin-top: .5em;
+      }
+
+      .changesection {
+         text-align: left;
+         margin-left: 2em;
+         font-weight: bold;
+         margin-top: .5em;
+      }
+
+      .changefield {
+         text-align: left;
+         margin-left: 1em;
+         font-weight: bold;
+      }
+
+      .changefieldlabel {
+         margin-left: 3em;
+         font-weight: bold;
+      }
+
+      .changeindicator {
+         margin-left: 3em;
+      }
+
+      .changeindicatorfieldname {
+         margin-left: 2em;
+      }
+
+      .changeindicatorvalue {
+         margin-left: 4em;
+         font-weight: bold;
+      }
+
+      .changesubfield {
+         margin-left: 3em;
+         font-weight: bold;
+      }
+
+      .changesubfieldname {
+         margin-left: 1em;
+         font-weight: bold;
+      }
+
+      .changesubfieldlocation {
+         text-align: justify;
+         font-weight: normal;
+      }
+
+      .glossaryentry {
+         margin-left: 2em;
+         margin-top: 1em;
+         font-weight: bold;
+      }
+
+      .glossaryentrydescription {
+         margin-left: 4em;
+         margin-bottom: 1em;
+         text-align: justify;
+      }
+
+      .glossaryentryfields {
+         margin-left: 4em;
+         margin-bottom: 1em;
+         text-align: justify;
+         font-weight: bold;
+      }
+
+      .citationaddress {
+         margin-left: 2em;
+         text-align: justify;
+      }
+
+      .citationinternet {
+         margin-left: 2em;
+         text-align: justify;
+      }
+
+      .citationname {
+         font-style: italic;
+         margin-top: 1em;
+      }
+   </style>
+   <script src="../../dac62e20b491e735c6b56e64c39134d8ee93f9cf/satelliteLib-6b47f831c184878d7338d4683ecf773a17973bb9.js"></script>
+</head>
+
+<body bgcolor="#ffffff">
+   <div class="head-nav"><a href="http://www.loc.gov/">Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/marc/">MARC</a> &gt;&gt;<a href="index.htm"> Community Information</a> &gt;&gt; <strong> Introduction</strong></div>
+   <hr><a name="skip_menu"></a>
+   <h1>Introduction</h1>
+   <hr>
+   <div class="formatname">MARC 21 Community Information</div>
+   <div class="datename">October 2006</div>
+   <hr>
+   <p>The five MARC 21 communication formats, <em><a href="../bibliographic/index.htm">MARC 21 Format for Bibliographic Data</a></em>, <em> <a href="../authority/ecadhome.html">MARC 21 Format for Authority Data</a></em>, <em><a href="../holdings/echdhome.html">MARC 21 Format for Holdings Data</a></em>, <em><a href="../classification/eccdhome.html">MARC 21 Format for Classification Data</a></em>, and <em><a href="eccihome.html">MARC 21 Format for Community Information</a></em>, are widely used standards for the representation and exchange of bibliographic, authority, holdings, classification, and community information in machine-readable form. </p>
+   <p>A MARC record is composed of three elements: the record structure, the content designation, and the data content of the record. The <strong>record structure</strong> is an implementation of the international standard <em>Format for Information Exchange</em> (ISO 2709) and its American counterpart, <em>Bibliographic Information Interchange</em> (ANSI/NISO Z39.2). The <strong>content designation</strong>--the codes and conventions established explicitly to identify and further characterize the data elements within a record and to support the manipulation of that data--is defined by each of the MARC formats. The <strong>content</strong> of the data elements that comprise a MARC record is usually defined by standards outside the formats. Examples are the <em>International Standard Bibliographic Description</em> (ISBD), <em>Anglo-American Cataloguing Rules</em>, <em>Library of Congress Subject Headings</em> (LCSH), or other cataloging rules, subject thesauri, and classification schedules used by the organization that creates a record. The content of certain coded data elements is defined in the MARC formats (e.g., the Leader, field 007, field 008). </p>
+   <p>The <em>MARC 21 Format for Community Data: Including Guidelines for Content Designation</em>, defines the codes and conventions (tags, indicators, subfield codes, and coded values that identify the data elements in MARC community information records. This document is intended for the use of personnel involved in the creation and maintenance of community information records, as well as those involved in the design and maintenance of systems for communication and processing of community information records. This documentation is also available online, including a concise version and a simple field list at: <a href="http://www.loc.gov/marc/">www.loc.gov/marc/</a>. </p>
+   <hr>
+   <p><strong>SCOPE OF THE COMMUNITY INFORMATION FORMAT</strong></p>
+   <p><em>The MARC 21 Format for Community Information</em> is designed to be a carrier for community information. Community information records describe non-bibliographic resources that fulfill the information needs of a community. </p>
+   <p><strong>Kinds of Community Information Records</strong></p>
+   <p>MARC community information records are distinguished from all other types of MARC records by the presence of code q (Community information) in Leader/06, Type of record. The <em>MARC 21 Format for Community Information</em> further identifies five kinds of community information records in Leader/07, Kind of data: </p>
+   <ul>
+      <li class="nobullet"><strong>Individual</strong> - A community information record in which the data pertain to an individual with a particular expertise (e.g., teacher, interpreter, storyteller, civic leader). </li>
+      <li class="nobullet"><strong>Organization</strong> - A community information record in which the data pertain to an organization or any group (e.g., corporation, association, club, agency). </li>
+      <li class="nobullet"><strong>Program or service</strong> - A community information record in which the data pertain to an offering or activity of a group or institution which carries out the purposes of that group or institution (e.g., driver education, day care placement, toy collection drive, blood bank). </li>
+      <li class="nobullet"><strong>Event</strong> - A community information record in which the data pertain to a scheduled happening (e.g., a lecture, play, concert series, sporting contest, festival, annual celebration, regularly scheduled meeting). </li>
+      <li class="nobullet"><strong>Other</strong> - A community information record in which the data pertain to a kind of Community Information not mentioned above. For example, the data may be for a facility, such as a planetarium on a university campus. </li>
+   </ul>
+   <hr>
+   <p><strong>COMPONENTS OF COMMUNITY INFORMATION RECORDS</strong></p>
+   <p><strong>Description of Record Parts</strong></p>
+   <p>A MARC community information record consists of three main components: the Leader, the Directory, and the Variable Fields. The following information summarizes the structure of a MARC record. More detail is provided in <em><a href="http://www.loc.gov/marc/specifications/">MARC 21 Specifications for Record Structure, Character Sets, and Exchange Media</a></em>. </p>
+   <ul>
+      <li class="nobullet"><strong>Leader</strong> - Data elements that provide information for the processing of the record. The data elements contain numbers or coded values and are identified by relative character position. The Leader is fixed in length at 24 character positions and is the first field of a MARC record. </li>
+      <li class="nobullet"><strong>Directory</strong> - A series of entries that contain the tag, length, and starting location of each variable field within a record. Each entry is 12 character positions in length. Directory entries for variable control fields appear first, sequenced by tag in increasing numerical order. Entries for variable data fields follow, arranged in ascending order according to the first character of the tag. The stored sequence of the variable data fields in a record does not necessarily correspond to the order of the corresponding Directory entries. Duplicate tags are distinguished only by the location of the respective fields within the record. The Directory ends with a field terminator character (ASCII 1E hex). </li>
+      <li class="nobullet"><strong>Variable fields</strong> - The data in a MARC community information record is organized into <strong>variable fields</strong>, each identified by a three-character numeric tag that is stored in the Directory entry for the field. Each field ends with a field terminator character. The last variable field in a record ends with both a field terminator and a record terminator (ASCII 1D hex).<br>
+         <br> There are two types of <strong>variable fields</strong>: <br>
+         <br>
+      </li>
+      <li class="nobullet"><strong>Variable control fields</strong> - The 00X fields. These fields are identified by a field tag in the Directory but they contain neither indicator positions nor subfield codes. The variable control fields are structurally different from the variable data fields. They may contain either a single data element or a series of fixed-length data elements identified by relative character position. </li>
+      <li class="nobullet"><strong>Variable data fields</strong> - The remaining variable fields defined in the format. In addition to being identified by a field tag in the Directory, variable data fields contain two <strong>indicator positions</strong> stored at the beginning of each field and a two-character <strong>subfield code</strong> preceding each data element within the field. </li>
+   </ul>
+   <p>The <strong>variable data fields</strong> are grouped into blocks according to the first character of the <strong>tag</strong>, which with some exceptions identifies the function of the data within the record. The type of information in the field is identified by the remainder of the tag. </p>
+   <div class="table">
+      <table>
+         <tr>
+            <td width="63" align="left" valign="top">0XX</td>
+            <td width="562" align="left" valign="top">Control information, numbers, and codes</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">1XX</td>
+            <td valign="top" align="left">Primary name</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">2XX</td>
+            <td valign="top" align="left">Titles, addresses</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">3XX</td>
+            <td valign="top" align="left">Physical description, etc.</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">4XX</td>
+            <td valign="top" align="left">Series information</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">5XX</td>
+            <td valign="top" align="left">Notes</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">6XX</td>
+            <td valign="top" align="left">Subject access fields</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">7XX</td>
+            <td valign="top" align="left">Added entries other than subject</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">8XX</td>
+            <td valign="top" align="left">Locations, Alternate Graphics</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">9XX</td>
+            <td valign="top" align="left">Reserved for local implementation</td>
+         </tr>
+      </table>
+   </div>
+   <p>Within the 1XX, 4XX, 6XX, and 7XX blocks, certain parallels of content designation are usually preserved. The following meanings, with some exceptions, are given to the final two characters of the tag of fields: </p>
+   <div class="table">
+      <table>
+         <tr>
+            <td width="46" align="left" valign="top">X00</td>
+            <td width="156" align="left" valign="top">Personal names</td>
+            <td width="52" align="left" valign="top">X40</td>
+            <td width="364" align="left" valign="top">Titles (of programs, events, etc. or series)</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">X10</td>
+            <td valign="top" align="left">Corporate names</td>
+            <td valign="top" align="left">X50</td>
+            <td valign="top" align="left">Topical terms</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">X11</td>
+            <td valign="top" align="left">Meeting names</td>
+            <td valign="top" align="left">X51</td>
+            <td valign="top" align="left">Geographic names</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">X30</td>
+            <td valign="top" align="left">Publication titles</td>
+            <td valign="top" align="left">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td valign="top" align="left">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+         </tr>
+      </table>
+   </div>
+   <p>Within variable data fields, the following two kinds of content designation are used:</p>
+   <ul>
+      <li class="nobullet"><strong>Indicator positions</strong> - The first two character positions in the variable data fields that contain values which interpret or supplement the data found in the field. Indicator values are interpreted independently, that is, meaning is not ascribed to the two indicators taken together. Indicator values may be a lowercase alphabetic or a numeric character. A blank (ASCII SPACE), represented in this document as a #, is used in an undefined indicator position. In a defined indicator position, a blank may be assigned a meaning, or may mean <em>no information provided</em>. </li>
+      <li class="nobullet"><strong>Subfield codes</strong> - Two characters that distinguish the data elements within a field which require separate manipulation. A subfield code consists of a delimiter (ASCII 1F hex), represented in this document as a $, followed by a data element identifier. Data element identifiers may be a lowercase alphabetic or a numeric character. Subfield codes are defined independently for each field; however, parallel meanings are preserved whenever possible (e.g., in the 100, 400, and 600 Personal Name fields). Subfield codes are defined for purposes of identification, not arrangement. The order of subfields is generally specified by standards for the data content, such as the subject heading system/thesaurus rules. </li>
+   </ul>
+   <p><strong>Multiscript Records</strong></p>
+   <p>A MARC community information record may contain <em>data</em> in multiple scripts. One script may be considered the primary script of the <em>data content</em> of the record, even though other scripts are also used for data content. (Note: ASCII is used for the structure elements of the record, with most coded data also specified within the ASCII range of characters.) General models for multiscript data are described in <a href="eccimulti.html">Appendix C</a>, along with several full record examples. </p>
+   <p><strong>Field and Subfield Repeatability</strong></p>
+   <p>Theoretically, all fields and subfields may be repeated. The nature of the data, however, often precludes repetition. For example, a community information record may contain only one 1XX primary name field; a field 110 (Primary Name&#8722;Corporate) may contain only one subfield $a (Corporate name or jurisdiction name as entry element) but may contain more than one subfield $b (Subordinate unit). The repeatability/nonrepeatability of each field and subfield is specified in the format. </p>
+   <p><strong>Fill Character and Related Values</strong></p>
+   <p>A fill character (ASCII 7C hex), represented in this document as a vertical bar (&#8739;), may be used in community information records in fields 007, and 008. A fill character may not be used in the Leader or in tags, indicator positions, or subfield codes. The presence of a fill character in a community information record indicates that the format specifies a code to be used but the creator of the record has decided not to attempt to supply a code. </p>
+   <p>Code u (Unknown), when it is defined, indicates that the creator of the record attempted to supply a code but was unable to determine what the appropriate code should be. </p>
+   <p>Code n (Not applicable) is defined in many coded positions to indicate that the characteristic defined by the position is not applicable to the community information entity involved. </p>
+   <p><strong>Display Constants</strong></p>
+   <p>A display constant is a term, phrase, spacing, or punctuation convention that may be system generated under prescribed circumstances in order to make a visual presentation of data in a record more meaningful to a user. In the community information format, certain field tags (e.g., field 505), indicators (e.g., field 520 Indicator 1, Display constant controller), and subfield codes (e.g., the subject subdivision subfields $x, $y, and $z in a subject added entry), may be used to generate specific display constants. The use of display constants is determined by each organization or system. Examples of display constants are provided under <em>Input Conventions</em> in the field descriptions. </p>
+   <p><strong>Record Content Responsibility</strong></p>
+   <p>The <em>MARC 21 Format for Community Information</em> serves as a vehicle for community information of all types from any organization. In general, the responsibility for the data content, content designation, and transcription of community information within a record may be determined by examination of the field indicated in the <strong>responsible parties</strong> section below. The data content of certain data elements, however, is restricted when the element is an <strong>agency-assigned</strong> or a <strong>controlled-list</strong> data element. </p>
+   <p><strong>Responsible Parties</strong></p>
+   <p>In <em>unmodified records</em>, the organization identified as the originating agency in subfield $a (Originating agency) of field 040 (Record Source) is responsible for the data content of the record. The organization identified as the transcribing agency in subfield $c (Transcribing agency) of field 040 is responsible for the content designation and transcription of the data. </p>
+   <p>In <em>modified records</em>, organizations identified in subfields $a and $d (Modifying agency) of field 040 are collectively responsible for the data content of the record. Organizations identified as transcribing or modifying agencies in subfields $c and $d of field 040 are collectively responsible for the content designation and transcription of the data. </p>
+   <p><strong>Agency-assigned Data Elements</strong></p>
+   <p>An agency-assigned data element is one that is exclusively assigned by a particular agency and is the responsibility of that agency, e.g., field 010 (Library of Congress Control Number). However, when the content designation and transcription of the agency-assigned data is performed by another organization, the responsibility for these functions is determined by the Responsible Parties Rule. </p>
+   <p><strong>Controlled-list Data Elements</strong></p>
+   <p>Certain data elements contain data from controlled lists maintained by designated agencies, e.g., the <em>MARC Code List for Geographic Areas</em> in field 043 (Geographic Area Code). These elements are indicated at the field or subfield level in MARC 21 and only values from the designated lists may be used. If a change or addition is desirable for a list, the maintenance agency for the list should be consulted. </p>
+   <hr>
+   <p><strong>ORGANIZATION OF THIS DOCUMENT</strong></p>
+   <p><strong>Main Parts</strong></p>
+   <p><em>The MARC 21 Format for Community Information</em> consists of a Summary Statement of Content Designators followed by a detailed presentation of each content designator. Following the descriptions of the Leader and the Directory, the detailed presentations for each variable field are arranged in numerical field tag order. Note that the X-- General Information sections described below precede the 1XX fields. </p>
+   <p>Appendixes to this document provide information about several control subfields (<a href="eccicntf.html">Appendix A</a>), record examples (<a href="examples.html">Appendix B</a>), multiscript record examples (<a href="eccimulti.html">Appendix C</a>), an alphabetical listing of ambiguous headings with suggested tagging (<a href="ambiguous-headings.html">Appendix D</a>), a multilingual list of initial definite and indefinite articles (<a href="ciapndxe.html">Appendix E</a>), lists of changes to the format since the last edition or update (<a href="ciapndxf.html">Appendix F</a>), a list of organization code sources (<a href="ecciorg.html">Appendix G</a>). </p>
+   <p><strong>General Information Sections</strong></p>
+   <p>To reduce repetition, a X-- General Information section is provided for three types of headings (X00 Personal Names; X10 Corporate Names; X11 Meeting Names). These general information sections provide instructions for the content designators that are common to each of the three types of headings whether it is used in a 1XX primary name field, a 6XX subject access field, or a 7XX added entry field. The field description for each type of heading (i.e., 100, 600, 700, etc.) refers back to the X-- general information section for that type of heading. </p>
+   <p>In addition, the format includes numerous general information sections to summarize blocks of fields. For instance, these include 00X (Control Fields), 008 (Fixed-Length Data Elements), 1XX (Primary Names), 2XX (Titles, Addresses), etc. </p>
+   <p><strong>Components of the Detailed Descriptions</strong></p>
+   <p>A detailed description may consist of six parts: content designator listing; character position or field definition and scope; guidelines for applying content designators, with examples; input conventions; and content designator history. </p>
+   <p>The <strong>content designator listing</strong> area presents </p>
+   <ul>
+      <li class="nobullet">the name of the content designator</li>
+      <li class="nobullet">the repeatability/nonrepeatability code (R or NR)</li>
+   </ul>
+   <p>For the Leader and the variable control fields, the list gives the <strong>name</strong> of the character position and any defined coded value. For the variable data fields, the list gives the name of the indicator positions and any defined coded values and the name of the subfield codes and any defined coded values. For all variable fields, the <strong>repeatability/nonrepeatability code</strong> at the field level specifies whether the field may be repeated in a record. For variable data fields, the subfield repeatability code specifies whether the subfield code may be repeated within a field. </p>
+   <p>The <strong>character position or field definition and scope</strong> area describes the contents of the character position or field, the appropriateness of its use in specific kinds of community information records, and gives other information, such as field repeatability in particular circumstances, the use of required lists or conventions in formulating the data, etc. </p>
+   <p>The <strong>guidelines for applying content designators</strong>area describes the content and scope of each coded value, indicator, or subfield code and gives other information, such as appropriateness for use and repeatability in certain circumstances. Examples showing the use of the content designator are provided immediately following the description. The examples illustrate the application of specific MARC content designators. Neither field terminators nor record terminators are shown in the examples provided in the <em>MARC 21 Format for Community Information</em>. </p>
+   <p>The <strong>input conventions</strong> area provides guidance to ensure consistency in the application of the content designators, and for such things as punctuation, spacing, and the use of display constants. The input conventions clarify MARC punctuation practices, especially with respect to final punctuation. In the discussion of punctuation practices, <em>mark of punctuation</em> is a period (.), a question mark (?), an exclamation mark (!), or a hyphen (-). </p>
+   <p>The <strong>content designator history</strong> area provides a record of significant content designator changes. The types of changes that are included are: </p>
+   <ul>
+      <li class="nobullet">newly defined content designators that impact on coding consistency within a file </li>
+      <li class="nobullet">redefined codes and values</li>
+      <li class="nobullet">changes in codes and values for consistency across MARC specifications</li>
+      <li class="nobullet">changes in repeatability when it impacts on file consistency</li>
+      <li class="nobullet">restructuring</li>
+      <li class="nobullet">obsolete content designation</li>
+   </ul>
+   <p>In the MARC formats, a distinction is made between <strong>obsolete</strong> and <strong>deleted</strong> content designators. An <strong>obsolete</strong> content designator is one that may have been used in MARC records and that may continue to appear in records created prior to the date it was made obsolete. Obsolete content designators are not used in new records. An obsolete content designator is recorded in the <em>Content Designator History</em> area. Content designation instructions are provided for retrospective conversion of records having data elements that would have been identified by the obsolete content designator. A <strong>deleted</strong> content designator is not recorded in the history area and will no longer appear anywhere in the MARC documentation. A content designator that had been reserved in MARC but has not been defined, or one that had been defined but is known with near certainty not to have been used, may be deleted from the format. A deleted content designator is available for redefinition in a format. </p>
+   <p><strong>Typographical Conventions</strong></p>
+   <p>Throughout this document, the following typographical conventions are used:</p>
+   <ul>
+      <li class="nobullet">0 - The graphic 0 represents the digit zero in tags, fixed-position character positions, indicator positions, and other places numerics are used. This character must be distinguished from an uppercase letter O in examples or text. </li>
+      <li class="nobullet"># - The graphic symbol # is used for a blank in coded fields and in other special situations where the existence of the character blank might be ambiguous. (In most textual examples, the blank is represented in the conventional way, by the absence of a character.) </li>
+      <li class="nobullet">$ - The graphic symbol $ is used for the delimiter portion of a subfield code. Within the text, subfield codes are referred to as <em>subfield $a</em>, for example. </li>
+      <li class="nobullet">/ - Specific character positions of the Leader, Directory, field 007, field 008 are expressed using a slash and the number of the character position, e.g., Leader/06, 007/00, 008/09. </li>
+      <li class="nobullet">1 - The graphic 1 represents the digit one (hex 31). This character must be distinguished from a lowercase roman alphabet letter l (hex 6C) and uppercase alphabetic letter I (hex 4C) in examples or text. </li>
+      <li class="nobullet">| - The graphic | represents a fill character in MARC examples. When this mark appears in the left margin, it indicates areas of the text of this document where changes have been made. </li>
+   </ul>
+   <hr>
+   <a href="http://www.loc.gov/global/disclaim.html"><img src="../../images/disclaimer.gif" alt="Link disclaimer" width="91" height="16" border="0" align="right"></a>
+   <p><strong>STANDARDS AND OTHER DOCUMENTS RELATED TO THIS FORMAT</strong></p>
+   <p>The <em>The MARC 21 Format for Community Data</em> should be used with the following standards and related documentation. When a standard is applicable to data in specific fields of the format, the fields are given in brackets following the citation. </p>
+   <p><strong>National and International Standards:</strong></p>
+   <p>ISO publications may be obtained from the <a href="http://www.iso.org">International Organization for Standardization (ISO)</a> and their agents; and ANSI/NISO Z39 publications may be obtained from the <a href="http://www.niso.org">National Information Standards Organization (NISO)</a>. </p>
+   <ul>
+      <li class="nobullet"><em>Format for Information Exchange</em> (ISO 2709) and <em>Bibliographic Information Interchange</em> (ANSI/NISO Z39.2) </li>
+      <li class="nobullet"><em>Representations of Dates and Times</em> (ISO 8601) </li>
+   </ul>
+   <p>Character set standards are specified in <em><a href="http://www.loc.gov/marc/specifications/spechome.html">MARC 21 Specifications for Record Structure, Character Sets, and Exchange Media</a></em>. </p>
+   <p><strong>MARC Standards and Other Related Publications:</strong></p>
+   <p>These publications are available from the Library of Congress, Cataloging Distribution Service, Washington, DC 20541, USA (Worldwide distribution). Where indicated these publications are available on the Internet. </p>
+   <ul>
+      <li class="nobullet"><em>DC&amp;: Dewey Decimal Classification Additions, Notes and Decisions</em>. Albany: Forest Press </li>
+      <li class="nobullet">Dewey, Melvil. <em> Abridged Dewey Decimal Classification and Relative Index</em>. Albany: Forest Press </li>
+      <li class="nobullet">Dewey, Melvil. <em>Dewey Decimal Classification and Relative Index</em>. Albany: Forest Press </li>
+      <li class="nobullet"><em>Geographic Cutters</em></li>
+      <li class="nobullet"><em>LC Classification - Additions and Changes</em></li>
+      <li class="nobullet"><em>Library of Congress Classification</em></li>
+      <li class="nobullet"><em>Library of Congress Classification -- Class G</em></li>
+      <li class="nobullet"><em><a href="http://www.loc.gov/marc/specifications">MARC 21 Specifications for Record Structure, Character Sets, and Exchange Media</a></em></li>
+      <li class="nobullet"><em><a href="http://www.loc.gov/marc/countries/">MARC Code List for Countries</a></em></li>
+      <li class="nobullet"><em><a href="http://www.loc.gov/marc/geoareas/gacshome.html">MARC Code List for Geographic Areas</a></em></li>
+      <li class="nobullet"><em><a href="http://www.loc.gov/marc/languages/">MARC Code List for Languages</a></em></li>
+      <li class="nobullet"><em><a href="http://www.loc.gov/marc/organizations/orgshome.html">MARC Code List for Organizations</a></em> (earlier title: <em>Symbols of American Libraries</em>) </li>
+      <li class="nobullet"><em><a href="http://www.loc.gov/marc/relators">MARC Code Lists for Relators, Sources, Description Conventions</a></em></li>
+      <li class="nobullet"><em><a href="http://www.loc.gov/marc/concise/">MARC 21 Concise Formats</a></em> (all five formats in concise form) </li>
+      <li class="nobullet"><em><a href="../bibliographic/lite/index.htm">MARC 21 LITE Bibliographic Format</a></em></li>
+      <li class="nobullet"><em><a href="../authority/ecadhome.html">MARC 21 Format for Authority Data</a></em></li>
+      <li class="nobullet"><em><a href="../bibliographic/index.htm">MARC 21 Format for Bibliographic Data</a></em></li>
+      <li class="nobullet"><em><a href="../classification/eccdhome.html">MARC 21 Format for Classification Data</a></em></li>
+      <li class="nobullet"><em><a href="../holdings/echdhome.html">MARC 21 Format for Holdings Data</a></em></li>
+      <li class="nobullet">National Library of Medicine. <em>National Library of Medicine Classification</em>. Washington: for sale by the Supt. of Docs., U.S.G.P.O. </li>
+      <li class="nobullet"><em>Subject Cataloging Manual: Shelflisting </em></li>
+      <li class="nobullet"><em>Subject Cataloging Manual: Subject Headings</em></li>
+      <li class="nobullet"><em><a href="http://www.collectionscanada.ca/6/16/s16-202-e.html">Symbols and Interlibrary Loan Policies in Canada</a></em></li>
+   </ul>
+   <p><strong>SUPERSEDED DOCUMENTATION</strong></p>
+   <p>This document supersedes the most recent editions of the <em>USMARC Format for Community Information</em>. </p>
+   <p><strong>USMARC Documentation</strong></p>
+   <p>MARC 21 supersedes the 1993 edition of <em>USMARC Format for Community Information: Including Guidelines for Content Designation</em> and update No. 1 (April 1996) to that edition. The 1993 edition superseded the 1992 provisional format approved in January 1992 by the MARC Advisory Group. </p>
+   <hr>
+   <p><strong>DOCUMENTATION MAINTENANCE</strong></p>
+   <p>The <em>MARC 21 Format for Community Information</em> is prepared by the Network Development and MARC Standards Office, Library of Congress, in cooperation with Content Management Division, Library and Archives Canada (previously National Library of Canada) and Bibliographic Standards and Systems, British Library. Please direct any questions related to the content of this document to one of the following: </p>
+   <p>Network Development and MARC Standards Office<br>Library of Congress <br>101 Independence Avenue, S.E. <br>Washington, DC 20540-4402, USA <br>Fax: +1-202-707-0115<br>Email: <a href="/cdn-cgi/l/email-protection#0f616b627c604f63606c21686079"><span class="__cf_email__" data-cfemail="610f050c120e210d0e024f060e17">[email&#160;protected]</span></a>
+   </p>
+   <p>Description Division <br> Library and Archives Canada<br>395 Wellington St. <br>Ottawa, Ontario K1A 0N4, Canada <br> Fax: +1-819-934-4388<br> Email: <a href="/cdn-cgi/l/email-protection#a7c5c6c489cac6d5c4959689cbc6c4e7c4c6c9c6c3c689c4c6"><span class="__cf_email__" data-cfemail="442625276a2925362776756a2825270427252a2520256a2725">[email&#160;protected]</span></a>
+   </p>
+   <p>Collection Metadata<br>The British Library<br> Boston Spa, Wetherby <br>West Yorkshire LS23 7BQ, United Kingdom <br>Fax: +44 (0) 1937 546586<br> Email: <a href="/cdn-cgi/l/email-protection#fb969e8f9a9f9a8f9abb9997d58e90"> <span class="__cf_email__" data-cfemail="7518100114111401143517195b001e">[email&#160;protected]</span></a></p>
+   <p>The <em>MARC 21 Format for Community Information</em> is organized on a field-by-field basis with each field separately paged to facilitate the updating of fields. Periodic updates of new and replacement pages for the base text and cumulated versions of the base text will be available from the Cataloging Distribution Service, Library of Congress, Washington, DC 20541-5017, USA (Worldwide distribution) and available in Canada from Publishing and Depository Services, Public Works and Government Services Canada (PWGSC), Ottawa, Ontario K1A 0S9, Canada (Canadian distribution). Their availability will be announced on the <a href="http://www.loc.gov/marc">Library of Congress MARC website</a>, the <a href="http://www.marc21.ca/index-e.html">Library and Archives Canada MARC website</a>, on listservs, and through press releases to the library press and to those who purchase the initial base volume. Updates are also available on standing order from the Library of Congress and the Canadian Government Publishing-PWGSC. </p>
+   <hr>
+   <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr valign="bottom">
+         <td>
+            <div class="head-nav"><a href="http://www.loc.gov/">Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/marc/">MARC</a> &gt;&gt; <a href="index.htm">Community Information</a> &gt;&gt; <strong>Introduction</strong></div> (03/17/2008)
+         </td>
+         <td align="right"><a href="/cdn-cgi/l/email-protection#a8c6ccc5dbc7e8c4c7cb86cfc7de">Contact Us</a></td>
+      </tr>
+   </table>
+   <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+   <script>if (window['_satellite']) { _satellite.pageBottom(); }</script>
+</body>
+
+</html>

@@ -1,0 +1,740 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html40/loose.dtd">
+<html>
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>MARC 21 Format for Holdings Data: Introduction (Network Development and MARC Standards Office, Library of Congress) </title>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="description" content="This page contains the introduction to the MARC 21 Format for Holdings Data (Network Development and MARC Standards Office, Library of Congress)">
+   <meta name="keywords" content="marc, marc21, marc standards">
+   <meta name="author" content="Library of Congress Network Development and MARC Standards Office">
+   <link href="../marc-generic.css" rel="stylesheet" type="text/css">
+   <style type="text/css">
+      body {
+         margin-left: 2em;
+         margin-right: 2em;
+      }
+
+      h1 {
+         font-family: Arial, Helvetica, sans-serif;
+      }
+
+      h3 {
+         text-align: left;
+      }
+
+      h4 {
+         margin-top: .5em;
+         margin-bottom: .5em;
+      }
+
+      p {
+         text-align: justify;
+         margin-left: 2em;
+         margin-right: 2em;
+      }
+
+      .formatname {
+         font-weight: bold;
+         font-family: Arial, Helvetica, sans-serif;
+         margin-left: .5em
+      }
+
+      .datename {
+         font-weight: bold;
+         text-align: right;
+         font-family: Arial, Helvetica, sans-serif;
+         margin-top: -1.2em;
+      }
+
+      .font_small {
+         font-size: 9pt;
+      }
+
+      .fieldtoc {
+         margin-left: 2em;
+      }
+
+      .subfieldtoc {
+         margin-left: 3em;
+      }
+
+      .box {
+         font-family: ZapfDingbats;
+      }
+
+      .description {
+         text-align: justify;
+         margin-left: 2em;
+      }
+
+      .description2 {
+         text-align: justify;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .description3 {
+         text-align: justify;
+         margin-top: 1em;
+         margin-bottom: 1em;
+         margin-left: 2em;
+      }
+
+      .indicator {
+         text-align: left;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .indicatorvalue {
+         margin-left: 2em;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .subfieldvalue {
+         margin-left: 2em;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .subfield {
+         text-align: left;
+         margin-top: 1em;
+         margin-bottom: 1em;
+         margin-left: 2em;
+      }
+
+      .characterposition {
+         text-align: left;
+         margin-top: 1em;
+         margin-bottom: 1em;
+         margin-left: 2em;
+      }
+
+      .charactervalue {
+         margin-left: 2em;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .characterpositionhistory {
+         text-align: left;
+         margin-top: .5em;
+         margin-bottom: .5em;
+         margin-left: 2em;
+      }
+
+      .charactervaluehistory {
+         margin-left: 2em;
+         margin-top: .1em;
+         margin-bottom: .1em;
+      }
+
+      .example {
+         margin-left: 4em;
+      }
+
+      .changed {
+         color: #FF0000;
+      }
+
+      .captiontext {
+         font-style: italic;
+      }
+
+      .displaytext {
+         font-style: italic;
+         margin-bottom: .5em;
+         margin-top: .5em;
+      }
+
+      .displaycontent {
+         text-align: left;
+      }
+
+      .table {
+         margin-left: 2em;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .head-nav {
+         font-family: Arial, Helvetica, sans-serif;
+         font-size: 9pt;
+      }
+
+      .summary {
+         margin-left: 2em;
+      }
+
+      .summarytable {
+         margin-left: 4em;
+      }
+
+      .update {
+         text-align: center;
+         font-weight: bold;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .changebox {
+         font-style: italic;
+         margin-top: .5em;
+      }
+
+      .changesection {
+         text-align: left;
+         margin-left: 2em;
+         font-weight: bold;
+         margin-top: .5em;
+      }
+
+      .changefield {
+         text-align: left;
+         margin-left: 1em;
+         font-weight: bold;
+      }
+
+      .changefieldlabel {
+         margin-left: 3em;
+         font-weight: bold;
+      }
+
+      .changeindicator {
+         margin-left: 3em;
+      }
+
+      .changeindicatorfieldname {
+         margin-left: 2em;
+      }
+
+      .changeindicatorvalue {
+         margin-left: 4em;
+         font-weight: bold;
+      }
+
+      .changesubfield {
+         margin-left: 3em;
+         font-weight: bold;
+      }
+
+      .changesubfieldname {
+         margin-left: 1em;
+         font-weight: bold;
+      }
+
+      .changesubfieldlocation {
+         text-align: justify;
+         font-weight: normal;
+      }
+
+      .glossaryentry {
+         margin-left: 2em;
+         margin-top: 1em;
+         font-weight: bold;
+      }
+
+      .glossaryentrydescription {
+         margin-left: 4em;
+         margin-bottom: 1em;
+         text-align: justify;
+      }
+
+      .citationaddress {
+         margin-left: 2em;
+         text-align: justify;
+      }
+
+      .citationinternet {
+         margin-left: 2em;
+         text-align: justify;
+      }
+
+      .citationname {
+         font-style: italic;
+         margin-top: 1em;
+      }
+   </style>
+   <script src="../../dac62e20b491e735c6b56e64c39134d8ee93f9cf/satelliteLib-6b47f831c184878d7338d4683ecf773a17973bb9.js"></script>
+</head>
+
+<body bgcolor="#ffffff">
+   <div class="head-nav"><a href="http://www.loc.gov/">Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/marc/">MARC</a> &gt;&gt; <a href="index.htm">Holdings</a> &gt;&gt; <strong>Introduction</strong></div>
+   <hr><a name="skip_menu"></a>
+   <h1>Introduction</h1>
+   <hr>
+   <div class="formatname">MARC 21 Holdings</div>
+   <div class="datename">October 2006</div>
+   <hr>
+   <p>The five MARC 21 communication formats, <em>
+         <a href="../bibliographic/index.htm">MARC 21 Format for Bibliographic Data</a></em>, <em> <a href="../authority/index.htm">MARC 21 Format for Authority Data</a></em>, <em> <a href="index.htm">MARC 21 Format for Holdings Data</a></em>, <em> <a href="../classification/index.htm">MARC 21 Format for Classification Data</a></em>, and <em> <a href="../community/index.htm">MARC 21 Format for Community Information</a></em>, are widely used standards for the representation and exchange of bibliographic, authority, holdings, classification, and community information data in machine-readable form. </p>
+   <p>A MARC record is composed of three elements: the record structure, the content designation, and the data content of the record. The <strong>record structure</strong> is an implementation of the international standard <em>Format for Information Exchange</em> (ISO 2709) and its American counterpart, <em>Bibliographic Information Interchange</em> (ANSI/NISO Z39.2). The <strong>content designation</strong>--the codes and conventions established explicitly to identify and further characterize the data elements within a record and to support the manipulation of that data--is defined by each of the MARC formats. The <strong>content</strong> of the data elements that comprise a MARC record is usually defined by standards outside the formats. Examples are the <em>International Standard Bibliographic Description</em> (ISBD), <em>Anglo-American Cataloguing Rules</em>, <em>Library of Congress Subject Headings</em> (LCSH), or other cataloging rules, subject thesauri, and classification schedules used by the organization that creates a record. The content of certain coded data elements is defined in the MARC formats (e.g., the Leader, field 007, field 008). </p>
+   <p>The <em>MARC 21 Format for Holdings Data: Including Guidelines for Content Designation</em>, defines the codes and conventions (tags, indicators, subfield codes, and coded values) that identify the data elements in MARC holdings reports for serial and nonserial items. The content of most of the data elements and their display may be determined by the ANSI standard for holdings statements, <em>Holdings Statements for Bibliographic Items</em> (ANSI/NISO Z39.71) (formerly <em>Serial Holdings Statements</em> (ANSI Z39.44) or <em>Holdings Statements for Non-Serial Items</em> (ANSI/NISO Z39.57)). The corresponding international standard (only for summary level holdings) is <em>Holdings Statements-Summary Level</em> (ISO 10324). Other <em>MARC 21 Holdings</em> content designators allow the potential of using the format to interface with such automated control systems as union catalog, serials check-in, and interlibrary loan systems. A comparison of the data elements in the ANSI and ISO standards and the content designators defined in the <em>MARC 21 Format for Holdings Data</em> is in <a href="hdapndxd.html">Appendix D</a>. </p>
+   <p> The <em>MARC 21 Format for Holdings Data</em> is intended for the use of personnel involved in the creation and maintenance of MARC holdings information, as well as those involved in the design and maintenance of systems for the communication and processing of MARC holdings information. A glossary of terms used by the Z39 holdings statement standards and in <em>MARC 21 Holdings</em> is in <a href="hdapndxe.html">Appendix E</a>. This documentation is also available online, including a concise version and a simple field list at: <a href="http://www.loc.gov/marc/">www.loc.gov/marc/</a>. </p>
+   <hr>
+   <p><strong>SCOPE OF THE HOLDINGS FORMAT</strong></p>
+   <p><em>MARC 21 Format for Holdings Data</em> is designed to be a carrier for holdings information for three types of bibliographic items that are identified by a code in Leader/06 (Type of record): </p>
+   <ul>
+      <li class="nobullet"><strong>Single-part item</strong> - item which is complete in a single physical part, for example, a single map, a score, a one-volume book, a computer file (Leader/06, code x) </li>
+      <li class="nobullet"><strong>Multipart item</strong> - item which is complete, or intended to be complete, in a finite number of separate physical parts, for example, a set of maps, a musical score and parts, a ten-volume encyclopedia, a multimedia kit, a manuscript collection (Leader/06, code v) </li>
+      <li class="nobullet"><strong>Serial item</strong> - item which is issued in successive parts at regular or irregular intervals and is intended to be continued indefinitely, for example, a journal, a serial update service to a looseleaf publication (Leader/06, code y) </li>
+   </ul>
+   <p>In contrast with data elements that are applicable to a universal bibliographic description of these types of items, holdings information may include: </p>
+   <ul>
+      <li class="nobullet">copy-specific information for an item;</li>
+      <li class="nobullet">information that is peculiar to the holding organization;</li>
+      <li class="nobullet">information that is needed for local processing, maintenance, or preservation of the item; and </li>
+      <li class="nobullet">version information.</li>
+   </ul>
+   <p><strong>Holdings Data Fields</strong></p>
+   <p>Four sets of holdings data fields are defined for recording information about the items actually held by an organization: </p>
+   <ul>
+      <li class="nobullet">Captions and Pattern (fields 853-855)</li>
+      <li class="nobullet">Enumeration and Chronology (863-865)</li>
+      <li class="nobullet">Textual Holdings (866-868)</li>
+      <li class="nobullet">Item Information (876-878)</li>
+   </ul>
+   <p>Within each set, separate fields are defined for three categories of material:</p>
+   <ul>
+      <li class="nobullet">Basic Bibliographic Unit (fields 853, 863, 866, 876)</li>
+      <li class="nobullet">Supplementary Material (854, 864, 867, 877)</li>
+      <li class="nobullet">Indexes (855, 865, 868, 878)</li>
+   </ul>
+   <p>Indicators and subfield codes defined in the holdings data fields allow the manipulation of the data to generate holdings statement displays that conform to the ANSI/NISO Z39 holdings standards. A general description of the four sets of holdings data fields and their relationships is given in the <em>853-878 Holdings Data-General Information</em> section, followed by detailed descriptions of each set in the <em>853-855 Captions and Pattern</em>, <em>863-865 Enumeration and Chronology</em>, <em>866-868 Textual Holdings</em>, and <em>876-878 Item Information</em> general information sections. </p>
+   <p><strong>Separate and Embedded Holdings Information</strong></p>
+   <p>Field 852 (Location) is defined to contain information in as much detail as is needed to locate an item. It may include such information as a unique shelving designation, copy number, and the address for the current physical location of the item. </p>
+   <ul>
+      <li class="nobullet"><strong>Single location field:</strong> When holdings are reported for a <em>single</em> location of an item, the information may be <strong>embedded</strong> in the related MARC bibliographic record or it may be contained in a <strong>single separate holdings record</strong>. A single 852 location field and any associated holdings fields are used. <br>
+         <br>
+      </li>
+      <li class="nobullet"><strong>Multiple location fields:</strong> When holdings are reported for <em>multiple</em> copies of an item and the location or call number data elements vary, multiple 852 location fields are required. <em>MARC Holdings</em> does not provide a technique for linking an 852 field to associated holdings information fields. To assure that these fields are implicitly linked, the following record configurations of the holdings information must be applied: <br>
+         <br>
+      </li>
+      <li class="nobullet"><em>Multiple 852 fields without associated fields</em>: When multiple 852 location fields have no associated fields, they may all be <strong>embedded</strong> in the related MARC bibliographic record, may all be contained in a <strong>single separate holdings record</strong>, or may be contained in <strong>multiple separate holdings records</strong>. <br>
+         <br>
+      </li>
+      <li class="nobullet"><em>Multiple 852 fields with associated fields</em>: When one or more 852 location fields have fields such as 841, 007, 842, 844, 853-855, 86X, or 87X associated with them, each 852 and its associated fields must be communicated in a single unambiguous holdings information cluster. An 852 holdings cluster may be <strong>embedded</strong> in the related MARC bibliographic record or it may be contained in a <strong>single separate holdings record</strong>. When the cluster is embedded, no other unassociated 852 location fields or clusters may reside in the bibliographic record; they must reside in separate holdings records. <br>
+         <br>
+      </li>
+      <li class="nobullet"><em>Multiple 852 fields with equally applicable associated fields</em>: In special cases, when associated holdings fields may be equally applicable to several 852 fields, all of the 852 fields and the associated fields may be considered a single holdings information cluster. The holdings cluster may either be <strong>embedded</strong> in the related MARC bibliographic record or contained in a <strong>single separate holdings record</strong>. <br>
+         <br>
+      </li>
+      <li class="nobullet"><strong>Item information:</strong> A holdings record may contain information for particular physical items at one or more locations. The relationship between field 852, the associated holdings data fields 853-868, and the item information fields 876-878 is included in the section <em>876-878 Item Information-General Information</em>. <br>
+         <br>
+      </li>
+      <li class="nobullet"><strong>Separate holdings records</strong> - A separate holdings record is linked to the related MARC bibliographic record by field 004 (Control Number for Related Bibliographic Record). </li>
+   </ul>
+   <p>The following fields may appear in a separate MARC holdings record:</p>
+   <p><strong>Holdings fields</strong></p>
+   <div class="table">
+      <table>
+         <tr>
+            <td width="79" align="left" valign="top">Leader</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">Directory</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">001</td>
+            <td width="544" align="left" valign="top">Control Number</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">003</td>
+            <td valign="top" align="left">Control Number Identifier</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">004</td>
+            <td valign="top" align="left">Control Number for Related Bibliographic Record</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">005</td>
+            <td valign="top" align="left">Date and Time of Latest Transaction</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">008</td>
+            <td valign="top" align="left">Fixed-Length Data Elements</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">014</td>
+            <td valign="top" align="left">Linkage Number</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">035</td>
+            <td valign="top" align="left">System Control Number</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">842</td>
+            <td valign="top" align="left">Textual Physical Form Designator</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">843</td>
+            <td valign="top" align="left">Reproduction Note</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">844</td>
+            <td valign="top" align="left">Name of Unit</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">845</td>
+            <td valign="top" align="left">Terms Governing Use and Reproduction Note</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">852</td>
+            <td valign="top" align="left">Location</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">853</td>
+            <td valign="top" align="left">Captions and Pattern-Basic Bibliographic Unit</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">854</td>
+            <td valign="top" align="left">Captions and Pattern-Supplementary Material</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">855</td>
+            <td valign="top" align="left">Captions and Pattern-Indexes</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">856</td>
+            <td valign="top" align="left">Electronic Location and Access</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">863</td>
+            <td valign="top" align="left">Enumeration and Chronology-Basic Bibliographic Unit</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">864</td>
+            <td valign="top" align="left">Enumeration and Chronology-Supplementary Material</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">865</td>
+            <td valign="top" align="left">Enumeration and Chronology-Indexes</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">866</td>
+            <td valign="top" align="left">Textual Holdings-Basic Bibliographic Unit</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">867</td>
+            <td valign="top" align="left">Textual Holdings-Supplementary Material</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">868</td>
+            <td valign="top" align="left">Textual Holdings-Indexes</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">876</td>
+            <td valign="top" align="left">Item Information-Basic Bibliographic Unit</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">877</td>
+            <td valign="top" align="left">Item Information-Supplementary Material</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">878</td>
+            <td valign="top" align="left">Item Information-Indexes</td>
+         </tr>
+      </table>
+   </div>
+   <p><strong>Bibliographic Format fields</strong></p>
+   <div class="table">
+      <table>
+         <tr>
+            <td width="77" align="left" valign="top">007</td>
+            <td width="546" align="left" valign="top">Physical Description Fixed Field</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">010</td>
+            <td valign="top" align="left">Library of Congress Control Number</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">016</td>
+            <td valign="top" align="left">National Bibliographic Agency Control Number</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">020</td>
+            <td valign="top" align="left">International Standard Book Number</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">022</td>
+            <td valign="top" align="left">International Standard Serial Number</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">024</td>
+            <td valign="top" align="left">Standard Recording Number</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">027</td>
+            <td valign="top" align="left">Standard Technical Report Number</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">030</td>
+            <td valign="top" align="left">CODEN Designation</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">541</td>
+            <td valign="top" align="left">Immediate Source of Acquisition Note</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">561</td>
+            <td valign="top" align="left">Ownership and Custodial History</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">562</td>
+            <td valign="top" align="left">Copy and Version Identification Note</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">583</td>
+            <td valign="top" align="left">Action Note</td>
+         </tr>
+      </table>
+   </div>
+   <p>Of these fields, the following are required in a separate MARC holdings record: Leader, Directory, 001, 004 and 852. For interchange purposes, the related MARC bibliographic record is distributed to exchange partners prior to the distribution of a separate holdings record. </p>
+   <ul>
+      <li class="nobullet"><strong>Embedded holdings information</strong> - Holdings information may be added to an existing MARC bibliographic record rather than being in a separate linked holdings record. </li>
+   </ul>
+   <p>Embedded holdings information may include the following Holdings Format fields:</p>
+   <div class="table">
+      <table>
+         <tr>
+            <td width="71" align="left" valign="top">841</td>
+            <td width="562" align="left" valign="top">Holdings Coded Data Values</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">843</td>
+            <td valign="top" align="left">Reproduction Note</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">845</td>
+            <td valign="top" align="left">Terms Governing Use and Reproduction Note</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">852</td>
+            <td valign="top" align="left">Location</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">853</td>
+            <td valign="top" align="left">Captions and Pattern-Basic Bibliographic Unit</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">854</td>
+            <td valign="top" align="left">Captions and Pattern-Supplementary Material</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">855</td>
+            <td valign="top" align="left">Captions and Pattern-Indexes</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">856</td>
+            <td valign="top" align="left">Electronic Location and Access</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">863</td>
+            <td valign="top" align="left">Enumeration and Chronology-Basic Bibliographic Unit</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">864</td>
+            <td valign="top" align="left">Enumeration and Chronology-Supplementary Material</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">865</td>
+            <td valign="top" align="left">Enumeration and Chronology-Indexes</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">866</td>
+            <td valign="top" align="left">Textual Holdings-Basic Bibliographic Unit</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">867</td>
+            <td valign="top" align="left">Textual Holdings-Supplementary Material</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">868</td>
+            <td valign="top" align="left">Textual Holdings-Indexes</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">876</td>
+            <td valign="top" align="left">Item Information-Basic Bibliographic Unit</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">877</td>
+            <td valign="top" align="left">Item Information-Supplementary Material</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">878</td>
+            <td valign="top" align="left">Item Information-Indexes</td>
+         </tr>
+      </table>
+   </div>
+   <p>Of these fields, only field 852 is required in a holdings statement that is embedded in the related MARC bibliographic record. </p>
+   <p><strong> In general, the guidelines in this document describe separate holdings records. Specific instructions for embedding holdings fields in the related MARC bibliographic record are given in the <em>Input Conventions</em> area of the field descriptions.</strong> (The first example in <a href="examples.html">Appendix B</a>: Full Level Record Examples illustrates holdings information reported as a separate holdings record and as a holdings cluster embedded in the related bibliographic record.) </p>
+   <p><strong>Compression and Expansion</strong></p>
+   <p>Compression or expansion (itemization) of detailed enumeration and chronology data may be done by computer algorithm if no break exists within the levels of enumeration or chronology. A fuller description of this capability is given in the <em>853-878 Holdings Data-General Information</em> section. The data elements that are required to be present for the compression or expansion of the contents of the enumeration and chronology fields for basic bibliographic units (field 863) and supplementary material (field 864) are described in the <em>Input Conventions</em> area of the <em>853-855 Captions and Pattern-General Information</em> section. The content of an enumeration and chronology field for indexes (field 865) may not be automatically compressed or expanded because of the potential for an ambiguous holdings statement. </p>
+   <hr>
+   <p><strong>COMPONENTS OF A SEPARATE HOLDINGS RECORD</strong></p>
+   <p><strong>Description of Record Parts</strong></p>
+   <p>A MARC holdings record consists of three main components: the <strong>Leader</strong>, the <strong>Directory</strong>, and the <strong>variable fields</strong>. The following information summarizes the structure of a separate MARC record. More detail is provided in <em><a href="http://www.loc.gov/marc/specifications/">MARC 21 Specifications for Record Structure, Character Sets, and Exchange Media</a></em>. </p>
+   <ul>
+      <li class="nobullet"><strong>Leader</strong> - Data elements that primarily provide information for the processing of the record. The data elements contain numbers or coded values and are identified by relative character position. The Leader is fixed in length at 24 character positions and is the first field of a MARC record. </li>
+      <li class="nobullet"><strong>Directory</strong> - A series of entries that contain the tag, length, and starting location of each variable field within a record. Each entry is 12 character positions in length. Directory entries for variable control fields appear first, sequenced by the field tag in increasing numerical order. Entries for variable data fields follow, arranged in ascending order according to the first character of the tag. The stored sequence of the variable data fields in a record does not necessarily correspond to the order of the corresponding Directory entries. Duplicate tags are distinguished only by the location of the respective fields within the record. The Directory ends with a field terminator character (ASCII 1E hex). </li>
+      <li class="nobullet"><strong>Variable fields</strong> - The data in a MARC holdings record is organized into variable fields, each identified by a three-character numeric tag that is stored in the Directory entry for the field. Each field ends with a field terminator character. The last variable field in a record ends with both a field terminator and a record terminator (ASCII 1D hex). </li>
+      <li class="nobullet"><strong>Variable control fields</strong> - The 00X fields. These fields are identified by a field tag in the Directory but they contain neither indicator positions nor subfield codes. The variable control fields are structurally different from the variable data fields. They may contain either a single data element or a series of fixed-length data elements identified by relative character position. </li>
+      <li class="nobullet"><strong>Variable data fields</strong> - The remaining variable fields defined in the format. In addition to being identified by a field tag in the Directory, variable data fields contain two <strong>indicator positions</strong> stored at the beginning of each field and a two-character <strong>subfield code</strong> preceding each data element within the field. </li>
+      <li class="nobullet">The <strong>variable data fields</strong> are grouped into blocks according to the first character of the <strong>tag</strong>, which with some exceptions identifies the function of the data within the record. The type of information in the field is identified by the remainder of the tag. </li>
+   </ul>
+   <div class="table">
+      <table>
+         <tr>
+            <td width="51" align="left" valign="top">0XX</td>
+            <td width="594" align="left" valign="top">Numbers and codes</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">5XX</td>
+            <td valign="top" align="left">Notes</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">8XX</td>
+            <td valign="top" align="left">Holdings and location data, notes</td>
+         </tr>
+      </table>
+   </div>
+   <p>Within the 853-878 holdings data fields, certain parallels of content designation are preserved. The following meanings are given to the final character of the tag in these fields: </p>
+   <div class="table">
+      <table width="653">
+         <tr>
+            <td width="158" align="left" valign="top">853/863/876</td>
+            <td width="483" align="left" valign="top">Basic Bibliographic Unit</td>
+         </tr>
+         <tr>
+            <td height="22" align="left" valign="top">854/864/877</td>
+            <td valign="top" align="left">Supplementary Material</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">855/865/878</td>
+            <td valign="top" align="left">Indexes</td>
+         </tr>
+      </table>
+   </div>
+   <p>In these fields, the same subfield codes are defined for the caption and enumeration and chronology, and item information data elements. </p>
+   <p>Within variable data fields, the following two kinds of content designation are used: </p>
+   <ul>
+      <li class="nobullet"><strong>Indicator positions</strong> - The first two character positions in the variable data fields that contain values which interpret or supplement the data found in the field. Indicator values are interpreted independently, that is, meaning is not ascribed to the two indicators taken together. Indicator values may be a lowercase alphabetic or a numeric character. A blank (ASCII SPACE), represented in this document as a #, is used in an undefined indicator position. In a defined indicator position, a blank may be assigned a meaning, or may mean <em>no information provided</em>. </li>
+      <li class="nobullet"><strong>Subfield codes</strong> - Two characters that distinguish the data elements within a field which require separate manipulation. A subfield code consists of a delimiter (ASCII 1F hex), represented in this document as a $, followed by a data element identifier. Data element identifiers may be a lowercase alphabetic or a numeric character. Subfield codes are defined independently for each field; however, parallel meanings are preserved whenever possible (for example, in 853-855 Caption and Pattern and 863-865 Enumeration and Chronology fields). Subfield codes are defined primarily for purposes of identification, not arrangement. The order of subfields is generally specified by Z39.71. </li>
+   </ul>
+   <p><strong>Character Sets</strong></p>
+   <p>A MARC 21 record may be encoded in 7-bit and 8-bit character sets or in the ISO Universal Coded Character Set (ISO 10646; UCS) (or Unicode&#8482;, an industry subset). ASCII is used for the structure elements of the record, with most coded data also specified within the ASCII range of characters. More details on character sets, encoding, repertoires, etc., are provided in <em><a href="http://www.loc.gov/marc/specifications/">MARC 21 Specifications for Record Structure, Character Sets, and Exchange Media</a></em>. </p>
+   <p><strong>Multiscript Holdings Records</strong></p>
+   <p>A MARC holdings record may contain <em>data</em> in multiple scripts. One script may be considered the primary script of the <em>data content</em> of the record, even though other scripts are also used for data content. (Note: ASCII is used for the structure elements of the record, with most coded data also specified within the ASCII range of characters.) General models for multiscript data are described in <a href="echdmulti.html"> Appendix C</a>: Multiscript Records, along with several full record examples. </p>
+   <p><strong>Field and Subfield Repeatability</strong></p>
+   <p>Repeatability or nonrepeatability of each field and subfield is specified in the format.</p>
+   <p><strong>Fill Character</strong></p>
+   <p>A fill character (ASCII 7C hex), represented in this document as a vertical bar (|), may be used in MARC holdings reports in fields 007 (Physical Description Fixed Field) and 008 (Fixed-Length Data Elements). The presence of a fill character indicates that the format specifies a code to be used but that the creator of the report has decided not to attempt to supply a code. A fill character may not be used in the Leader or in tags, indicators, or subfield codes. </p>
+   <p><strong>Record Level Requirements</strong></p>
+   <p>No level requirement codes are specified in the <em>MARC 21 Format for Holdings Data</em>. The data elements that must be present to meet the requirements of the various levels of reporting specificity of Z39.71 are described in Leader/17 (Encoding level). </p>
+   <hr>
+   <p><strong>ORGANIZATION OF THIS DOCUMENT</strong></p>
+   <p><strong>Main Parts</strong></p>
+   <p><em>MARC 21 Format for Holdings Data</em> consists of a Summary Statement of Content Designators followed by a detailed presentation of each content designator. Following the descriptions of the Leader and the Directory, the detailed presentations for each variable field are arranged in field tag order. The variable data fields are presented in the following groupings in order to bring together fields that serve related functions: </p>
+   <ul>
+      <li class="nobullet">Numbers and Codes (Fields 010-035)</li>
+      <li class="nobullet">Notes (Fields 5XX and 84X)</li>
+      <li class="nobullet">Location (Fields 852 and 856)</li>
+      <li class="nobullet">Holdings Data (853-868 General Information; 853-855 Captions and Pattern, General Information and individual fields; 863-865 Enumeration and Chronology, General Information and individual fields; 866-868 Textual Holdings, General Information and individual fields; 876-878 Item Information, General Information and individual fields); Alternate Graphic Representation (Field 880) </li>
+   </ul>
+   <p>Appendixes to this document provide information about several control subfields (<a href="echdcntf.html">Appendix A</a>), full holdings record examples (<a href="examples.html">Appendix B</a>), multiscript record examples (<a href="echdmulti.html">Appendix C</a>), a comparison of the <em>MARC 21 Format for Holdings Data</em> content designators and the data elements of Z39.71 (<a href="hdapndxd.html">Appendix D</a>), a glossary (<a href="hdapndxe.html">Appendix E</a>), a listing of changes to the format since the last edition or update (<a href="hdapndxf.html">Appendix F</a>) and a list of organization code sources (<a href="echdorg.html">Appendix G</a>). </p>
+   <p><strong>General Information Sections</strong></p>
+   <p>To avoid repetition, general information sections are provided for groups of fields with similar characteristics. These general information sections provide instructions for the content designators that are common to each field in the group. The description for each of the fields refers back to the general information section for that group and to any related general information section. </p>
+   <p>For example, the 853-878 General Information section defines the four types of holdings data fields and describes their relationships and specific aspects they have in common. The General Information section for each of the four types of holdings data fields (853-855 Captions and Pattern; 863-865 Enumeration and Chronology; 866-868 Textual Holdings; 876-878 Item Information) provide instructions for the content designators that are common to each type of field. The description for each of the individual fields (853, 863, 866, etc.) refers back to both the 853-868 and the type-of-field general information sections. </p>
+   <p><strong>Components of the Detailed Descriptions</strong></p>
+   <p>A detailed description may consist of seven parts: content designator listing; character position or field definition and scope; guidelines for applying content designators, with examples; input conventions; related MARC document/field; other related documents; and content designator history. </p>
+   <p>The <strong>content designator listing</strong> area presents </p>
+   <ul>
+      <li class="nobullet">the name of the content designator</li>
+      <li class="nobullet">the repeatability/nonrepeatability code (R or NR)</li>
+   </ul>
+   <p>For the Leader and the variable control fields, the list gives the <strong>name</strong> of the character position and any defined coded value. For the variable data fields, the list gives the name of the indicator positions and any defined coded values and the name of the subfield codes and any defined coded values. For all variable fields, the <strong>repeatability/nonrepeatability code</strong> at the field level specifies whether the field may be repeated in a holdings report. For variable data fields, the subfield repeatability code specifies whether the subfield code may be repeated within a field. </p>
+   <p>The <strong>character position or field definition and scope</strong> area describes the contents of the character position or field and gives other information, such as field repeatability in particular circumstances and the use of required lists or rules in formulating the data. </p>
+   <p>The <strong>guidelines for applying content designators</strong> area describes the content and scope of each code, indicator, or subfield code and gives other information, such as appropriateness for use and repeatability in certain circumstances. The coded values and subfield codes in this area are presented in alphabetical or numerical order. Examples showing the use of the content designator illustrate the application of specific MARC content designators and immediately follow the description. In the examples, &lt;location identifier&gt; may be used instead of the code of the organization holding the item or from which it is available. No <em>item identifier</em> (fields 004, 010-030) is shown in the examples although in separate holdings records such a link may be necessary to identify the related bibliographic title. No item identifier field is needed in embedded holdings statements. </p>
+   <p>The <strong>input conventions</strong> area provides general guidance for the application of the content designators and for such things as punctuation, spacing, and the use of the content designator in embedded holdings information. </p>
+   <p>The <strong>content designator history</strong> area provides a record of significant content designator changes. The types of changes that are included are: </p>
+   <ul>
+      <li class="nobullet">newly defined content designators that impact on coding consistency within a file</li>
+      <li class="nobullet">redefined codes and values</li>
+      <li class="nobullet">changes in codes and values for consistency across MARC specifications</li>
+      <li class="nobullet">changes in repeatability when it impacts on file consistency</li>
+      <li class="nobullet">restructuring</li>
+      <li class="nobullet">obsolete content designation (Obsolete content designation formerly defined in only one format are designated <em>[USMARC only]</em> or <em> [CAN/MARC only]</em>; unmarked items were defined in both formats.) </li>
+   </ul>
+   <p>In the MARC formats, a distinction is made between <strong>obsolete</strong> and <strong>deleted</strong> content designators. An <strong>obsolete</strong> content designator is one that may have been used in MARC records and that may continue to appear in records created prior to the date it was made obsolete. Obsolete content designators are not used in new records. An obsolete content designator is recorded in the <em>Content Designator History</em> area. Content designation instructions are provided for retrospective conversion of records having data elements that would have been identified by the obsolete content designator. A <strong>deleted</strong> content designator is not recorded in the history area and will no longer appear anywhere in the MARC documentation. A content designator that had been reserved in MARC but has not been defined, or one that had been defined but is known with near certainty not to have been used, may be deleted from the format. A deleted content designator is available for redefinition in a format. </p>
+   <p><strong>Typographical Conventions</strong></p>
+   <p>Throughout this document, the following typographical conventions are used:</p>
+   <ul>
+      <li class="nobullet">0 - The graphic 0 represents the digit zero in tags, fixed-position character positions, indicator positions, and other places numerics are used. This character must be distinguished from an uppercase letter O in examples or text. </li>
+      <li class="nobullet"># - The graphic symbol # is used for a blank in coded fields and in other special situations where the existence of the character blank might be ambiguous. (In most textual examples, the blank is represented in the conventional way, by the absence of a character.) </li>
+      <li class="nobullet">$ - The graphic symbol $ is used for the delimiter portion of a subfield code. Within the text, subfield codes are referred to as <em>subfield $a</em>, for example. </li>
+      <li class="nobullet">/- Specific character positions of the Leader, Directory, field 007, field 008 are expressed using a slash and the number of the character position, e.g., Leader/06, 007/00, 008/12. </li>
+      <li class="nobullet">1 - The graphic 1 represents the digit one (hex 31). This character must be distinguished from a lowercase roman alphabet letter l (hex 6C) and uppercase alphabetic letter I (hex 4C) in examples or text. </li>
+      <li class="nobullet">| - The graphic | represents a fill character in MARC examples.</li>
+   </ul>
+   <hr>
+   <a href="http://www.loc.gov/global/disclaim.html"><img src="../../images/disclaimer.gif" alt="Link disclaimer" width="91" height="16" border="0" align="right"></a>
+   <p><strong>STANDARDS AND OTHER DOCUMENTS RELATED TO THIS FORMAT</strong></p>
+   <p>The <em>MARC 21 Format for Holdings Data</em> should be used with the following standards and related documentation. When a standard is applicable to data in specific fields of the format, the fields are given in brackets following the citation. </p>
+   <p><strong>National and International Standards:</strong></p>
+   <p>ISO publications may be obtained from the <a href="http://www.iso.org">International Organization for Standardization (ISO)</a> and their agents; and ANSI/NISO Z39 publications may be obtained from the <a href="http://www.niso.org">National Information Standards Organization (NISO)</a>. </p>
+   <ul>
+      <li class="nobullet"><em>Anglo-American Cataloguing Rules</em>. Chicago: American Library Association [Fields 853-855; 866-868] </li>
+      <li class="nobullet"><em>Format for Information Exchange</em> (ISO 2709) and <em>Information Interchange Format</em> (ANSI/NISO Z39.2) </li>
+      <li class="nobullet"><em>Holdings Statements for Bibliographic Items</em> (ANSI/NISO Z39.71) </li>
+      <li class="nobullet"><em>Holdings Statements for Non-Serial Items</em> (ANSI/NISO Z39.57) <em>[Superseded by ANSI/NISO Z39.71]</em></li>
+      <li class="nobullet"><em>Holdings Statements-Summary Level</em> (ISO 10324) </li>
+      <li class="nobullet"><em>Representation of Dates and Times</em> (ISO 8601) [Field 005] </li>
+      <li class="nobullet"><em>Serial Holdings Statements</em> (ANSI Z39.44) <em>[Superseded by ANSI/NISO Z39.71]</em></li>
+   </ul>
+   <p><strong>MARC Standards:</strong></p>
+   <p>These publications are available from the Library of Congress, Cataloging Distribution Service, Washington, DC 20541, USA (Worldwide distribution). Where indicated these publications are available on the Internet. </p>
+   <ul>
+      <li class="nobullet"><em><a href="http://www.loc.gov/marc/specifications">MARC 21 Specifications for Record Structure, Character Sets, and Exchange Media</a></em></li>
+      <li class="nobullet"><em><a href="http://www.loc.gov/marc/countries/">MARC Code List for Countries</a></em></li>
+      <li class="nobullet"><em><a href="http://www.loc.gov/marc/languages/">MARC Code List for Languages</a></em></li>
+      <li class="nobullet"><em><a href="http://www.loc.gov/marc/organizations/orgshome.html">MARC Code List for Organizations</a></em> (earlier title: <em>Symbols of American Libraries</em>) </li>
+      <li class="nobullet"><em><a href="https://www.bac-lac.gc.ca/eng/symbols-interlibrary-loan-policies/Pages/symbols-interlibrary-loan-policies.aspx">Symbols and Interlibrary Loan Policies in Canada</a></em></li>
+      <li class="nobullet"><em><a href="http://www.loc.gov/marc/concise/">MARC 21 Concise Formats</a></em> (all five formats in concise form) </li>
+      <li class="nobullet"><em><a href="../bibliographic/lite/index.htm">MARC 21 LITE Bibliographic Format</a></em></li>
+      <li class="nobullet"><em><a href="../bibliographic/index.htm">MARC 21 Format for Bibliographic Data</a></em></li>
+   </ul>
+   <p><strong>Other related publications:</strong></p>
+   <p><em><a href="../bibliographic/583terms.html">Standard Terminology for MARC Field 583</a></em>. Chicago: Resources and Technical Services Division, American Library Association</p>
+   <hr>
+   <p><strong>SUPERSEDED DOCUMENTATION</strong></p>
+   <p><strong>USMARC Documentation</strong></p>
+   <p>MARC 21 supersedes the 1989 edition of <em>USMARC Format for Holdings Data: Including Guidelines for Content Designation</em> and updates No.1 (April 1991), No.2 (July 1994), and No.3 (October 1998) to that edition. The 1989 edition superseded the 1984 edition of the format, which was the first edition, and its 1987 update No.1. </p>
+   <p><strong>CAN/MARC Documentation</strong></p>
+   <p>MARC 21 supersedes the 1990 edition of <em>Canadian MARC Communication Format: Holdings Data</em> and its one update published in 1992. </p>
+   <hr>
+   <p><strong>DOCUMENTATION MAINTENANCE</strong></p>
+   <p>The <em>MARC 21 Format for Holdings Data</em> is prepared by the Network Development and MARC Standards Office, Library of Congress, in cooperation with Content Management Division, Library and Archives Canada (previously National Library of Canada) and Bibliographic Standards and Systems, British Library. Please direct any questions related to the content of this document to one of the following: </p>
+   <p>Network Development and MARC Standards Office<br>Library of Congress <br>101 Independence Avenue, S.E. <br>Washington, DC 20540-4402, USA <br>Fax: +1-202-707-0115<br>Email: <a href="/cdn-cgi/l/email-protection#8de3e9e0fee2cde1e2eea3eae2fb"><span class="__cf_email__" data-cfemail="84eae0e9f7ebc4e8ebe7aae3ebf2">[email&#160;protected]</span></a>
+   </p>
+   <p>Description Division<br> Library and Archives Canada<br>395 Wellington St. <br>Ottawa, Ontario K1A 0N4, Canada <br> Fax: +1-819-934-4388<br> Email: <a href="/cdn-cgi/l/email-protection#395b585a1754584b5a0b081755585a795a5857585d58175a58"><span class="__cf_email__" data-cfemail="56343735783b3724356467783a373516353738373237783537">[email&#160;protected]</span></a>
+   </p>
+   <p>Collection Metadata<br>The British Library<br> Boston Spa, Wetherby <br>West Yorkshire LS23 7BQ, United Kingdom <br>Fax: +44 (0) 1937 546586<br>Email: <a href="/cdn-cgi/l/email-protection#19747c6d787d786d78597b75376c72"> <span class="__cf_email__" data-cfemail="adc0c8d9ccc9ccd9ccedcfc183d8c6">[email&#160;protected]</span></a>
+   </p>
+   <p>The <em>MARC 21 Format for Holdings Data</em> is organized on a field-by-field basis with each field separately paged to facilitate the updating of fields. Periodic updates of new and replacement pages for the base text and cumulated versions of the base text will be available from the Cataloging Distribution Service, Library of Congress, Washington, DC 20541-5017, USA (Worldwide distribution) and available in Canada from Publishing and Depository Services, Public Works and Government Services Canada (PWGSC), Ottawa, Ontario K1A 0S5, Canada (Canadian distribution). Their availability will be announced on the <a href="http://www.loc.gov/marc">Library of Congress MARC website</a>, the <a href="http://www.marc21.ca/index-e.html">Library and Archives Canada MARC website</a>, on listservs, and through press releases to the library press and to those who purchase the initial base volume. Updates are also available on standing order from the Library of Congress and the Canadian Government Publishing-PWGSC. This publication and all updates are supplied to all purchasers of the Library of Congress MARC Distribution Service files of bibliographic records as part of their MARC record subscription. </p>
+   <hr>
+   <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr valign="bottom">
+         <td>
+            <div class="head-nav"><a href="http://www.loc.gov/">Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/marc/">MARC</a> &gt;&gt; <a href="index.htm">Holdings</a> &gt;&gt; <strong>Introduction</strong></div> (03/13/2008)
+         </td>
+         <td align="right"><a href="/cdn-cgi/l/email-protection#bed0dad3cdd1fed2d1dd90d9d1c8">Contact Us</a></td>
+      </tr>
+   </table>
+   <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+   <script>if (window['_satellite']) { _satellite.pageBottom(); }</script>
+</body>
+
+</html>

@@ -1,0 +1,471 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>MARC 21 Format for Authority Data: 376: Family Information (Network Development and MARC Standards Office, Library of Congress) </title>
+   <meta name="description" content="This field contains the  (Network Development and MARC Standards Office, Library of Congress)">
+   <meta name="keywords" content="marc, marc21, marc standards">
+   <meta name="author" content="Library of Congress Network Development and MARC Standards Office">
+   <link href="../styles.css" rel="stylesheet" type="text/css">
+   <link href="../print.css" rel="stylesheet" type="text/css" media="print">
+   <script src="../../dac62e20b491e735c6b56e64c39134d8ee93f9cf/satelliteLib-6b47f831c184878d7338d4683ecf773a17973bb9.js"></script>
+</head>
+
+<body class="full">
+   <div class="head-nav">
+      <div class="noprint"><a href="http://www.loc.gov/">Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/marc/">MARC</a> &gt;&gt; <a href="index.htm">Authority</a> &gt;&gt; <span class="caps"><a href="ad1xx3xx.html">1XX,3XX</a>  &gt;&gt; <strong>376</strong></span></div>
+   </div>
+   <hr><a name="skip_menu"></a>
+   <h1><span>376</span> - <span>Family Information</span><span> (R)</span></h1>
+   <hr>
+   <div class="formatname">MARC 21 Authority - full</div>
+   <div class="datename">December 2023</div>
+   <hr>
+   <table width="100%" class="indicators">
+      <tr>
+         <th width="45%"> First Indicator </th>
+         <th width="45%"> Second Indicator </th>
+      </tr>
+      <tr>
+         <td><em>Undefined</em><br><span># - Undefined</span><br><br></td>
+         <td><em>Undefined</em><br><span># - Undefined</span><br><br></td>
+      </tr>
+   </table>
+   <hr>
+   <table width="100%" class="subfields">
+      <tr>
+         <td width="50%"></td>
+         <td width="50%"></td>
+      </tr>
+      <tr>
+         <th colspan="2">Subfield Codes</th>
+      </tr>
+      <tr>
+         <td>
+            <ul class="nomark">
+               <li>$a - Type of family<span> (R)</span></li>
+               <li>$b - Name of prominent member<span> (R)</span></li>
+               <li>$c - Hereditary title<span> (R)</span></li>
+               <li class="changed">$d - Other designation<span> (R)</span></li>
+               <li>$s - Start period<span> (NR)</span></li>
+               <li>$t - End period<span> (NR)</span></li>
+               <li>$u - Uniform Resource Identifier<span> (R)</span></li>
+            </ul>
+         </td>
+         <td>
+            <ul class="nomark">
+               <li>$v - Source of information<span> (R)</span></li>
+               <li>$0 - Authority record control number or standard number<span> (R)</span></li>
+               <li>$1 - Real World Object URI<span> (R)</span></li>
+               <li>$2 - Source of term<span> (NR)</span></li>
+               <li>$6 - Linkage<span> (NR)</span></li>
+               <li>$7 - Data provenance<span> (R)</span></li>
+               <li>$8 - Field link and sequence number<span> (R)</span></li>
+            </ul>
+         </td>
+      </tr>
+   </table>
+   <hr>
+   <h3>FIELD DEFINITION AND SCOPE</h3>
+   <div class="definition">
+      <div>
+         <p>Additional information about families, including type of family, prominent member of the family, and hereditary title. </p>
+      </div>
+   </div>
+   <hr>
+   <h3>GUIDELINES FOR APPLYING CONTENT DESIGNATORS</h3>
+   <div class="guidelines">
+      <div>
+         <p></p>
+      </div>
+      <h4><span class="box">■</span> INDICATORS </h4>
+      <div class="indicators">
+         <ul>
+            <li>Both indicator positions are undefined; each contains a blank (#).</li>
+         </ul>
+      </div>
+      <h4><span class="box">■</span> SUBFIELD CODES </h4>
+      <div class="subfields">
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$a - Type of family</strong>
+               </p>
+               <div>
+                  <p>A categorization or generic descriptor for the type of family, e.g Family, Clan, Dynasty, Royal House. </p>
+               </div>
+               <div class="example">
+                  <table>
+                     <tr>
+                        <td>046</td>
+                        <td colspan="9">##$s1925$t1979</td>
+                     </tr>
+                     <tr>
+                        <td>100</td>
+                        <td colspan="9">3#$aPahlavi (Dynasty : $d1925-1979)</td>
+                     </tr>
+                     <tr>
+                        <td><strong>376</strong></td>
+                        <td colspan="9"><strong>##</strong><strong>$a</strong>Dynasty </td>
+                     </tr>
+                  </table>
+               </div>
+               <div class="example">
+                  <table>
+                     <tr>
+                        <td>046</td>
+                        <td colspan="9">##$s1529$t1739</td>
+                     </tr>
+                     <tr>
+                        <td>100</td>
+                        <td colspan="9">3#$aNayak (Dynasty :$cMadurai, India)</td>
+                     </tr>
+                     <tr>
+                        <td>370</td>
+                        <td colspan="9">##$fMadurai, India</td>
+                     </tr>
+                     <tr>
+                        <td><strong>376</strong></td>
+                        <td colspan="9"><strong>##</strong><strong>$a</strong>Dynasty </td>
+                     </tr>
+                  </table>
+               </div>
+               <div class="example">
+                  <table>
+                     <tr>
+                        <td>100</td>
+                        <td colspan="9">3#$aYan (Family : China)</td>
+                     </tr>
+                     <tr>
+                        <td>370</td>
+                        <td colspan="9">##$cChina</td>
+                     </tr>
+                     <tr>
+                        <td><strong>376</strong></td>
+                        <td colspan="9"><strong>##</strong><strong>$a</strong>Family </td>
+                     </tr>
+                  </table>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$b - Name of prominent member</strong>
+               </p>
+               <div>
+                  <p>A well-known individual who is a member of the family.</p>
+               </div>
+               <div class="example">
+                  <table>
+                     <tr>
+                        <td>100</td>
+                        <td colspan="9">3#$aMedici (Royal house : $gMedici, Lorenzo de’, 1449-1492)</td>
+                     </tr>
+                     <tr>
+                        <td><strong>376</strong></td>
+                        <td colspan="9"><strong>##</strong><strong>$a</strong>Royal house<strong>$b</strong>Medici, Lorenzo de’, 1449-1492 </td>
+                     </tr>
+                  </table>
+               </div>
+               <div class="example">
+                  <table>
+                     <tr>
+                        <td>100</td>
+                        <td colspan="9">3#$aDenney (Family : $gDenny, Anthony, 1501-1549)</td>
+                     </tr>
+                     <tr>
+                        <td><strong>376</strong></td>
+                        <td colspan="9"><strong>##</strong><strong>$a</strong>Family<strong>$b</strong>Denny, Anthony, 1501-1549 </td>
+                     </tr>
+                  </table>
+               </div>
+               <div class="example">
+                  <table>
+                     <tr>
+                        <td>100</td>
+                        <td colspan="9">3#$aDenney (Family : $gDenny, Arthur Armstrong, 1822-1899)<em><span><br><span>[two families with the same name differentiated by addition of prominent member of the family]</span></span></em></td>
+                     </tr>
+                     <tr>
+                        <td><strong>376</strong></td>
+                        <td colspan="9"><strong>##</strong><strong>$a</strong>Family<strong>$b</strong>Denny, Arthur Armstrong, 1822-1899 </td>
+                     </tr>
+                  </table>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$c - Hereditary title</strong>
+               </p>
+               <div>
+                  <p>A title of nobility, etc., associated with a family.</p>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div class="changed">
+               <p class="label"><strong>$d - Other designation</strong>
+               </p>
+               <div>
+                  <p>An appropriate designation in the language preferred by the agency creating the data of an attribute of the family that is not provided for in subfields $a, $b, or $c, or in another field.</p>
+               </div>
+               <div class="example">
+                  <table>
+                     <tr class="changed">
+                        <td><strong>376</strong></td>
+                        <td colspan="9"><strong>##</strong><strong>$d</strong>Māori (New Zealand people)<strong>$2</strong>lcdgt </td>
+                     </tr>
+                     <tr class="changed">
+                        <td><strong>376</strong></td>
+                        <td colspan="9"><strong>##</strong><strong>$d</strong>Chinese Americans<strong>$d</strong>Americans<strong>$2</strong>lcdgt </td>
+                     </tr>
+                     <tr class="changed">
+                        <td><strong>376</strong></td>
+                        <td colspan="9"><strong>##</strong><strong>$d</strong>Philanthropists<strong>$2</strong>lcsh </td>
+                     </tr>
+                     <tr class="changed">
+                        <td><strong>376</strong></td>
+                        <td colspan="9"><strong>##</strong><strong>$d</strong>Machishū<strong>$2</strong>aat </td>
+                     </tr>
+                     <tr class="changed">
+                        <td><strong>376</strong></td>
+                        <td colspan="9"><strong>##</strong><strong>$d</strong>Baptists<strong>$2</strong>lcdgt </td>
+                     </tr>
+                     <tr class="changed">
+                        <td><strong>376</strong></td>
+                        <td colspan="9"><strong>##</strong><strong>$d</strong>Democratic Party members (United States)<strong>$2</strong>lcdgt </td>
+                     </tr>
+                     <tr class="changed">
+                        <td><strong>376</strong></td>
+                        <td colspan="9"><strong>##</strong><strong>$d</strong>Dukes<strong>$d</strong>Earls<strong>$2</strong>aat </td>
+                     </tr>
+                     <tr class="changed">
+                        <td><strong>376</strong></td>
+                        <td colspan="9"><strong>##</strong><strong>$d</strong>Fictitious characters<strong>$2</strong>lcsh </td>
+                     </tr>
+                     <tr class="changed">
+                        <td><strong>376</strong></td>
+                        <td colspan="9"><strong>##</strong><strong>$d</strong>Imaginary creatures<strong>$2</strong>cyac </td>
+                     </tr>
+                  </table>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$s - Start period</strong>
+               </p>
+               <div>
+                  <p>Starting date associated with a family, such as date of origin.</p>
+               </div>
+               <div class="example">
+                  <table>
+                     <tr>
+                        <td>100</td>
+                        <td colspan="9">3#$aCholmley (Family)</td>
+                     </tr>
+                     <tr>
+                        <td>400</td>
+                        <td colspan="9">3#$aCholmeley (Family)</td>
+                     </tr>
+                     <tr>
+                        <td>400</td>
+                        <td colspan="9">3#$aCholmondeley (Family)</td>
+                     </tr>
+                     <tr>
+                        <td><strong>376</strong></td>
+                        <td colspan="9"><strong>##</strong><strong>$a</strong>Family<strong>$c</strong>Marquesses of Cholmondeley </td>
+                     </tr>
+                     <tr>
+                        <td><strong>376</strong></td>
+                        <td colspan="9"><strong>##</strong><strong>$a</strong>Family<strong>$c</strong>Dukes of Cholmondeley<strong>$s</strong>1852 </td>
+                     </tr>
+                  </table>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$t - End period</strong>
+               </p>
+               <div>
+                  <p>End date associated with a family, such as date of termination.</p>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$u - Uniform Resource Identifier</strong>
+               </p>
+               <div>
+                  <p>Uniform Resource Identifier (URI), for example a URL or URN, which provides electronic access data in a standard syntax. This data can be used for automated access to an electronic item using one of the Internet protocols. </p>
+               </div>
+               <div>
+                  <p>In field 376, subfield $u is used to record the location of the source of information about the family accessible electronically. </p>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$v - Source of information</strong>
+               </p>
+               <div>
+                  <p>Source where the information recorded in field 376 was found if not through a URI.</p>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$0 - Authority record control number or standard number</strong>
+               </p>
+               <div>
+                  <p>See description of this subfield in Appendix A: <em><a href="ecadcntf.html">Control Subfields</a></em>. </p>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$1 - Real World Object URI</strong>
+               </p>
+               <div>
+                  <p>See description of this subfield in Appendix A: <em><a href="ecadcntf.html">Control Subfields</a></em>. </p>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$2 - Source of term</strong>
+               </p>
+               <div>
+                  <p>Specifies a code that identifies the source of a controlled form of the name in subfield $b.</p>
+               </div>
+               <div>
+                  <p>Code from: <em><a href="http://www.loc.gov/standards/sourcelist/name-title.html">Name and Title Authority Source Codes</a></em>. </p>
+               </div>
+               <div class="changed">
+                  <p>Specifies a code that identifies the source of a term for type of family in subfield $a or for other designation in subfield $d, when they are from a controlled list.</p>
+               </div>
+               <div class="changed">
+                  <p>Code from: <em><a href="https://www.loc.gov/standards/sourcelist/subject.html">Subject Heading and Term Source Codes</a></em>. </p>
+               </div>
+               <div class="example">
+                  <table class="changed">
+                     <tr class="changed">
+                        <td>100</td>
+                        <td colspan="9">3#$aDenney (Family :$gDenny, Anthony, 1501-1549)</td>
+                     </tr>
+                     <tr class="changed">
+                        <td><strong>376</strong></td>
+                        <td colspan="9"><strong>##</strong><strong>$a</strong>Families<strong>$2</strong>lcdgt </td>
+                     </tr>
+                     <tr class="changed">
+                        <td><strong>376</strong></td>
+                        <td colspan="9"><strong>##</strong><strong>$b</strong>Denny, Anthony, 1501-1549<strong>$2</strong>naf </td>
+                     </tr>
+                     <tr class="changed">
+                        <td><strong>376</strong></td>
+                        <td colspan="9"><strong>##</strong><strong>$d</strong>Britons<strong>$2</strong>lcdgt </td>
+                     </tr>
+                  </table>
+               </div>
+               <div class="example">
+                  <table class="changed">
+                     <tr class="changed">
+                        <td>100</td>
+                        <td colspan="9">3#$aNayak (Dynasty :$cMadurai, India)</td>
+                     </tr>
+                     <tr class="changed">
+                        <td><strong>376</strong></td>
+                        <td colspan="9"><strong>##</strong><strong>$a</strong>Dynasty<strong>$2</strong>wikidata </td>
+                     </tr>
+                     <tr class="changed">
+                        <td><strong>376</strong></td>
+                        <td colspan="9"><strong>##</strong><strong>$d</strong>Telugu (Indic people}<strong>$2</strong>lcsh </td>
+                     </tr>
+                  </table>
+               </div>
+               <div class="example">
+                  <table class="changed">
+                     <tr class="changed">
+                        <td>100</td>
+                        <td colspan="9">3#$aKoteda (Clan :$dactive 15th century-17th century :$cHirado-shi, Japan)</td>
+                     </tr>
+                     <tr class="changed">
+                        <td><strong>376</strong></td>
+                        <td colspan="9"><strong>##</strong><strong>$a</strong>Clans<strong>$2</strong>lcsh </td>
+                     </tr>
+                     <tr class="changed">
+                        <td><strong>376</strong></td>
+                        <td colspan="9"><strong>##</strong><strong>$b</strong>Koteda, Sakae<strong>$2</strong>naf </td>
+                     </tr>
+                     <tr class="changed">
+                        <td><strong>376</strong></td>
+                        <td colspan="9"><strong>##</strong><strong>$d</strong>Japanese<strong>$2</strong>lcdgt </td>
+                     </tr>
+                  </table>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$6 - Linkage</strong>
+               </p>
+               <div>
+                  <p>See description of this subfield in Appendix A: <em><a href="ecadcntf.html">Control Subfields</a></em>. </p>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$7 - Data provenance</strong>
+               </p>
+               <div>
+                  <p>See description of this subfield in Appendix H: <em><a href="adapndxh.html">Data Provenance Subfields</a></em>. </p>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$8 - Field link and sequence number</strong>
+               </p>
+               <div>
+                  <p>See description of this subfield in Appendix A: <em><a href="ecadcntf.html">Control Subfields</a></em>. </p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <hr>
+   <h3>CONTENT DESIGNATOR HISTORY</h3>
+   <div class="history">
+      <div class="historySubfield">
+         <div class="changed"><em>$d - Other designation [NEW, 2023]</em></div>
+      </div>
+      <div class="historySubfield">
+         <div><em>$0 - Record control number [REDEFINED, 2010]</em></div>
+      </div>
+      <div class="historySubfield">
+         <div><em>$1 - Real World Object URI [NEW, 2017]</em></div>
+      </div>
+      <div class="historySubfield">
+         <div class="changed"><em>$2 - Source of term [REDESCRIBED, 2023]</em>
+            <div class="subfieldHistoryDsc">
+               <p>The definition of subfield $2 was broadened to allow for the recording of source codes of terms for type of family (subfield $a) and other designation (subfield $d).</p>
+            </div>
+         </div>
+      </div>
+      <div class="historySubfield">
+         <div><em>$7 - Data provenance [NEW, 2022]</em></div>
+      </div>
+   </div>
+   <hr class="clear">
+   <div class="head-nav">
+      <div class="noprint"><a href="http://www.loc.gov/">Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/marc/">MARC</a> &gt;&gt; <a href="index.htm">Authority</a> &gt;&gt; <span class="caps"><a href="ad1xx3xx.html">1XX,3XX</a>  &gt;&gt; <strong>376</strong></span></div>
+   </div>
+   <div class="left"><span class="noprint">(12/07/2023)</span></div>
+   <div class="right"><a href="/cdn-cgi/l/email-protection#7618121b0519361a191558111900" class="noprint">Contact Us</a></div>
+   <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+   <script>if (window['_satellite']) { _satellite.pageBottom(); }</script>
+</body>
+
+</html>

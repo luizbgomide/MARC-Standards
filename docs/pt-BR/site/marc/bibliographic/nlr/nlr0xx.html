@@ -1,0 +1,522 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html40/loose.dtd">
+<html>
+
+<head>
+    <meta name="generator" content="HTML Tidy, see www.w3.org">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>MARC 21 Format for Bibliographic Data: National Level Requirements: Number and Code Fields (Network Development and MARC Standards Office, Library of Congress)</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="description" content="This page contains the national level requirements for the MARC 21 Format for Bibliographic Data (Network Development and MARC Standards Office, Library of Congress)">
+    <meta name="keywords" content="marc, marc21, marc standards">
+    <meta name="author" content="Library of Congress Network Development and MARC Standards Office">
+    <style type="text/css">
+        body {
+            margin-left: 2em;
+            margin-right: 2em;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 125%;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 125%;
+        }
+
+        h3 {
+            font-size: 125%;
+        }
+
+        h4 {
+            margin-top: .5em;
+            margin-bottom: .5em;
+        }
+
+        p {
+            margin-left: 2em;
+            margin-right: 2em;
+        }
+
+        .banner {
+            text-align: center;
+        }
+
+        .byline {
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        .contents {
+            font-style: italic;
+            font-weight: bold;
+            margin-left: 2em;
+            font-size: 20px;
+            margin-top: 1em;
+        }
+
+        .contentslist {
+            margin-left: 3em;
+        }
+
+        .head-navigation {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 9pt;
+        }
+
+        .bottom-navigation {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 9pt;
+        }
+    </style>
+    <script src="../../../dac62e20b491e735c6b56e64c39134d8ee93f9cf/satelliteLib-6b47f831c184878d7338d4683ecf773a17973bb9.js"></script>
+</head>
+
+<body>
+    <div class="head-navigation"><a id="skip" href="#skip_menu">
+            <img src="http://www.loc.gov/marc/images/clear.gif" border="0" alt="Skip Navigation Links"></a>
+        <a href="http://www.loc.gov/">The Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/library/">Especially for Librarians and Archivists</a> &gt;&gt; <a href="http://www.loc.gov/standards/">Standards</a>
+        <br><br>
+        <a href="http://www.loc.gov/marc/">
+            <img src="http://www.loc.gov/marc/images/marc-bar.gif" alt="MARC Standards" width="620" height="36" border="0"></a>
+        <br><br>
+        <a href="http://www.loc.gov/marc/">MARC 21 HOME</a> &gt;&gt; <a href="http://www.loc.gov/marc/marcdocz.html">MARC 21 Formats</a> &gt;&gt; <a href="nlr.html">National Level Requirements--Bibliographic</a> &gt;&gt; <strong>Number &amp; Code Fields</strong>
+    </div>
+    <h1>MARC 21 Format for Bibliographic Data</h1>
+    <h2>National Level Full and Minimal Requirements<br><br> 01X-09X: Number and Code Fields</h2>
+    <hr>
+    <div class="byline">1999 Edition<br> Update No. 1 (October 2001) through Update No. 12 (October 2010)</div>
+    <hr>
+    <pre>
+                                                 National  Minimal
+                                                  Level     Level
+
+
+<strong>010 LIBRARY OF CONGRESS CONTROL NUMBER</strong>               A        A
+    $a  LC control number                            A        A
+    $b  NUCMC control number                         A        A
+    $z  Canceled or invalid LC control number        A        A
+    $8  Field link and sequence number               O        .   
+
+<strong>013 PATENT CONTROL INFORMATION</strong>                       O        .        
+    $a  Number                                       A        .
+    $b  Country                                      A        .
+    $c  Type of number                               A        .
+    $d  Date                                         O        .
+    $e  Status                                       O        .
+    $f  Party to document                            A        .
+    $6  Linkage                                      A        .
+    $8  Field link and sequence number               O        .
+
+<strong>015 NATIONAL BIBLIOGRAPHY NUMBER</strong>                     O        .
+    $a  National bibliography number                 M        .
+    $z  Canceled/Invalid national bibliography       A        .
+        number
+    $6  Linkage                                      A        .
+    $8  Field link and sequence number               O        .
+        
+<strong>016 NATIONAL BIBLIOGRAPHIC AGENCY CONTROL</strong>            A        A
+   <strong>NUMBER</strong>
+    $a  Record control number                        A        A
+    $z  Canceled or invalid control number           A        A
+    $2  Source                                       A        A
+    $8  Field link and sequence number               O        .        
+
+<strong>017 COPYRIGHT OR LEGAL DEPOSIT NUMBER</strong>                O        .        
+    $a  Copyright or legal deposit number            M        .
+    $b  Source (assigning agency)                    M        .
+    $d  Date                                         O        .
+    $i  Display text                                 O        .
+    $z  Canceled/Invalid Copyright of Legal          A        .
+        Deposit Number
+    $6  Linkage                                      A        .
+    $8  Field link and sequence number               O        .
+
+<strong>018 COPYRIGHT ARTICLE-FEE CODE</strong>                       A        .        
+    $a  Copyright article-fee code                   M        .
+    $6  Linkage                                      A        .
+    $8  Field link and sequence number               O        .
+
+<strong>020 INTERNATIONAL STANDARD BOOK NUMBER</strong>               A        A
+    $a  International Standard Book Number           A        A
+    $c  Terms of availability                        A        A
+    $z  Canceled or invalid ISBN                     A        A
+    $6  Linkage                                      A        A
+    $8  Field link and sequence number               O        . 
+        
+<strong>022 INTERNATIONAL STANDARD SERIAL NUMBER</strong>             A        A
+    $a  International Standard Serial Number         A        A
+    $l  ISSN-L                                       A        A
+    $m  Canceled ISSN-L                              A        A
+    $y  Incorrect ISSN                               A        A
+    $z  Canceled ISSN                                A        A
+    $2  Source                                       A        A 
+    $6  Linkage                                      A        A
+    $8  Field link and sequence number               O        .  
+
+<strong>024 OTHER STANDARD IDENTIFIER</strong>                        A        A
+    $a  Standard number or code                      M        M
+    $c  Terms of availability                        A        A
+    $d  Additional codes following the standard      A        A
+        number or code 
+    $z  Canceled or invalid standard number          A        A
+        or code 
+    $2  Source of number or code                     A        A
+    $6  Linkage                                      A        A
+    $8  Field link and sequence number               O        .   
+        
+<strong>025 OVERSEAS ACQUISITION NUMBER</strong>                      O        .        
+    $a  Overseas acquisition number                  M        .
+    $8  Field link and sequence number               O        .
+
+<strong>026 FINGERPRINT IDENTIFIER</strong>                           O        .        
+    $a  First and second groups of characters        A        .
+    $b  Third and fourth groups of characters        A        .
+    $c  Date                                         A        .
+    $d  Number of volume or part                     A        .
+    $e  Unparsed fingerprint                         A        .
+    $2  Source                                       A        .
+    $5  Institution to which field applies           A        .
+    $6  Linkage                                      A        .    
+    $8  Field link and sequence number               O        .
+
+<strong>027 STANDARD TECHNICAL REPORT NUMBER</strong>                 A        .        
+    $a  Standard technical report number             M        .
+    $z  Canceled or invalid STRN                     A       
+    $6  Linkage                                      A        .    
+    $8  Field link and sequence number               O        .
+
+<strong>028 PUBLISHER NUMBER</strong>                                 A        A
+    $a  Publisher number                             M        M
+    $b  Source                                       M        M
+    $6  Linkage                                      A        A
+    $8  Field link and sequence number               O        .    
+         
+<strong>030 CODEN DESIGNATION</strong>                                O        . 
+    $a  CODEN                                        M        .
+    $z  Canceled or invalid CODEN                    O        .
+    $6  Linkage                                      A        .
+    $8  Field link and sequence number               O        .
+
+<strong>031 MUSICAL INCIPITS INFORMATION</strong>                     O        .
+    $a  Number of work                               A        .
+    $b  Number of movement                           A        .
+    $c  Number of excerpt                            A        .
+    $d  Caption or heading                           O        .
+    $e  Role                                         O        .
+    $g  Clef                                         O        .
+    $m  Voice/instrument                             O        .
+    $n  Key signature                                O        .
+    $o  Time signature                               O        .
+    $p  Musical notation                             O        .
+    $q  General note                                 O        .
+    $r  Key or mode                                  O        .
+    $s  Coded validity note                          O        .
+    $t  Text incipit                                 A        .
+    $u  Uniform Resource Identifie                   O        .
+    $y  Link text                                    O        .
+    $z  Public note                                  O        .
+    $2  System code                                  O        .
+    $6  Linkage                                      A        .
+    $8  Field link and sequence number               O <strong>       .
+
+032 POSTAL REGISTRATION NUMBER </strong>                      O        .        
+    $a  Postal registration number                   M        .
+    $b  Source (agency assigning number)             M        .
+    $6  Linkage                                      A        .
+    $8  Field link and sequence number               O        .
+        
+<strong>033 DATE/TIME AND PLACE OF AN EVENT </strong>                 O        .        
+    $a  Formatted date/time                          A        .        
+    $b  Geographic classification area code          A        .
+    $c  Geographic classification subarea code       A        .
+    $p  Place of event                               A        .
+    $0  Record control number                        0        . 
+    $3  Materials specified                          O        .
+    $6  Linkage                                      A        .
+    $8  Field link and sequence number               O        .
+        
+<strong>034 CODED CARTOGRAPHIC MATHEMATICAL DATA</strong>             A        A
+    $a  Category of scale                            M        M
+    $b  Constant ratio linear horizontal code        A        A
+    $c  Constant ratio linear vertical scale         A        A
+    $d  Coordinates westernmost longitude            A        . 
+    $e  Coordinates easternmost longitude            A        .
+    $f  Coordinates northernmost latitude            A        .
+    $g  Coordinates southernmost latitude            A        .
+    $h  Angular scale                                A        .
+    $j  Declination northern limit                   A        .
+    $k  Declination southern limit                   A        .
+    $m  Right ascension eastern limit                A        .
+    $n  Right ascension western limit                A        .
+    $p  Equinox                                      A        .
+    $r  Distance from earth                          A        .
+    $s  G-ring latitude                              A        .
+    $t  G-ring longitude                             A        .
+    $x  Beginning date                               A        .
+    $y  Ending date                                  A        .
+    $z  Name of extraterrestrial body                A        .
+    $2  Source                                       A        .
+    $6  Linkage                                      A        A
+    $8  Field link and sequence number               O        .
+        
+<strong>035 SYSTEM CONTROL NUMBER</strong>                            O        .        
+    $a  System control number                        M        .
+    $z  Canceled/invalid system control number       A        .
+    $6  Linkage                                      A        .
+    $8  Field link and sequence number               O        .
+ <strong>    
+036 ORIGINAL STUDY NUMBER FOR COMPUTER DATA</strong>          O        .   
+    <strong>FILES</strong>   
+    $a  Original study number                        M        .
+    $b  Source (agency assigning number)             A        
+    $6  Linkage                                      A        .
+    $8  Field link and sequence number               O        .
+
+<strong>037 SOURCE OF ACQUISITION</strong>                            O        .        
+    $a  Stock number                                 A        .
+    $b  Source of stock number/acquisition           M        .           
+    $c  Terms of availability                        O        .        
+    $f  Form of issue                                O        .        
+    $g  Additional format characteristics            O        .        
+    $n  Note                                         O        .        
+    $6  Linkage                                      A        .        
+    $8  Field link and sequence number               O        .
+
+<strong>038 RECORD CONTENT LICENSOR</strong>                          O        .        
+    $a  Record content licensor                      M        .    
+    $6  Linkage                                      A        .        
+    $8  Field link and sequence number               O        .   
+
+<strong>040 CATALOGING SOURCE</strong>                                M        M
+    $a  Original cataloging agency                   A        A
+    $b  Language of cataloging                       A        A
+    $c  Transcribing agency                          M        M
+    $d  Modifying agency                             A        A
+    $e  Description conventions                      O        .
+    $6  Linkage                                      A        A
+    $8  Field link and sequence number               O        .
+         
+<strong>041 LANGUAGE CODE</strong>                                    A        .        
+    $a  Language code of text/sound track            M        .
+        separate title       
+        [Subfield is A for computer files, music
+        and visual materials.]
+    $b  Language code of summary or abstract         A        .     
+    $d  Language code of sung or spoken text         A        .    
+    $e  Language code of librettos                   A        .
+    $f  Language code of table of contents           O        .
+    $g  Language code of accompanying                A        .  
+        material other than librettos                                    
+    $h  Language code of original                    A        .                 
+    $j  Language code of subtitles or captions       A        .
+    $6  Linkage                                      A        .
+    $8  Field link and sequence number               O        .
+
+<strong>042 AUTHENTICATION CODE</strong>                              A        A
+    $a  Authentication code                          M        M
+
+<strong>043 GEOGRAPHIC AREA CODE</strong>                             A        .        
+    $a  Geographic area code                         M        . 
+    $b  Local GAC code                               O        . 
+    $2  Source of local code                         A        .
+    $6  Linkage                                      A        .
+    $8  Field link and sequence number               O        .
+         
+<strong>044 COUNTRY OF PUBLISHING/PRODUCING ENTITY CODE</strong>      O        . 
+     [Field is A for Visual materials.]
+    $a  MARC Country Code                            M        .        
+    $b  Local subentity code                         O        .
+    $c  ISO Country Code                             O        .
+    $2  Source of local subentity code               A        .
+    $6  Linkage                                      A        .
+    $8  Field link and sequence number               O        .
+        
+<strong>045 TIME PERIOD OF CONTENT</strong>                           O        .        
+    $a  Time period code                             A        .        
+    $b  Formatted 9999 B.C. through C.E time period  A        .
+    $c  Formatted pre-9999 B.C. time period          A        .
+    $6  Linkage                                      A        .
+    $8  Field link and sequence number               O        .
+         
+<strong>046 SPECIAL CODED DATES</strong>                              O        .        
+    $a  Type of date code                            A        .
+    $b  Date 1 (B.C. date)                           A        .
+    $c  Date 1 (C.E. date)                           A        .
+    $d  Date 2 (B.C. date)                           A        .
+    $e  Date 2 (C.E. date)                           A        .
+    $j  Date resource modified                       A        .
+    $k  Beginning or single date created             A        .
+    $l  Ending date created                          A        .
+    $m  Beginning of date valid                      A        .
+    $n  End of date valid                            A        .
+    $2  Source of date                               A        . 
+    $6  Linkage                                      A        .
+    $8  Field link and sequence number               O        .
+        
+<strong>047 FORM OF MUSICAL COMPOSITION CODE</strong>                 O        .       
+    $a  Form of musical composition code             M        . 
+    $2  Source of code                               A        .      
+    $8  Field link and sequence number               O        .        
+ 
+<strong>048 NUMBER OF MUSICAL INSTRUMENTS OR VOICES</strong>          O        .      
+   <strong>CODE</strong>   
+    $a  Performer or ensemble                        A        .        
+    $b  Soloist                                      A        . 
+    $2  Source of code                               A        .       
+    $8  Field link and sequence number               O        .  
+         
+<strong>050 LIBRARY OF CONGRESS CALL NUMBER</strong>                  O        .        
+    $a  Classification number                        M        .
+    $b  Item number                                  A        .
+    $3  Materials specified                          O        .
+    $6  Linkage                                      A        .
+    $8  Field link and sequence number               O        .
+        
+<strong>051 LIBRARY OF CONGRESS COPY, ISSUE, OFF</strong>             A        .        
+ <strong>   PRINT STATEMENT</strong>
+    $a  Classification number                        M        .        
+    $b  Item number                                  A        .
+    $c  Copy information                             O        .
+    $8  Field link and sequence number               O        .
+  
+<strong>052 GEOGRAPHIC CLASSIFICATION</strong>                        O        .        
+    [Field is M for Maps.]
+    $a  Geographic classification area code          M        . 
+    $b  Geographic classification subarea code       A        .
+    $d  Populated place name                         O        .
+    $2  Source of code                               A        .        
+    $6  Linkage                                      A        .        
+    $8  Field link and sequence number               O        .
+
+<strong>055 CALL NUMBERS/CLASS NUMBERS ASSIGNED IN CANADA</strong>    O        .  
+    $a  Classification number                        M        .        
+    $b  Item number                                  A        .
+    $2  Source of call/class number                  A        .
+    $8  Field link and sequence number               O        .
+ 
+<strong>060 NATIONAL LIBRARY OF MEDICINE CALL NUMBER</strong>         O        .
+    $a  Classification number                        M        .        
+    $b  Item number                                  A        .
+    $8  Field link and sequence number               O        .
+
+<strong>061 NATIONAL LIBRARY OF MEDICINE COPY STATEMENT</strong>      O        .
+    $a  Classification number                        M        .
+    $b  Item number                                  A        .
+    $c  Copy information                             A        .
+    $8  Field link and sequence number               O        .
+
+<strong>066 CHARACTER SET PRESENT</strong>                            A        A
+    $a  Primary G0 character set                     O        .        
+    $b  Primary G1 character set                     O        .
+    $c  Alternate G0 or G1 character set             M        M
+
+<strong>070 NATIONAL AGRICULTURAL LIBRARY CALL NUMBER</strong>        O        .   
+    $a  Classification number                        M        .
+    $b  Item number                                  A        .
+    $8  Field link and sequence number               O        .
+        
+<strong>071 NATIONAL AGRICULTURAL LIBRARY COPY STATEMENT</strong>     O        .
+    $a  Classification number                        M        .
+    $b  Item number                                  A        .
+    $c  Copy information                             A        .
+    $8  Field link and sequence number               O        .
+        
+<strong>072 SUBJECT CATEGORY CODE</strong>                            O        .        
+    $a  Subject category code                        M        .        
+    $x  Subject category code subdivision            A        . 
+    $2  Source                                       A        .        
+    $6  Linkage                                      A        .        
+    $8  Field link and sequence number               O        .        
+        
+<strong>074 GPO ITEM NUMBER</strong>                                  O        .        
+    $a  GPO item number                              M        .        
+    $z  Canceled or invalid GPO item number          A        .        
+    $8  Field link and sequence number               O        .       
+
+<strong>080 UNIVERSAL DECIMAL CLASSIFICATION NUMBER</strong>          O        .   
+    $a  Universal Decimal Classification number      M        .
+    $b  Item number                                  A        .        
+    $x  Common auxiliary subdivision                 A        .        
+    $2  Edition identifier                           A        .        
+    $6  Linkage                                      A        .        
+    $8  Field link and sequence number               O        . 
+        
+<strong>082 DEWEY DECIMAL CALL NUMBER</strong>                        O        .        
+    $a  Classification number                        M        .
+    $b  Item number                                  A        .
+    $m  Standard or Optional Designation             M        .
+    $q  Assigning agency                             O        .
+    $2  Edition number                               M        .
+    $6  Linkage                                      A        .
+    $8  Field link and sequence number               O        .
+
+<strong>083 ADDITIONAL DEWEY DECIMAL CALL NUMBER</strong>             O        .        
+    $a  Classification number                        M        .
+    $c  Classification number--ending number of span A        .
+    $m  Standard or Optional Designation             M        .
+    $q  Assigning agency                             O        .
+    $y  Table sequence number for internal           A        .
+        subarrangement or add table
+    $2  Edition number                               M        .
+    $6  Linkage                                      A        .
+    $8  Field link and sequence number               O        .
+        
+<strong>084 OTHER CALL NUMBER</strong>                                A        .        
+    $a  Classification number                        M        .
+    $b  Item number                                  A        .
+    $2  Source of number                             A        .
+    $6  Linkage                                      A        .
+    $8  Field link and sequence number               O        .
+
+<strong>085 SYNTHESIZED CLASIFICATION NUMBER COMPONENTS</strong>      A        .        
+    $a  Number where instructions are found--single  O        .
+        number or beginning number of span
+    $b  Base number                                  A        .
+    $c  Classification number--ending number of span A        .
+    $f  Facet designator                             A        .
+    $r  Root number                                  A        .
+    $s  Classification number                        A        .
+    $t  Classification number--ending number of span A        .
+    $u  Standard or Optional Designation             O        .
+    $v  Assigning agency                             A        .
+    $w  Table sequence number for internal           A        .
+    $y  Table sequence number for internal           A        .
+        subarrangement or add table
+    $z  Table identification                         A        .
+    $6  Linkage                                      O        .
+    $8  Field link and sequence number               O        .
+        
+<strong>086 GOVERNMENT DOCUMENT CALL NUMBER</strong>                  A        .        
+    $a  Classification number                        M        .
+    $z  Canceled or invalid classification number    A        .
+    $2  Number source                                A        .
+    $6  Linkage                                      A        .
+    $8  Field link and sequence number               O        .
+        
+<strong>088 REPORT NUMBER</strong>                                    A        .        
+    $a  Report number                                M        .
+    $z  Canceled or invalid report number            A        .
+    $6  Linkage                                      A        .
+    $8  Field link and sequence number               O        .
+   
+</pre>
+    <hr>
+    <div class="bottom-navigation">
+        <a href="http://www.loc.gov/marc/">MARC 21 HOME</a> &gt;&gt; <a href="http://www.loc.gov/marc/marcdocz.html">MARC 21 Formats</a> &gt;&gt; <a href="nlr.html">National Level Requirements--Bibliographic</a> &gt;&gt; <strong>Number &amp; Code Fields</strong>
+        <br><br>
+        <a href="http://www.loc.gov/">The Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/library/">Especially for Librarians and Archivists</a> &gt;&gt; <a href="http://www.loc.gov/standards/">Standards</a>
+    </div>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr valign="bottom">
+            <td>2011/02/09 </td>
+            <td align="right"><a href="/cdn-cgi/l/email-protection#5a343e3729351a363539743d352c">Contact Us</a></td>
+        </tr>
+    </table>
+    <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script>if (window['_satellite']) { _satellite.pageBottom(); }</script>
+</body>
+
+</html>

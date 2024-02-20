@@ -1,0 +1,1101 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>MARC 21 Format for Holdings Data: 008: Fixed-Length Data Elements-General Information (Network Development and MARC Standards Office, Library of Congress) </title>
+   <meta name="description" content="This field contains the  (Network Development and MARC Standards Office, Library of Congress)">
+   <meta name="keywords" content="marc, marc21, marc standards">
+   <meta name="author" content="Library of Congress Network Development and MARC Standards Office">
+   <link href="../styles.css" rel="stylesheet" type="text/css">
+   <link href="../print.css" rel="stylesheet" type="text/css" media="print">
+   <script src="../../dac62e20b491e735c6b56e64c39134d8ee93f9cf/satelliteLib-6b47f831c184878d7338d4683ecf773a17973bb9.js"></script>
+</head>
+
+<body class="full">
+   <div class="head-nav">
+      <div class="noprint"><a href="http://www.loc.gov/">Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/marc/">MARC</a> &gt;&gt; <a href="index.htm">Holdings</a> &gt;&gt; <span class="caps"><a href="hd00x.html">00X</a>  &gt;&gt; <strong>008</strong></span></div>
+   </div>
+   <hr><a name="skip_menu"></a>
+   <h1><span>008</span> - <span>Fixed-Length Data Elements-General Information</span><span> (NR)</span></h1>
+   <hr>
+   <div class="formatname">MARC 21 Holdings - full</div>
+   <div class="datename">November 2019</div>
+   <hr>
+   <h4>Indicators and Subfield Codes</h4>
+   <div class="wildcard">
+      <div>
+         <p>No indicators or subfield codes; the data elements are positionally defined.</p>
+      </div>
+   </div>
+   <table width="100%" class="characterPositions">
+      <tr>
+         <td width="45%"><strong>Character Positions</strong></td>
+         <td width="45%"></td>
+      </tr>
+      <tr>
+         <td colspan="2"><span><strong>00-05 - Date entered on file</strong></span></td>
+      </tr>
+      <tr>
+         <td colspan="2" class="characterPositionTitle"><span><strong>06 - Receipt, acquisition, or access status</strong></span></td>
+      </tr>
+      <tr>
+         <td>
+            <dl>
+               <dd>0 - Unknown</dd>
+               <dd>1 - Other receipt or acquisition status</dd>
+               <dd>2 - Received and complete or ceased</dd>
+               <dd>3 - On order</dd>
+            </dl>
+         </td>
+         <td>
+            <dl>
+               <dd>4 - Currently received</dd>
+               <dd>5 - Not currently received</dd>
+               <dd>6 - External access</dd>
+            </dl>
+         </td>
+      </tr>
+      <tr>
+         <td colspan="2" class="characterPositionTitle"><span><strong>07 - Method of acquisition</strong></span></td>
+      </tr>
+      <tr>
+         <td>
+            <dl>
+               <dd>c - Cooperative or consortial purchase</dd>
+               <dd>d - Deposit</dd>
+               <dd>e - Exchange</dd>
+               <dd>f - Free</dd>
+               <dd>g - Gift</dd>
+               <dd>l - Legal deposit</dd>
+            </dl>
+         </td>
+         <td>
+            <dl>
+               <dd>m - Membership</dd>
+               <dd>n - Non-library purchase</dd>
+               <dd>p - Purchase</dd>
+               <dd>q - Lease</dd>
+               <dd>u - Unknown</dd>
+               <dd>z - Other method of acquisition</dd>
+            </dl>
+         </td>
+      </tr>
+      <tr>
+         <td colspan="2" class="characterPositionTitle"><span><strong>08-11 - Expected acquisition end date</strong></span></td>
+      </tr>
+      <tr>
+         <td>
+            <dl>
+               <dd>&lt;yymm&gt; - Date of cancellation or last expected part</dd>
+               <dd>uuuu - Intent to cancel; effective date not known</dd>
+            </dl>
+         </td>
+         <td>
+            <dl>
+               <dd>#### - No intent to cancel or not applicable</dd>
+            </dl>
+         </td>
+      </tr>
+      <tr>
+         <td colspan="2" class="characterPositionTitle"><span><strong>12 - General retention policy</strong></span></td>
+      </tr>
+      <tr>
+         <td>
+            <dl>
+               <dd>0 - Unknown</dd>
+               <dd>1 - Other general retention policy</dd>
+               <dd>2 - Retained except as replaced by updates</dd>
+               <dd>3 - Sample issue retained</dd>
+               <dd>4 - Retained until replaced by microform</dd>
+            </dl>
+         </td>
+         <td>
+            <dl>
+               <dd>5 - Retained until replaced by cumulation, replacement volume, or revision</dd>
+               <dd>6 - Retained for a limited period</dd>
+               <dd>7 - Not retained</dd>
+               <dd>8 - Permanently retained</dd>
+            </dl>
+         </td>
+      </tr>
+      <tr>
+         <td colspan="2" class="characterPositionTitle"><span><strong>13-15 - Specific retention policy</strong></span></td>
+      </tr>
+      <tr>
+         <td>
+            <dl>
+               <dd>### - No specific retention policy</dd>
+            </dl>
+         </td>
+         <td></td>
+      </tr>
+      <tr>
+         <td colspan="2" class="characterPositionTitle"><span><strong>13 - Policy type</strong></span></td>
+      </tr>
+      <tr>
+         <td>
+            <dl>
+               <dd>l - Latest</dd>
+            </dl>
+         </td>
+         <td>
+            <dl>
+               <dd>p - Previous</dd>
+            </dl>
+         </td>
+      </tr>
+      <tr>
+         <td colspan="2" class="characterPositionTitle"><span><strong>14 - Number of units</strong></span></td>
+      </tr>
+      <tr>
+         <td>
+            <dl>
+               <dd># - No information provided</dd>
+            </dl>
+         </td>
+         <td>
+            <dl>
+               <dd>1-9 - Number of units</dd>
+            </dl>
+         </td>
+      </tr>
+      <tr>
+         <td colspan="2" class="characterPositionTitle"><span><strong>15 - Unit type</strong></span></td>
+      </tr>
+      <tr>
+         <td>
+            <dl>
+               <dd>m - Month(s)</dd>
+               <dd>w - Week(s)</dd>
+               <dd>y - Year(s)</dd>
+            </dl>
+         </td>
+         <td>
+            <dl>
+               <dd>e - Edition(s)</dd>
+               <dd>i - Issue(s)</dd>
+               <dd>s - Supplement(s)</dd>
+            </dl>
+         </td>
+      </tr>
+      <tr>
+         <td colspan="2" class="characterPositionTitle"><span><strong>16 - Completeness</strong></span></td>
+      </tr>
+      <tr>
+         <td>
+            <dl>
+               <dd>0 - Other</dd>
+               <dd>1 - Complete</dd>
+               <dd>2 - Incomplete</dd>
+            </dl>
+         </td>
+         <td>
+            <dl>
+               <dd>3 - Scattered</dd>
+               <dd>4 - Not applicable</dd>
+            </dl>
+         </td>
+      </tr>
+      <tr>
+         <td colspan="2" class="characterPositionTitle"><span><strong>17-19 - Number of copies reported</strong></span></td>
+      </tr>
+      <tr>
+         <td colspan="2" class="characterPositionTitle"><span><strong>20 - Lending policy</strong></span></td>
+      </tr>
+      <tr>
+         <td>
+            <dl>
+               <dd>a - Will lend</dd>
+               <dd>b - Will not lend</dd>
+               <dd>c - Will lend hard copy only</dd>
+            </dl>
+         </td>
+         <td>
+            <dl>
+               <dd>l - Limited lending policy</dd>
+               <dd>u - Unknown</dd>
+            </dl>
+         </td>
+      </tr>
+      <tr>
+         <td colspan="2" class="characterPositionTitle"><span><strong>21 - Reproduction policy</strong></span></td>
+      </tr>
+      <tr>
+         <td>
+            <dl>
+               <dd>a - Will reproduce</dd>
+               <dd>b - Will not reproduce</dd>
+            </dl>
+         </td>
+         <td>
+            <dl>
+               <dd>u - Unknown</dd>
+            </dl>
+         </td>
+      </tr>
+      <tr>
+         <td colspan="2" class="characterPositionTitle"><span><strong>22-24 - Language</strong></span></td>
+      </tr>
+      <tr>
+         <td>
+            <dl>
+               <dd>### - Blanks</dd>
+            </dl>
+         </td>
+         <td>
+            <dl>
+               <dd>und - Undetermined</dd>
+            </dl>
+         </td>
+      </tr>
+      <tr>
+         <td colspan="2" class="characterPositionTitle"><span><strong>25 - Separate or composite copy report</strong></span></td>
+      </tr>
+      <tr>
+         <td>
+            <dl>
+               <dd>0 - Separate copy report</dd>
+            </dl>
+         </td>
+         <td>
+            <dl>
+               <dd>1 - Composite copy report</dd>
+            </dl>
+         </td>
+      </tr>
+      <tr>
+         <td colspan="2" class="characterPositionTitle"><span><strong>26-31 - Date of report</strong></span></td>
+      </tr>
+   </table>
+   <hr>
+   <h3>FIELD DEFINITION AND SCOPE</h3>
+   <div class="definition">
+      <div>
+         <p>Thirty-two character positions (00-31) that contain data elements that provide coded information about the record. The data elements are positionally defined. Each defined character position must contain either a defined code or a fill character ( | ). The fill character is used when no attempt is made to supply a defined code for a specific character position. </p>
+      </div>
+      <div>
+         <p>Some of the codes relate to coded values in Z39.71. Others are potentially useful for retrieval and data management purposes. </p>
+      </div>
+   </div>
+   <hr>
+   <h3>GUIDELINES FOR APPLYING CONTENT DESIGNATORS</h3>
+   <div class="guidelines">
+      <h4><span class="box">■</span> CHARACTER POSITIONS </h4>
+      <div class="characterPositions">
+         <div><strong>00-05 - Date entered on file</strong>
+            <div>
+               <p>Computer-generated six-character numeric string that specifies the date the holdings report was first entered into machine-readable form. Date is given in the pattern <em>yymmdd</em> (<em>yy</em> for the year, <em>mm</em> for the month, and <em>dd</em> for the day). </p>
+            </div>
+            <div>
+               <p>If only the year and month are provided, the date is left justified and each unused position contains a zero. </p>
+               <p>Date entered on file in 008/00-05 is never changed. The date in 008/26-31 (Date of report) is changed each time the holdings information is updated. The date in field 005 (Date and Time of Latest Transaction) changes each time a transaction is made to a separate holdings record. </p>
+            </div>
+            <div class="example">
+               <table>
+                  <tr>
+                     <td><strong>008/00-05</strong></td>
+                     <td colspan="9">890818<em><span><br><span>[The record was entered into the system on August 18, 1989.]</span></span></em></td>
+                  </tr>
+                  <tr>
+                     <td><strong>008/00-05</strong></td>
+                     <td colspan="9">890800<em><span><br><span>[The record was entered into the system on August 1989.]</span></span></em></td>
+                  </tr>
+               </table>
+            </div>
+         </div>
+         <hr>
+         <div><strong>06 - Receipt, acquisition, or access status</strong>
+            <div>
+               <p>Whether newly published parts of a multipart (Leader/06, code v) or serial item (Leader/06, code y) are being received or accessed via a third party. This code is also used with single-part items (Leader/06, code x).</p>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">0 - Unknown</span>
+                  <div>
+                     <p>Receipt or acquisition status is unknown.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">1 - Other receipt or acquisition status</span>
+                  <div>
+                     <p>Receipt or acquisition status for which none of the other defined codes is appropriate. </p>
+                  </div>
+               </div>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">2 - Received and complete or ceased</span>
+                  <div>
+                     <p>All parts of a multipart or serial item have been published or that the publication is no longer issued (has ceased publication). Used for single-part items (Leader/06, Type of record, code x) and for completed multipart or serial items. </p>
+                  </div>
+               </div>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">3 - On order</span>
+                  <div>
+                     <p>Order has been placed for the current and/or continuing parts of an item, but nothing has been received or been made accessible. This definition excludes parts received under retrospective acquisition efforts. This code is also used with single-part items. </p>
+                  </div>
+               </div>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">4 - Currently received</span>
+                  <div>
+                     <p>Parts of a serial item or updates to multipart items are routinely received. </p>
+                  </div>
+               </div>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">5 - Not currently received</span>
+                  <div>
+                     <p>Reporting organization has holdings of the multipart or serial item but neither currently receives nor intends to acquire the item. Used for multipart items and items for which updates are no longer being received. </p>
+                  </div>
+               </div>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">6 - External access</span>
+                  <div>
+                     <p>Online content accessed via a third-party platform, e.g., through a publisher’s website, content provider, etc. </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <hr>
+         <div><strong>07 - Method of acquisition</strong>
+            <div>
+               <p>How the reporting organization acquires the bibliographic item.</p>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">c - Cooperative or consortial purchase</span>
+                  <div>
+                     <p>Acquired through a cooperative purchase and the library has expended its own funds. </p>
+                  </div>
+               </div>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">d - Deposit</span>
+                  <div>
+                     <p>Acquired through a deposit program. This code can be used as a generic code for any form of deposit program. Code l may be used if there is a need to separately identify legal deposits. </p>
+                  </div>
+               </div>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">e - Exchange</span>
+                  <div>
+                     <p>Acquired through an exchange program.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">f - Free</span>
+                  <div>
+                     <p>Acquired without cost.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">g - Gift</span>
+                  <div>
+                     <p>Acquired as a gift.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">l - Legal deposit</span>
+                  <div>
+                     <p>Acquired through a legal deposit program established by law. If a distinction between types of deposit programs is not necessary, code d can be used as a generic code for any form of deposit program. </p>
+                  </div>
+               </div>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">m - Membership</span>
+                  <div>
+                     <p>Acquired as a part of an organizational membership.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">n - Non-library purchase</span>
+                  <div>
+                     <p>Acquired on behalf of the library by an external agency and the library has not expended its own funds. </p>
+                  </div>
+               </div>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">p - Purchase</span>
+                  <div>
+                     <p>Acquired through purchase.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">q - Lease</span>
+                  <div>
+                     <p>Acquired through lease.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">u - Unknown</span>
+                  <div>
+                     <p>Method of acquisition is unknown.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">z - Other method of acquisition</span>
+                  <div>
+                     <p>Method of acquisition for which none of the other defined codes is appropriate. </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <hr>
+         <div><strong>08-11 - Expected acquisition end date</strong>
+            <div>
+               <p>Four characters indicate an intent to cancel, the effective date of a cancellation, or the date of the last expected part of a multipart or serial item (Leader/06, Type of record, code y) that is received on a continuing basis by the reporting organization. A date is recorded in the pattern <em>yymm</em> (2 for the year and 2 for the month). </p>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">&lt;yymm&gt; - Date of cancellation or last expected part</span>
+                  <div>
+                     <p>Effective date of either the cancellation of a multipart or serial item or the actual date of the last expected part. The volume or issue designation for the last expected part may be recorded in subfield $z (Public note) of field 852 (Location).</p>
+                  </div>
+               </div>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">uuuu - Intent to cancel; effective date not known</span>
+                  <div>
+                     <p>Reporting organization intends to cancel its receipt of the multipart or serial item but that the effective date of the cancellation is unknown. </p>
+                  </div>
+               </div>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">#### - No intent to cancel or not applicable</span>
+                  <div>
+                     <p>Either the reporting organization does not intend to cancel its receipt of the multipart or serial item or that the information is not applicable to the item (the title has ceased, been superseded or the title is not a serial). </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <hr>
+         <div><strong>12 - General retention policy</strong>
+            <div>
+               <p>Reporting organization's general retention policy for the bibliographic item.</p>
+            </div>
+            <div>
+               <p>Organization's retention policy for specific parts or editions or for a limited time is contained in field 008/13-15 (Specific retention policy). </p>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">0 - Unknown</span></div>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">1 - Other general retention policy</span>
+                  <div>
+                     <p>General retention policy is one for which none of the other defined codes is appropriate. </p>
+                  </div>
+               </div>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">2 - Retained except as replaced by updates</span>
+                  <div>
+                     <p>All parts of the item are retained until they are replaced by updates.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">3 - Sample issue retained</span>
+                  <div>
+                     <p>Only a sample issue of the item is retained.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">4 - Retained until replaced by microform</span>
+                  <div>
+                     <p>All parts of the item are retained until they are replaced by microform.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">5 - Retained until replaced by cumulation, replacement volume, or revision</span>
+                  <div>
+                     <p>All parts of the item are retained until they are replaced by a cumulation, replacement volume, or revision. </p>
+                  </div>
+               </div>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">6 - Retained for a limited period</span>
+                  <div>
+                     <p>Parts of an item are retained for a period of time or only parts or editions of the item are retained. Specific time or parts may be recorded in 008/13-15 (Specific retention policy). </p>
+                  </div>
+                  <div>
+                     <p>Field 008/16 (Completeness) contains code 0 (Other).</p>
+                  </div>
+               </div>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">7 - Not retained</span>
+                  <div>
+                     <p>No part of the item is retained.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">8 - Permanently retained</span>
+                  <div>
+                     <p>All parts of the item are retained. Used for nonserial items that are normally permanently retained. </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <hr>
+         <div><strong>13-15 - Specific retention policy</strong>
+            <div>
+               <p>Specific parts of the bibliographic item that are retained for a limited time by the reporting organization, when field 008/12 (General retention policy) contains code 6 (Retained for a limited period). </p>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">### - No specific retention policy</span>
+                  <div>
+                     <p>Blank (#) is used in each 008/13-15 character position when no specific retention policy is recorded. </p>
+                  </div>
+                  <div class="example">
+                     <table>
+                        <tr>
+                           <td><strong>008/12</strong></td>
+                           <td colspan="9">8<em><span><br><span>[code indicating permanently retained]</span></span></em></td>
+                        </tr>
+                        <tr>
+                           <td><strong>008/13-15</strong></td>
+                           <td colspan="9">###</td>
+                        </tr>
+                     </table>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <hr>
+         <div><strong>13 - Policy type</strong>
+            <div>
+               <p>Type of specific retention policy.</p>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">l - Latest</span>
+                  <div>
+                     <p>Latest, including the current, time or part unit is retained.</p>
+                  </div>
+                  <div class="example">
+                     <table>
+                        <tr>
+                           <td><strong>008/12</strong></td>
+                           <td colspan="9">6<em><span><br><span>[code indicating limited retention period]</span></span></em></td>
+                        </tr>
+                        <tr>
+                           <td><strong>008/13-15</strong></td>
+                           <td colspan="9">l6m<em><span><br><span>[Latest 6 months of the item are retained.] </span></span></em></td>
+                        </tr>
+                     </table>
+                  </div>
+                  <div class="example">
+                     <table>
+                        <tr>
+                           <td><strong>008/12</strong></td>
+                           <td colspan="9">6</td>
+                        </tr>
+                        <tr>
+                           <td><strong>008/13-15</strong></td>
+                           <td colspan="9">l2i<em><span><br><span>[Latest 2 issues of the item are retained.] </span></span></em></td>
+                        </tr>
+                     </table>
+                  </div>
+               </div>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">p - Previous</span>
+                  <div>
+                     <p>Previous, not including the current, time or part unit is retained.</p>
+                  </div>
+                  <div class="example">
+                     <table>
+                        <tr>
+                           <td><strong>008/12</strong></td>
+                           <td colspan="9">6<em><span><br><span>[code indicating limited retention period]</span></span></em></td>
+                        </tr>
+                        <tr>
+                           <td><strong>008/13-15</strong></td>
+                           <td colspan="9">p1e<em><span><br><span>[Previous edition is retained.] </span></span></em></td>
+                        </tr>
+                     </table>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <hr>
+         <div><strong>14 - Number of units</strong>
+            <div>
+               <p>Number of time or part units used to specify the specific retention policy.</p>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel"># - No information provided</span></div>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">1-9 - Number of units</span>
+                  <div>
+                     <p>One-character number (1-9) that specifies the number of time units or parts that are retained. If the number of time units or parts exceeds 9, this information may be contained in subfield $x (Nonpublic note) or $z (Public note) of an 852 (Location) or 863-868 Holdings Data field. When Policy type is Latest (code l), the number includes the current time or part unit. When Policy type is Previous (code p), the number does not include the current time or part unit.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <hr>
+         <div><strong>15 - Unit type</strong>
+            <div>
+               <p>Describes either the period of retention or the part that is retained.</p>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">m - Month(s)</span></div>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">w - Week(s)</span></div>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">y - Year(s)</span></div>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">e - Edition(s)</span></div>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">i - Issue(s)</span></div>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">s - Supplement(s)</span>
+                  <div class="example">
+                     <table>
+                        <tr>
+                           <td><strong>008/12</strong></td>
+                           <td colspan="9">6</td>
+                        </tr>
+                        <tr>
+                           <td><strong>008/13-15</strong></td>
+                           <td colspan="9">l1s<em><span><br><span>[Latest supplement is retained.]</span></span></em></td>
+                        </tr>
+                     </table>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <hr>
+         <div><strong>16 - Completeness</strong>
+            <div>
+               <p>Estimation of the general extent of the holdings for a multipart (Leader/06, Type of record, code v) or serial item (Leader/06, Type of record, code y). </p>
+            </div>
+            <div>
+               <p>Percentages associated with values 1, 2, and 3 are for general guidance and are not prescriptive. They may be determined locally. </p>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">0 - Other</span>
+                  <div>
+                     <p>Either parts of the item are retained for a limited period (008/12, General retention policy, code 6) or no estimate of the completeness of the holdings is made. </p>
+                  </div>
+               </div>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">1 - Complete</span>
+                  <div>
+                     <p>Organization holds about 95-100% of the parts of the item.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">2 - Incomplete</span>
+                  <div>
+                     <p>Organization holdings are incomplete (about 50-94% held).</p>
+                  </div>
+               </div>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">3 - Scattered</span>
+                  <div>
+                     <p>Organization holds only scattered parts of the item (less than 50%).</p>
+                  </div>
+               </div>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">4 - Not applicable</span>
+                  <div>
+                     <p>Holdings statement is for a single-part item (Leader/06, Type of record, code x). </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <hr>
+         <div><strong>17-19 - Number of copies reported</strong>
+            <div>
+               <p>Three numeric characters indicate the number of copies represented in either a separate copy report (008/25, Separate or composite copy report, code 0) or a composite copy report (008/25, code 1). The number is right justified and each unused position contains a zero. </p>
+            </div>
+            <div class="example">
+               <table>
+                  <tr>
+                     <td><strong>008/17-19</strong></td>
+                     <td colspan="9">001<em><span><br><span>[one copy reported]</span></span></em></td>
+                  </tr>
+               </table>
+            </div>
+            <div class="example">
+               <table>
+                  <tr>
+                     <td><strong>008/17-19</strong></td>
+                     <td colspan="9">002<em><span><br><span> [two copies reported]</span></span></em></td>
+                  </tr>
+                  <tr>
+                     <td>852</td>
+                     <td colspan="9">##$a&lt;location identifier&gt;$bMain$ccenter shelves$t1</td>
+                  </tr>
+                  <tr>
+                     <td>852</td>
+                     <td colspan="9">##$a&lt;location identifier&gt;$bMain$cmezzanine stacks$t2</td>
+                  </tr>
+               </table>
+            </div>
+         </div>
+         <hr>
+         <div><strong>20 - Lending policy</strong>
+            <div>
+               <p>Reporting organization's external lending policy for the bibliographic item.</p>
+            </div>
+            <div>
+               <p>More specific information about the lending policy may be contained in field 845 (Terms Governing Use and Reproduction Note). </p>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">a - Will lend</span>
+                  <div>
+                     <p>Organization will lend the bibliographic item in accordance with any restriction in its general lending policy. </p>
+                  </div>
+               </div>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">b - Will not lend</span>
+                  <div>
+                     <p>Organization will not lend the bibliographic item.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">c - Will lend hard copy only</span>
+                  <div>
+                     <p>Organization will lend only a hard copy of the bibliographic item.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">l - Limited lending policy</span>
+                  <div>
+                     <p>Organization maintains a limited lending policy of the bibliographic item. More specific information about the lending policy may be contained in field 845 (Terms Governing Use and Reproduction Note). </p>
+                  </div>
+               </div>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">u - Unknown</span>
+                  <div>
+                     <p>Lending policy of the organization is not known.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <hr>
+         <div><strong>21 - Reproduction policy</strong>
+            <div>
+               <p>Reporting organization's reproduction policy for the bibliographic item. More specific information about the reproduction policy may be contained in field 845 (Terms Governing Use and Reproduction Note). </p>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">a - Will reproduce</span>
+                  <div>
+                     <p>Organization will make a reproduction of the bibliographic item in accordance with any restrictions in its general reproduction policy. </p>
+                  </div>
+               </div>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">b - Will not reproduce</span>
+                  <div>
+                     <p>Organization will not make a reproduction of the bibliographic item.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">u - Unknown</span>
+                  <div>
+                     <p>Reproduction policy of the reporting organization is not known.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <hr>
+         <div><strong>22-24 - Language</strong>
+            <div>
+               <p>Three-character MARC code that indicates the language of coded data contained in the 863-865 Enumeration and Chronology fields that require a language table to generate chronological terms or ordinal numbers for the codes in a display. Code from: <em><a href="http://www.loc.gov/marc/languages/langhome.html">MARC Code List for Languages</a></em>. There are two special codes: </p>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">### - Blanks</span>
+                  <div>
+                     <p>Holdings statement contains no coded chronological data or ordinal numbers.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">und - Undetermined</span>
+                  <div>
+                     <p>Language of the coded chronological data or ordinal numbers in the holdings statement cannot be determined. </p>
+                  </div>
+                  <div class="example">
+                     <table>
+                        <tr>
+                           <td><strong>008/22-24</strong></td>
+                           <td colspan="9">fre</td>
+                        </tr>
+                        <tr>
+                           <td>853</td>
+                           <td colspan="9">20$81$av.$bptie$u4$vr$cno$u13$vr$dfasc.$u2$vr$i(year)$j(month)$k(day)$p2$ww$x01</td>
+                        </tr>
+                        <tr>
+                           <td>863</td>
+                           <td colspan="9">41$81.1$a1$b1$c1$d1$i1980$j01$k4<em><span><br><span>[Display text: v. 1: ptie 1: no 1: fasc.1 (1980:janv.4)]</span></span></em></td>
+                        </tr>
+                     </table>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <hr>
+         <div><strong>25 - Separate or composite copy report</strong>
+            <div>
+               <p>Whether the holdings information represents a separate copy or a composite copy report. </p>
+            </div>
+            <div>
+               <p><strong>Separate copy report</strong> contains holdings information for one copy of a bibliographic item. If more copies are held by the organization, a separate holdings report is made for each copy. <strong>Composite copy report</strong> consolidates into a single holdings report information about two or more copies of the same bibliographic item that are held at a single location or at one or more sublocations within the organization. The number of copies reported is contained in 008/17-19 (Number of copies reported). </p>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">0 - Separate copy report</span>
+                  <div>
+                     <p>Holdings report is for one copy of the bibliographic item.</p>
+                  </div>
+                  <div class="example">
+                     <p class="exampleCaption"><em>Two separate holdings records:</em></p>
+                     <table>
+                        <tr>
+                           <td width="5%"> </td>
+                           <td colspan="9">
+                              <div class="captiontext">Record 1:</div>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td><strong>008/16</strong></td>
+                           <td colspan="9">2<em><span><br><span>[incomplete]</span></span></em></td>
+                        </tr>
+                        <tr>
+                           <td><strong>008/17-19</strong></td>
+                           <td colspan="9">001<em><span><br><span>[one copy reported]</span></span></em></td>
+                        </tr>
+                        <tr>
+                           <td><strong>008/25</strong></td>
+                           <td colspan="9">0<em><span><br><span>[separate copy]</span></span></em></td>
+                        </tr>
+                        <tr>
+                           <td>852</td>
+                           <td colspan="9">##$a&lt;location identifier&gt;$bChemistry Library$t1</td>
+                        </tr>
+                        <tr>
+                           <td>853</td>
+                           <td colspan="9">00$81$av.$tc.</td>
+                        </tr>
+                        <tr>
+                           <td>863</td>
+                           <td colspan="9">30$81.1$a1-4</td>
+                        </tr>
+                        <tr>
+                           <td>863</td>
+                           <td colspan="9">30$81.2$a7-10<em><span><br><span>[Holdings consist of copy 1, v. 1-4 and 7-10.] </span></span></em></td>
+                        </tr>
+                     </table>
+                  </div>
+                  <div class="example">
+                     <table>
+                        <tr>
+                           <td width="5%"> </td>
+                           <td colspan="9">
+                              <div class="captiontext">Record 2:</div>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td><strong>008/16</strong></td>
+                           <td colspan="9">2<em><span><br><span>[incomplete]</span></span></em></td>
+                        </tr>
+                        <tr>
+                           <td><strong>008/17-19</strong></td>
+                           <td colspan="9">001<em><span><br><span>[one copy reported]</span></span></em></td>
+                        </tr>
+                        <tr>
+                           <td><strong>008/25</strong></td>
+                           <td colspan="9">0<em><span><br><span>[separate copy]</span></span></em></td>
+                        </tr>
+                        <tr>
+                           <td>852</td>
+                           <td colspan="9">##$a&lt;location identifier&gt;$bMain Library$t2</td>
+                        </tr>
+                        <tr>
+                           <td>853</td>
+                           <td colspan="9">00$81$av.$tc.</td>
+                        </tr>
+                        <tr>
+                           <td>863</td>
+                           <td colspan="9">30$81.1$a5-10<em><span><br><span>[Holdings consist of copy 2, v. 5-10.] </span></span></em></td>
+                        </tr>
+                     </table>
+                  </div>
+               </div>
+            </div>
+            <div class="value">
+               <div><span class="valueLabel">1 - Composite copy report</span>
+                  <div>
+                     <p>Holdings statement is a consolidation of information about more than one copy of the same bibliographic item. </p>
+                  </div>
+                  <div class="example">
+                     <table>
+                        <tr>
+                           <td><strong>008/16</strong></td>
+                           <td colspan="9">1<em><span><br><span>[complete]</span></span></em></td>
+                        </tr>
+                        <tr>
+                           <td><strong>008/17-19</strong></td>
+                           <td colspan="9">002<em><span><br><span>[two copies reported]</span></span></em></td>
+                        </tr>
+                        <tr>
+                           <td><strong>008/25</strong></td>
+                           <td colspan="9">1<em><span><br><span>[composite report]</span></span></em></td>
+                        </tr>
+                        <tr>
+                           <td>852</td>
+                           <td colspan="9">##$a&lt;location identifier&gt;$bChemistry Library$bMain Library</td>
+                        </tr>
+                        <tr>
+                           <td>866</td>
+                           <td colspan="9">31$80$av. 1-10$zc.1 has v. 5-6 lacking; c. 2 has only v. 5-10<em><span><br><span>[Holdings consist of two copies in two sublocations.] </span></span></em></td>
+                        </tr>
+                     </table>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <hr>
+         <div><strong>26-31 - Date of report</strong>
+            <div>
+               <p>Six numeric characters indicate the currency of the holdings information. The date is recorded in the pattern <em>yymmdd</em> (<em>yy</em> for the year, <em>mm</em> for the month, and <em>dd</em> for the day). A date that consists of only year and month information is left justified and each unused position contains a zero. An unknown date is represented by six zeros. </p>
+            </div>
+            <div>
+               <p>Date on which the holdings report is first entered into machine-readable form is contained in field 008/00-05 (Date entered on file). This date never changes. In a separate holdings record, the date in field 005 (Date and Time of Latest Transaction) changes each time any transaction is made to the record, while Date of Report indicates only changes to the holdings information. </p>
+            </div>
+            <div class="example">
+               <table>
+                  <tr>
+                     <td><strong>008/26-31</strong></td>
+                     <td colspan="9">880819<em><span><br><span>[The holdings report was updated on August 19, 1988.] </span></span></em></td>
+                  </tr>
+               </table>
+            </div>
+         </div>
+      </div>
+   </div>
+   <hr>
+   <h3>INPUT CONVENTIONS</h3>
+   <div class="conventions">
+      <div>
+         <p><strong>System-Generated Data Elements - </strong>008/00-05 (Date entered on file) and /26-31 (Date of report) are usually system generated. The generation of other 008 data elements depends upon the capabilities of an individual system. </p>
+      </div>
+      <div>
+         <p><strong>Capitalization - </strong>Alphabetic codes are input in lowercase. </p>
+      </div>
+      <div>
+         <p><strong>Embedded Holdings Information - </strong>When holdings information is embedded in a related MARC bibliographic record, the coded information in field 008/00-31 may be contained in subfield $b (Fixed-length data elements) of field 841 (Holdings Coded Data Values), which is also embedded in the bibliographic record. </p>
+      </div>
+   </div>
+   <hr>
+   <h3>CONTENT DESIGNATOR HISTORY</h3>
+   <div class="history">
+      <div class="characterPositionHistory">
+         <div><em>008/06 - Receipt or acquisition status [RENAMED, 2019]</em>
+            <div class="charactervaluehistory">
+               <div>
+                  <div class="charactervaluehistoryLabel">6 - External access [NEW, 2019]</div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="characterPositionHistory">
+         <div><em>008/07 - Method of acquisition</em>
+            <div class="charactervaluehistory">
+               <div>
+                  <div class="charactervaluehistoryLabel">c - Cooperative or consortial purchase [NEW, 2002]</div>
+               </div>
+            </div>
+            <div class="charactervaluehistory">
+               <div>
+                  <div class="charactervaluehistoryLabel">l - Legal deposit [NEW, 2009]</div>
+               </div>
+            </div>
+            <div class="charactervaluehistory">
+               <div>
+                  <div class="charactervaluehistoryLabel">m - Membership [NEW, 2002]</div>
+               </div>
+            </div>
+            <div class="charactervaluehistory">
+               <div>
+                  <div class="charactervaluehistoryLabel">n - Non-library purchase [NEW, 2002]</div>
+               </div>
+            </div>
+            <div class="charactervaluehistory">
+               <div>
+                  <div class="charactervaluehistoryLabel">q - Lease [NEW, 2015]</div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="characterPositionHistory">
+         <div><em>008/11 - Intent to cancel date [RENAMED, 2002]</em></div>
+      </div>
+      <div class="characterPositionHistory">
+         <div><em>008/12 - General retention policy</em>
+            <div class="charactervaluehistory">
+               <div>
+                  <div class="charactervaluehistoryLabel"># - Permanently retained [OBSOLETE]</div>
+                  <div>
+                     <p>Code # was used in holdings records that met the requirements of <em>Serial Holdings Statements at the Summary Level</em> (ANSI Z39.42). Code 8 (Permanently retained) is defined for use in summary-level MARC holdings statements that follow <em>Serial Holdings Statements</em> (ANSI Z39.44) which replaced Z39.42. </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="characterPositionHistory">
+         <div><em>008/20 - Lending policy</em>
+            <div class="charactervaluehistory">
+               <div>
+                  <div class="charactervaluehistoryLabel">c - Will lend hard copy only [NEW, 2002]</div>
+               </div>
+            </div>
+            <div class="charactervaluehistory">
+               <div>
+                  <div class="charactervaluehistoryLabel">l - Limited lending policy [NEW, 2002]</div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="characterPositionHistory">
+         <div><em>008/40 - Fill character usage [OBSOLETE, 1997] [CAN/MARC only]</em></div>
+      </div>
+   </div>
+   <hr class="clear">
+   <div class="head-nav">
+      <div class="noprint"><a href="http://www.loc.gov/">Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/marc/">MARC</a> &gt;&gt; <a href="index.htm">Holdings</a> &gt;&gt; <span class="caps"><a href="hd00x.html">00X</a>  &gt;&gt; <strong>008</strong></span></div>
+   </div>
+   <div class="left"><span class="noprint">(11/26/2019)</span></div>
+   <div class="right"><a href="/cdn-cgi/l/email-protection#f29c969f819db29e9d91dc959d84" class="noprint">Contact Us</a></div>
+   <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+   <script>if (window['_satellite']) { _satellite.pageBottom(); }</script>
+</body>
+
+</html>

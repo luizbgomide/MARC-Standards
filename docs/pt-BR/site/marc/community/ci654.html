@@ -1,0 +1,363 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>MARC 21 Format for Community Information Data: 654: Subject Added Entry-Faceted Topical Terms (Network Development and MARC Standards Office, Library of Congress) </title>
+   <meta name="description" content="This field contains the  (Network Development and MARC Standards Office, Library of Congress)">
+   <meta name="keywords" content="marc, marc21, marc standards">
+   <meta name="author" content="Library of Congress Network Development and MARC Standards Office">
+   <link href="../styles.css" rel="stylesheet" type="text/css">
+   <link href="../print.css" rel="stylesheet" type="text/css" media="print">
+   <script src="../../dac62e20b491e735c6b56e64c39134d8ee93f9cf/satelliteLib-6b47f831c184878d7338d4683ecf773a17973bb9.js"></script>
+</head>
+
+<body class="full">
+   <div class="head-nav">
+      <div class="noprint"><a href="http://www.loc.gov/">Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/marc/">MARC</a> &gt;&gt; <a href="index.htm">Community Information</a> &gt;&gt; <span class="caps"><a href="ci6xx.html">6XX</a>  &gt;&gt; <strong>654</strong></span></div>
+   </div>
+   <hr><a name="skip_menu"></a>
+   <h1><span>654</span> - <span>Subject Added Entry-Faceted Topical Terms</span><span> (R)</span></h1>
+   <hr>
+   <div class="formatname">MARC 21 Community Information - full</div>
+   <div class="datename">December 2017</div>
+   <hr>
+   <table width="100%" class="indicators">
+      <tr>
+         <th width="45%"> First Indicator </th>
+         <th width="45%"> Second Indicator </th>
+      </tr>
+      <tr>
+         <td><em>Level of subject</em><br><span># - No information provided</span><br><span>0 - No level specified</span><br><span>1 - Primary</span><br><span>2 - Secondary</span><br><br></td>
+         <td><em>Undefined</em><br><span># - Undefined</span><br><br></td>
+      </tr>
+   </table>
+   <hr>
+   <table width="100%" class="subfields">
+      <tr>
+         <td width="50%"></td>
+         <td width="50%"></td>
+      </tr>
+      <tr>
+         <th colspan="2">Subfield Codes</th>
+      </tr>
+      <tr>
+         <td>
+            <ul class="nomark">
+               <li>$a - Focus term<span> (NR)</span></li>
+               <li>$b - Non-focus term<span> (R)</span></li>
+               <li>$c - Facet/hierarchy designation<span> (R)</span></li>
+               <li>$v - Form subdivision<span> (R)</span></li>
+               <li>$y - Chronological subdivision<span> (R)</span></li>
+               <li>$z - Geographic subdivision<span> (R)</span></li>
+            </ul>
+         </td>
+         <td>
+            <ul class="nomark">
+               <li>$0 - Authority record control number or standard number<span> (R)</span></li>
+               <li>$1 - Real World Object URI<span> (R)</span></li>
+               <li>$2 - Source of heading or term<span> (NR)</span></li>
+               <li>$3 - Materials specified<span> (NR)</span></li>
+               <li>$6 - Linkage<span> (NR)</span></li>
+               <li>$8 - Field link and sequence number<span> (R)</span></li>
+            </ul>
+         </td>
+      </tr>
+   </table>
+   <hr>
+   <h3>FIELD DEFINITION AND SCOPE</h3>
+   <div class="definition">
+      <div>
+         <p>Topical subject entry constructed from a faceted vocabulary.</p>
+      </div>
+      <div>
+         <p>For each term found in the field, an identification is given as to the facet/hierarchy in the thesaurus from which the term came. In addition, identification is given as to which term is the focus term of the expression. A field may contain more than one expression. </p>
+      </div>
+   </div>
+   <hr>
+   <h3>GUIDELINES FOR APPLYING CONTENT DESIGNATORS</h3>
+   <div class="guidelines">
+      <h4><span class="box">■</span> INDICATORS </h4>
+      <div class="indicators">
+         <div class="indicator">
+            <div>
+               <p class="label"><strong>First Indicator - Level of subject</strong></p>
+               <div>
+                  <p>Level of the subject expression or string. This indicator is used to distinguish primary and secondary descriptors. </p>
+               </div>
+               <div class="value">
+                  <div><span class="valueLabel"># - No information provided</span>
+                     <div>
+                        <p>No information as to the level of the subject expression or string is provided. </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="value">
+                  <div><span class="valueLabel">0 - No level specified</span>
+                     <div>
+                        <p>Level of the subject expression or string could be determined but is not specified. </p>
+                     </div>
+                     <div class="example">
+                        <p class="exampleCaption"><em>Heading: landscape gardens-18th century-United States-Virginia-Charlottesville</em></p>
+                        <table>
+                           <tr>
+                              <td><strong>654</strong></td>
+                              <td colspan="9"><strong>0#</strong><strong>$c</strong>ob<strong>$a</strong>landscape gardens<strong>$c</strong>y<strong>$b</strong>18th century<strong>$c</strong>z<strong>$b</strong>United States<strong>$c</strong>z<strong>$b</strong>Virginia<strong>$c</strong>z<strong>$b</strong>Charlottesville<strong>$2</strong>aat </td>
+                           </tr>
+                        </table>
+                     </div>
+                  </div>
+               </div>
+               <div class="value">
+                  <div><span class="valueLabel">1 - Primary</span>
+                     <div>
+                        <p>Entry is a primary subject. A subject expression or string is considered primary if it covers the main focus or subject content associated with the community information entity. </p>
+                     </div>
+                     <div class="example">
+                        <p class="exampleCaption"><em>Heading: meetings</em></p>
+                        <table>
+                           <tr>
+                              <td><strong>654</strong></td>
+                              <td colspan="9"><strong>1#</strong><strong>$c</strong>ac<strong>$a</strong>meetings<strong>$2</strong>aat </td>
+                           </tr>
+                        </table>
+                     </div>
+                  </div>
+               </div>
+               <div class="value">
+                  <div><span class="valueLabel">2 - Secondary</span>
+                     <div>
+                        <p>Entry is a secondary subject. A subject expression or string is considered secondary if it represents a less important aspect associated with the community information entity. </p>
+                     </div>
+                     <div class="example">
+                        <p class="exampleCaption"><em>Heading: housing-United States-Illinois-McHenry County</em></p>
+                        <table>
+                           <tr>
+                              <td><strong>654</strong></td>
+                              <td colspan="9"><strong>2#</strong><strong>$c</strong>ob<strong>$a</strong>housing<strong>$c</strong>z<strong>$b</strong>United States<strong>$c</strong>z<strong>$b</strong>Illinois<strong>$c</strong>z<strong>$b</strong>McHenry County<strong>$2</strong>aat </td>
+                           </tr>
+                        </table>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="indicator">
+            <div>
+               <p class="label"><strong>Second Indicator - Undefined</strong></p>
+               <div>
+                  <p>Undefined and contains a blank (#).</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <h4><span class="box">■</span> SUBFIELD CODES </h4>
+      <div class="subfields">
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$a - Focus term</strong>
+               </p>
+               <div>
+                  <p>Term is considered the focus term. A focus term is the concrete thing, being, idea, or activity forming the basis of the indexing entry. The subfield is repeated when there is more than one expression in the field. </p>
+               </div>
+               <div class="example">
+                  <p class="exampleCaption"><em>Heading: French Colonial landscapes-United States-New Jersey</em></p>
+                  <table>
+                     <tr>
+                        <td><strong>654</strong></td>
+                        <td colspan="9"><strong>##</strong><strong>$c</strong>sp<strong>$b</strong>French Colonial<strong>$c</strong>ob<strong>$a</strong>landscapes<strong>$c</strong>z<strong>$b</strong>United States<strong>$c</strong>z<strong>$b</strong>New Jersey<strong>$2</strong>aat<em><span><br><span>[The focus term in the AAT expression is "landscapes."] </span></span></em></td>
+                     </tr>
+                  </table>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$b - Non-focus term</strong>
+               </p>
+               <div>
+                  <p>Term other than that considered the focus.</p>
+               </div>
+               <div class="example">
+                  <p class="exampleCaption"><em>Heading: garden club-meetings</em></p>
+                  <table>
+                     <tr>
+                        <td><strong>654</strong></td>
+                        <td colspan="9"><strong>##</strong><strong>$c</strong>po<strong>$b</strong>garden club<strong>$a</strong>meetings<strong>$2</strong>aat<em><span><br><span>[The focus term in the AAT expression is "meetings."] </span></span></em></td>
+                     </tr>
+                  </table>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$c - Facet/hierarchy designation</strong>
+               </p>
+               <div>
+                  <p>Designation used by the thesaurus specified by the MARC code contained in subfield $2 to identify the facet/hierarchy for each term contained in subfields $a and $b. Subfield $c always precedes the data to which it is associated.</p>
+               </div>
+               <div>
+                  <p>The designations differ, depending on the subject heading thesaurus used (as specified by the code found in subfield $2). The designations and their associated facets/hierarchies can be found in the thesaurus identified by subfield $2.</p>
+               </div>
+               <div class="example">
+                  <p class="exampleCaption"><em>Heading: housing-United States-Florida-Miami</em></p>
+                  <table>
+                     <tr>
+                        <td><strong>654</strong></td>
+                        <td colspan="9"><strong>##</strong><strong>$c</strong>ob<strong>$a</strong>housing<strong>$c</strong>z<strong>$b</strong>United States<strong>$c</strong>z<strong>$b</strong>Florida<strong>$c</strong>z<strong>$b</strong>Miami<strong>$2</strong>aat </td>
+                     </tr>
+                  </table>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$v - Form subdivision</strong>
+               </p>
+               <div>
+                  <p>Form subdivision that designates a specific kind or genre of material as defined by the thesaurus being used. Subfield $v is appropriate only when a form subject subdivision is added to a faceted topical term.</p>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$y - Chronological subdivision</strong>
+               </p>
+               <div>
+                  <p>Subject subdivision that represents a period of time. Subfield $y is appropriate only when a chronological subject subdivision is added to a main term.</p>
+               </div>
+               <div class="example">
+                  <table>
+                     <tr>
+                        <td><strong>654</strong></td>
+                        <td colspan="9"><strong>0#</strong><strong>$c</strong>r<strong>$a</strong>landscape<strong>$y</strong>18th century<strong>$z</strong>England.<strong>$2</strong>aat </td>
+                     </tr>
+                  </table>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$z - Geographic subdivision</strong>
+               </p>
+               <div>
+                  <p>Geographic subject subdivision. Subfield $z is appropriate in field 650 only when a geographic subject subdivision is added to a main term.</p>
+               </div>
+               <div class="example">
+                  <table>
+                     <tr>
+                        <td><strong>654</strong></td>
+                        <td colspan="9"><strong>0#</strong><strong>$c</strong>r<strong>$a</strong>landscape<strong>$y</strong>18th century<strong>$z</strong>England.<strong>$2</strong>aat </td>
+                     </tr>
+                  </table>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$0 - Authority record control number or standard number</strong>
+               </p>
+               <div>
+                  <p>See description of this subfield in Appendix A: <em><a href="eccicntf.html">Control Subfields</a></em>. </p>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$1 - Real World Object URI</strong>
+               </p>
+               <div>
+                  <p>See description of this subfield in Appendix A: <em><a href="eccicntf.html">Control Subfields</a></em>. </p>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$2 - Source of heading or term</strong>
+               </p>
+               <div>
+                  <p>MARC code that identifies the source list from which the subject expression was assigned. Code from: <em><a href="http://www.loc.gov/standards/sourcelist/subject.html">Subject Heading and Term Source Codes</a></em>. </p>
+               </div>
+               <div class="example">
+                  <p class="exampleCaption"><em>Heading: country houses-United States-Kentucky</em></p>
+                  <table>
+                     <tr>
+                        <td><strong>654</strong></td>
+                        <td colspan="9"><strong>##</strong><strong>$c</strong>ob<strong>$a</strong>country houses<strong>$c</strong>z<strong>$b</strong>United States<strong>$c</strong>z<strong>$b</strong>Kentucky<strong>$2</strong>aat </td>
+                     </tr>
+                  </table>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$3 - Materials specified</strong>
+               </p>
+               <div>
+                  <p>Part of the collection, etc. to which the field applies.</p>
+               </div>
+               <div class="example">
+                  <p class="exampleCaption"><em>Heading: business letters: housing-United States</em></p>
+                  <table>
+                     <tr>
+                        <td><strong>654</strong></td>
+                        <td colspan="9"><strong>##</strong><strong>$3</strong>business letters<strong>$c</strong>r<strong>$a</strong>housing<strong>$c</strong>z<strong>$b</strong>United States.<strong>$2</strong>aat </td>
+                     </tr>
+                  </table>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$6 - Linkage</strong>
+               </p>
+               <div>
+                  <p>See the description of this subfield in Appendix A: <em><a href="eccicntf.html">Control Subfields</a></em>. </p>
+               </div>
+            </div>
+         </div>
+         <div class="subfield">
+            <div>
+               <p class="label"><strong>$8 - Field link and sequence number</strong>
+               </p>
+               <div>
+                  <p>See the description of this subfield in Appendix A: <em><a href="eccicntf.html">Control Subfields</a></em>. </p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <hr>
+   <h3>INPUT CONVENTIONS</h3>
+   <div class="conventions">
+      <div>
+         <p><strong>Punctuation - </strong>The subfield preceding subfield $2 in field 654 ends with a mark of punctuation or a closing parenthesis. </p>
+      </div>
+      <div>
+         <p><strong>Display Constant - </strong>The dash (-) that precedes any non-focus term that <em>follows</em> a focus term, that precedes a second, etc. focus term, or that precedes a subdivision is not carried in the machine-readable record. It may be system generated as a display constant associated with the content of subfields $a, $b, $v, $y, and $z. </p>
+      </div>
+   </div>
+   <hr>
+   <h3>CONTENT DESIGNATOR HISTORY</h3>
+   <div class="history">
+      <div class="historySubfield">
+         <div><em>$0 - Authority record control number [NEW, 2007]</em></div>
+      </div>
+      <div class="historySubfield">
+         <div><em>$0 - Authority record control number [REDEFINED, 2010]</em></div>
+      </div>
+      <div class="historySubfield">
+         <div><em>$1 - Real World Object URI [NEW, 2017]</em></div>
+      </div>
+   </div>
+   <hr class="clear">
+   <div class="head-nav">
+      <div class="noprint"><a href="http://www.loc.gov/">Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/marc/">MARC</a> &gt;&gt; <a href="index.htm">Community Information</a> &gt;&gt; <span class="caps"><a href="ci6xx.html">6XX</a>  &gt;&gt; <strong>654</strong></span></div>
+   </div>
+   <div class="left"><span class="noprint">(12/18/2017)</span></div>
+   <div class="right"><a href="/cdn-cgi/l/email-protection#d3bdb7bea0bc93bfbcb0fdb4bca5" class="noprint">Contact Us</a></div>
+   <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+   <script>if (window['_satellite']) { _satellite.pageBottom(); }</script>
+</body>
+
+</html>

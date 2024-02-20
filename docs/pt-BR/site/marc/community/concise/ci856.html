@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>MARC 21 Format for Community Information Data: 856: Electronic Location and Access (Network Development and MARC Standards Office, Library of Congress) </title>
+   <meta name="description" content="This field contains the  (Network Development and MARC Standards Office, Library of Congress)">
+   <meta name="keywords" content="marc, marc21, marc standards">
+   <meta name="author" content="Library of Congress Network Development and MARC Standards Office">
+   <link href="../styles.css" rel="stylesheet" type="text/css">
+   <link href="../print.css" rel="stylesheet" type="text/css" media="print">
+   <script src="../../../dac62e20b491e735c6b56e64c39134d8ee93f9cf/satelliteLib-6b47f831c184878d7338d4683ecf773a17973bb9.js"></script>
+</head>
+
+<body class="concise">
+   <div class="head-nav">
+      <div class="noprint"><a href="http://www.loc.gov/">Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/marc/">MARC</a> &gt;&gt; <a href="../index.htm">Community Information</a> &gt;&gt; <span class="caps"><a href="../ci8xx.html">8XX</a>  &gt;&gt; <strong>856</strong></span></div>
+   </div>
+   <hr><a name="skip_menu"></a>
+   <h1><span>856</span> - <span>Electronic Location and Access</span><span> (R)</span></h1>
+   <hr>
+   <div class="formatname">MARC 21 Community Information - concise</div>
+   <div class="datename">December 2022</div>
+   <hr>
+   <div class="definition">
+      <div>
+         <p>Contains the information needed to locate and access electronic information pertaining to a community service such as the service or event website or related resources. Subfields $y (Link text) and $z (Public note) may be used to specify the type of electronic information. The phrase "networked electronic resource" is used to refer to an electronic resource for which content is accessed using a network protocol like telnet, http, ftp, etc.</p>
+         <p>Field 856 is repeated when the location data elements vary (the URL in subfield $u or subfields $a and $d, when used). It is also repeated whenever the electronic filename varies (subfield $f), except when a single intellectual item is divided into different parts for online storage or retrieval.</p>
+      </div>
+   </div>
+   <div class="guidelines">
+      <h4>Indicators</h4>
+      <div class="indicators">
+         <dl>
+            <dt>First - Access method</dt>
+            <dd># - No information provided</dd>
+            <dd>0 - Email</dd>
+            <dd>1 - FTP</dd>
+            <dd>2 - Remote login (Telnet)</dd>
+            <dd>3 - Dial-up</dd>
+            <dd>4 - HTTP</dd>
+            <dd>7 - Method specified in subfield $2</dd>
+            <dt>Second - Relationship</dt>
+            <dd># - No information provided</dd>
+            <dd>0 - Resource</dd>
+            <dd>1 - Version of resource</dd>
+            <dd>2 - Related resource</dd>
+            <dd>3 - Component part(s) of resource</dd>
+            <dd>4 - Version of component part(s) of resource</dd>
+            <dd>8 - No display constant generated</dd>
+         </dl>
+      </div>
+      <h4>Subfield Codes</h4>
+      <div class="subfields">
+         <dl>
+            <dt>$a - Host name <span> (R)</span></dt>
+            <dd style="margin-left:1.75em;"><span>Fully qualified domain (host name) of the electronic location. It contains a network address which is repeated if there is more than one address for the same host.</span><br></dd>
+         </dl>
+         <dl>
+            <dt>$c - Compression information <span> (R)</span></dt>
+            <dd style="margin-left:1.75em;"><span>Information about the compression of a file; in particular, whether a specific program is required to decompress the file.</span><br></dd>
+         </dl>
+         <dl>
+            <dt>$d - Path <span> (R)</span></dt>
+         </dl>
+         <dl>
+            <dt>$f - Electronic name <span> (R)</span></dt>
+         </dl>
+         <dl>
+            <dt>$g - Persistent identifier <span> (R)</span></dt>
+         </dl>
+         <dl>
+            <dt>$h - Non-functioning Uniform Resource Identifier <span> (R)</span></dt>
+         </dl>
+         <dl>
+            <dt>$l - Standardized information governing access <span> (R)</span></dt>
+         </dl>
+         <dl>
+            <dt>$n - Terms governing access <span> (R)</span></dt>
+         </dl>
+         <dl>
+            <dt>$m - Contact for access assistance <span> (R)</span></dt>
+         </dl>
+         <dl>
+            <dt>$o - Operating system <span> (NR)</span></dt>
+         </dl>
+         <dl>
+            <dt>$p - Port <span> (NR)</span></dt>
+            <dd style="margin-left:1.75em;"><span>Portion of the address that identifies a process or service in the host.</span><br></dd>
+         </dl>
+         <dl>
+            <dt>$q - Electronic format type <span> (R)</span></dt>
+         </dl>
+         <dl>
+            <dt>$r - Standardized information governing use and reproduction <span> (R)</span></dt>
+         </dl>
+         <dl>
+            <dt>$s - File size <span> (R)</span></dt>
+         </dl>
+         <dl>
+            <dt>$t - Terms governing use and reproduction <span> (R)</span></dt>
+         </dl>
+         <dl>
+            <dt>$u - Uniform Resource Identifier <span> (R)</span></dt>
+            <dd style="margin-left:1.75em;"><span>Uniform Resource Identifier (URI), which provides standard syntax for locating an object using existing Internet protocols or by resolution of a persistent identifier (PID). Field 856 is structured to allow for the creation of a URL from the concatenation of other separate 856 subfields. Subfield $u may be used instead of those separate subfields or in addition to them.</span><br></dd>
+            <dd style="margin-left:1.75em;">Subfield $u may be repeated if more than one URI is recorded.<br></dd>
+         </dl>
+         <dl>
+            <dt>$v - Hours access method available <span> (R)</span></dt>
+         </dl>
+         <dl>
+            <dt>$w - Record control number <span> (R)</span></dt>
+         </dl>
+         <dl>
+            <dt>$x - Nonpublic note <span> (R)</span></dt>
+         </dl>
+         <dl>
+            <dt>$y - Link text <span> (R)</span></dt>
+         </dl>
+         <dl>
+            <dt>$z - Public note <span> (R)</span></dt>
+         </dl>
+         <dl>
+            <dt>$2 - Access method <span> (NR)</span></dt>
+            <dd style="margin-left:1.75em;"><span>Access method when the first indicator position contains value 7 (Method specified in subfield $2). Code from: <em><a href="http://www.loc.gov/standards/valuelist/electronaccess.html">Electronic Access Methods Code List</a></em>.</span><br></dd>
+         </dl>
+         <dl>
+            <dt>$3 - Materials specified <span> (NR)</span></dt>
+         </dl>
+         <dl>
+            <dt>$6 - Linkage <span> (NR)</span></dt>
+            <dd style="margin-left:1.75em;"><span>See the description of this subfield in Appendix A: <em><a href="../eccicntf.html">Control Subfields</a></em>.</span><br></dd>
+         </dl>
+         <dl>
+            <dt>$7 - Access status <span> (NR)</span></dt>
+            <dd style="margin-left:1.75em;"><span>Code indicating the availability of access to the networked electronic resource the address of which appears in subfield $u. Subfield $7 applies to all subfields $u present in the field.</span><br></dd>
+         </dl>
+         <dl>
+            <dt>$8 - Field link and sequence number <span> (R)</span></dt>
+            <dd style="margin-left:1.75em;"><span>See the description of this subfield in Appendix A: <em><a href="../eccicntf.html">Control Subfields</a></em>.</span><br></dd>
+         </dl>
+      </div>
+      <h4>Examples</h4>
+      <table class="examples">
+         <tr>
+            <td><strong>856</strong></td>
+            <td colspan="9"><strong>1#</strong><strong>$a</strong>maine.maine.edu<strong>$c</strong>Must be decompressed with PKUNZIP<strong>$f</strong>resource.zip<strong>$s</strong>16874 bytes </td>
+         </tr>
+         <tr>
+            <td><strong>856</strong></td>
+            <td colspan="9"><strong>1#</strong><strong>$a</strong>wuarchive.wustl.edu<strong>$d</strong>mirrors/info-mac/util<strong>$f</strong>color-system-icons.hqx </td>
+         </tr>
+         <tr>
+            <td><strong>856</strong></td>
+            <td colspan="9"><strong>0#</strong><strong>$a</strong>kentvm.bitnet<strong>$f</strong>acadlist file1<strong>$f</strong>acadlist file2<strong>$f</strong>acadlist file3 </td>
+         </tr>
+         <tr>
+            <td><strong>856</strong></td>
+            <td colspan="9"><strong>2#</strong><strong>$a</strong>gopac.berkeley.edu<strong>$m</strong>Roy Tennant </td>
+         </tr>
+         <tr>
+            <td><strong>856</strong></td>
+            <td colspan="9"><strong>0#</strong><strong>$a</strong>keptvm.bitnet<strong>$f</strong>acadlist file1<strong>$s</strong>34,989 bytes<strong>$f</strong>acadlist file2<strong>$s</strong>32,876 bytes<strong>$f</strong>acadlist file3<strong>$s</strong>23987 bytes </td>
+         </tr>
+         <tr>
+            <td><strong>856</strong></td>
+            <td colspan="9"><strong>3#</strong><strong>$a</strong>locis.loc.gov<strong>$m</strong><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6b070804050702050e2b070408450c041d">[email&#160;protected]</a><strong>$v</strong>M-F 6:00 a.m.-21:30 p.m. USA EST, Sat. 8:30-17:00 USA EST, Sun. 13:00-17:00 USA EST </td>
+         </tr>
+         <tr>
+            <td><strong>856</strong></td>
+            <td colspan="9"><strong>1#</strong><strong>$a</strong>wuarchive.wustl.edu<strong>$c</strong>decompress with PKUNZIP.exe<strong>$d</strong>/mirrors2/win3/games<strong>$f</strong>atmoids.zip<strong>$x</strong>cannot verify because of transfer difficulty </td>
+         </tr>
+         <tr>
+            <td><strong>856</strong></td>
+            <td colspan="9"><strong>42</strong><strong>$3</strong>Finding aid<strong>$u</strong>https://lcweb2.loc.gov/ammem/ead/jackson.sgm </td>
+         </tr>
+      </table>
+   </div>
+   <div class="conventions"></div>
+   <div class="history"></div>
+   <hr class="clear">
+   <div class="head-nav">
+      <div class="noprint"><a href="http://www.loc.gov/">Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/marc/">MARC</a> &gt;&gt; <a href="../index.htm">Community Information</a> &gt;&gt; <span class="caps"><a href="../ci8xx.html">8XX</a>  &gt;&gt; <strong>856</strong></span></div>
+   </div>
+   <div class="left"><span class="noprint">(12/20/2022)</span></div>
+   <div class="right"><a href="/cdn-cgi/l/email-protection#e8868c859b87a884878bc68f879e" class="noprint">Contact Us</a></div>
+   <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+   <script>if (window['_satellite']) { _satellite.pageBottom(); }</script>
+</body>
+
+</html>
