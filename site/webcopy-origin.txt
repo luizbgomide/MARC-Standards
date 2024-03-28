@@ -1,21 +1,9 @@
-Uri: https://assets.adobedtm.com/dac62e20b491e735c6b56e64c39134d8ee93f9cf/satelliteLib-6b47f831c184878d7338d4683ecf773a17973bb9.js
-File Name: D:\MARC-Standards\site\dac62e20b491e735c6b56e64c39134d8ee93f9cf\satelliteLib-6b47f831c184878d7338d4683ecf773a17973bb9.js
-Content Type: application/x-javascript
-
-Uri: https://www.issn.org/wp-content/uploads/2023/11/Country_codes_centres_codes_2023.pdf
-File Name: D:\MARC-Standards\site\wp-content\uploads\2023\11\Country_codes_centres_codes_2023.pdf
-Content Type: application/pdf
-
-Uri: https://www.loc.gov/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
-File Name: D:\MARC-Standards\site\cdn-cgi\scripts\5c5dd728\cloudflare-static\email-decode.min.js
-Content Type: application/javascript
-
 Uri: https://www.loc.gov/images/disclaimer.gif
 File Name: D:\MARC-Standards\site\images\disclaimer.gif
 Content Type: image/gif
 
 Uri: https://www.loc.gov/marc/authority/
-File Name: D:\MARC-Standards\site\marc\authority\index.htm
+File Name: D:\MARC-Standards\site\marc\authority\index.html
 Content Type: text/html
 
 Uri: https://www.loc.gov/marc/authority/ad001.html
@@ -1367,7 +1355,7 @@ File Name: D:\MARC-Standards\site\marc\authority\update11-stylesheet.css
 Content Type: text/css
 
 Uri: https://www.loc.gov/marc/bibliographic/
-File Name: D:\MARC-Standards\site\marc\bibliographic\index.htm
+File Name: D:\MARC-Standards\site\marc\bibliographic\index.html
 Content Type: text/html
 
 Uri: https://www.loc.gov/marc/bibliographic/583terms.html
@@ -3607,7 +3595,7 @@ File Name: D:\MARC-Standards\site\marc\bibliographic\images\marc21bd-new.gif
 Content Type: image/gif
 
 Uri: https://www.loc.gov/marc/bibliographic/lite/
-File Name: D:\MARC-Standards\site\marc\bibliographic\lite\index.htm
+File Name: D:\MARC-Standards\site\marc\bibliographic\lite\index.html
 Content Type: text/html
 
 Uri: https://www.loc.gov/marc/bibliographic/lite/elbdadde.html
@@ -4059,7 +4047,7 @@ File Name: D:\MARC-Standards\site\marc\bibliographic\lite\lbdleader.html
 Content Type: text/html
 
 Uri: https://www.loc.gov/marc/bibliographic/nlr/
-File Name: D:\MARC-Standards\site\marc\bibliographic\nlr\index.htm
+File Name: D:\MARC-Standards\site\marc\bibliographic\nlr\index.html
 Content Type: text/html
 
 Uri: https://www.loc.gov/marc/bibliographic/nlr/nlr.html
@@ -4110,22 +4098,6 @@ Uri: https://www.loc.gov/marc/bibliographic/nlr/nlrleaddirect.html
 File Name: D:\MARC-Standards\site\marc\bibliographic\nlr\nlrleaddirect.html
 Content Type: text/html
 
-Uri: https://www.loc.gov/marc/bibliographic/pda-part1.pdf
-File Name: D:\MARC-Standards\site\marc\bibliographic\pda-part1.pdf
-Content Type: application/pdf
-
-Uri: https://www.loc.gov/marc/bibliographic/pda-part2.pdf
-File Name: D:\MARC-Standards\site\marc\bibliographic\pda-part2.pdf
-Content Type: application/pdf
-
-Uri: https://www.loc.gov/marc/bibliographic/pda-part3.pdf
-File Name: D:\MARC-Standards\site\marc\bibliographic\pda-part3.pdf
-Content Type: application/pdf
-
-Uri: https://www.loc.gov/marc/bibliographic/pda.pdf
-File Name: D:\MARC-Standards\site\marc\bibliographic\pda.pdf
-Content Type: application/pdf
-
 Uri: https://www.loc.gov/marc/bibliographic/print.css
 File Name: D:\MARC-Standards\site\marc\bibliographic\print.css
 Content Type: text/css
@@ -4147,7 +4119,7 @@ File Name: D:\MARC-Standards\site\marc\bibliographic\update11-stylesheet.css
 Content Type: text/css
 
 Uri: https://www.loc.gov/marc/classification/
-File Name: D:\MARC-Standards\site\marc\classification\index.htm
+File Name: D:\MARC-Standards\site\marc\classification\index.html
 Content Type: text/html
 
 Uri: https://www.loc.gov/marc/classification/cd001.html
@@ -4631,7 +4603,7 @@ File Name: D:\MARC-Standards\site\marc\classification\update10-stylesheet.css
 Content Type: text/css
 
 Uri: https://www.loc.gov/marc/community/
-File Name: D:\MARC-Standards\site\marc\community\index.htm
+File Name: D:\MARC-Standards\site\marc\community\index.html
 Content Type: text/html
 
 Uri: https://www.loc.gov/marc/community/ambiguous-headings.html
@@ -5375,7 +5347,7 @@ File Name: D:\MARC-Standards\site\marc\community\update10-stylesheet.css
 Content Type: text/css
 
 Uri: https://www.loc.gov/marc/holdings/
-File Name: D:\MARC-Standards\site\marc\holdings\index.htm
+File Name: D:\MARC-Standards\site\marc\holdings\index.html
 Content Type: text/html
 
 Uri: https://www.loc.gov/marc/holdings/concise/hd001.html
@@ -5909,6 +5881,30 @@ Content Type: text/css
 Uri: https://www.loc.gov/marc/holdings/update10-stylesheet.css
 File Name: D:\MARC-Standards\site\marc\holdings\update10-stylesheet.css
 Content Type: text/css
+
+Uri: https://www.loc.gov/marc/images/clear.gif
+File Name: D:\MARC-Standards\site\marc\images\clear.gif
+Content Type: image/gif
+
+Uri: https://www.loc.gov/marc/images/marc-bar.gif
+File Name: D:\MARC-Standards\site\marc\images\marc-bar.gif
+Content Type: image/gif
+
+Uri: https://www.loc.gov/marc/images/marc21h2.gif
+File Name: D:\MARC-Standards\site\marc\images\marc21h2.gif
+Content Type: image/gif
+
+Uri: https://www.loc.gov/marc/images/marc3.gif
+File Name: D:\MARC-Standards\site\marc\images\marc3.gif
+Content Type: image/gif
+
+Uri: https://www.loc.gov/marc/images/update.gif
+File Name: D:\MARC-Standards\site\marc\images\update.gif
+Content Type: image/gif
+
+Uri: https://www.loc.gov/marc/images/yelnew.gif
+File Name: D:\MARC-Standards\site\marc\images\yelnew.gif
+Content Type: image/gif
 
 Uri: https://www.loc.gov/marc/marc-generic.css
 File Name: D:\MARC-Standards\site\marc\marc-generic.css

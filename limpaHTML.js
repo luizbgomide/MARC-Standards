@@ -9,8 +9,8 @@ const contactUsRE = /<a href=.+?>Contact Us<\/a>/
 const cfEmailObfuscationRE = /<a href=.+? data-cfemail="(\w+?)".+?<\/a>/g
 const file_location="site/marc/"
 const sourceDir = path.resolve(file_location);
-const missingHttp = 'href="//';
-const replaceHttp = 'href="http://';
+const missingHttp = '="//';
+const replaceHttp = '="http://';
 
 function readDirectory(dir) {
     fs.readdirSync(dir, { withFileTypes: true }).forEach((item) => {
