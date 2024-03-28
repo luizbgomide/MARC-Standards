@@ -5,7 +5,8 @@ const fs = require("fs");
 const path = require("path");
 
 const scriptRE = /\s*<script[\s\S]+?<\/script>/g
-const contactUsRE = /<a href="\/cdn-cgi\/l\/email-protection#.+?Contact Us<\/a>/
+const contactUsRE = /<a href=.+?>Contact Us<\/a>/
+const cfEmailObfuscationRE = /<a href=.+? data-cfemail="(\w+?)".+?<\/a>/g
 const file_location="site/marc/"
 const sourceDir = path.resolve(file_location);
 const missingHttp = 'href="//';
@@ -37,7 +38,8 @@ function processFile(file) {
     let contents = fs.readFileSync(file, 'utf8');
     contents = contents.replaceAll(scriptRE, "");
     contents = contents.replaceAll(missingHttp, replaceHttp);
-    // assumindo que há apenas um link de contato na página
+    contents = contents.replaceAll(cfEmailObfuscationRE, cfEmailReplacer);
+    // assumindo que há apenas um link de contato na página trocar ele pelo link para a página original
     contents = contents.replace(contactUsRE, sourceLinkHtml);
 
 
@@ -55,4 +57,17 @@ else {
 function cleanHTML() {
     readDirectory(sourceDir);
     console.log(`\n\nProcesso completo.\nArquivos HTML modificados em: "${sourceDir}"`);
+}
+
+function cfEmailReplacer(match, codedEmail) {
+    return cfDecodeEmail(codedEmail);
+}
+
+function cfDecodeEmail(encodedString) {
+    var email = "", r = parseInt(encodedString.substr(0, 2), 16), n, i;
+    for (n = 2; encodedString.length - n; n += 2){
+        i = parseInt(encodedString.substr(n, 2), 16) ^ r;
+        email += String.fromCharCode(i);
+    }
+    return email;
 }
