@@ -1,0 +1,431 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>Formato MARC 21 para Dados Bibliográficos: Introdução </title>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="description" content="Esta página a introdução para o Formato MARC 21 para Dados Bibliográficos (Network Development and MARC Standards Office, Library of Congress)">
+   <meta name="keywords" content="marc, marc21, padrões marc">
+   <meta name="author" content="Library of Congress Network Development and MARC Standards Office">
+   <link href="../marc-generic.css" rel="stylesheet" type="text/css">
+   <style type="text/css">
+      body {
+         margin-left: 2em;
+         margin-right: 2em;
+      }
+
+      h1 {
+         font-family: Arial, Helvetica, sans-serif;
+      }
+
+      h3 {
+         text-align: left;
+      }
+
+      h4 {
+         margin-top: .5em;
+         margin-bottom: .5em;
+      }
+
+      p {
+         text-align: justify;
+         margin-left: 2em;
+         margin-right: 2em;
+      }
+
+      .formatname {
+         font-weight: bold;
+         font-family: Arial, Helvetica, sans-serif;
+         margin-left: .5em
+      }
+
+      .datename {
+         font-weight: bold;
+         text-align: right;
+         font-family: Arial, Helvetica, sans-serif;
+         margin-top: -1.2em;
+      }
+
+      .font_small {
+         font-size: 9pt;
+      }
+
+      .fieldtoc {
+         margin-left: 2em;
+      }
+
+      .box {
+         font-family: ZapfDingbats;
+      }
+
+      .description {
+         text-align: justify;
+         margin-left: 2em;
+      }
+
+      .description2 {
+         text-align: justify;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .description3 {
+         text-align: justify;
+         margin-top: 1em;
+         margin-bottom: 1em;
+         margin-left: 2em;
+      }
+
+      .indicator {
+         text-align: left;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .indicatorvalue {
+         margin-left: 2em;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .subfield {
+         text-align: left;
+         margin-top: 1em;
+         margin-bottom: 1em;
+         margin-left: 2em;
+      }
+
+      .characterposition {
+         text-align: left;
+         margin-top: 1em;
+         margin-bottom: 1em;
+         margin-left: 2em;
+      }
+
+      .charactervalue {
+         margin-left: 2em;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .characterpositionhistory {
+         text-align: left;
+         margin-top: .5em;
+         margin-bottom: .5em;
+         margin-left: 2em;
+      }
+
+      .charactervaluehistory {
+         margin-left: 2em;
+         margin-top: .1em;
+         margin-bottom: .1em;
+      }
+
+      .example {
+         margin-left: 4em;
+      }
+
+      .changed {
+         color: #FF0000;
+      }
+
+      .captiontext {
+         font-style: italic;
+      }
+
+      .displaytext {
+         font-style: italic;
+         margin-left: 6em;
+         margin-bottom: .5em;
+         margin-top: .5em;
+      }
+
+      .displaycontent {
+         margin-left: 4em;
+      }
+
+      .table {
+         margin-left: 2em;
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
+      .head-nav {
+         font-family: Arial, Helvetica, sans-serif;
+         font-size: 9pt;
+      }
+   </style>
+</head>
+
+<body>
+   <div class="head-nav"><a href="http://www.loc.gov/">Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/marc/">MARC</a> &gt;&gt; <a href="index.html">Bibliográfico</a> &gt;&gt; <strong> Introdução</strong></div>
+   <hr><a name="skip_menu"></a>
+   <h1>Introdução</h1>
+   <hr>
+   <div class="formatname">MARC 21 Bibliográfico</div>
+   <div class="datename">Outubro de 2006</div>
+   <hr>
+   <p>Os cinco formatos de comunicação MARC 21, <em><a href="index.html">Formato MARC 21 para Dados Bibliográficos</a></em>, <em><a href="../authority/ecadhome.html">Formato MARC 21 para Dados de Autoridade</a></em>, <em><a href="../holdings/echdhome.html">Formato MARC 21 para Dados de Acervo</a></em>, <em><a href="../classification/eccdhome.html">Formato MARC 21 para Dados de Classificação</a></em>, e <em><a href="../community/eccihome.html">Formato MARC 21 para Informação de Comunidade</a></em>, são padrões largamente utilizados para representação e troca de dados bibliográficos, de autoridade, de acervo, de classificação e de informação de comunidade em formato legível por máquina. </p>
+   <p>Um registro MARC é composto por três elementos: a estrutura de registro, a designação de conteúdo, e o conteúdo de dados do registro. A <strong>estrutura do registro</strong> é uma implementação do padrão internacional <em>Format for Information Exchange</em> (ISO 2709) e sua contraparte estadunidense <em>Bibliographic Information Interchange</em> (ANSI/NISO Z39.2). A <strong>designação de conteúdo</strong> -- os códigos e convenções estabelecidos para identificar e caracterizar os elementos de dados em um registro, possibilitando a manipulação destes dados -- é definido por cada um dos formatos MARC. O <strong>conteúdo</strong> dos elementos de dados que compõem um registro MARC é geralmente definido por padrões além destes formatos. São exemplos disso: <em>International Standard Bibliographic Description</em> (ISBD), <em>Anglo-American Cataloguing Rules</em> (AACR), <em>Library of Congress Subject Headings</em> (LCSH), ou outras regras de catalogação, tesauros de assunto, e esquemas de classificação utilizados pelas organizações que criam um registro. O conteúdo de certos elementos de dados codificados é definido nos formatos MARC (ex: o Líder, campo 007, campo 008). </p>
+   <p>O <em>Formato MARC 21 para Dados Bibliográficos: Incluindo Diretrizes para Designação de Conteúdo</em> define os códigos e convenções (etiquetas, indicadores, códigos de subcampo e valores codificados) que identificam os elementos de dados em registros bibliográficos MARC. Este documento é destinado para o uso do pessoal envolvido na criação e manutenção de registros bibliográficos, assim como daqueles envolvidos no desenvolvimento e manutenção de sistema para comunicação e processamento de registros bibliográficos. Esta documentação também está disponível online, incluindo uma versão concisa e uma lista simples de campos em: <a href="http://www.loc.gov/marc/">www.loc.gov/marc/</a>. </p>
+   <hr>
+   <p><strong>ESCOPO DO FORMATO BIBLIOGRÁFICO</strong></p>
+   <p>O <em>Formato MARC 21 para Dados Bibliográficos</em> foi criado para transporte de informações bibliográficas sobre materiais textuais impressos e manuscritos, arquivos de computador, mapas, músicas, recursos contínuos, materiais visuais e materiais mistos. Os dados bibliográficos comumente incluem títulos, nomes, assuntos, notas, dados de publicação e informações sobre a descrição física de um item. O formato bibliográfico contém elementos de dados para os seguintes tipos de material: </p>
+   <ul>
+      <li class="nobullet"><strong>Livros (BK)</strong> - usado para materiais textuais impressos, eletrônicos, manuscritos e em microformas que são de natureza monográfica. </li>
+      <li class="nobullet"> <strong>Recursos Contínuos (CR)</strong> - usado para materiais textuais impressos, eletrônicos, manuscritos e em microformas, distribuídos em partes com um padrão recorrente de publicação (ex: periódicos, jornais, anuários). (<strong>NOTA:</strong> Antes de 2002, os Recursos Contínuos (CR) eram referidos como Séries (SE)). </li>
+      <li class="nobullet"><strong>Arquivos de Computador (CF)</strong> - usado para softwares, dados numéricos, multimídia para computador, sistema online ou serviços. Outras classes de recursos eletrônicos são codificados por seu aspecto mais significativo. Os materiais podem ser de natureza monográfica ou seriada. </li>
+      <li class="nobullet"><strong>Mapas (MP) </strong> - usado para todos os tipos de materiais cartográficos impressos, eletrônicos, manuscritos e em microformas, incluindo atlas, mapas e globos. Os materiais podem ser de natureza monográfica ou seriada. </li>
+      <li class="nobullet"><strong>Músicas (MU)</strong> - usado para música impressa, eletrônica, manuscrita e em microformas, assim como gravações de som musicais e não musicais. Os materiais podem ser de natureza monográfica ou seriada. </li>
+      <li class="nobullet"><strong>Materiais Visuais (VM)</strong> - usado para mídias projetáveis, mídias não projetáveis, gráficos bidimensionais, artefatos tridimensionais, objetos naturais e kits. Os materiais podem ser de natureza monográfica ou seriada. </li>
+      <li class="nobullet"><strong>Materiais Mistos (MX)</strong> - usado principalmente para coleções de arquivos e de manuscritos de formas diversas de materiais. Os materiais podem ser de natureza monográfica ou seriada. (<strong>NOTA:</strong> Antes de 1994, os Materiais Mistos (MX) eram referidos como Material de Arquivos e Manuscrito (AM)). </li>
+   </ul>
+   <p><strong>Tipos de Registros Bibliográficos</strong></p>
+   <p>Os registros bibliográficos MARC são diferenciados de todos os outros tipos de registros MARC por códigos específicos no Líder/06 (Tipo de registro), que identifica os seguintes tipos de registros bibliográficos. </p>
+   <div class="table">
+      <table>
+         <tr>
+            <td width="270" align="left" valign="top">Material textual</td>
+            <td width="419" align="left" valign="top">Gravação de som não musical</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">Material textual manuscrito</td>
+            <td valign="top" align="left">Gravação de som musical</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">Arquivo de computador</td>
+            <td valign="top" align="left">Mídia projetável</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">Material cartográfico</td>
+            <td valign="top" align="left">Gráfico bidimensional não projetável</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">Material cartográfico manuscrito</td>
+            <td valign="top" align="left">Artefato tridimensional ou objetos naturais</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">Notação musical</td>
+            <td valign="top" align="left">Kit</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">Música manuscrita</td>
+            <td valign="top" align="left">Material Misto</td>
+         </tr>
+      </table>
+   </div>
+   <p><strong>Microformas</strong>, sejam originais ou reproduções, não são identificados como um tipo especial de registro. O aspecto de microforma é secundário ao tipo do material ao qual o item original pertence (ex: livro). O mesmo é vale para <strong>Arquivos de Computador</strong> em que o aspecto de arquivo de computador é secundário; no entanto, certas categorias de recursos eletrônicos são codificadas como <strong>Arquivos do Computador</strong>. </p>
+   <hr>
+   <p><strong>COMPONENTES DE REGISTROS BIBLIOGRÁFICOS</strong></p>
+   <p><strong>Descrição das Partes do Registro</strong></p>
+   <p>Um registro bibliográfico MARC consiste de três componentes principais: o <strong>Líder</strong>, o <strong>Diretório</strong> e os <strong>campos variáveis</strong>. As seguintes informações resumem a estrutura de um registro MARC separado. Mais detalhes estão disponíveis em <em><a href="http://www.loc.gov/marc/specifications/">MARC 21 Specifications for Record Structure, Character Sets, and Exchange Media</a></em>. </p>
+   <ul>
+      <li class="nobullet"><strong>Líder</strong> - Elementos de dados que fornecem primariamente informações para o processamento do registro. Os elementos de dados contêm números ou valores codificados e são identificados pela posição relativa de caractere. O Líder tem tamanho fixo de 24 posições de caracteres e é o primeiro campo de um registro MARC. </li>
+      <li class="nobullet"><strong>Diretório</strong> - Uma série de referências que contêm a etiqueta, comprimento, e localização inicial de cada campo de variável dentro de um registro. Cada entrada tem 12 posições de caracteres de comprimento. As entradas do diretório para campos de controle variáveis aparecem primeiro, seguidas pelas etiquetas de campo em ordem numérica crescente. As entradas para campos de dados de variáveis seguem, organizadas em ordem ascendente de acordo com o primeiro caractere da etiqueta. A sequência armazenada dos campos de dados de variável em um registro não necessariamente corresponde à ordem das entradas do Diretório correspondente. Etiquetas duplicadas são diferenciadas apenas pela localização dos respectivos campos dentro do registro. O Diretório termina com um caractere terminador de campo (ASCII 1E hex). </li>
+      <li class="nobullet"><strong>Campos Variáveis</strong> - Os dados em um registro bibliográfico MARC estão organizados em <strong>campos de variáveis</strong>, cada um identificado por uma etiqueta numéria de três caracteres que é armazenada na entrada de Diretório para o campo. Cada campo termina com um caractere terminador de campo. O último campo variável em um registro termina com ambos, um terminador de campo e um terminador de registro (ASCII 1D hex). Existem dois tipos de <strong>campos variáveis</strong>. </li>
+      <li class="nobullet"><strong>Campos de controle variáveis</strong> - Os campos 00X. Estes campos são identificados por uma etiqueta de campo no Diretório, mas eles não contêm posições de indicador nem códigos de subcampo. Os campos de controle de variáveis são estruturalmente diferentes dos campos de dados de variáveis. Eles podem conter um único elemento de dados ou uma série de elementos de dados de comprimento fixo identificados pela posição de caractere relativa. </li>
+      <li class="nobullet"><strong>Campos de dados variáveis</strong> - Os campos de variáveis restantes definidos no formato. Além de serem identificados por uma etiqueta de campo no Diretório, os campos de dados variáveis contém duas <strong>posições de indicadores</strong> armazenadas no início de cada campo e um <strong>código de subcampo</strong> de dois caracteres precede cada elemento de dados dentro do campo. </li>
+      <li class="nobullet">Os <strong>campos de dados variáveis</strong> são agrupados em blocos conforme o primeiro caractere da <strong>etiqueta</strong>, que, com algumas exceções, identifica a função do dado dentro do registro. O tipo de informação no campo é identificado pelo restante da etiqueta. </li>
+   </ul>
+   <div class="table">
+      <table>
+         <tr>
+            <td width="60" align="left" valign="top">0XX</td>
+            <td width="546" align="left" valign="top">Informação de controle, números de identificação e classificação, etc. </td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">1XX</td>
+            <td valign="top" align="left">Entradas principais</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">2XX</td>
+            <td valign="top" align="left">Títulos e parágrafo do título (título, edição, imprenta)</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">3XX</td>
+            <td valign="top" align="left">Descrição física, etc.</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">4XX</td>
+            <td valign="top" align="left">Indicações de série</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">5XX</td>
+            <td valign="top" align="left">Notas</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">6XX</td>
+            <td valign="top" align="left">Campos de acesso por assunto</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">7XX</td>
+            <td valign="top" align="left">Entradas secundárias além de assunto ou série; campos ligados </td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">8XX</td>
+            <td valign="top" align="left">Entradas secundárias de série, acervo, etc.</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">9XX</td>
+            <td valign="top" align="left">Reservado para implementação local</td>
+         </tr>
+      </table>
+   </div>
+   <p>Dentro dos blocos 1XX, 4XX, 6XX, 7XX e 8XX blocos, certos paralelos da designação de conteúdo geralmente são preservados. Os seguintes significados, com algumas exceções, são dados aos dois últimos caracteres da etiqueta dos campos: </p>
+   <div class="table">
+      <table>
+         <tr>
+            <td width="46" align="left" valign="top">X00</td>
+            <td width="146" align="left" valign="top">Nomes pessoais</td>
+            <td width="59" align="left" valign="top">X40</td>
+            <td width="418" align="left" valign="top">Títulos bibliográficos</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">X10</td>
+            <td valign="top" align="left">Nomes corporativos</td>
+            <td valign="top" align="left">X50</td>
+            <td valign="top" align="left">Termos tópicos</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">X11</td>
+            <td valign="top" align="left">Nomes de eventos</td>
+            <td valign="top" align="left">X51</td>
+            <td valign="top" align="left">Nomes geográficos</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left">X30</td>
+            <td valign="top" align="left">Títulos uniformes</td>
+            <td valign="top" align="left">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td valign="top" align="left">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+         </tr>
+      </table>
+   </div>
+   <p>Dentro dos campos de dados de variáveis, estes dois tipos de designação de conteúdo são usadas:</p>
+   <ul>
+      <li class="nobullet"><strong>Posições de indicadores</strong> - As primeiras duas posições de caracteres nos campos de dados variáveis que contêm valores que interpretam ou complementam os dados encontrados no campo. Os valores indicadores são interpretados de forma independente, ou seja, não é atribuído um significado aos dois indicadores em conjunto. Os valores dos indicadores podem ser caracteres alfabéticos em minúsculas ou numéricos. Um espaço em branco (ASCII SPACE), representado neste documento como um #, é usado em uma posição de indicador indefinida. Em uma posição de indicador definida, um espaço em branco pode ter um significado específico ou significar <em>nenhuma informação fornecida</em>. </li>
+      <li class="nobullet"><strong>Códigos de subcampos</strong> - Dois caracteres que diferenciam os elementos de dados dentro de um campo que requer manipulação separada. Um código de subcampo consiste de um delimitador (ASCII 1F hex), representado neste documento como um $, seguido de um identificador de elemento de dados. Os identificadores de elementos de dados podem ser caracteres alfabéticos em minúsculas ou numéricos. Códigos de subcampo são definidos de forma independente para cada campo; no entanto, significados paralelos são preservados sempre que possível (ex: nos campos de Nomes Pessoais de 100, 400, e 600). Códigos de subcampo são definidos para fins de identificação, e não de arranjo. A ordem dos subcampos é geralmente especificada pelos padrões para o conteúdo dos dados, como as regras de catalogação. </li>
+   </ul>
+   <p><strong>Registros Bibliográficos com Múltiplos Sistemas de Escrita</strong></p>
+   <p>Um registro bibliográfico MARC pode conter <em>dados</em> em múltiplos sistemas de escrita. Um sistema de escrita pode ser considerado a escrita principal dos <em>conteúdos de dados</em> do registro, mesmo que outras escritas também sejam usadas para conteúdos de dados. Modelos gerais para dados com múltiplos sistemas de escrita são descritos no <a href="ecbdmulti.html">Apêndice D</a> juntamente com vários exemplos. </p>
+   <p><strong>Repetibilidade de Campos e Subcampos</strong></p>
+   <p>Teoricamente, todos os campos e subcampos podem ser repetidos. No entanto, a natureza dos dados muitas vezes impede a repetição. Por exemplo, um registro bibliográfico pode conter apenas um campo de entrada principal 1XX; um campo 100 pode conter apenas um subcampo $a (Nome pessoal), mas pode conter mais de um subcampo $c (Títulos e outras palavras associadas com um nome). A repetibilidade ou não de cada campo e subcampo é especificada no formato. </p>
+   <p><strong>Ligação de Campos</strong></p>
+   <p>Os campos no registro podem ser ligados de forma especial utilizando uma técnica de ligação de campos que geralmente é aplicável. A técnica depende da sintaxe dos dados no subcampo $8 (Ligação de campo e número de sequência) para identificar os campos ligados. A estrutura e sintaxe para o subcampo de ligação de campo e número de sequência são descritos no <a href="ecbdcntf.html">Apêndice A</a>. </p>
+   <p><strong>Caractere de Preenchimento e Valores Relacionados</strong></p>
+   <p>Um caractere de preenchimento (ASCII 7C hex), representado nesse documento por uma barra vertical (|), pode ser usado em registros bibliográficos nos campos 006, 007, 008, e no subcampo $7 do campo 533 (Nota de reprodução) e nos campos de entrada ligada (760-787). Um caractere de preenchimento não pode ser usado no líder, ou em etiquetas, indicadores ou códigos de subcampo. O uso do caractere de preenchimento em registros que contribuem para uma base de dados nacional também pode depender dos requisitos nacionais especificados para cada elemento de dados. A presença de um caractere de preenchimento em um registro bibliográfico indica que o formato especifica um código para ser usado, mas o criador do registro decidiu não tentar fornecer um código. </p>
+   <p>O código u (Desconhecido ou não especificado), quando ele for definido, indica que o criador do registro tentou fornecer um código, mas não pode determinar qual deveria o código apropriado. </p>
+   <p>O código n (Não aplicável) é definido em muitas posições codificadas para indicar que a característica definida pela posição não era aplicável ao tipo específico de item ou ao tipo do registro. </p>
+   <p><strong>Constantes de Exibição</strong></p>
+   <p>Uma constante de exibição é uma convenção de termo, frase, espaçamento ou pontuação, que pode ser gerada pelo sistema para produzir uma apresentação visual mais significativa para o usuário dos dados em um registro. No formato bibliográfico, certas etiquetas de campos (ex: campo 770, Entrada de Publicação Suplementar/Especial), indicadores (ex: campo 511, indicador 1, controlador de constante de exibição), e códigos de subcampo (ex: ou subcampos de subdivisão de assunto $x, $y e $z em uma entrada secundária de assunto), pode ser usado para gerar convenções de termos, frases, e/ou espaçamento ou pontuação específicos para a exibição do registro. O uso das constantes de exibição é determinado por cada organização ou sistema. Exemplo de constantes de exibição são fornecidos sob <em>Convenções de Uso</em> nas descrições de campos. </p>
+   <p><strong>Responsabilidade de Conteúdo do Registro</strong></p>
+   <p>O <em>Formato MARC 21 para Dados Bibliográficos</em> funciona como um veículo para dados bibliográficos de todos os tipos e de qualquer organização. Em geral, a responsabilidade pelo conteúdo de dados, designação de conteúdo, e a transcrição de informações bibliográficas dentro de um registro pode ser determinada através do campo indicado na seção <strong>partes responsáveis</strong> abaixo. No entanto, o conteúdo de certos elementos de dados é restrito quando o elemento for <strong>atribuído por agência</strong> ou um elemento de dados de <strong>lista controlada</strong>. </p>
+   <p><strong>Partes Responsáveis</strong></p>
+   <p>Em <em>registros não modificados</em>, a organização identificada como a fonte original de catalogação em 008/39 e/ou 040 $a é responsável pelo conteúdo do registro. A organização identificada como a agência de transcrição no campo 040 $c é responsável pela designação de conteúdo e transcrição dos dados. </p>
+   <p>Nos <em>registros modificados</em>, as organizações identificadas em 040 $a e $d (Agência modificadora) são coletivamente responsáveis pelo conteúdo do registro. As organizações identificadas como agências transcritoras ou modificadores no campo 040 $c e $d são coletivamente responsáveis pela designação de conteúdo e transcrição dos dados. </p>
+   <p><strong>Elementos de Dados Atribuídos por Agência</strong></p>
+   <p>Um elemento de dado atribuído por agência é aquele cujo conteúdo é determinado por uma agência designada e é de responsabilidade desta agência, ex: campo 222 (Título Chave) que é responsabilidade de um Centro ISSN. Embora geralmente seja inserido pela agência designada, ele pode ser transcrito por outra organização. </p>
+   <p><strong>Elementos de Dados de Lista Controlada</strong></p>
+   <p>Certos elementos de dados contém dados de listas controladas mantidas por agências designadas, ex: a <em>Lista de Códigos MARC para Áreas Geográficas</em> no campo 043 (Código de Área Geográfica). Estes elementos são indicados nos níveis de campo ou subcampo no MARC 21 e apenas valores das listas designadas podem ser usados. Se for desejável uma alteração ou adição para uma lista, a agência mantenedora da lista deve ser consultada. </p>
+   <p><strong>Requisitos de Nível de Registro</strong></p>
+   <p>Grupos de usuários podem ter requisitos de registro de nível completo e nível mínimo, para promover consistência entre as agências de catalogação. Estes requisitos devem ser amplamente divulgados para que todos os possíveis parceiros de intercâmbio tenham ciência. </p>
+   <hr>
+   <p><strong>ORGANIZAÇÃO DESTE DOCUMENTO</strong></p>
+   <p><strong>Partes Principais</strong></p>
+   <p>O <em>Formato MARC 21 para Dados Bibliográficos</em> consiste em uma Declaração Resumida de Designadores de Conteúdo seguida por uma apresentação detalhada de cada designador de conteúdo. Na sequência das descrições do Líder e do Diretório, as apresentações detalhadas para cada campo variável estão organizadas na ordem da etiqueta do campo. </p>
+   <p>Apêndices para este documento fornecem informações sobre vários subcampos de controle (<a href="ecbdcntf.html">Apêndice A</a>), exemplos de registros de nível completo (<a href="examples.html">Apêndice B</a>), exemplos de registros de nível mínimo (<a href="bdapndxc.html">Apêndice C</a>), exemplos de registros em múltiplos sistemas de escrita (<a href="ecbdmulti.html">Apêndice D</a>), uma listagem alfabética de cabeçalhos ambíguos com sugestão de etiquetagem (<a href="ambiguous-headings.html">Apêndice E</a>), uma lista de artigos definidos e indefinidos iniciais em vários idiomas (<a href="bdapndxf.html">Apêndice F</a>), listas de alterações ao formato desde a última edição ou atualização (<a href="bdapndxg.html">Apêndice G</a>), uma listagem de vários campos locais do Canadá e dos EUA (<a href="bdapndxh.html">Apêndice H</a>) e uma lista de fontes de códigos de organizações (<a href="ecbdorg.html">Apêndice I</a>). </p>
+   <p><strong>Seções de Informações Gerais</strong></p>
+   <p>Para evitar a repetição, são fornecidas seções gerais de informações para grupos de campos com características semelhantes. Essas seções de informações gerais fornecem instruções para os designadores de conteúdo que são comuns para cada campo do grupo. A descrição de cada um dos campos faz referência à seção de informações gerais para esse grupo e a qualquer seção de informações gerais relacionadas. </p>
+   <p>Por exemplo, a seção X00 Nomes Pessoais  -  Informações Gerais é fornecida para cabeçalhos de nomes pessoais. Esta seção de informações geral fornece instruções para os designadores de conteúdo que são comuns para cada tipo de cabeçalho pessoal, seja ele usado em um campo de entrada principal 100, em um campo de acesso de assunto 600, em um campo de entrada secundária 700 ou em um campo de entrada secundária de série 800. A descrição de cada um dos campos individuais (ou seja, 100, 600, 700, 800) referencia a seção de informações gerais X00. </p>
+   <p><strong>Componentes das Descrições Detalhadas</strong></p>
+   <p>Uma descrição detalhada pode consistir de seis partes: listagem do designador de conteúdo; posição de caractere ou definição de campo e escopo; diretrizes para aplicação de designadores de conteúdo, com exemplos; convenções de uso; e histórico dos designadores de conteúdo. </p>
+   <p>A área de <strong>listagem do designador de conteúdo</strong> apresenta </p>
+   <ul>
+      <li class="nobullet">o nome do designador de conteúdo</li>
+      <li class="nobullet">o código de repetibilidade/não repetibilidade (R ou NR)</li>
+   </ul>
+   <p>Para o Líder e os campos de controle de variáveis, a listagem dá o <strong>nome</strong> da posição do caractere e qualquer valor codificado definido. Para campos de dados de variáveis, a listagem dá o nome das posições de indicadores e quaisquer valores codificados definidos, e o nome dos códigos de subcampo e quaisquer valores codificados definidos. Para todos os campos de variáveis, o código <strong>repetibilidade/não repetibilidade</strong> no nível de campo especifica se o campo pode ser repetido em um registro. Para campos de dados de variáveis, o código de repetibilidade do subcampo especifica se o código do subcampo pode ser repetido dentro de um campo. </p>
+   <p>A área da <strong>posição de caractere ou definição de campo e escopo</strong> descreve o conteúdo da posição de caractere ou campo, a adequação do seu uso em tipos específicos de registros bibliográficos, e fornece outras informações, tais como repetibilidade de campo em circunstâncias específicas, o uso de listas ou regras necessárias na formulação dos dados, etc. </p>
+   <p>A área das <strong>diretrizes para aplicação de designadores de conteúdo</strong> descreve o conteúdo e escopo de cada valor codificado, indicador ou código de subcampo, e fornece outras informações, tais como a adequação do uso e repetibilidade em circunstâncias definidas. Os valores codificados e os códigos de subcampos nesta área são apresentados em ordem alfabética/numérica. Exemplos que mostram o uso do designador de conteúdo são fornecidos imediatamente após a descrição. Os exemplos ilustram a aplicação de uma designação de conteúdo do MARC específica. Os dados podem estar mais completos ou menos do que estariam na prática real de catalogação. A maioria dos exemplos reflete a aplicação do AACR 2 e do ISBD; no entanto, alguns refletem uma aplicação do MARC generalizada. Outros exemplos ilustram pontos específicos. </p>
+   <p>A área de <strong>convenções de uso</strong> fornece uma orientação geral para a aplicação dos designadores de conteúdo, e para coisas como pontuação, espaçamento e o uso de constantes de exibição. A pontuação usada dentro de um campo é geralmente ditada pelas regras de catalogação descritiva ou de cabeçalhos de assunto do sistema/tesauro. As convenções de uso clarificam as práticas de pontuação do MARC, especialmente no que se refere à pontuação final. Na discussão de práticas de pontuação, uma <em>marca da pontuação</em> é um ponto final (.), um ponto de interrogação (?), um ponto de exclamação (!), ou um hífen (-). </p>
+   <p>A área <strong>histórico dos designadores de conteúdo</strong> fornecem um registro de mudanças significativas no designador de conteúdo. Os tipos de mudanças que são incluídas são: </p>
+   <ul>
+      <li class="nobullet">designadores de conteúdo recém-definidos que impactam a consistência da codificação dentro de um arquivo, ex: a localização de um evento inserida sob um ente corporativo, não era codificada como um subcampo separado nos campos X10 antes da definição do subcampo $c em 1980. </li>
+      <li class="nobullet">códigos e valores redefinidos, ex: em campos X10, tanto o número quanto o nome da parte/seção de uma obra eram contidos no subcampo $p antes da redefinição do subcampo $p para apenas o nome da parte/seção de uma obra em 1979. </li>
+      <li class="nobullet">mudanças nos códigos e valores para consistência entre as especificações do MARC, ex: em 008/24-27 para especificações de livros, o código f (Manuais) era identificado pelo código h antes de 1979. </li>
+      <li class="nobullet">mudanças na repetibilidade quando ela impacta a consistência do arquivo, ex: o campo 020 não era repetível antes de 1977; múltiplos dados de ISBN estavam contidos em subcampos repetíveis $a, $b, e $c. </li>
+      <li class="nobullet">restruturação, ex: o campo 007 (Campo Fixo de Descrição Física) em 1980.</li>
+      <li class="nobullet">designação de conteúdo obsoleta, ex: subcampo $b (Número) nos campos X11 quando o subcampo $n foi redefinido para incluir números de eventos em 1979. Designação de conteúdo obsoleta definida anteriormente em apenas um formato está designada como <em>[Somente USMARC]</em> ou <em>[Somente CAN/MARC]</em>; itens sem marcação estavam definidos em ambos os formatos. </li>
+   </ul>
+   <p>Nos formatos MARC, uma distinção é feita entre designadores de conteúdo <strong>obsoletos</strong> e <strong>eliminados</strong>. Um designador de conteúdo <strong>obsoleto</strong> pode ter sido usado em registros MARC e pode continuar aparecendo em registros criados antes da data em que foi tornado obsoleto. Designadores de conteúdo obsoletos não são usados em novos registros. Um designador de conteúdo obsoleto está registrado na área <em>Histórico dos Designadores de Conteúdo</em>. Instruções de designação de conteúdo são fornecidas para conversão retrospectiva de registros que tenham elementos de dados identificados pelo designador de conteúdo obsoleto. Um designador de conteúdo <strong>eliminado</strong> não está registrado na área de histórico e não aparecerá em nenhum lugar da documentação MARC. Um designador de conteúdo que estava reservado no MARC, mas não foi definido, ou um que tenha sido definido, mas que com quase certeza que não foi utilizado, pode ser eliminado do formato. Um designador de conteúdo eliminado está disponível para redefinição em um formato. Um designador de conteúdo eliminado está disponível para redefinição em um formato. </p>
+   <p><strong>Convenções Tipográficas</strong></p>
+   <p>Ao longo deste documento, são utilizadas as seguintes convenções tipográficas:</p>
+   <ul>
+      <li class="nobullet">0 - O gráfico 0 representa o dígito zero em etiquetas, posições de caracteres fixas, posições de indicador e outros lugares onde números são usados. Este caractere deve ser distinguido de uma letra maiúscula O em exemplos ou texto. </li>
+      <li class="nobullet"># - O símbolo gráfico # é usado para um espaço em branco nos campos codificados e em outras situações especiais onde a existência do caractere espaço em branco pode ser ambígua. (Na maioria dos exemplos textuais, o espaço em branco é representado da maneira convencional, pela ausência de um caractere.) </li>
+      <li class="nobullet">$ - O símbolo gráfico $ é usado para a porção delimitadora de um código de subcampo. No texto, códigos subcampo são referidos como <em>subcampo $a</em>, por exemplo. </li>
+      <li class="nobullet">/ - Posições de caracteres específicas do Líder, Diretório, campo 007 e campo 008 são expressas usando uma barra e o número da posição do caractere, ex: Líder/06, 007/00, 008/12. </li>
+      <li class="nobullet">1 - O gráfico 1 representa o dígito um (hexadecimal 31). Este caractere deve ser distinto de uma letra alfabética minúscula l (hex 6C) e da letra alfabética maiúscula I (hex 4C) em exemplos ou texto. </li>
+      <li class="nobullet">| - O gráfico | representa um caractere de preenchimento nos exemplos MARC. Quando esta marca aparece na margem esquerda, ele indica áreas do texto deste documento onde foram feitas alterações. </li>
+   </ul>
+   <hr>
+   <a href="http://www.loc.gov/global/disclaim.html"><img src="../../images/disclaimer.gif" alt="Isenção de responsabilidade para links" width="91" height="16" border="0" align="right"></a>
+   <p><strong>PADRÕES E OUTROS DOCUMENTOS RELACIONADOS COM ESTE FORMATO</strong></p>
+   <p>O <em>Formato MARC 21 para Dados Bibliográficos</em> deve ser usado com os seguintes padrões e documentações relacionadas. Quando um padrão é aplicável aos dados em campos específicos do formato, os campos são dados em colchetes após a citação. </p>
+   <p><strong>Padrões Nacionais e internacionais:</strong></p>
+   <p>Publicações ISO podem ser obtidas da <a href="http://www.iso.org">International Organization for Standardization (ISO)</a> e seus agentes; e publicações ANSI/NISO Z39 podem ser obtidas da <a href="http://www.niso.org">National Information Standards Organization (NISO)</a>. </p>
+   <ul>
+      <li class="nobullet"><em>Format for Information Exchange</em> (ISO 2709) e <em>Bibliographic Information Interchange</em> (ANSI/NISO Z39.2) </li>
+      <li class="nobullet"><em>Code for the Representation of Names of Countries and their Subdivisions: Part 2, Country subdivision code</em> (ISO 3166-2) </li>
+      <li class="nobullet"><em>International Standard Book Numbering (ISBN) </em> (ISO 2108) </li>
+      <li class="nobullet"><em>International Standard Music Number (ISMN)</em> (ISO 10957) </li>
+      <li class="nobullet"><em>International Standard Recording Code (ISRC)</em> (ISO 3901) </li>
+      <li class="nobullet"><em>International Standard Serial Number (ISSN)</em> (ISO 3297) (ANSI/NISO Z39.9) </li>
+      <li class="nobullet"><em>Representations of Dates and Times</em> (ISO 8601) </li>
+      <li class="nobullet"><em>Serial Item and Contribution Identifier (SICI) </em> (ANSI/NISO Z39.56) </li>
+      <li class="nobullet"><em>International Standard Technical Report Number (ISRN)</em> (ISO 10444) e <em>Standard Technical Report Number and Description </em> (ANSI/NISO Z39.23) </li>
+   </ul>
+   <p><strong>Padrões MARC:</strong></p>
+   <p>Estas publicações estão disponíveis na Library of Congress, Cataloging Distribution Service, Washington, DC 20541, USA (Worldwide distribution). Onde for indicado, estas publicações estão disponíveis na Internet. </p>
+   <ul>
+      <li class="nobullet"><em><a href="http://www.loc.gov/marc/specifications">MARC 21 Specifications for Record Structure, Character Sets, and Exchange Media</a></em></li>
+      <li class="nobullet"><em><a href="http://www.loc.gov/marc/countries/">Lista de Códigos MARC para Países</a></em></li>
+      <li class="nobullet"><em><a href="http://www.loc.gov/marc/geoareas/gacshome.html">Lista de Códigos MARC para Áreas Geográficas</a></em></li>
+      <li class="nobullet"><em><a href="http://www.loc.gov/marc/languages/">Lista de Códigos MARC para Idiomas</a></em></li>
+      <li class="nobullet"><em><a href="http://www.loc.gov/marc/organizations/orgshome.html">Lista de Códigos MARC para Organizações</a></em> (título anterior: <em>Symbols of American Libraries</em>) </li>
+      <li class="nobullet"><em><a href="https://www.bac-lac.gc.ca/eng/symbols-interlibrary-loan-policies/Pages/symbols-interlibrary-loan-policies.aspx">Symbols and Interlibrary Loan Policies in Canada</a></em></li>
+      <li class="nobullet"><em><a href="http://www.loc.gov/marc/concise/">MARC 21 Formatos Concisos</a></em> (todos os cinco formatos de forma concisa) </li>
+      <li class="nobullet"><em><a href="lite/index.html">MARC 21 LITE Bibliographic Format</a></em></li>
+      <li class="nobullet"><em><a href="../authority/ecadhome.html">Formato MARC 21 para Dados de Autoridade</a></em></li>
+      <li class="nobullet"><em><a href="../classification/eccdhome.html">Formato MARC 21 para Dados de Classificação</a></em></li>
+      <li class="nobullet"><em><a href="../community/eccihome.html">Formato MARC 21 para a Informação da Comunidade</a></em></li>
+      <li class="nobullet"><em><a href="../holdings/echdhome.html">Formato MARC 21 para Dados de Acervo</a></em></li>
+   </ul>
+   <hr>
+   <p><strong>DOCUMENTAÇÃO SUPLANTADA</strong></p>
+   <p>Este documento substitui as edições mais recentes do <em>USMARC Format for Bibliographic Data</em> e do <em>Canadian MARC Communication Format for Bibliographic Data</em>. Com o alinhamento destes formatos em 1997, uma única edição do formato pode ser publicada. </p>
+   <p><strong>Documentação do USMARC</strong></p>
+   <p>MARC 21 substitui a edição de 1994 do <em>USMARC Format for Bibliographic Data: Including Guidelines for Content Designation</em> e atualizações n. 1 (março de 1995), n. 2 (março de 1996) e n. 3 (julho de 1997) para essa edição. Com a atualização n. 3, os formatos USMARC e CAN/MARC tiveram especificações de formato idênticas. A edição de 1994 substituiu a edição de 1988 e as suas quatro atualizações publicadas entre 1988 e 1991. A edição de 1988 incorporou o texto base da edição de 1980 publicada sob o título <em>MARC Formats for Bibliographic Data</em> (MFBD) e as 15 atualizações dessa edição publicadas entre 1980 e 1987. A edição de 1980 era uma compilação de documentos de formato MARC separados elaborados para diferentes tipos de materiais e publicados entre 1969 e 1977. </p>
+   <p><strong>Documentação do CAN/MARC</strong></p>
+   <p>O MARC 21 substitui a edição de 1994 do <em>Canadian MARC Communication Format for Bibliographic Data</em> e suas seis atualizações publicadas entre 1994 e 1998. A atualização seis continha as mudanças para CAN/MARC necessárias para se alinhar com o USMARC. Com esta atualização, as especificações contidas nos formatos CAN/MARC e USMARC são idênticas. A edição de 1994 substituiu a edição de 1988 e suas sete atualizações publicadas entre 1988 e 1991. A edição de 1988 foi produzida pela amálgama de formatos de CAN/MARC publicados separadamente para monografias e séries. </p>
+   <hr>
+   <p><strong>MANUTENÇÃO DA DOCUMENTAÇÃO</strong></p>
+   <p>O <em>Formato MARC 21 para Dados Bibliográficos</em> é preparado pelo Network Development and MARC Standards Office, da Library of Congress, em cooperação com a Content Management Division, da Library and Archives Canada (anteriormente National Library of Canada) e Bibliographic Standards and Systems, da British Library. Por favor, direcione quaisquer questões relacionadas ao conteúdo deste documento para um dos seguintes: </p>
+   <p>Network Development and MARC Standards Office<br>Library of Congress <br>101 Independence Avenue, S.E. <br>Washington, DC 20540-4402, USA <br>Fax: +1-202-707-0115<br>Email: ndmso@loc.gov
+   </p>
+   <p>Description Division<br> Library and Archives Canada<br>395 Wellington St. <br>Ottawa, Ontario K1A 0N4, Canada <br> Fax: +1-819-934-4388<br> Email: bac.marc21.lac@canada.ca
+   </p>
+   <p>Collection Metadata<br> The British Library<br> Boston Spa, Wetherby <br>West Yorkshire LS23 7BQ, United Kingdom <br>Fax: +44 (0) 1937 546586<br> Email: metadata@bl.uk</p>
+   <p>O <em>Formato MARC 21 para Dados Bibliográficos</em> é organizado por campos, com cada campo separado em sua página para facilitar a atualização. Atualizações periódicas de páginas novas e substituições para o texto base e versões acumuladas do texto base serão disponibilizadas pelo Cataloging Distribution Service, Library of Congress, Washington, DC 20541-5017, USA (Worldwide distribution) e no Canadá pelo Publishing and Depository Services, Public Works and Government Services Canada (PWGSC), Ottawa, Ontario K1A 0S5, Canada (Canadian distribution). Sua disponibilidade será anunciada no <a href="http://www.loc.gov/marc">site MARC da Library of Congress</a>, no <a href="http://www.marc21.ca/index-e.html">site MARC da Library and Archives Canada</a>, em listas de e-mail, e através de comunicados de imprensa para as editoras e para aqueles que compraram o volume base inicial. As atualizações também estão disponíveis continuamente através da Library of Congress e da Canadian Government Publishing-PWGSC. Esta publicação e todas as atualizações são fornecidas a todos os compradores de arquivos de registros bibliográficos do Library of Congress MARC Distribution Service como parte de sua assinatura de registros MARC. </p>
+   <hr>
+   <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr valign="bottom">
+         <td>
+            <div class="head-nav"><a href="http://www.loc.gov/">Library of Congress</a> &gt;&gt; <a href="http://www.loc.gov/marc/">MARC</a> &gt;&gt; <a href="index.html">Bibliográfico</a> &gt;&gt; <strong> Introdução</strong></div> (22/04/2008)
+         </td>
+         <td align="right"><a href="http://www.loc.gov/marc/bibliographic/bdintro.html" class="noprint">Fonte</a></td>
+      </tr>
+   </table>
+</body>
+
+</html>
